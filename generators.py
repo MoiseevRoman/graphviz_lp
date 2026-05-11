@@ -190,6 +190,7 @@ class Stage2DataGenerator:
             "The subgraph above shows connections around '{head}'.\n"
             "- Blue node (head) = query entity\n"
             "- Dashed node {question} = entity to predict\n\n"
+            "Description: {head_description}\n\n"
             "Query: {head} [{relation}] ?\n"
             "Provide only the entity name.\n"
             "Answer:"
