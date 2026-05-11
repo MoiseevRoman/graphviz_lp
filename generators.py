@@ -190,7 +190,7 @@ class Stage2DataGenerator:
             "The subgraph above shows connections around '{head}'.\n"
             "- Blue node (head) = query entity\n"
             "- Dashed node {question} = entity to predict\n\n"
-            "Query: {head} \u2014[{relation}]\u2192 ?\n"
+            "Query: {head} [{relation}] ?\n"
             "Provide only the entity name.\n"
             "Answer:"
         ),
@@ -198,7 +198,7 @@ class Stage2DataGenerator:
             "<image>\n"
             "Task: Link Prediction\n\n"
             "Context: subgraph centered on '{head}'.\n"
-            "The dashed green edge leads to {question} \u2014 "
+            "The dashed green edge leads to {question} "
             "the target entity.\n"
             "Description: {head_description}\n\n"
             "Query: ({head}, {relation}, ?)\n"
