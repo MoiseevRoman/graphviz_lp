@@ -1,0 +1,22 @@
+# data / checkpoints / heavy artifacts (not source)
+FB15k-237/
+graphvis_ckpts/
+graphvis_ckpts_scaling/
+graphvis_ckpts_scaling_aug/
+graphvis_ckpts_scaling_common/
+graphvis_fb15k_data/
+graphvis_fb15k_data_hybrid4_672/
+graphvis_fb15k_data_hybrid8_672/
+graphvis_scaling/
+graphvis_scaling_aug/
+tmp/
+paper/*.pdf
+
+# env / caches
+.venv312/
+__pycache__/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.secondstack/
