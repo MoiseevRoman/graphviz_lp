@@ -16,9 +16,12 @@
 
 from __future__ import annotations
 
+import logging
 from typing import Any, Dict, List, Optional, Tuple
 
 import torch
+
+logger = logging.getLogger(__name__)
 
 
 # ──────────────────────────────────────────────────────────────────
@@ -155,6 +158,15 @@ def process_train_example(
     input_ids = full["input_ids"][0]
     attention_mask = full["attention_mask"][0]
     prompt_len = prompt_enc["input_ids"].shape[1]
+
+    # Защита: если truncation обрезал ответ, лейблы вышли бы полностью
+    # маскированными (пример не учит хвост). На текущем конфиге не срабатывает.
+    prompt_len = min(prompt_len, input_ids.size(0))
+    if prompt_len >= input_ids.size(0):
+        logger.warning(
+            "example truncated: answer fully cut (prompt_len=%d >= seq_len=%d)",
+            prompt_len, input_ids.size(0),
+        )
 
     labels = input_ids.clone()
     labels[:prompt_len] = -100

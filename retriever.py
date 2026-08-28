@@ -225,9 +225,11 @@ class FB15k237GraphRetriever:
         entity: str,
         exclude_entity: str = "",
         max_neighbors: int | None = None,
+        split: str = "train",
     ) -> Dict[str, Any]:
         """1-hop с ранжированием по весу."""
         k = max_neighbors or self._cfg.k_neighbors
+        allowed_splits = self._allowed_splits(split)
         order = self._order_clause()
 
         nodes: Dict[str, Dict] = {}
@@ -252,7 +254,8 @@ class FB15k237GraphRetriever:
 
             query = (
                 "MATCH (a:Entity {name: $name})-[r]-(nb:Entity) "
-                "WHERE nb.name <> $exclude "
+                "WHERE r.split IN $splits "
+                "  AND nb.name <> $exclude "
                 "RETURN nb.name AS nn, nb.fb_id AS nid, "
                 "  nb.description AS nd, r.type AS rel, "
                 "  startNode(r).name AS start_name, "
@@ -261,7 +264,8 @@ class FB15k237GraphRetriever:
                 "LIMIT $k"
             )
             for r in session.run(
-                query, name=entity, exclude=exclude_entity, k=k,
+                query, name=entity, splits=allowed_splits,
+                exclude=exclude_entity, k=k,
             ):
                 nb = r["nn"]
                 if exclude_entity and nb == exclude_entity:

@@ -152,9 +152,11 @@ def measure_token_cost(
                 img_id = image_token_id(getattr(processor, "model", None) or processor,
                                         tokenizer, family)
             try:
-                vis = int((enc["input_ids"][0] == img_id).sum())
+                counted = int((enc["input_ids"][0] == img_id).sum())
             except Exception:
-                vis = LLAVA_VISUAL_TOKENS
+                counted = 0
+            # старые/некоторые LLaVA-процессоры не разворачивают <image> в 576 токенов
+            vis = counted if counted >= LLAVA_VISUAL_TOKENS else LLAVA_VISUAL_TOKENS
 
         totals.append(total)
         visuals.append(vis)

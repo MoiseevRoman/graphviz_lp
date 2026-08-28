@@ -56,13 +56,10 @@ def parse_neighbors_text(nt: str):
 
 def _row_cols(nt: str, kinds):
     edges, order = parse_neighbors_text(nt)
-    out = {}
-    for k in kinds:
-        if edges is None:
-            out[f"neighbors_{k}"] = nt  # безопасный откат к исходному тексту
-        else:
-            out[f"neighbors_{k}"] = _ENCODERS[k](order, edges)
-    return out
+    if edges is None:
+        # громкий отказ: тихий откат к edge-list испортил бы matched-info
+        raise ValueError(f"нераспарсенный neighbors_text для кодировки: {nt!r:.200}")
+    return {f"neighbors_{k}": _ENCODERS[k](order, edges) for k in kinds}
 
 
 def process_split(path: str, kinds, force: bool) -> str:

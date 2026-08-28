@@ -6,8 +6,14 @@
   - CSV,
   - фигуру MRR / Hits@10 / tokens vs K.
 
-Работает и по iso-тесту (graphvis_ckpts_scaling), и по общему тесту
-(graphvis_ckpts_scaling_common). Пример:
+Для отчёта используй только общий тест (graphvis_ckpts_scaling_common): там
+n_evaluated одинаков для всех условий одного K. ВНИМАНИЕ: iso-дерево
+(graphvis_ckpts_scaling) даёт РАЗНЫЕ n_evaluated между условиями и НЕ должно
+использоваться для сравнительных таблиц/кривой (условия оценены на несопоставимых
+тройках). Скрипт прерывается при таком рассогласовании (см. --allow-mismatch).
+Aug-visual лежит в graphvis_ckpts_scaling_aug/ctx_visual (context_mode=visual,
+датасет graphvis_scaling_aug); используй --label visual_aug, чтобы отделить его от
+non-aug visual на кривой. Пример:
     python scripts/summarize_scaling.py --root graphvis_ckpts_scaling_common \
         --out_prefix tmp/common
 """
@@ -28,6 +34,10 @@ def main() -> None:
     ap.add_argument("--root", required=True, help="дерево чекпойнтов (…/k{K}/ctx_{cond})")
     ap.add_argument("--out_prefix", default="tmp/scaling",
                     help="префикс для .csv и .png")
+    ap.add_argument("--label", default=None,
+                    help="переименовать выведенное visual-условие (напр. visual_aug)")
+    ap.add_argument("--allow-mismatch", action="store_true", dest="allow_mismatch",
+                    help="не прерываться при разном n_evaluated внутри K, а исключать такие K из кривой")
     args = ap.parse_args()
 
     rows = []
@@ -36,6 +46,8 @@ def main() -> None:
         parts = rep.replace("\\", "/").split("/")
         k = int([p for p in parts if p.startswith("k") and p[1:].isdigit()][-1][1:])
         cond = [p for p in parts if p.startswith("ctx_")][-1].replace("ctx_", "")
+        if args.label and cond == "visual":
+            cond = args.label  # aug-visual: отделить от non-aug на кривой/в CSV
         e = d.get("eval", {})
         rows.append(dict(k=k, cond=cond, MRR=e.get("MRR"), H1=e.get("Hits@1"),
                          H3=e.get("Hits@3"), H10=e.get("Hits@10"),
@@ -46,6 +58,23 @@ def main() -> None:
         print(f"Нет report.json в {args.root}")
         return
     rows.sort(key=lambda r: (r["k"], _ORDER.get(r["cond"], 9)))
+
+    # защита 'общего теста': n_evaluated должен совпадать среди условий одного K,
+    # иначе MRR/Hits сравниваются на несопоставимых тройках (iso-дерево так и делает)
+    bad_ks = set()
+    for k in sorted({r["k"] for r in rows}):
+        nev_by_cond = {r["cond"]: r["nev"] for r in rows if r["k"] == k}
+        print(f"K={k} n_evaluated: " + ", ".join(f"{c}={n}" for c, n in nev_by_cond.items()))
+        if len(set(nev_by_cond.values())) > 1:
+            bad_ks.add(k)
+            msg = f"K={k}: n_evaluated не совпадает между условиями: {nev_by_cond}"
+            if not args.allow_mismatch:
+                raise SystemExit(
+                    "НЕСОПОСТАВИМЫЙ ТЕСТ: " + msg +
+                    " (iso-дерево нельзя использовать для сравнения; возьми "
+                    "graphvis_ckpts_scaling_common или запусти с --allow-mismatch)")
+            print("WARNING (исключён из кривой): " + msg)
+    rows = [dict(r, incomparable=(r["k"] in bad_ks)) for r in rows]
 
     print(f"{'K':>2} {'cond':<10} {'MRR':>6} {'H@1':>5} {'H@3':>5} {'H@10':>5} "
           f"{'tot':>6} {'txt':>4} {'vis':>4} {'nEval':>6} {'trainTok':>9}")
@@ -71,7 +100,7 @@ def main() -> None:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    Ks = sorted({r["k"] for r in rows})
+    Ks = sorted({r["k"] for r in rows if not r["incomparable"]})  # несопоставимые K вне кривой
     conds = sorted({r["cond"] for r in rows}, key=lambda c: _ORDER.get(c, 9))
 
     def series(c, f):

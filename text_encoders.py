@@ -26,7 +26,12 @@ from typing import Any, Dict, List, Tuple
 
 from config import VisualizationConfig
 from graph_features import compute_features
-from visualizer import FB15kGraphVisualizer, compute_visible_subgraph, format_label
+from visualizer import (
+    FB15kGraphVisualizer,
+    _norm_rel,
+    compute_visible_subgraph,
+    format_label,
+)
 
 QUESTION_NODE = "[?]"
 
@@ -52,7 +57,7 @@ def _visible(
     """
     nodes, edges = compute_visible_subgraph(subgraph, cfg)
     head = subgraph["head"]
-    rel = subgraph.get("rel", "?")
+    rel = _norm_rel(subgraph)
     mll = cfg.max_label_len
 
     def lbl(name: str) -> str:
@@ -69,6 +74,55 @@ def _visible(
     fmt_edges.append((lbl(head), format_label(rel, mll), QUESTION_NODE))
 
     return lbl(head), format_label(rel, mll), node_labels, fmt_edges
+
+
+def _visible_ids(
+    subgraph: Dict[str, Any], cfg: VisualizationConfig,
+) -> Tuple[str, str, List[str], List[Tuple[int, str, int]]]:
+    """Позиционно-ключёванный видимый граф (matched-info фикс).
+
+    Каждый РАЗЛИЧНЫЙ узел (по сырому имени) получает свой индекс — даже если его
+    обрезанная подпись совпала с другим узлом; на картинке они рисуются разными
+    боксами (visualizer._nid по сырому имени), поэтому и в тексте не должны
+    схлопываться. Совпавшие подписи дизамбигуируются суффиксом ' #k'. Рёбра
+    возвращаются как позиции (i, rel, j), а не как подписи → кодировщики больше
+    не зависят от уникальности строк.
+
+    Ограничение: истинные омонимы (одно и то же сырое имя у разных сущностей —
+    finding идентичности по имени) остаются схлопнутыми, т.к. на этом уровне mid
+    недоступен; их различение требует ключа fb_id (см. раздел «Угрозы валидности»).
+    """
+    nodes, edges = compute_visible_subgraph(subgraph, cfg)
+    head = subgraph["head"]
+    rel = _norm_rel(subgraph)
+    mll = cfg.max_label_len
+
+    def base(name: str) -> str:
+        return name if name == QUESTION_NODE else format_label(name, mll)
+
+    raw_seq = [n["name"] for n in nodes] + [QUESTION_NODE]
+    raw2idx: Dict[str, int] = {}
+    for rn in raw_seq:
+        if rn not in raw2idx:
+            raw2idx[rn] = len(raw2idx)
+    order = sorted(raw2idx, key=lambda k: raw2idx[k])
+
+    seen: Dict[str, int] = {}
+    disp: List[str] = []
+    for rn in order:
+        b = base(rn)
+        seen[b] = seen.get(b, 0) + 1
+        disp.append(b if seen[b] == 1 else f"{b} #{seen[b]}")
+
+    edges_idx: List[Tuple[int, str, int]] = []
+    for e in edges:
+        i, j = raw2idx.get(e["source"]), raw2idx.get(e["target"])
+        if i is None or j is None:
+            continue
+        edges_idx.append((i, format_label(e["relation"], mll), j))
+    edges_idx.append((raw2idx[head], format_label(rel, mll), raw2idx[QUESTION_NODE]))
+
+    return disp[raw2idx[head]], format_label(rel, mll), disp, edges_idx
 
 
 # ────────────────────────────────────────────────────────────────
@@ -121,6 +175,46 @@ _ENCODERS = {
 }
 
 
+# ── позиционные версии (matched-info фикс, cfg.disambiguate_labels) ──
+# Идентичность узла = позиция (индекс), а не строка-подпись → узлы с совпавшей
+# обрезанной подписью НЕ схлопываются. disp — уже дизамбигуированные подписи.
+def _encode_triples_ids(disp: List[str], edges_idx: List[Tuple[int, str, int]]) -> str:
+    return "\n".join(f"({disp[i]}, {r}, {disp[j]})" for i, r, j in edges_idx)
+
+
+def _encode_adjlist_ids(disp: List[str], edges_idx: List[Tuple[int, str, int]]) -> str:
+    out: Dict[int, List[str]] = {i: [] for i in range(len(disp))}
+    for i, r, j in edges_idx:
+        out[i].append(f"{r} -> {disp[j]}")
+    return "\n".join(
+        f"{disp[i]}: " + ("; ".join(out[i]) if out[i] else "(no outgoing edges)")
+        for i in range(len(disp))
+    )
+
+
+def _encode_matrix_ids(disp: List[str], edges_idx: List[Tuple[int, str, int]]) -> str:
+    size = len(disp)
+    mat = [[0] * size for _ in range(size)]
+    legend: List[str] = []
+    for i, r, j in edges_idx:
+        mat[i][j] = 1
+        legend.append(f"({i},{j}): {r}")
+    header = "Node index:\n" + "\n".join(f"  {i}: {n}" for i, n in enumerate(disp))
+    rows = ["Adjacency matrix (row=source, col=target, 1=edge):"]
+    rows.append("     " + " ".join(f"{i:>2}" for i in range(size)))
+    for i in range(size):
+        rows.append(f"  {i:>2} " + " ".join(f"{mat[i][j]:>2}" for j in range(size)))
+    leg = "Edge relations:\n" + "\n".join(f"  {x}" for x in legend) if legend else ""
+    return "\n".join([header, "", *rows] + (["", leg] if leg else []))
+
+
+_ENCODERS_IDS = {
+    "triples": _encode_triples_ids,
+    "adjlist": _encode_adjlist_ids,
+    "matrix": _encode_matrix_ids,
+}
+
+
 # ────────────────────────────────────────────────────────────────
 # Feature-блок (инженерные признаки движка → текст)
 # ────────────────────────────────────────────────────────────────
@@ -163,6 +257,9 @@ def encode_subgraph(subgraph: Dict[str, Any], cfg: VisualizationConfig, kind: st
     признаками используют ``cfg.inject_layout_features`` для добавления позиций.
     """
     if kind in _ENCODERS:
+        if getattr(cfg, "disambiguate_labels", False):
+            _, _, disp, edges_idx = _visible_ids(subgraph, cfg)
+            return _ENCODERS_IDS[kind](disp, edges_idx)
         _, _, node_labels, edges = _visible(subgraph, cfg)
         return _ENCODERS[kind](node_labels, edges)
 
@@ -170,8 +267,12 @@ def encode_subgraph(subgraph: Dict[str, Any], cfg: VisualizationConfig, kind: st
     if kind == "feat":
         return encode_features_block(subgraph, cfg, inc_layout)
     if kind == "triples_feat":
-        _, _, node_labels, edges = _visible(subgraph, cfg)
-        block = _encode_triples(node_labels, edges)
+        if getattr(cfg, "disambiguate_labels", False):
+            _, _, disp, edges_idx = _visible_ids(subgraph, cfg)
+            block = _encode_triples_ids(disp, edges_idx)
+        else:
+            _, _, node_labels, edges = _visible(subgraph, cfg)
+            block = _encode_triples(node_labels, edges)
         feat = encode_features_block(subgraph, cfg, inc_layout)
         return f"{block}\n\nNode features:\n{feat}"
     raise ValueError(f"Unknown encoding kind: {kind!r}")
@@ -232,12 +333,22 @@ def all_text_prompts(
     vis = FB15kGraphVisualizer(cfg) if inc_layout else None
     feats = compute_features(subgraph, cfg, include_layout=inc_layout, visualizer=vis)
     feat_block = _format_feat_lines(feats, cfg)
-    triples_block = _encode_triples(node_labels, edges)
+
+    # matched-info: структурные кодировки — позиционно, если включён флаг.
+    if getattr(cfg, "disambiguate_labels", False):
+        _, _, _disp, _eidx = _visible_ids(subgraph, cfg)
+        triples_block = _encode_triples_ids(_disp, _eidx)
+        adjlist_block = _encode_adjlist_ids(_disp, _eidx)
+        matrix_block = _encode_matrix_ids(_disp, _eidx)
+    else:
+        triples_block = _encode_triples(node_labels, edges)
+        adjlist_block = _encode_adjlist(node_labels, edges)
+        matrix_block = _encode_matrix(node_labels, edges)
 
     blocks = {
         "triples": triples_block,
-        "adjlist": _encode_adjlist(node_labels, edges),
-        "matrix": _encode_matrix(node_labels, edges),
+        "adjlist": adjlist_block,
+        "matrix": matrix_block,
         "feat": feat_block,
         "triples_feat": f"{triples_block}\n\nNode features:\n{feat_block}",
     }

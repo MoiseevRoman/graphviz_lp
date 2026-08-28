@@ -177,7 +177,7 @@ class FB15k237GraphVisBuilder:
                 if "error" in sg or not sg.get("edges"):
                     # Fallback: 1-hop тоже исключает tail
                     sg = self._retriever.get_1hop_neighbors(
-                        head, exclude_entity=tail,
+                        head, exclude_entity=tail, split=split,
                     )
                     if not sg.get("edges"):
                         self.stats["errors"] += 1

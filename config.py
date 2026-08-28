@@ -83,6 +83,15 @@ class VisualizationConfig:
     # всегда (дёшево, чистый networkx). См. text_encoders / graph_features.
     inject_layout_features: bool = False
 
+    # matched-info фикс: ключевать узлы текстовых кодировок ПОЗИЦИОННО (по сырому
+    # имени), а не по обрезанной подписи. При коллизии подписей (разные сущности
+    # → одинаковый format_label) картинка рисует их разными боксами, а текст
+    # матрицы/списка смежности молча схлопывал их. С флагом узлы не схлопываются,
+    # а совпавшие подписи дизамбигуируются суффиксом ' #k' (в тексте; при желании
+    # то же и в рендере). См. text_encoders._visible_ids. Default False —
+    # исторический вывод колонок не меняется.
+    disambiguate_labels: bool = False
+
     @classmethod
     def for_qwen(cls, side: int = 560, **overrides) -> "VisualizationConfig":
         """Пресет рендера под Qwen2.5-VL (dynamic resolution).

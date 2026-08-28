@@ -139,7 +139,7 @@ class FB15kGraphVisualizer:
     ) -> Digraph:
         cfg = self._cfg
         head = subgraph["head"]
-        rel = subgraph.get("rel") or target_relation or "?"
+        rel = _norm_rel(subgraph, target_relation)
 
         dot = Digraph(format=cfg.fmt, engine=cfg.engine)
 
@@ -246,6 +246,15 @@ class FB15kGraphVisualizer:
 
 
 # ── утилиты ──────────────────────────────────────────────────
+
+def _norm_rel(subgraph: Dict[str, Any], target_relation: Optional[str] = None) -> str:
+    """Единая нормализация метки target-ребра для рендера и текста.
+
+    Пустая строка трактуется как отсутствие → fallback на target_relation,
+    затем на '?'. Гарантирует совпадение подписи head→[?] между модальностями.
+    """
+    return (subgraph.get("rel") or "").strip() or (target_relation or "") or "?"
+
 
 def _nid(name: str) -> str:
     """Безопасный DOT-идентификатор узла.

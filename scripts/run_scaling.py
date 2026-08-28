@@ -195,12 +195,28 @@ def main() -> None:
                 cmd = [_PY, os.path.join(_SCRIPTS, "rerender_dataset.py"),
                        "--method", args.method, "--k", str(k),
                        "--target_size", str(args.target_size),
+                       # stage2_valid намеренно НЕ рендерится per-budget: scaling-eval
+                       # идёт только на stage2_test, а filtered-ранжирование и вселенная
+                       # сущностей берутся из сырых троек data_dir (train+valid+test) через
+                       # build_name_maps/build_entity_universe — перерендеренный valid не нужен.
                        "--splits", "stage2_train,stage2_test",
                        "--limit", str(build_limit),
                        "--workers", str(args.workers), "--out_root", k_root]
                 if args.feat_layout:
                     cmd.append("--feat_layout")
                 _run(cmd, dry)
+
+        # ── matched-info: доп. текстовые сериализации подграфа (те же рёбра) ──
+        # text_adjlist/text_matrix требуют колонок neighbors_adjlist/neighbors_matrix,
+        # которых rerender не создаёт. Добавляем идемпотентно (пропуск, если уже есть),
+        # чтобы viability_gate не откатился молча к edge-list и сравнение не выродилось.
+        _enc = [e for c, e in (("text_adjlist", "adjlist"), ("text_matrix", "matrix"))
+                if c in conditions]
+        if _enc and not args.skip_build:
+            _run([_PY, os.path.join(_SCRIPTS, "add_text_encodings.py"),
+                  "--budgets", str(k), "--data_base", args.out_base,
+                  "--splits", "stage2_train,stage2_test",
+                  "--encodings", ",".join(_enc)], dry)
 
         # ── iso-token: per-condition train_n/eval_n под общий бюджет ──
         iso = None
@@ -267,6 +283,7 @@ def main() -> None:
         _run([_PY, os.path.join(_SCRIPTS, "scaling_curve.py"),
               "--mode", "plot", "--budgets", args.budgets,
               "--conditions", args.conditions, "--metric", "MRR",
+              "--eval_mode", args.eval_mode,
               "--ckpt_root", args.ckpt_root, "--cost_out", cost_out,
               "--fig_out", fig_out], dry)
 

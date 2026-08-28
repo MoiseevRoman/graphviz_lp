@@ -160,17 +160,56 @@ def run_cost(args) -> Dict[str, Dict]:
 # ────────────────────────────────────────────────────────────────
 # plot
 # ────────────────────────────────────────────────────────────────
-def _find_metric(ckpt_root: str, k: int, cond: str) -> Optional[dict]:
-    """Ищет test_metrics_sample_*.json (или _rank/_metrics) для бюджета+условия."""
-    for pat in (
-        os.path.join(ckpt_root, f"k{k}", f"ctx_{cond}", "test_metrics_sample_*.json"),
-        os.path.join(ckpt_root, f"k{k}", f"ctx_{cond}", "test_metrics_rank*.json"),
-        os.path.join(ckpt_root, f"k{k}", f"ctx_{cond}", "test_metrics*.json"),
-    ):
-        hits = sorted(glob.glob(pat))
-        if hits:
-            return json.load(open(hits[0], encoding="utf-8"))
-    return None
+# Паттерны метрик по режиму оценки (порядок = приоритет в auto).
+_METRIC_PATTERNS = {
+    "sample": "test_metrics_sample_*.json",
+    "rank": "test_metrics_rank*.json",
+}
+
+
+def _metric_path(ckpt_root: str, k: int, cond: str, eval_mode: str) -> Optional[str]:
+    """Путь к файлу метрик для бюджета+условия при заданном eval_mode.
+
+    eval_mode ∈ {rank, sample}: ищет ТОЛЬКО соответствующий паттерн. Если в
+    папке >1 подходящего файла — падает (не молча sorted()[0])."""
+    d = os.path.join(ckpt_root, f"k{k}", f"ctx_{cond}")
+    hits = sorted(glob.glob(os.path.join(d, _METRIC_PATTERNS[eval_mode])))
+    if not hits:
+        return None
+    if len(hits) > 1:
+        raise RuntimeError(
+            f"неоднозначные метрики режима '{eval_mode}' в {d}: {hits}; "
+            f"оставьте один файл или задайте явный --eval_mode/тег")
+    return hits[0]
+
+
+def _resolve_eval_mode(ckpt_root: str, budgets: List[int], conds: List[str]) -> str:
+    """auto: определить единый режим по всем ctx-папкам; при смешении — падать.
+
+    Если файлы РАЗНЫХ режимов найдены (в разных папках или оба в одной) — метрики
+    несравнимы (rank candidate-restricted vs sample/KGT5), поэтому явно падаем со
+    списком конфликтующих путей, а не молча берём первый."""
+    present: Dict[str, List[str]] = {m: [] for m in _METRIC_PATTERNS}
+    for c in conds:
+        for k in budgets:
+            d = os.path.join(ckpt_root, f"k{k}", f"ctx_{c}")
+            for m, pat in _METRIC_PATTERNS.items():
+                present[m] += sorted(glob.glob(os.path.join(d, pat)))
+    found = [m for m in _METRIC_PATTERNS if present[m]]
+    if len(found) > 1:
+        detail = "; ".join(f"{m}: {present[m]}" for m in found)
+        raise RuntimeError(
+            f"смешаны режимы оценки ({', '.join(found)}) — метрики несравнимы; "
+            f"задайте --eval_mode явно. Найдено: {detail}")
+    return found[0] if found else "rank"  # дефолт совместим: реальные папки — rank
+
+
+def _find_metric(ckpt_root: str, k: int, cond: str, eval_mode: str) -> Optional[dict]:
+    """Загружает метрики для бюджета+условия в режиме eval_mode (rank|sample)."""
+    p = _metric_path(ckpt_root, k, cond, eval_mode)
+    if p is None:
+        return None
+    return json.load(open(p, encoding="utf-8"))
 
 
 def run_plot(args) -> None:
@@ -181,6 +220,10 @@ def run_plot(args) -> None:
     budgets = _parse_budgets(args.budgets)
     conds = [c.strip() for c in args.conditions.split(",") if c.strip()]
     metric = args.metric
+
+    # Единый режим метрик: явный --eval_mode или авто-детект (падает при смешении).
+    eval_mode = args.eval_mode if args.eval_mode != "auto" else _resolve_eval_mode(
+        args.ckpt_root, budgets, conds)
 
     cost = json.load(open(args.cost_out, encoding="utf-8")) if os.path.exists(args.cost_out) else {"budgets": {}}
     cost_b = cost.get("budgets", {})
@@ -194,7 +237,7 @@ def run_plot(args) -> None:
     xs: Dict[str, List] = {c: [] for c in conds}
     for c in conds:
         for k in budgets:
-            m = _find_metric(args.ckpt_root, k, c)
+            m = _find_metric(args.ckpt_root, k, c, eval_mode)
             if m is None or metric not in m:
                 continue
             xs[c].append(xval(k))
@@ -233,7 +276,7 @@ def run_plot(args) -> None:
         f.write("condition,k,mean_objects,%s,text_tokens,image_tokens\n" % metric)
         for c in conds:
             for k in budgets:
-                m = _find_metric(args.ckpt_root, k, c)
+                m = _find_metric(args.ckpt_root, k, c, eval_mode)
                 b = cost_b.get(str(k), {})
                 if m is None or metric not in m:
                     continue
@@ -318,6 +361,9 @@ def build_argparser() -> argparse.ArgumentParser:
     # plot
     ap.add_argument("--ckpt_root", default=os.path.join(_ROOT, "graphvis_ckpts_scaling"))
     ap.add_argument("--conditions", default="visual,text,text_feat")
+    ap.add_argument("--eval_mode", choices=["rank", "sample", "auto"], default="auto",
+                    help="режим метрик: rank|sample читает только свой паттерн; "
+                         "auto — авто-детект, падает при смешении режимов")
     ap.add_argument("--metric", default="MRR")
     ap.add_argument("--fig_out", default=os.path.join(_ROOT, "graphvis_scaling", "scaling_curve.png"))
     return ap

@@ -52,8 +52,16 @@ def evaluate_link_prediction(
     Разрыв метрик real − blank/shuffle = сколько информации с картинки
     реально доходит до языковой модели.
 
+    ВНИМАНИЕ: MRR/Hits@k здесь — UNFILTERED ранги по позиции золотого в списке
+    dedup'нутых beam-строк, ограниченные ``num_beams`` (не найден → reciprocal=0),
+    с substring/normalize-матчем. Это НЕ filtered-протокол: нет исключения прочих
+    истинных хвостов и нет общего набора кандидатов. Эти числа НЕ сопоставимы с
+    filtered rank/sample-режимами (``evaluate_link_prediction_rank`` /
+    ``…_sample``) и с таблицами KGE/KGT5 — не ставить их в одну таблицу.
+
     Returns:
         Словарь с метриками: ``MRR, Hits@1, Hits@3, Hits@10, …``
+        (помечен ``eval_mode="generative_unfiltered"``).
     """
     num_beams = num_beams or cfg.eval_num_beams
     max_new_tokens = max_new_tokens or cfg.eval_max_new_tokens
@@ -212,6 +220,7 @@ def evaluate_link_prediction(
         "Median_Rank_found": float(np.median(finite)) if len(finite) else float("inf"),
         "n_evaluated": max_eval,
         "n_total_test": n_total,
+        "eval_mode": "generative_unfiltered",   # UNFILTERED, ранг по позиции beam-строки
     }
 
     total_min = (time.time() - t0) / 60
@@ -274,8 +283,15 @@ def evaluate_link_prediction_rank(
     image_mode: str = "real",
     cand_batch: int = 8,
     max_length: int = 2048,
+    realistic_ties: bool = False,
 ) -> Dict[str, Any]:
     """Filtered link prediction РАНЖИРОВАНИЕМ кандидатов по правдоподобию.
+
+    ``realistic_ties``: при равенстве очков золотого с дистракторами ранг =
+    1 + higher + ties/2 (realistic, как в pykeen и в sample-пути). По умолчанию
+    False — сохраняется исторический optimistic тай-брейк (строгое «>»), чтобы
+    ранее посчитанные rank-числа воспроизводились; для нового прогона включать
+    флаг (см. --realistic_ties в viability_gate).
 
     Вместо открытой beam-генерации (медленно, ~beams×max_new_tokens шагов
     декодирования на батч, хрупкий substring-матч) скорим каждого
@@ -382,7 +398,12 @@ def evaluate_link_prediction_rank(
         gscore = sc[gpos]
         higher = sum(1 for i, c in enumerate(candidates)
                      if i != gpos and c not in filter_others and sc[i] > gscore)
-        rank = 1 + higher
+        if realistic_ties:
+            ties = sum(1 for i, c in enumerate(candidates)
+                       if i != gpos and c not in filter_others and sc[i] == gscore)
+            rank = 1 + higher + ties / 2.0
+        else:
+            rank = 1 + higher
         ranks.append(rank)
         cand_sizes.append(len(candidates))
         detailed.append({"idx": data_i, "gold": gold, "rank": rank, "n_cand": len(candidates)})
@@ -409,6 +430,7 @@ def evaluate_link_prediction_rank(
         "n_total_test": n_total,
         "mean_candidates": float(np.mean(cand_sizes)) if cand_sizes else 0.0,
         "eval_mode": "rank",
+        "tie_break": "realistic" if realistic_ties else "optimistic",
         "image_mode": image_mode,
     }
     logger.info("=" * 65)

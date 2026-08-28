@@ -112,6 +112,7 @@ def filtered_rank_eval(
     cand_batch: int = 64,
     seed: int = 42,
     log_every: int = 50,
+    realistic_ties: bool = False,
 ) -> Dict[str, float]:
     """Возвращает filtered MRR / Hits@1,3,10 (+ 95% ДИ MRR)."""
     n_total = len(test_dataset)
@@ -154,7 +155,12 @@ def filtered_rank_eval(
         others = set(filter_fn(row)) - {gold}
         higher = sum(1 for k, cand in enumerate(cands)
                      if k != gpos and cand not in others and scores[k] > gscore)
-        ranks.append(1 + higher)
+        if realistic_ties:
+            ties = sum(1 for k, cand in enumerate(cands)
+                       if k != gpos and cand not in others and scores[k] == gscore)
+            ranks.append(1 + higher + ties / 2.0)
+        else:
+            ranks.append(1 + higher)
 
         if (c + 1) % log_every == 0:
             el = time.time() - t0

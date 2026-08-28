@@ -118,6 +118,9 @@ def main():
     ap.add_argument("--cand_cap", type=int, default=50,
                     help="сколько type-constrained кандидатов-хвостов на запрос (rank)")
     ap.add_argument("--cand_batch", type=int, default=8, help="батч кандидатов при скоринге (rank)")
+    ap.add_argument("--realistic_ties", action="store_true",
+                    help="rank: realistic тай-брейк (1+higher+ties/2, как pykeen/sample); "
+                         "по умолчанию исторический optimistic (строгое '>')")
     ap.add_argument("--image_modes", default="real",
                     help="режимы картинки через запятую для абляции: real,blank,noise,shuffle "
                          "(разрыв real−blank = вклад изображения)")
@@ -213,7 +216,9 @@ def main():
 
     if args.minimal_prompt and args.eval_mode != "sample":
         import re as _re
-        _desc = _re.compile(r"Entity description:.*?(?=\n\s*Query:)", _re.S)
+        # Оба префикса генератора ('Entity description:' и 'Description:') — как в
+        # rerender_dataset._DESC_RE; иначе для ~1/3 шаблонов описание оставалось бы.
+        _desc = _re.compile(r"(?:Entity description|Description):.*?(?=\n\s*Query:)", _re.S)
 
         def _strip(ds):
             return ds.map(lambda r: {"prompt": _desc.sub("", r["prompt"])},
@@ -221,6 +226,10 @@ def main():
                           load_from_cache_file=False)
 
         train, test = _strip(train), _strip(test)
+        # Fail-loud проверка: описание не должно уцелеть ни в одном промпте.
+        _left = sum(1 for r in test if _re.search(r"(?i)description:", r["prompt"]))
+        if _left:
+            logger.warning("minimal_prompt: 'description:' остался в %d тест-промптах после вырезания", _left)
         logger.info("minimal_prompt: описание сущности удалено из промптов (train+eval)")
         if args.eval_only:
             logger.warning("--minimal_prompt + --eval_only: адаптер мог быть обучен С описанием "
@@ -405,7 +414,8 @@ def main():
             logger.info("─── image_mode=%s ───", mode)
             mode_metrics[mode] = evaluate_link_prediction_rank(
                 model, processor, tokenizer, test, cfg, candidate_provider,
-                image_mode=mode, cand_batch=args.cand_batch)
+                image_mode=mode, cand_batch=args.cand_batch,
+                realistic_ties=args.realistic_ties)
         m = mode_metrics.get("real", next(iter(mode_metrics.values())))
     elif args.eval_mode == "sample":
         import textlp_upperbound as tub
@@ -418,10 +428,16 @@ def main():
         # Минимальный промпт (без вербализованной окрестности) как отдельная колонка,
         # чтобы одним прогоном сравнить контекст-в-тексте vs контекст-в-картинке.
         import re as _re
-        _desc = _re.compile(r"Entity description:.*?(?=\n\s*Query:)", _re.S)
+        # Оба префикса генератора ('Entity description:' и 'Description:') — как в
+        # rerender_dataset._DESC_RE; иначе для ~1/3 шаблонов описание утекало бы в prompt_min.
+        _desc = _re.compile(r"(?:Entity description|Description):.*?(?=\n\s*Query:)", _re.S)
         test_s = test.map(lambda r: {"prompt_min": _desc.sub("", r["prompt"])},
                           desc="build prompt_min", keep_in_memory=True,
                           load_from_cache_file=False)
+        # Fail-loud проверка: описание не должно уцелеть в prompt_min ни у одного примера.
+        _left = sum(1 for r in test_s if _re.search(r"(?i)description:", r["prompt_min"]))
+        if _left:
+            logger.warning("prompt_min: 'description:' остался в %d промптах после вырезания", _left)
 
         def filter_provider(sample):
             head = sample["head"]

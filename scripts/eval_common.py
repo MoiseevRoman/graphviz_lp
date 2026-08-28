@@ -5,7 +5,10 @@
 но тест каждого условия шёл на своём подмножестве (разный eval_n) → MRR
 несопоставимы. Здесь мы прогоняем eval-only с ОДИНАКОВЫМ eval_n для всех
 условий каждого K, поэтому оцениваются одни и те же тестовые тройки
-(датасет на K общий, тест = детерминированный префикс stage2_test).
+(датасет на K общий, тест = seed-фиксированный (random.seed(42)) сэмпл eval_n
+троек из первых max(2*eval_n, eval_n+5) строк stage2_test; при eval_n=1000 это
+выборка ~1000 из первых 2000 строк 4000-строчного теста, одинаковая для всех
+условий и K).
 
 Ничего не удаляем и не переобучаем: адаптеры грузятся из старого дерева
 (--ckpt_root, по умолчанию graphvis_ckpts_scaling), а метрики пишутся в новое
@@ -43,6 +46,9 @@ def main() -> None:
     ap.add_argument("--num_samples", type=int, default=300)
     ap.add_argument("--gen_batch", type=int, default=50)
     ap.add_argument("--cand_cap", type=int, default=50)
+    ap.add_argument("--realistic_ties", action="store_true",
+                    help="rank: realistic тай-брейк (1+higher+ties/2). Для сравнения с "
+                         "историей пиши в отдельный --out_root (не перезаписывай common)")
     ap.add_argument("--model", default="Qwen/Qwen2.5-VL-3B-Instruct")
     ap.add_argument("--data_dir", default=os.path.join(_ROOT, "FB15k-237"))
     ap.add_argument("--data_base", default=os.path.join(_ROOT, "graphvis_scaling"),
@@ -90,6 +96,8 @@ def main() -> None:
                    "--cand_cap", str(args.cand_cap),
                    "--num_samples", str(args.num_samples),
                    "--gen_batch", str(args.gen_batch)]
+            if args.realistic_ties:
+                cmd.append("--realistic_ties")
             _run(cmd, dry)
 
     if missing:
