@@ -156,6 +156,8 @@ class FB15kGraphVisualizer:
         # ── Атрибуты, зависящие от engine ──
         if cfg.engine == "dot":
             dot.attr(rankdir="LR", nodesep="0.3", ranksep="0.5")
+            if cfg.relevance_tiers:
+                dot.attr(ordering="out")
         elif cfg.engine in ("neato", "fdp", "sfdp"):
             dot.attr(
                 overlap="false",
@@ -198,6 +200,7 @@ class FB15kGraphVisualizer:
         )
 
         # Соседи
+        tier = _relevance_tiers(nodes, head) if cfg.relevance_tiers else {}
         for node in nodes:
             name = node["name"]
             if name == head:
@@ -205,14 +208,18 @@ class FB15kGraphVisualizer:
             dot.node(
                 _nid(name),
                 format_label(name, cfg.max_label_len),
-                fillcolor="lightyellow",
+                **_TIER_NODE[tier.get(name, 1)](cfg),
+                **({"style": "invis"} if node.get("hidden") else {}),
             )
 
         # ── Рёбра с подписями (уже отфильтрованы и дедуплицированы) ──
         for edge in edges_list:
+            other = edge["target"] if edge["source"] == head else edge["source"]
             dot.edge(
                 _nid(edge["source"]), _nid(edge["target"]),
                 label=f" {format_label(edge['relation'], cfg.max_label_len)} ",
+                **_TIER_EDGE[tier.get(other, 1)](cfg),
+                **({"style": "invis"} if edge.get("hidden") else {}),
             )
 
         # ── [?] + пунктирное ребро ──
@@ -246,6 +253,27 @@ class FB15kGraphVisualizer:
 
 
 # ── утилиты ──────────────────────────────────────────────────
+
+_TIER_NODE = {
+    0: lambda c: dict(fillcolor="orange", penwidth="2.0", fontsize=str(c.node_fontsize + 3)),
+    1: lambda c: dict(fillcolor="lightyellow"),
+    2: lambda c: dict(fillcolor="gray95", color="gray60", fontcolor="gray30",
+                      fontsize=str(max(c.node_fontsize - 2, 8))),
+}
+_TIER_EDGE = {
+    0: lambda c: dict(penwidth="2.0", fontcolor="black", fontsize=str(c.edge_fontsize + 1)),
+    1: lambda c: {},
+    2: lambda c: dict(color="gray60", fontsize=str(max(c.edge_fontsize - 2, 7))),
+}
+
+
+def _relevance_tiers(nodes: List[Dict[str, Any]], head: str) -> Dict[str, int]:
+    """Ранг соседа = позиция в subgraph["nodes"] (порядок отбора) → 0/1/2:
+    верхняя четверть, вторая четверть, остальные."""
+    nb = [n["name"] for n in nodes if n["name"] != head]
+    q = max(1, -(-len(nb) // 4))
+    return {name: (0 if i < q else 1 if i < 2 * q else 2) for i, name in enumerate(nb)}
+
 
 def _norm_rel(subgraph: Dict[str, Any], target_relation: Optional[str] = None) -> str:
     """Единая нормализация метки target-ребра для рендера и текста.

@@ -1,0 +1,77 @@
+prompt[text]:   0%|          | 0/8 [00:00<?, ? examples/s]prompt[text]: 100%|██████████| 8/8 [00:00<00:00, 2662.21 examples/s]
+prompt[text]:   0%|          | 0/1200 [00:00<?, ? examples/s]prompt[text]: 100%|██████████| 1200/1200 [00:00<00:00, 22714.07 examples/s]
+2026-08-08 05:18:58,152 [INFO] context_mode=text: промпты пересобраны; train_image_mode=blank (соседей текстом: True)
+2026-08-08 05:18:58,152 [INFO] EVAL-ONLY: загружаю сохранённый адаптер graphvis_ckpts\ctx_text\adapter
+2026-08-08 05:18:58,153 [INFO] Семейство модели: qwen (Qwen/Qwen2.5-VL-3B-Instruct)
+2026-08-08 05:18:58,153 [INFO] 4-bit quantization (QLoRA) включена
+`torch_dtype` is deprecated! Use `dtype` instead!
+C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\transformers\modeling_utils.py:6105: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(byte_count // factor, dtype=torch.float16, device=device, requires_grad=False)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.93s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+2026-08-08 05:19:07,358 [INFO] Gradient checkpointing включён (use_reentrant=False)
+2026-08-08 05:19:08,803 [INFO] ================================================================
+2026-08-08 05:19:09,523 [INFO] ОЦЕНКА (sample/KGT5): 600 примеров, N=200, |E|=14541, условия=text-only,text-context,image-context,image+text
+2026-08-08 05:19:09,523 [INFO] ================================================================
+build prompt_min:   0%|          | 0/1200 [00:00<?, ? examples/s]build prompt_min: 100%|██████████| 1200/1200 [00:00<00:00, 23074.05 examples/s]
+2026-08-08 05:19:09,577 [INFO] ─── условие «text» (image=blank, prompt=prompt) ───
+2026-08-08 05:19:09,585 [INFO] EVALUATION (sample/KGT5): 600/1200 | mode=blank prompt=prompt | N=200 T=1.00 top_p=1.00 gb=32 [text]
+2026-08-08 05:32:17,325 [INFO] [   20/600] 0.03 smp/s | sampled_gold=12/20 | ETA 381m
+2026-08-08 05:45:39,789 [INFO] [   40/600] 0.03 smp/s | sampled_gold=20/40 | ETA 371m
+2026-08-08 05:58:33,474 [INFO] [   60/600] 0.03 smp/s | sampled_gold=31/60 | ETA 355m
+2026-08-08 06:11:21,680 [INFO] [   80/600] 0.03 smp/s | sampled_gold=41/80 | ETA 339m
+2026-08-08 06:24:13,494 [INFO] [  100/600] 0.03 smp/s | sampled_gold=50/100 | ETA 325m
+2026-08-08 06:36:53,843 [INFO] [  120/600] 0.03 smp/s | sampled_gold=63/120 | ETA 311m
+2026-08-08 06:50:10,057 [INFO] [  140/600] 0.03 smp/s | sampled_gold=68/140 | ETA 299m
+2026-08-08 07:03:24,426 [INFO] [  160/600] 0.03 smp/s | sampled_gold=75/160 | ETA 287m
+2026-08-08 07:16:40,835 [INFO] [  180/600] 0.03 smp/s | sampled_gold=84/180 | ETA 274m
+2026-08-08 07:29:46,465 [INFO] [  200/600] 0.03 smp/s | sampled_gold=98/200 | ETA 261m
+2026-08-08 07:42:25,052 [INFO] [  220/600] 0.03 smp/s | sampled_gold=108/220 | ETA 247m
+2026-08-08 07:55:25,740 [INFO] [  240/600] 0.03 smp/s | sampled_gold=118/240 | ETA 234m
+2026-08-08 08:08:01,928 [INFO] [  260/600] 0.03 smp/s | sampled_gold=131/260 | ETA 221m
+2026-08-08 08:20:23,163 [INFO] [  280/600] 0.03 smp/s | sampled_gold=142/280 | ETA 207m
+2026-08-08 08:33:01,130 [INFO] [  300/600] 0.03 smp/s | sampled_gold=151/300 | ETA 194m
+2026-08-08 08:45:54,394 [INFO] [  320/600] 0.03 smp/s | sampled_gold=167/320 | ETA 181m
+2026-08-08 08:58:42,055 [INFO] [  340/600] 0.03 smp/s | sampled_gold=175/340 | ETA 168m
+2026-08-08 09:11:51,760 [INFO] [  360/600] 0.03 smp/s | sampled_gold=185/360 | ETA 155m
+2026-08-08 09:24:17,365 [INFO] [  380/600] 0.03 smp/s | sampled_gold=195/380 | ETA 142m
+2026-08-08 09:36:52,347 [INFO] [  400/600] 0.03 smp/s | sampled_gold=208/400 | ETA 129m
+2026-08-08 09:49:23,049 [INFO] [  420/600] 0.03 smp/s | sampled_gold=225/420 | ETA 116m
+2026-08-08 10:02:02,618 [INFO] [  440/600] 0.03 smp/s | sampled_gold=234/440 | ETA 103m
+2026-08-08 10:15:06,821 [INFO] [  460/600] 0.03 smp/s | sampled_gold=243/460 | ETA 90m
+2026-08-08 10:28:10,210 [INFO] [  480/600] 0.03 smp/s | sampled_gold=252/480 | ETA 77m
+2026-08-08 10:40:55,513 [INFO] [  500/600] 0.03 smp/s | sampled_gold=264/500 | ETA 64m
+2026-08-08 10:53:39,926 [INFO] [  520/600] 0.03 smp/s | sampled_gold=275/520 | ETA 51m
+2026-08-08 11:06:32,484 [INFO] [  540/600] 0.03 smp/s | sampled_gold=283/540 | ETA 39m
+2026-08-08 11:19:40,315 [INFO] [  560/600] 0.03 smp/s | sampled_gold=292/560 | ETA 26m
+2026-08-08 11:32:35,975 [INFO] [  580/600] 0.03 smp/s | sampled_gold=301/580 | ETA 13m
+2026-08-08 11:45:35,339 [INFO] [  600/600] 0.03 smp/s | sampled_gold=314/600 | ETA 0m
+2026-08-08 11:45:35,357 [INFO] =================================================================
+2026-08-08 11:45:35,357 [INFO] RESULTS sample/KGT5 [text] (600 queries, 386.4 min) | filtered, |E|=14541
+2026-08-08 11:45:35,357 [INFO]   MRR 0.3523 | H@1 29.7 | H@3 38.2 | H@10 46.8 | gold-sampled 52.3% | distinct 26 | invalid 29%
+2026-08-08 11:45:35,357 [INFO] =================================================================
+
+================================================================
+ГЕЙТ ЖИЗНЕСПОСОБНОСТИ  (sample, filtered)
+================================================================
+  обучение : loss nan → nan | пик VRAM 0.0 ГБ
+  качество : MRR=0.3523  H@1=29.7  H@3=38.2  H@10=46.8  n=600  gold-sampled=52%
+  zero-shot пол (preflight) : MRR≈0
+----------------------------------------------------------------
+  ✅ ЕСТЬ СИГНАЛ: дообучение заметно поднимает качество над нулём.
+     → премиса подтверждена, можно масштабировать на полный тест / A100.
+================================================================
+
+ЗОНА B — единый KGT5-протокол (сравнимо с KGT5/KGT5-context)
+условие              MRR     H@1     H@3    H@10   gold%     n
+--------------------------------------------------------------
+text              0.3523    29.7    38.2    46.8    52.3   600
+--------------------------------------------------------------
+(|E|=14541; sampled% = доля запросов, где золотой вообще попал в сэмплы — потолок recall при данном N/температуре)
+Сохранено: graphvis_ckpts\report_sample_text.json
+Exception ignored in: <function ResourceTracker.__del__ at 0x000002486644A160>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

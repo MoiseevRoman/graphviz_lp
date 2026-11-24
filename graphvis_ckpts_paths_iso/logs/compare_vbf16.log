@@ -1,0 +1,40 @@
+[protocol] rank
+[ok]   visual_paths: image_mode=real, n=971
+[ok]   visual_paths_vbf16: image_mode=real, n=971
+[ok]   visual_paths_vbf16_blank: image_mode=blank, n=971
+[ok]   text_paths_iso: image_mode=blank, n=971
+[ok]   none: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+visual_paths   971   0.3667   25.03   39.24   60.25
+visual_paths_vbf16   971   0.3730   26.57   39.24   57.98
+visual_paths_vbf16_blank   971   0.3433   22.25   36.66   58.70
+text_paths_iso   971   0.3819   28.12   39.96   57.47
+none       971   0.3859   28.22   40.78   59.32
+
+=== visual_paths_vbf16 vs visual_paths (парных 971) ===
+  ΔMRR = +0.0063  95% CI [-0.0069, +0.0191]  не значимо
+  McNemar H@1 : visual_paths_vbf16-win= 49 visual_paths-win= 34 z= 1.54 p=0.1244 н/з
+  McNemar H@3 : visual_paths_vbf16-win= 47 visual_paths-win= 47 z=-0.10 p=0.9179 н/з
+  McNemar H@10: visual_paths_vbf16-win= 42 visual_paths-win= 64 z= 2.04 p=0.04138 значимо
+
+=== visual_paths_vbf16_blank vs visual_paths (парных 971) ===
+  ΔMRR = -0.0234  95% CI [-0.0391, -0.0080]  ЗНАЧИМО
+  McNemar H@1 : visual_paths_vbf16_blank-win= 48 visual_paths-win= 75 z= 2.34 p=0.01906 значимо
+  McNemar H@3 : visual_paths_vbf16_blank-win= 44 visual_paths-win= 69 z= 2.26 p=0.02396 значимо
+  McNemar H@10: visual_paths_vbf16_blank-win= 49 visual_paths-win= 64 z= 1.32 p=0.1878 н/з
+
+=== text_paths_iso vs visual_paths (парных 971) ===
+  ΔMRR = +0.0152  95% CI [-0.0010, +0.0317]  не значимо
+  McNemar H@1 : text_paths_iso-win= 73 visual_paths-win= 43 z= 2.69 p=0.00709 значимо
+  McNemar H@3 : text_paths_iso-win= 61 visual_paths-win= 54 z= 0.56 p=0.5758 н/з
+  McNemar H@10: text_paths_iso-win= 56 visual_paths-win= 83 z= 2.21 p=0.02743 значимо
+
+=== none vs visual_paths (парных 971) ===
+  ΔMRR = +0.0192  95% CI [+0.0074, +0.0316]  ЗНАЧИМО
+  McNemar H@1 : none-win= 54 visual_paths-win= 23 z= 3.42 p=0.0006289 значимо
+  McNemar H@3 : none-win= 48 visual_paths-win= 33 z= 1.56 p=0.1198 н/з
+  McNemar H@10: none-win= 40 visual_paths-win= 49 z= 0.85 p=0.3964 н/з
+
+Сохранено: graphvis_ckpts_paths_iso\compare_vbf16.json

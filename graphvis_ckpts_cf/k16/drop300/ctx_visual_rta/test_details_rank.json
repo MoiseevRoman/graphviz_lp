@@ -1,0 +1,2322 @@
+[
+  {
+    "idx": 0,
+    "gold": "October",
+    "rank": 1,
+    "n_cand": 12,
+    "gold_score": -0.9181,
+    "reading": "Edges:\n- month -> June\n- month -> November\n- month -> February\n- month -> December\n- month -> April\n- month -> January\n- month -> March\n- administrative division <- Canton of Zurich\n- administrative parent -> Canton of Zurich\n- contains <- University of Zurich\n- capital <- Canton of Zurich\n- contains -> University of Zurich"
+  },
+  {
+    "idx": 1,
+    "gold": "Heart",
+    "rank": 43,
+    "n_cand": 51,
+    "gold_score": -3.5676,
+    "reading": "Edges:\n- group -> Styx\n- group -> The Band\n- role <- Jews harp\n- role -> Jews harp\n- instrumentalists -> Graham Gouldman\n- instrumentalists -> John Paul Jones\n- instrumentalists -> David Byrne\n- role <- Bill Wyman\n- role <- pipe organ\n- role <- Joe Satriani"
+  },
+  {
+    "idx": 2,
+    "gold": "Pontefract",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -1.9595,
+    "reading": "Edges:\n- contains -> Kings Lynn and West Norfolk\n- contains -> Kings College, Cambridge\n- contains -> St Catherines College, Oxford\n- contains -> Kings College London\n- contains -> Christs College, Cambridge\n- contains -> Royal Tunbridge Wells\n- contains -> Hitchin\n- contains -> South Cambridgeshire\n- contains -> Swindon"
+  },
+  {
+    "idx": 3,
+    "gold": "Lancaster",
+    "rank": 15,
+    "n_cand": 51,
+    "gold_score": -4.4197,
+    "reading": "Edges:\n- contains -> Kings Lynn and West Norfolk\n- contains -> St Catherines College, Oxford\n- contains -> St Hildas College, Oxford\n- contains -> Kings College London\n- contains -> Christs College, Cambridge\n- contains -> Oldham\n- contains -> Royal Tunbridge Wells\n- contains -> Hitchin\n- contains -> South Cambridgeshire"
+  },
+  {
+    "idx": 4,
+    "gold": "Bad_Lieutenant:_Port_of_Call_New_Orleans",
+    "rank": 10,
+    "n_cand": 51,
+    "gold_score": -1.5667,
+    "reading": "Edges:\n- film -> One Flew Over the Cuckoos Nest\n- nominated for -> One Flew Over the Cuckoos Nest\n- award winner <- One Flew Over the Cuckoos Nest\n- film -> Ragtime\n- film -> Priest\n- film -> Color of Night\n- film -> Dune\n- film -> Mississippi Burning\n- film -> Halloween\n- film -> The Lord of the Rings: The…\n- film -> The Lord of the Rings: The…\n- location -> Colorado Springs"
+  },
+  {
+    "idx": 5,
+    "gold": "Piranha_3D",
+    "rank": 20,
+    "n_cand": 51,
+    "gold_score": -1.6547,
+    "reading": "Edges:\n- nominated for -> House of Wax\n- nominated for -> Zombieland\n- nominated for -> War of the Worlds\n- nominated for -> The Hobbit: An Unexpected…\n- nominated for -> The Grudge\n- nominated for -> Saw\n- nominated for -> Zero Dark Thirty\n- nominated for -> Inception\n- award <- Jennifer Tilly"
+  },
+  {
+    "idx": 6,
+    "gold": "Liechtenstein",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -1.7366,
+    "reading": "Edges:\n- jurisdiction of office -> Greenland\n- jurisdiction of office -> Kosovo\n- jurisdiction of office -> Cook Islands\n- jurisdiction of office -> Dominica\n- jurisdiction of office -> Tonga\n- jurisdiction of office -> Saint Vincent and the…\n- jurisdiction of office -> Somalia\n- jurisdiction of office -> Tuvalu\n- jurisdiction of office -> Bhutan"
+  },
+  {
+    "idx": 7,
+    "gold": "David_Henrie",
+    "rank": 47,
+    "n_cand": 51,
+    "gold_score": -3.6637,
+    "reading": "Edges:\n- vacationer -> Matthew McConaughey\n- vacationer -> Julia Roberts\n- teams -> ACF Fiorentina\n- capital <- Kingdom of Italy\n- contains <- Alabama\n- time zones -> Central European Time Zone-US\n- country -> Italy\n- location <- Dante Alighieri\n- contains <- South Carolina"
+  },
+  {
+    "idx": 8,
+    "gold": "Bronze_medal",
+    "rank": 1,
+    "n_cand": 3,
+    "gold_score": -0.143,
+    "reading": "Edges:\n- medal -> Silver medal\n- olympics -> 1912 Summer Olympics\n- combatants <- Thirty Years War\n- combatants -> Swedish Empire\n- combatants -> Transylvania\n- combatants <- Transylvania\n- combatants <- Electorate of Saxony\n- combatants -> Electorate of Saxony\n- combatants <- Kingdom of Scotland\n- combatants -> Kingdom of Scotland\n- combatants <- Kingdom of England\n- combatants -> Kingdom of England"
+  },
+  {
+    "idx": 9,
+    "gold": "Eastern_Time_Zone",
+    "rank": 1,
+    "n_cand": 13,
+    "gold_score": -0.1009,
+    "reading": "Edges:\n- state -> North Carolina\n- county seat <- Buncombe County\n- contains <- Buncombe County\n- country -> United States of America\n- citytown <- Black Mountain College\n- origin <- Jermaine Dupri\n- location <- Jermaine Dupri\n- place of birth <- Jermaine Dupri\n- contains <- United States of America\n- category -> Official Website\n- administrative division <- Buncombe County"
+  },
+  {
+    "idx": 10,
+    "gold": "Florida",
+    "rank": 14,
+    "n_cand": 50,
+    "gold_score": -2.1775,
+    "reading": "Edges:\n- location -> Atlanta\n- film -> Im Not There\n- location -> New York City\n- participant <- Mary Lynn Rajskub\n- participant -> Mary Lynn Rajskub\n- film -> Alvin and the Chipmunks: The…\n- film -> Ghost World\n- film -> The Cable Guy\n- place of birth -> Atlanta\n- influenced by -> Lenny Bruce\n- film -> Kung Fu Panda"
+  },
+  {
+    "idx": 11,
+    "gold": "United_States_Dollar",
+    "rank": 1,
+    "n_cand": 7,
+    "gold_score": -0.0045,
+    "reading": "Edges:\n- adjoins <- Clinton County\n- source -> United States Department of…\n- time zones -> Eastern Time Zone"
+  },
+  {
+    "idx": 12,
+    "gold": "Mauritania",
+    "rank": 5,
+    "n_cand": 51,
+    "gold_score": -2.3513,
+    "reading": "Edges:\n- participating countries -> Rhodesia\n- participating countries -> British Virgin Islands\n- participating countries -> Comoros\n- participating countries -> Aruba\n- participating countries -> San Marino\n- participating countries -> Gambia\n- participating countries -> Brunei\n- participating countries -> Samoa\n- participating countries -> Dominica"
+  },
+  {
+    "idx": 13,
+    "gold": "Computer_Science",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.6074,
+    "reading": "Edges:\n- major field of study -> Communication\n- major field of study -> Industrial engineering\n- major field of study -> Anthropology\n- major field of study -> Chemical Engineering\n- major field of study -> Journalism\n- major field of study -> Medicine\n- major field of study -> Theatre\n- institution <- Masters Degree\n- institution <- Bachelors degree"
+  },
+  {
+    "idx": 14,
+    "gold": "43rd_Annual_Grammy_Awards",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.1642,
+    "reading": "Edges:\n- award winner -> George Strait\n- ceremony -> 38th Annual Grammy Awards\n- ceremony -> 39th Annual Grammy Awards\n- ceremony -> 47th Annual Grammy Awards\n- ceremony -> 41st Annual Grammy Awards\n- ceremony -> 50th Annual Grammy Awards-US\n- ceremony -> 48th Annual Grammy Awards\n- ceremony -> 44th Annual Grammy Awards\n- ceremony -> 49th Annual Grammy Awards"
+  },
+  {
+    "idx": 16,
+    "gold": "Chicago",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -1.1854,
+    "reading": "Edges:\n- place of death -> Los Angeles\n- award winner <- High Noon\n- profession -> Screenwriter\n- award -> Golden Globe Award for Best…\n- nationality -> United States of America\n- award winner <- 30th Academy Awards\n- award -> Academy Award for Best…\n- award -> Academy Award for Best…\n- award -> Academy Award for Best Picture\n- nominated for -> High Noon\n- written by <- The Guns of Navarone\n- written by <- High Noon"
+  },
+  {
+    "idx": 17,
+    "gold": "Society_of_Jesus-GB",
+    "rank": 22,
+    "n_cand": 24,
+    "gold_score": -5.3225,
+    "reading": "Edges:\n- school type -> Private school\n- educational institution -> Marquette University\n- student -> Don Ameche\n- colors -> Navy Blue\n- campuses -> Marquette University\n- major field of study -> Theatre\n- major field of study -> Business Administration\n- major field of study -> Electrical engineering\n- major field of study -> Spanish Language\n- colors -> Gold\n- school <- Golden State Warriors"
+  },
+  {
+    "idx": 18,
+    "gold": "Star_Wars_Episode_IV:_A_New_Hope",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -0.7314,
+    "reading": "Edges:\n- film -> Gentlemans Agreement\n- film -> Theres Something About Mary\n- film -> Dont Say a Word\n- film -> The Texas Chainsaw Massacre\n- film -> Peyton Place\n- film -> The Pirate Movie\n- film -> Cheaper by the Dozen\n- film -> The Chronicles of Narnia: The…\n- film -> My Name is Khan\n- nominated for -> Gentlemans Agreement\n- award winner <- Gentlemans Agreement"
+  },
+  {
+    "idx": 19,
+    "gold": "Brazil",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -2.1605,
+    "reading": "Edges:\n- film release region -> Ireland\n- film release region -> Bahrain\n- film regional debut venue -> Cannes Film Festival\n- film release region -> Kuwait\n- film release region -> Chile\n- film release region -> Singapore\n- film release region -> Philippines\n- film release region -> Israel\n- film release region -> South Korea"
+  },
+  {
+    "idx": 20,
+    "gold": "Ralph_E._Winters",
+    "rank": 18,
+    "n_cand": 29,
+    "gold_score": -3.2408,
+    "reading": "Edges:\n- award -> Academy Award for Best…\n- award winner <- Leslie Bricusse\n- genre -> Remake\n- nominated for <- Leslie Bricusse\n- award winner -> Leslie Bricusse\n- honored for <- 55th Academy Awards\n- nominated for <- Julie Andrews\n- nominated for <- Academy Award for Best…\n- music -> Henry Mancini\n- award winner -> Julie Andrews"
+  },
+  {
+    "idx": 21,
+    "gold": "American_football",
+    "rank": 1,
+    "n_cand": 9,
+    "gold_score": -0.0324,
+    "reading": "Edges:\n- school -> Clemson University\n- school -> University of Virginia\n- draft -> 2004 NFL Draft\n- draft -> 2008 NFL Draft\n- draft -> 2007 NFL Draft\n- draft -> 2003 NFL Draft\n- draft -> 2006 NFL Draft\n- team <- National Football League\n- teams <- St. Louis"
+  },
+  {
+    "idx": 22,
+    "gold": "Kenan_Thompson",
+    "rank": 8,
+    "n_cand": 51,
+    "gold_score": -1.79,
+    "reading": "Edges:\n- people -> MoNique Imes-Jackson\n- people -> Lil Kim\n- people -> Shaquille ONeal\n- people -> DAngelo\n- people -> Tim Duncan\n- people -> Lamar Odom\n- people -> Kevin Garnett\n- people -> John Amos\n- people -> Ray Allen"
+  },
+  {
+    "idx": 23,
+    "gold": "You_Only_Live_Twice",
+    "rank": 3,
+    "n_cand": 51,
+    "gold_score": -0.7447,
+    "reading": "Edges:\n- film -> Heavens Gate\n- film -> Its a Mad, Mad, Mad, Mad World\n- film -> One Flew Over the Cuckoos Nest\n- film -> The Lord of the Rings\n- film -> The Man with the Golden Gun\n- film -> Goldfinger\n- film -> Dr. No\n- film -> Fame\n- film -> The Spy Who Loved Me"
+  },
+  {
+    "idx": 24,
+    "gold": "Boaz_Davidson",
+    "rank": 49,
+    "n_cand": 50,
+    "gold_score": -4.9744,
+    "reading": "Edges:\n- produced by -> Avi Lerner\n- written by -> Sylvester Stallone\n- film crew role -> Visual Effects Art Director\n- prequel <- The Expendables 2\n- film release region -> Oman\n- film crew role -> Boom Operator\n- film release region -> Jordan\n- film release region -> Bosnia and Herzegovina\n- film release region -> Cyprus"
+  },
+  {
+    "idx": 25,
+    "gold": "Nat_King_Cole",
+    "rank": 14,
+    "n_cand": 51,
+    "gold_score": -1.929,
+    "reading": "Edges:\n- artist -> Joe Cocker\n- artist -> Ella Fitzgerald\n- artist -> Boyz II Men\n- artist -> Richard Wagner\n- artist -> The Who\n- artist -> Thin Lizzy\n- artist -> Graham Gouldman\n- artist -> Bing Crosby\n- artist -> Marianne Faithfull"
+  },
+  {
+    "idx": 26,
+    "gold": "Primetime_Emmy_Award_for_Outstanding_Lead_Actor_-_Drama_Series",
+    "rank": 3,
+    "n_cand": 51,
+    "gold_score": -0.2662,
+    "reading": "Edges:\n- award -> Daytime Emmy Award for…\n- award winner <- Daytime Emmy Award for…\n- award -> Grammy Award for Best Comedy…\n- award winner <- The Cosby Show\n- award winner <- Grammy Award for Best Comedy…\n- award winner <- Presidential Medal of Freedom\n- award nominee <- Rita Moreno\n- award nominee -> Rita Moreno\n- award nominee <- Lou Scheimer\n- award nominee -> Lou Scheimer"
+  },
+  {
+    "idx": 27,
+    "gold": "Rome",
+    "rank": 7,
+    "n_cand": 50,
+    "gold_score": -1.6539,
+    "reading": "Edges:\n- featured film locations -> Malibu\n- film regional debut venue -> Berlin International Film…\n- cinematography -> Leon Shamroy\n- film release region -> West Germany\n- edited by -> Dorothy Spencer\n- film release region -> Soviet Union\n- music -> Alex North\n- film release region -> China\n- film release region -> Turkey"
+  },
+  {
+    "idx": 28,
+    "gold": "2010_Berlin_International_Film_Festival",
+    "rank": 2,
+    "n_cand": 21,
+    "gold_score": -0.6454,
+    "reading": "Edges:\n- film production design by -> Dante Ferretti\n- genre -> Epic film\n- film <- Brendan Gleeson\n- film <- Jim Broadbent\n- film <- Stephen Graham\n- films <- Gang\n- film <- Daniel Day-Lewis\n- film <- Liam Neeson\n- film <- Martin Scorsese"
+  },
+  {
+    "idx": 29,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2,
+    "gold_score": -0.0008,
+    "reading": "Edges:\n- profession -> Football player\n- team -> Crewe Alexandra F.C.\n- team -> Stockport County F.C.\n- team -> Walsall F.C.\n- team -> Norwich City F.C.\n- team -> Chester City F.C.\n- team -> Everton F.C.\n- team -> Bristol City F.C.\n- nationality -> England"
+  },
+  {
+    "idx": 30,
+    "gold": "Garland",
+    "rank": 8,
+    "n_cand": 51,
+    "gold_score": -3.4783,
+    "reading": "Edges:\n- contains -> Greater Houston\n- contains -> Amarillo\n- contains -> Marshall\n- contains -> San Angelo\n- contains -> Wichita Falls\n- contains -> Tyler\n- contains -> Travis County\n- contains -> McLennan County\n- contains -> College Station"
+  },
+  {
+    "idx": 31,
+    "gold": "Film_Producer-GB",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.3139,
+    "reading": "Edges:\n- profession -> Screenwriter\n- award -> MTV Movie Award for Best New…\n- film -> Lock, Stock and Two Smoking…\n- film -> Snatch\n- participant <- Gwyneth Paltrow\n- participant -> Gwyneth Paltrow\n- film -> Swept Away\n- celebrity -> Madonna\n- spouse <- Madonna\n- spouse -> Madonna\n- film -> Sherlock Holmes: A Game of…\n- award winner <- MTV Movie Award for Best New…"
+  },
+  {
+    "idx": 32,
+    "gold": "Grammy_Award_for_Best_Rap_Album",
+    "rank": 3,
+    "n_cand": 51,
+    "gold_score": -0.452,
+    "reading": "Edges:\n- award -> MTV Video Music Award for…\n- award -> MTV Video Music Award for…\n- award -> Grammy Award for Best Rap Song\n- award -> Grammy Award for Best Rap…\n- award -> Grammy Award for Best Rap…\n- award -> Grammy Award for Best…\n- award nominee <- KRS-One\n- award -> MTV Video Music Award for…\n- award nominee -> KRS-One\n- award nominee <- Amy Winehouse\n- award nominee -> Amy Winehouse\n- award nominee <- Sean Combs\n- award nominee -> Sean Combs\n- award nominee <- Kanye West"
+  },
+  {
+    "idx": 33,
+    "gold": "44th_Annual_Grammy_Awards",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.1427,
+    "reading": "Edges:\n- ceremony -> 35th Annual Grammy Awards\n- award winner -> Pat Benatar\n- ceremony -> 43rd Annual Grammy Awards\n- ceremony -> 46th Annual Grammy Awards\n- award winner -> Melissa Etheridge\n- award winner -> Donna Summer\n- award winner -> Tina Turner\n- award winner -> Bonnie Raitt\n- award <- Patti Smith\n- award <- Pat Benatar"
+  },
+  {
+    "idx": 34,
+    "gold": "Invictus",
+    "rank": 24,
+    "n_cand": 51,
+    "gold_score": -2.4283,
+    "reading": "Edges:\n- nominated for -> The Kings Speech\n- nominated for -> District 9\n- nominated for -> The Diving Bell and the…\n- nominated for -> The Kids Are All Right\n- nominated for -> The Town\n- nominated for -> War Horse\n- nominated for -> Michael Clayton\n- nominated for -> Juno\n- nominated for -> Up\n- award <- The Kings Speech"
+  },
+  {
+    "idx": 36,
+    "gold": "Confessions_of_a_Dangerous_Mind",
+    "rank": 6,
+    "n_cand": 51,
+    "gold_score": -1.0508,
+    "reading": "Edges:\n- film -> Charlies Angels: Full Throttle\n- film -> Hes Just Not That Into You\n- film -> Donnie Darko\n- film -> Batman Forever\n- film -> Grey Gardens\n- film -> Big Miracle\n- film -> Jack & Jill\n- film -> Whip It!\n- film -> Everyone Says I Love You"
+  },
+  {
+    "idx": 37,
+    "gold": "Pantothenic_acid",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.5738,
+    "reading": "Edges:\n- nutrient -> Arachidonic acid\n- nutrient -> Decanoic acid\n- nutrient -> Vitamin B-12\n- nutrient -> Betaine\n- nutrient -> Myristic acid\n- nutrient -> Fructose\n- nutrient -> Aspartic acid\n- nutrient -> Table sugar\n- nutrient -> Choline"
+  },
+  {
+    "idx": 38,
+    "gold": "Beta-carotene",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -1.0987,
+    "reading": "Edges:\n- nutrient -> Arachidonic acid\n- nutrient -> Retinol\n- nutrient -> Decanoic acid\n- nutrient -> Vitamin B-12\n- nutrient -> Betaine\n- nutrient -> Myristic acid\n- nutrient -> D-Glucose\n- nutrient -> Fructose\n- nutrient -> Aspartic acid"
+  },
+  {
+    "idx": 39,
+    "gold": "E._G._Marshall",
+    "rank": 37,
+    "n_cand": 51,
+    "gold_score": -3.0153,
+    "reading": "Edges:\n- student -> Peter Tork\n- educational institution -> Carleton College\n- school type -> Private school\n- major field of study -> Biology\n- campuses -> Carleton College\n- major field of study -> Mathematics\n- colors -> Blue\n- institution <- Bachelor of Science\n- registering agency -> Internal Revenue Service\n- institution <- Bachelor of Arts\n- organization <- President"
+  },
+  {
+    "idx": 40,
+    "gold": "Artist-GB",
+    "rank": 21,
+    "n_cand": 50,
+    "gold_score": -1.7058,
+    "reading": "Edges:\n- profession -> Songwriter-GB\n- profession -> Actor-GB\n- award winner <- MTV Video Music Award for…\n- award -> Grammy Award for Best Rap Song\n- award -> Grammy Award for Best Rap…\n- award -> MTV Video Music Award for…\n- student <- University of Nevada, Las…\n- award nominee -> T-Pain\n- origin -> Miami\n- artist <- Southern hip hop"
+  },
+  {
+    "idx": 41,
+    "gold": "Drugstore_Cowboy",
+    "rank": 8,
+    "n_cand": 51,
+    "gold_score": -1.4094,
+    "reading": "Edges:\n- film -> Zodiac\n- film -> Enemy of the State\n- film -> Big Miracle\n- film -> Psycho\n- award nominee <- Ron Perlman\n- place of birth -> Minneapolis\n- award nominee -> Ron Perlman\n- award nominee <- Calista Flockhart\n- award nominee -> Calista Flockhart\n- award nominee <- Peter MacNicol\n- award nominee -> Peter MacNicol"
+  },
+  {
+    "idx": 42,
+    "gold": "Singer-songwriter-GB",
+    "rank": 5,
+    "n_cand": 50,
+    "gold_score": -0.7295,
+    "reading": "Edges:\n- profession -> Writer-GB\n- profession -> Actor-GB\n- award winner <- BFCA Critics Choice Award for…\n- award nominee <- N Sync\n- spouse <- Emilio Estefan\n- religion -> Roman Catholic Church\n- location -> Miami Beach\n- place of birth -> Havana\n- award -> BFCA Critics Choice Award for…\n- award nominee -> N Sync\n- award -> Grammy Award for Best…"
+  },
+  {
+    "idx": 43,
+    "gold": "Dio",
+    "rank": 14,
+    "n_cand": 51,
+    "gold_score": -4.6487,
+    "reading": "Edges:\n- artists -> Janes Addiction\n- artists -> Guns N Roses\n- artists -> Jerry Wonder Duplessis\n- artists -> Pritam Chakraborty\n- artists -> Melvins\n- artists -> Jefferson Airplane\n- artists -> The Temptations\n- artists -> The Jackson 5\n- artists -> Johnny Yong Bosch"
+  },
+  {
+    "idx": 44,
+    "gold": "United_Kingdom",
+    "rank": 2,
+    "n_cand": 50,
+    "gold_score": -0.5992,
+    "reading": "Edges:\n- role -> Appalachian dulcimer\n- role -> slide guitar\n- role -> Tambourine\n- role -> Electronic keyboard\n- role -> Acoustic guitar\n- role -> Electric guitar\n- role -> Harmonica\n- role -> Bass\n- role -> Synthesizer"
+  },
+  {
+    "idx": 45,
+    "gold": "NASA",
+    "rank": 28,
+    "n_cand": 50,
+    "gold_score": -3.6424,
+    "reading": "Edges:\n- religion -> Religious Society of Friends\n- company -> United States of America\n- profession -> Lawyer\n- basic title -> Vice President-GB\n- profession -> Politician-GB\n- profession -> Author-GB\n- student <- Bachelor of Laws\n- taxonomy -> Library of Congress…\n- basic title -> President"
+  },
+  {
+    "idx": 46,
+    "gold": "Eastern_Time_Zone",
+    "rank": 1,
+    "n_cand": 13,
+    "gold_score": -0.0595,
+    "reading": "Edges:\n- state <- Bradenton\n- state <- Pensacola\n- state province region <- Telemundo\n- state <- Daytona Beach\n- state <- Coral Gables\n- origin <- N Sync\n- state <- Jacksonville\n- state <- Tallahassee\n- state <- Tampa"
+  },
+  {
+    "idx": 47,
+    "gold": "Nondenominational_Christianity",
+    "rank": 21,
+    "n_cand": 50,
+    "gold_score": -2.136,
+    "reading": "Edges:\n- religion -> Evangelicalism\n- religion -> Churches of Christ\n- religion -> Pentecostalism\n- religion -> Presbyterianism\n- religion -> Protestantism\n- religion -> Lutheranism\n- religion -> Baptists\n- religion -> Methodism\n- origin <- N Sync"
+  },
+  {
+    "idx": 48,
+    "gold": "The_Pianist",
+    "rank": 9,
+    "n_cand": 51,
+    "gold_score": -2.158,
+    "reading": "Edges:\n- nominated for -> The Man Who Wasnt There\n- nominated for -> You Can Count on Me\n- nominated for -> The Crucible\n- nominated for -> Man on the Moon\n- nominated for -> Blood Diamond\n- nominated for -> Winter’s Bone\n- nominated for -> The Kite Runner\n- nominated for -> Notes on a Scandal\n- nominated for -> Wag the Dog"
+  },
+  {
+    "idx": 49,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0015,
+    "reading": "Edges:\n- location -> Flint\n- film -> Get Smart\n- place of birth -> Flint\n- film -> The Longest Yard\n- film -> Starsky & Hutch\n- profession -> Comedian\n- film -> Click\n- film -> Bridesmaids\n- team -> Washington Redskins\n- profession -> Voice Actor"
+  },
+  {
+    "idx": 50,
+    "gold": "Leo_Tolstoy",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.5909,
+    "reading": "Edges:\n- honored for <- 85th Academy Awards\n- film festivals -> 2012 Toronto International…\n- production companies -> Working Title Films\n- nominated for <- Tom Stoppard\n- award -> Academy Award for Best…\n- nominated for <- Satellite Award for Best…\n- nominated for <- Satellite Award for Best…\n- nominated for <- BAFTA Award for Best Makeup &\n- nominated for <- Academy Award for Best…\n- film release region -> Cyprus"
+  },
+  {
+    "idx": 51,
+    "gold": "New_Zealand",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0229,
+    "reading": "Edges:\n- location <- Karl Urban\n- contains <- Oceania\n- place of birth <- Graeme Revell\n- place of birth <- Chris Wood\n- location of ceremony <- Marriage"
+  },
+  {
+    "idx": 52,
+    "gold": "United_States_Dollar",
+    "rank": 1,
+    "n_cand": 7,
+    "gold_score": -0.0079,
+    "reading": "Edges:\n- educational institution -> Boston University School of…\n- citytown -> Boston\n- school type -> Private university\n- organization <- Dean-GB\n- campuses -> Boston University School of…\n- state province region -> Massachusetts\n- contains <- Boston\n- school type -> Private school\n- contains <- Massachusetts\n- institution <- Juris Doctor"
+  },
+  {
+    "idx": 53,
+    "gold": "University_of_Michigan_Law_School",
+    "rank": 13,
+    "n_cand": 51,
+    "gold_score": -1.0581,
+    "reading": "Edges:\n- institution -> Queens University Belfast\n- institution -> Queens University\n- institution -> Schulich School of Law\n- institution -> Osgoode Hall Law School\n- institution -> Saint Petersburg State…\n- institution -> Georgetown University Law…\n- institution -> Cairo University\n- institution -> University College Cork -…\n- institution -> University of Aberdeen"
+  },
+  {
+    "idx": 54,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2,
+    "gold_score": -0.002,
+    "reading": "Edges:\n- profession -> Playwright-GB\n- profession -> Screenwriter\n- film -> Alice in Wonderland\n- award -> National Society of Film…\n- profession -> Actor-GB\n- student <- Wellington College, Berkshire\n- nationality -> United Kingdom\n- award winner <- National Society of Film…\n- people <- Stroke\n- award -> Academy Award for Best Actor…"
+  },
+  {
+    "idx": 55,
+    "gold": "University",
+    "rank": 7,
+    "n_cand": 24,
+    "gold_score": -2.4386,
+    "reading": "Edges:\n- educational institution -> University of British Columbia\n- school <- 2002 Major League Baseball…\n- school <- Colorado Rockies\n- major field of study -> Remax-US\n- student -> Evangeline Lilly\n- major field of study -> Library science\n- campuses -> University of British Columbia\n- role -> Times Higher Education World…\n- major field of study -> Marketing-GB\n- major field of study -> Theatre\n- institution <- Masters Degree"
+  },
+  {
+    "idx": 56,
+    "gold": "Typhoid_fever",
+    "rank": 7,
+    "n_cand": 50,
+    "gold_score": -1.1608,
+    "reading": "Edges:\n- symptom of -> Crohns disease\n- symptom of -> Dysentery\n- symptom of -> Cystic fibrosis\n- symptom of -> Hepatitis\n- symptom of -> Jaundice\n- symptom of -> AIDS\n- symptom of -> Liver tumour\n- symptom of -> Pancreatic cancer"
+  },
+  {
+    "idx": 57,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0018,
+    "reading": "Edges:\n- location -> Greenwood\n- location -> Gary\n- location -> Memphis\n- film -> Gone Baby Gone\n- film -> Seven\n- film -> Robin Hood: Prince of Thieves\n- film -> March of the Penguins\n- film -> Driving Miss Daisy\n- place of birth -> Memphis\n- award winner <- 38th Peoples Choice Awards"
+  },
+  {
+    "idx": 58,
+    "gold": "United_Nations",
+    "rank": 2,
+    "n_cand": 50,
+    "gold_score": -0.5791,
+    "reading": "Edges:\n- organization -> Council of Europe\n- organization -> World Bank\n- teams -> Turkey national football team\n- combatants <- Iraq War\n- capital -> Ankara\n- combatants <- Korean War\n- contains -> Izmir\n- country -> Izmir\n- official language -> Turkish Language\n- contains -> Istanbul"
+  },
+  {
+    "idx": 59,
+    "gold": "Yanni",
+    "rank": 6,
+    "n_cand": 51,
+    "gold_score": -2.6096,
+    "reading": "Edges:\n- instrumentalists -> Vidyasagar\n- instrumentalists -> Ilaiyaraaja\n- instrumentalists -> Bill Withers\n- instrumentalists -> Joe Hisaishi\n- instrumentalists -> Bill Payne\n- instrumentalists -> David Grisman\n- instrumentalists -> Jon Lord\n- instrumentalists -> Benny Andersson\n- instrumentalists -> Fred Frith"
+  },
+  {
+    "idx": 60,
+    "gold": "Carl_Sagan",
+    "rank": 30,
+    "n_cand": 50,
+    "gold_score": -2.7977,
+    "reading": "Edges:\n- student -> Nagarjuna\n- student -> Rowan Atkinson\n- institution -> Queens University Belfast\n- institution -> The Queens College, Oxford\n- institution -> University of Bucharest\n- institution -> University of Karachi\n- institution -> University of Essex\n- institution -> Saint Petersburg State…\n- institution -> Banaras Hindu University"
+  },
+  {
+    "idx": 61,
+    "gold": "United_Kingdom",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.2742,
+    "reading": "Edges:\n- industry -> Broadcasting\n- program -> Comic Relief Does Fame…\n- service language -> English Language\n- program -> Holby City\n- titles <- Only Fools and Horses\n- place founded -> London\n- program -> War and Peace-GB\n- program -> Torchwood-GB\n- program -> Bleak House-GB"
+  },
+  {
+    "idx": 63,
+    "gold": "109th_United_States_Congress",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.3646,
+    "reading": "Edges:\n- legislative sessions -> 90th United States Congress\n- legislative sessions -> 88th United States Congress\n- legislative sessions -> 93rd United States Congress\n- legislative sessions -> 94th United States Congress\n- legislative sessions -> 95th United States Congress\n- legislative sessions -> 96th United States Congress\n- legislative sessions -> 97th United States Congress\n- legislative sessions -> 101st United States Congress\n- legislative sessions -> 102nd United States Congress"
+  },
+  {
+    "idx": 64,
+    "gold": "Hollywood",
+    "rank": 10,
+    "n_cand": 50,
+    "gold_score": -1.3957,
+    "reading": "Edges:\n- profession -> Author-GB\n- profession -> Actor-GB\n- nationality -> United States of America\n- gender -> Male"
+  },
+  {
+    "idx": 65,
+    "gold": "El_Dorado_County",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -0.7055,
+    "reading": "Edges:\n- adjoins <- Nevada County\n- adjoins -> Nevada County\n- adjoins <- Sacramento County\n- adjoins -> Sacramento County\n- contains <- California\n- time zones -> Pacific Time Zone"
+  },
+  {
+    "idx": 66,
+    "gold": "BAFTA_Award_for_Best_Direction",
+    "rank": 34,
+    "n_cand": 50,
+    "gold_score": -0.9079,
+    "reading": "Edges:\n- film -> Ryans Daughter\n- award winner <- Golden Bear\n- award winner <- BAFTA Academy Fellowship Award\n- award winner <- 30th Academy Awards\n- award winner <- 35th Academy Awards\n- award -> BAFTA Academy Fellowship Award\n- award -> Writers Guild of America…\n- award -> Golden Globe Award for Best…\n- award -> Academy Award for Best Film…\n- award winner <- National Board of Review."
+  },
+  {
+    "idx": 67,
+    "gold": "State_University_of_New_York_at_Stony_Brook",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -1.6057,
+    "reading": "Edges:\n- institution -> Saint Marys College of…\n- institution -> Saint Josephs University\n- institution -> Queens University\n- institution -> University of Karachi\n- institution -> The University of Hong Kong\n- institution -> Johann Wolfgang Goethe…\n- institution -> University of Essex\n- institution -> University of Tasmania\n- institution -> Monash University"
+  },
+  {
+    "idx": 68,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4,
+    "gold_score": -0.0083,
+    "reading": "Edges:\n- nominated for -> The Cosby Show\n- profession -> Comedian\n- location of ceremony -> Fort Lauderdale\n- award winner <- Special Tony Award\n- influenced by <- Conan OBrien\n- award -> Primetime Emmy Award for…\n- award winner <- Screen Actors Guild Life…\n- award -> Primetime Emmy Award for…\n- award winner <- Peabody Award\n- gender -> Male"
+  },
+  {
+    "idx": 69,
+    "gold": "Special_Effects",
+    "rank": 7,
+    "n_cand": 39,
+    "gold_score": -1.0535,
+    "reading": "Edges:\n- film crew role -> Sound\n- film crew role -> Graphic Designer-GB\n- film crew role -> Visual Effects\n- film regional debut venue -> Cannes Film Festival\n- film crew role -> Sound Mixer\n- music -> Angelo Badalamenti\n- nominated for <- Angelo Badalamenti\n- film release region -> South Korea\n- film release region -> Turkey\n- film release region -> Portugal"
+  },
+  {
+    "idx": 70,
+    "gold": "Switzerland",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -1.812,
+    "reading": "Edges:\n- film release region -> South Korea\n- film release region -> Turkey\n- film release region -> Portugal\n- film release region -> Norway\n- film release region -> Greece\n- film release region -> Hungary\n- film release region -> Denmark-GB\n- film release region -> Finland\n- film release region -> Sweden"
+  },
+  {
+    "idx": 71,
+    "gold": "Welsh_Language",
+    "rank": 4,
+    "n_cand": 50,
+    "gold_score": -0.8591,
+    "reading": "Edges:\n- languages spoken -> English Language\n- people -> Jane Seymour\n- people -> Alan Turing\n- people -> Edward Shearmur\n- people -> Boris Karloff\n- people -> Ernest Rutherford\n- people -> David Attenborough\n- people -> Gordon Brown\n- people -> Rolfe Kent"
+  },
+  {
+    "idx": 72,
+    "gold": "Shirley_Ann_Russell",
+    "rank": 39,
+    "n_cand": 51,
+    "gold_score": -3.2412,
+    "reading": "Edges:\n- people -> Jane Seymour\n- people -> Alan Turing\n- people -> Edward Shearmur\n- people -> Ernest Rutherford\n- people -> Natasha Richardson\n- people -> Gordon Brown\n- people -> Rolfe Kent\n- people -> Donald Sumpter\n- people -> Rachel Portman"
+  },
+  {
+    "idx": 73,
+    "gold": "Business",
+    "rank": 35,
+    "n_cand": 50,
+    "gold_score": -3.3115,
+    "reading": "Edges:\n- major field of study -> Theatre\n- major field of study -> Sociology\n- major field of study -> Accountancy\n- major field of study -> Business Administration\n- student -> Jennifer Morrison\n- student -> Bob Newhart\n- student -> Leslie David Baker\n- institution <- Bachelors degree\n- fraternities and sororities -> Alpha Sigma Phi"
+  },
+  {
+    "idx": 74,
+    "gold": "San_Mateo",
+    "rank": 6,
+    "n_cand": 51,
+    "gold_score": -1.4176,
+    "reading": "Edges:\n- film -> Mrs. Parker and the Vicious…\n- film -> Cowboys & Aliens\n- profession -> Songwriter-GB\n- sibling <- David Carradine\n- award nominee <- Karen Black\n- award nominee -> Karen Black\n- award -> Tony Award for Best Actor in…\n- participant <- Madonna\n- participant -> Madonna\n- award nominee <- Henry Gibson\n- profession -> Actor-GB"
+  },
+  {
+    "idx": 75,
+    "gold": "Cambodia",
+    "rank": 7,
+    "n_cand": 51,
+    "gold_score": -2.6884,
+    "reading": "Edges:\n- country -> Cayman Islands\n- country -> Gambia\n- country -> Saint Vincent and the…\n- country -> Bhutan\n- country -> Mauritius\n- country -> Grenada\n- country -> Papua New Guinea\n- country -> Benin\n- country -> Gabon"
+  },
+  {
+    "idx": 76,
+    "gold": "Alpha_Delta_Pi",
+    "rank": 1,
+    "n_cand": 3,
+    "gold_score": -1.1863,
+    "reading": "Edges:\n- fraternities and sororities -> Alpha Sigma Phi\n- educational institution -> University of Delaware\n- school type -> Land-grant university\n- major field of study -> Finance\n- organization <- President\n- school type -> Private school\n- campuses -> University of Delaware\n- major field of study -> Electrical engineering\n- major field of study -> Mathematics\n- major field of study -> History\n- state province region -> Delaware"
+  },
+  {
+    "idx": 77,
+    "gold": "Barbara_Stanwyck",
+    "rank": 10,
+    "n_cand": 51,
+    "gold_score": -1.7953,
+    "reading": "Edges:\n- award winner -> Ralph Bellamy\n- award winner -> Rosalind Russell\n- award winner -> Danny Kaye\n- award winner -> Walter Pidgeon\n- award winner -> Karl Malden\n- award winner -> Shirley Temple\n- award winner -> James Cagney\n- award winner -> George Burns\n- award winner -> Mary Tyler Moore"
+  },
+  {
+    "idx": 78,
+    "gold": "Women_in_Love",
+    "rank": 10,
+    "n_cand": 51,
+    "gold_score": -2.895,
+    "reading": "Edges:\n- nominated for -> Prizzis Honor\n- nominated for -> One Flew Over the Cuckoos Nest\n- nominated for -> The Kings Speech\n- nominated for -> All the Kings Men\n- nominated for -> Guess Whos Coming to Dinner\n- nominated for -> They Shoot Horses, Dont They?\n- nominated for -> Gentlemans Agreement\n- nominated for -> The Lives of a Bengal Lancer\n- award <- Schindlers List\n- award <- One Flew Over the Cuckoos Nest\n- award <- The Kings Speech"
+  },
+  {
+    "idx": 79,
+    "gold": "The_Last_Picture_Show",
+    "rank": 12,
+    "n_cand": 51,
+    "gold_score": -3.4244,
+    "reading": "Edges:\n- nominated for -> Prizzis Honor\n- nominated for -> One Flew Over the Cuckoos Nest\n- nominated for -> The Kings Speech\n- nominated for -> Its a Wonderful Life\n- nominated for -> The Nuns Story\n- nominated for -> Guess Whos Coming to Dinner\n- nominated for -> They Shoot Horses, Dont They?\n- nominated for -> Gentlemans Agreement\n- award <- Schindlers List\n- award <- One Flew Over the Cuckoos Nest\n- award <- The Kings Speech\n- award <- Gentlemans Agreement"
+  },
+  {
+    "idx": 80,
+    "gold": "Bell",
+    "rank": 42,
+    "n_cand": 50,
+    "gold_score": -5.1715,
+    "reading": "Edges:\n- role -> Solo\n- role -> Violin\n- role -> Electronic keyboard\n- role -> Acoustic guitar\n- role -> Keyboard\n- location -> Tijuana\n- role -> Percussion\n- group -> Santana\n- role -> Guitar"
+  },
+  {
+    "idx": 81,
+    "gold": "Actor-GB",
+    "rank": 3,
+    "n_cand": 50,
+    "gold_score": -0.4854,
+    "reading": "Edges:\n- profession -> Organist\n- profession -> Guitarist-GB\n- profession -> Singer-songwriter-GB\n- profession -> Musician-GB\n- spouse <- Carly Simon\n- spouse -> Carly Simon\n- location -> Chapel Hill\n- award -> Grammy Award for Best…\n- origin -> Chapel Hill\n- award winner <- Grammy Award for Best…\n- award -> Grammy Award for Best…"
+  },
+  {
+    "idx": 82,
+    "gold": "Cameo_appearance",
+    "rank": 1,
+    "n_cand": 5,
+    "gold_score": -0.7528,
+    "reading": "Edges:\n- film -> Ninotchka\n- celebrities impersonated <- Rich Little\n- place of burial -> Holy Cross Cemetery\n- religion -> Catholicism\n- people <- Myocardial infarction\n- nationality -> United States of America\n- place of death -> Los Angeles"
+  },
+  {
+    "idx": 83,
+    "gold": "Computer_Science",
+    "rank": 4,
+    "n_cand": 50,
+    "gold_score": -1.0462,
+    "reading": "Edges:\n- major field of study -> Creative writing\n- major field of study -> Political Science\n- major field of study -> History\n- student -> Bruce Campbell\n- student -> Tim Allen\n- student -> Luther Vandross\n- educational institution -> Western Michigan University\n- colors -> Brown\n- campuses -> Western Michigan University\n- fraternities and sororities -> Alpha Sigma Phi\n- institution <- Bachelors degree"
+  },
+  {
+    "idx": 84,
+    "gold": "Voice_Actor",
+    "rank": 3,
+    "n_cand": 50,
+    "gold_score": -0.8998,
+    "reading": "Edges:\n- profession -> Television producer-GB\n- award -> Daytime Emmy Award for…\n- profession -> Actor-GB\n- participant <- Matthew Broderick\n- film -> The Santa Clause 3: The…\n- award -> Daytime Emmy Award for…\n- participant -> Matthew Broderick\n- film -> The Spiderwick Chronicles\n- award nominee -> Bernie Brillstein\n- film -> Bernie Brillstein\n- film -> Father of the Bride Part II\n- film -> Mumford"
+  },
+  {
+    "idx": 85,
+    "gold": "Beverly_Hills",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -0.8743,
+    "reading": "Edges:\n- contains -> Sherman Oaks\n- contains -> North Hollywood\n- contains -> Van Nuys\n- contains -> San Pedro\n- contains -> Inglewood\n- contains -> Loyola Law School\n- contains -> Otis College of Art and Design\n- contains -> Los Angeles City College\n- contains -> Culver City"
+  },
+  {
+    "idx": 86,
+    "gold": "The_Birdcage",
+    "rank": 24,
+    "n_cand": 51,
+    "gold_score": -3.3541,
+    "reading": "Edges:\n- nominated for -> Schindlers List\n- award <- Schindlers List\n- nominated for -> Prizzis Honor\n- award <- Prizzis Honor\n- nominated for -> Bridget Joness Diary\n- nominated for -> The Unbearable Lightness of…\n- nominated for -> Little Shop of Horrors\n- nominated for -> Full Metal Jacket\n- nominated for -> Greystoke: The Legend of…\n- nominated for -> Babe\n- nominated for -> Scent of a Woman"
+  },
+  {
+    "idx": 87,
+    "gold": "Long_Island",
+    "rank": 7,
+    "n_cand": 51,
+    "gold_score": -1.3555,
+    "reading": "Edges:\n- location -> Miami Beach\n- location -> Mount Vernon\n- place of birth -> Harlem\n- location -> New York City\n- film -> Get Him to the Greek\n- participant <- Busta Rhymes\n- participant <- Naomi Campbell\n- participant -> Naomi Campbell\n- friend -> The Notorious B.I.G.\n- award -> MTV Video Music Award for…"
+  },
+  {
+    "idx": 88,
+    "gold": "Jack_&_Jill",
+    "rank": 37,
+    "n_cand": 51,
+    "gold_score": -3.2328,
+    "reading": "Edges:\n- film -> Mr Deeds\n- film -> Happy Gilmore\n- film -> Big Daddy\n- film -> Just Go With It\n- place of birth -> West Palm Beach\n- company -> Happy Madison Productions\n- produced by <- Thats My Boy\n- nominated for -> Bucky Larson: Born to Be a…\n- participant <- Adam Sandler\n- participant -> Adam Sandler"
+  },
+  {
+    "idx": 89,
+    "gold": "2004_Summer_Olympics",
+    "rank": 2,
+    "n_cand": 43,
+    "gold_score": -0.2244,
+    "reading": "Edges:\n- olympics -> 1984 Summer Olympics\n- olympics -> 1992 Summer Olympics\n- olympics -> 2010 Winter Olympics\n- olympics -> 1996 Summer Olympics\n- olympics -> 2012 Summer Olympics\n- capital <- Algiers\n- teams -> Algeria national football team\n- medal -> Gold medal\n- contains <- Algiers\n- medal -> Silver medal"
+  },
+  {
+    "idx": 90,
+    "gold": "Action_Film",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.635,
+    "reading": "Edges:\n- genre -> Science Fiction\n- genre -> Adventure Film\n- genre -> Thriller\n- music -> James Horner\n- story by -> Walter Hill\n- film production design by -> Peter Lamont\n- executive produced by -> Walter Hill\n- produced by -> Gale Anne Hurd\n- award winner -> Stan Winston\n- nominated for <- Alien Resurrection"
+  },
+  {
+    "idx": 91,
+    "gold": "New_Zealand",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.1154,
+    "reading": "Edges:\n- place of birth -> Wellington\n- award nominee <- Annie Lennox\n- award nominee -> Annie Lennox\n- award nominee <- Peter Jackson\n- award nominee -> Peter Jackson\n- award winner <- 76th Academy Awards\n- award winner -> Annie Lennox\n- award winner -> Howard Shore\n- award winner <- Howard Shore\n- award -> Satellite Award for Best…\n- award -> Writers Guild of America…\n- award -> BAFTA Award for Best…\n- award -> Writers Guild of America…"
+  },
+  {
+    "idx": 92,
+    "gold": "Video_game",
+    "rank": 1,
+    "n_cand": 48,
+    "gold_score": -0.2858,
+    "reading": "Edges:\n- child <- Bandai Namco Holdings\n- child <- Namco Bandai Games\n- organization <- Managing Director-GB\n- category -> Official Website"
+  },
+  {
+    "idx": 93,
+    "gold": "John_5",
+    "rank": 29,
+    "n_cand": 51,
+    "gold_score": -3.0334,
+    "reading": "Edges:\n- artist -> AFI\n- artist -> Daddy Yankee\n- artist -> Sonic Youth\n- artist -> Limp Bizkit\n- artist -> Van Halen\n- artist -> Thomas DeLonge\n- artist -> Omarion\n- artist -> Les Claypool\n- artist -> Queens of the Stone Age"
+  },
+  {
+    "idx": 94,
+    "gold": "United_Nations",
+    "rank": 2,
+    "n_cand": 50,
+    "gold_score": -0.6056,
+    "reading": "Edges:\n- organization -> Council of Europe\n- official language -> Turkish Language\n- form of government -> Unitary state\n- administrative parent -> Earth\n- contains <- Mediterranean Sea\n- official language -> Greek Language\n- administrative area type -> Sovereign state\n- medal -> Silver medal\n- olympics -> 2010 Winter Olympics"
+  },
+  {
+    "idx": 95,
+    "gold": "Punjabi_language",
+    "rank": 6,
+    "n_cand": 40,
+    "gold_score": -1.6564,
+    "reading": "Edges:\n- location -> Peshawar\n- religion -> Hinduism\n- award -> Filmfare Award for Best…\n- place of birth -> Peshawar\n- award winner <- Filmfare Award for Best…\n- location -> Mumbai\n- nationality -> India\n- profession -> Film Producer-GB\n- gender -> Male\n- politician <- Bharatiya Janata Party\n- people <- Punjabi people"
+  },
+  {
+    "idx": 96,
+    "gold": "Tony_Curtis",
+    "rank": 21,
+    "n_cand": 51,
+    "gold_score": -2.5878,
+    "reading": "Edges:\n- people -> Richard Feynman\n- people -> Leon Trotsky\n- people -> Stephen Jay Gould\n- people -> Noam Chomsky\n- people -> Milton Friedman\n- people -> Isaac Asimov\n- people -> Karl Marx\n- people -> Elmer Bernstein\n- people -> Allen Ginsberg"
+  },
+  {
+    "idx": 97,
+    "gold": "French_Language",
+    "rank": 3,
+    "n_cand": 50,
+    "gold_score": -0.7161,
+    "reading": "Edges:\n- language -> Standard Mandarin\n- language -> English Language\n- produced by -> Bob Yari\n- genre -> War film\n- genre -> Film adaptation\n- country -> China\n- produced by -> Edward Norton\n- executive produced by -> Mark Gordon\n- film <- Anthony Wong"
+  },
+  {
+    "idx": 98,
+    "gold": "1995_Major_League_Baseball_Draft",
+    "rank": 3,
+    "n_cand": 20,
+    "gold_score": -0.5724,
+    "reading": "Edges:\n- draft -> 2007 Major League Baseball…\n- draft -> 2004 Major League Baseball…\n- draft -> 2002 Major League Baseball…\n- draft -> 2006 Major League Baseball…\n- season -> 1908 Major League Baseball…\n- season -> 1927 Major League Baseball…\n- season -> 1965 Major League Baseball…\n- school -> Old Dominion University\n- season -> 2008 Major League Baseball…"
+  },
+  {
+    "idx": 99,
+    "gold": "Washington,_D.C.",
+    "rank": 5,
+    "n_cand": 50,
+    "gold_score": -1.2789,
+    "reading": "Edges:\n- genre -> Dystopia\n- genre -> Film noir\n- film format -> Super 35\n- production companies -> Amblin Entertainment\n- story by -> Philip K. Dick\n- produced by -> Jan de Bont\n- film crew role -> Special Effects Supervisor\n- genre -> Film adaptation\n- film <- Max von Sydow"
+  },
+  {
+    "idx": 100,
+    "gold": "Capote",
+    "rank": 10,
+    "n_cand": 51,
+    "gold_score": -2.5464,
+    "reading": "Edges:\n- nominated for -> Schindlers List\n- nominated for -> Ryans Daughter\n- nominated for -> Alice Doesnt Live Here Anymore\n- nominated for -> The Go-Between-GB\n- nominated for -> Fame\n- nominated for -> Cinema Paradiso\n- nominated for -> The Dresser\n- nominated for -> Cry Freedom\n- nominated for -> Shadowlands"
+  },
+  {
+    "idx": 101,
+    "gold": "Tuscany",
+    "rank": 9,
+    "n_cand": 51,
+    "gold_score": -1.6739,
+    "reading": "Edges:\n- place of birth -> Salisbury\n- film -> Enemy at the Gates\n- religion -> Catholicism\n- award nominee <- Simon Callow\n- award nominee <- Antony Sher\n- award nominee -> Antony Sher\n- award nominee <- Imelda Staunton\n- award nominee -> Imelda Staunton\n- sibling -> Ralph Fiennes\n- award -> Screen Actors Guild Award for…\n- award nominee <- Tom Wilkinson"
+  },
+  {
+    "idx": 102,
+    "gold": "Actor-GB",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0837,
+    "reading": "Edges:\n- profession -> Comedian\n- sibling <- Moe Howard\n- religion -> Judaism-GB\n- sibling -> Moe Howard\n- nationality -> United States of America\n- type of union -> Marriage\n- people <- Stroke"
+  },
+  {
+    "idx": 103,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 40,
+    "gold_score": -0.0077,
+    "reading": "Edges:\n- location -> Jakarta\n- location -> Lafayette\n- award nominee <- Catherine Tate\n- participant <- Jenna Fischer\n- award nominee -> Catherine Tate\n- award nominee -> Craig Robinson\n- participant -> Jenna Fischer\n- actor <- The Office\n- award winner <- 13th Screen Actors Guild…\n- award winner <- Brian Baumgartner\n- award winner -> Brian Baumgartner"
+  },
+  {
+    "idx": 104,
+    "gold": "Makeup_Artist-GB",
+    "rank": 2,
+    "n_cand": 39,
+    "gold_score": -0.3098,
+    "reading": "Edges:\n- film crew role -> Special Effects Supervisor\n- film crew role -> Sound Mixer\n- production companies -> Image Entertainment\n- featured film locations -> Detroit\n- film format -> Super 35\n- production companies -> Imagine Entertainment\n- genre -> Coming of age\n- nominated for <- BFCA Critics Choice Award for…\n- film <- Xzibit"
+  },
+  {
+    "idx": 105,
+    "gold": "Golden_Globe_Award_for_Best_Director_-_Motion_Picture",
+    "rank": 8,
+    "n_cand": 50,
+    "gold_score": -0.4015,
+    "reading": "Edges:\n- award winner <- 41st Academy Awards\n- award -> BAFTA Academy Fellowship Award\n- award nominee <- Arthur C. Clarke\n- award nominee -> Arthur C. Clarke\n- award winner <- 2001: A Space Odyssey\n- award winner <- Hugo Award for Best Dramatic…\n- award winner <- A Clockwork Orange\n- award winner <- New York Film Critics Circle…\n- award winner <- National Board of Review…\n- award -> National Society of Film…"
+  },
+  {
+    "idx": 106,
+    "gold": "The_King's_Speech",
+    "rank": 22,
+    "n_cand": 51,
+    "gold_score": -2.2418,
+    "reading": "Edges:\n- film -> Charlies Angels\n- film -> Charlies Angels: Full Throttle\n- film -> Thats My Boy\n- film -> My Sisters Keeper\n- film -> Guess Whos Coming to Dinner\n- film -> You Dont Mess with the Zohan\n- nominated for -> Charlies Angels: Full Throttle\n- award winner <- Charlies Angels: Full Throttle\n- nominated for -> Nick and Norahs Infinite…\n- film -> Naruto the Movie: Legend of…\n- film -> The Water Horse: Legend of…"
+  },
+  {
+    "idx": 107,
+    "gold": "Men_in_Black",
+    "rank": 13,
+    "n_cand": 51,
+    "gold_score": -1.6786,
+    "reading": "Edges:\n- film -> Charlies Angels\n- film -> Charlies Angels: Full Throttle\n- film -> Bram Stokers Dracula\n- film -> My Sisters Keeper\n- film -> Smokin Aces\n- film -> All the Kings Men\n- film -> Guess Whos Coming to Dinner\n- film -> Naruto the Movie: Legend of…\n- film -> The Water Horse: Legend of…\n- nominated for -> Charlies Angels: Full Throttle\n- award winner <- Charlies Angels: Full Throttle"
+  },
+  {
+    "idx": 108,
+    "gold": "Kolkata",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -0.8778,
+    "reading": "Edges:\n- production companies -> UTV Motion Pictures\n- genre -> Bollywood\n- language -> Bengali Language\n- produced by -> Mira Nair\n- genre -> Indie film\n- production companies -> Fox Searchlight Pictures\n- nominated for <- Irrfan Khan\n- genre -> Film adaptation\n- film crew role -> Visual Effects Supervisor\n- nominated for <- Mira Nair"
+  },
+  {
+    "idx": 109,
+    "gold": "Hugo",
+    "rank": 23,
+    "n_cand": 51,
+    "gold_score": -4.2132,
+    "reading": "Edges:\n- nominated for -> Bram Stokers Dracula\n- nominated for -> The Kings Speech\n- nominated for -> Harry Potter and the…\n- nominated for -> Pirates of the Caribbean:…\n- nominated for -> RoboCop\n- nominated for -> Cinema Paradiso\n- nominated for -> The Dresser\n- nominated for -> Legend\n- nominated for -> Greystoke: The Legend of…"
+  },
+  {
+    "idx": 110,
+    "gold": "Greg_Graffin",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -0.9796,
+    "reading": "Edges:\n- instrumentalists -> Donovan\n- instrumentalists -> Bob Geldof\n- instrumentalists -> Joe Cocker\n- instrumentalists -> Glenn Danzig\n- instrumentalists -> Bret Michaels\n- instrumentalists -> Roger Daltrey\n- instrumentalists -> Tim Armstrong\n- instrumentalists -> Hank Williams, Jr.\n- instrumentalists -> Jack Bruce"
+  },
+  {
+    "idx": 111,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4,
+    "gold_score": -0.0064,
+    "reading": "Edges:\n- profession -> Film Director\n- nominated for -> The Golden Girls\n- profession -> Film Producer-GB\n- religion -> Atheism\n- award nominee <- Paul Junger Witt\n- award -> BAFTA Award for Best Film\n- gender -> Male\n- student <- Jesus College, Cambridge\n- nationality -> United States of America"
+  },
+  {
+    "idx": 112,
+    "gold": "The_Mask_of_Zorro",
+    "rank": 7,
+    "n_cand": 51,
+    "gold_score": -1.3498,
+    "reading": "Edges:\n- nominated for -> Pirates of the Caribbean:…\n- nominated for -> Pirates of the Caribbean: At…\n- nominated for -> Bram Stokers Dracula\n- nominated for -> The Mummy\n- nominated for -> The Cell\n- nominated for -> The League of Extraordinary…\n- nominated for -> The Rocketeer\n- nominated for -> Little Shop of Horrors\n- nominated for -> Galaxy Quest"
+  },
+  {
+    "idx": 113,
+    "gold": "Rowing",
+    "rank": 10,
+    "n_cand": 50,
+    "gold_score": -1.3585,
+    "reading": "Edges:\n- sports -> Handball\n- sports -> Volleyball\n- sports -> Dressage\n- sports -> Water polo\n- sports -> Canoe Sprint\n- sports -> Diving\n- sports -> Show jumping\n- sports -> Track cycling\n- sports -> Fencing"
+  },
+  {
+    "idx": 114,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4,
+    "gold_score": -0.0129,
+    "reading": "Edges:\n- nominated for -> Ryans Hope\n- profession -> Screenwriter\n- award nominee <- Barbara Esensten\n- award nominee -> Barbara Esensten\n- award nominee <- Josh Griffith\n- award nominee -> Josh Griffith\n- award nominee <- Wisner Washam\n- award nominee -> Wisner Washam\n- award nominee <- Nancy Williams Watt\n- award nominee -> Nancy Williams Watt\n- award nominee <- Stephen Demorest\n- award nominee -> Stephen Demorest\n- award nominee <- William J. Bell"
+  },
+  {
+    "idx": 115,
+    "gold": "Actor-GB",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.1425,
+    "reading": "Edges:\n- award nominee <- Mike OMalley\n- award nominee -> Mike OMalley\n- film -> Glee: The 3D Concert Movie\n- award winner <- Chris Colfer\n- award winner -> Chris Colfer\n- award winner <- Naya Rivera\n- award winner -> Naya Rivera\n- actor <- Glee\n- award winner <- Patrick Gallagher\n- award winner -> Patrick Gallagher\n- award winner <- Harry Shum, Jr.\n- award winner -> Harry Shum, Jr.\n- award winner <- 16th Screen Actors Guild…"
+  },
+  {
+    "idx": 116,
+    "gold": "Portugal",
+    "rank": 7,
+    "n_cand": 50,
+    "gold_score": -1.9008,
+    "reading": "Edges:\n- film release region -> Madrid\n- film festivals -> 2011 Sundance Film Festival\n- film release region -> Slovenia\n- film regional debut venue -> Toronto International Film…\n- film release region -> South Korea\n- production companies -> UK Film Council\n- film release region -> Russia\n- film release region -> Greece\n- film release region -> Belgium"
+  },
+  {
+    "idx": 117,
+    "gold": "Israel",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0468,
+    "reading": "Edges:\n- place of birth -> Tel Aviv\n- award -> Grammy Award for Best…\n- award winner <- Grammy Award for Best Chamber…\n- award -> Grammy Award for Best…\n- profession -> Conductor\n- award nominee <- Daniel Barenboim\n- award nominee <- Isaac Stern\n- award nominee -> Isaac Stern\n- award -> Grammy Award for Best…\n- role -> Fiddle\n- award winner <- Grammy Award for Best Chamber…"
+  },
+  {
+    "idx": 118,
+    "gold": "Patrick_Doyle",
+    "rank": 45,
+    "n_cand": 50,
+    "gold_score": -4.0,
+    "reading": "Edges:\n- music -> Trevor Rabin\n- music -> Harry Gregson-Williams\n- genre -> Family\n- produced by -> Lawrence Gordon\n- language -> Spanish Language\n- film <- Christopher Eccleston\n- film <- Dee Bradley Baker\n- film <- Dan Castellaneta\n- film release region -> Bolivia"
+  },
+  {
+    "idx": 119,
+    "gold": "Elvis_Costello",
+    "rank": 7,
+    "n_cand": 50,
+    "gold_score": -1.771,
+    "reading": "Edges:\n- instrumentalists -> Drake Bell\n- instrumentalists -> Pete Seeger\n- instrumentalists -> Robert Wachtel\n- instrumentalists -> Colbie Caillat\n- instrumentalists -> Jimmy Buffett\n- instrumentalists -> Syd Barrett\n- instrumentalists -> Nelly Furtado\n- instrumentalists -> Jemaine Clement\n- instrumentalists -> Jake Shimabukuro"
+  },
+  {
+    "idx": 120,
+    "gold": "Netherlands",
+    "rank": 2,
+    "n_cand": 38,
+    "gold_score": -2.0429,
+    "reading": "Edges:\n- contains -> Martinique\n- contains -> Dominica\n- contains -> Trinidad and Tobago\n- contains -> Barbados\n- contains <- Antilles\n- contains <- Caribbean\n- taxonomy -> Library of Congress…\n- time zones -> Atlantic Time Zone-US"
+  },
+  {
+    "idx": 121,
+    "gold": "Visual_Effects_Art_Director",
+    "rank": 3,
+    "n_cand": 39,
+    "gold_score": -1.0337,
+    "reading": "Edges:\n- crewmember -> Craig Barron\n- film crew role -> Special Effects\n- crewmember -> Christopher Boyes\n- film crew role -> Special Effects Supervisor\n- film crew role -> Visual Effects Supervisor\n- film crew role -> Sound Mixer\n- music -> Klaus Badelt\n- story by -> Bob Kane\n- film release distribution… -> Blu-ray disc"
+  },
+  {
+    "idx": 122,
+    "gold": "Television_producer-GB",
+    "rank": 4,
+    "n_cand": 50,
+    "gold_score": -0.807,
+    "reading": "Edges:\n- profession -> Television Director\n- profession -> Actor-GB\n- religion -> Hinduism\n- award -> Filmfare Award for Best…\n- nationality -> India\n- award winner <- Filmfare Award for Best…"
+  },
+  {
+    "idx": 123,
+    "gold": "Finance",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -1.5288,
+    "reading": "Edges:\n- major field of study -> Industrial engineering\n- major field of study -> Civil Engineering\n- major field of study -> Geology\n- major field of study -> Engineering-GB\n- major field of study -> Mechanical Engineering\n- major field of study -> Accountancy\n- institution <- Bachelors degree\n- major field of study -> Electrical engineering\n- major field of study -> Physics"
+  },
+  {
+    "idx": 124,
+    "gold": "Hal_Pereira",
+    "rank": 14,
+    "n_cand": 27,
+    "gold_score": -3.286,
+    "reading": "Edges:\n- film festivals -> 1984 Berlin International…\n- music -> Bernard Herrmann\n- genre -> Black comedy\n- genre -> Suspense\n- nominated for <- Saboteur\n- genre -> Thriller\n- nominated for -> Saboteur\n- nominated for <- Topaz\n- nominated for -> Topaz\n- film sets designed <- Emile Kuri"
+  },
+  {
+    "idx": 125,
+    "gold": "Thailand",
+    "rank": 3,
+    "n_cand": 50,
+    "gold_score": -2.1425,
+    "reading": "Edges:\n- film release region -> Bosnia and Herzegovina\n- film release region -> Ecuador\n- film release region -> Vietnam\n- film release region -> Panama\n- film release region -> Indonesia\n- film release region -> Serbia\n- film release region -> Kuwait\n- film release region -> Slovenia\n- film release region -> Iceland"
+  },
+  {
+    "idx": 126,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 40,
+    "gold_score": -0.0077,
+    "reading": "Edges:\n- location -> Connecticut\n- gender -> Female\n- location -> Manhattan\n- award -> Primetime Emmy Award for…\n- actor <- Torchwood-GB\n- actor <- Six Feet Under\n- award nominee <- Joanna Cassidy\n- award winner <- Joanna Cassidy\n- award nominee -> Joanna Cassidy\n- award winner <- Justina Machado\n- award winner -> Justina Machado\n- award winner <- 10th Screen Actors Guild…"
+  },
+  {
+    "idx": 127,
+    "gold": "Mandarin_Chinese",
+    "rank": 8,
+    "n_cand": 50,
+    "gold_score": -1.2234,
+    "reading": "Edges:\n- language -> Tagalog language\n- language -> Filipino language\n- language -> Tamil-GB\n- language -> Standard Mandarin\n- cinematography -> Christopher Doyle\n- written by -> Wong Kar-wai\n- film regional debut venue -> Berlin International Film…\n- award winner -> Leslie Cheung\n- genre -> Crime Fiction"
+  },
+  {
+    "idx": 128,
+    "gold": "Prince",
+    "rank": 16,
+    "n_cand": 51,
+    "gold_score": -2.1706,
+    "reading": "Edges:\n- artist -> Guns N Roses\n- artist -> The Offspring\n- artist -> Soundgarden\n- artist -> AC/DC\n- artist -> Van Halen\n- artist -> Suicidal Tendencies\n- artist -> Limp Bizkit\n- artist -> Nirvana\n- artist -> Tupac Shakur"
+  },
+  {
+    "idx": 129,
+    "gold": "Roy_Bittan",
+    "rank": 12,
+    "n_cand": 51,
+    "gold_score": -3.6588,
+    "reading": "Edges:\n- instrumentalists -> DAngelo\n- instrumentalists -> Vidyasagar\n- instrumentalists -> Pyotr Ilyich Tchaikovsky\n- instrumentalists -> Johannes Brahms\n- instrumentalists -> Basil Poledouris\n- instrumentalists -> Robert Alexander Schumann\n- instrumentalists -> James Levine\n- instrumentalists -> Richard Strauss\n- instrumentalists -> Robyn Hitchcock"
+  },
+  {
+    "idx": 130,
+    "gold": "Greece",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -1.9894,
+    "reading": "Edges:\n- country -> Luxembourg\n- country -> Czechoslovakia\n- country -> West Germany\n- country -> Soviet Union\n- country -> Venezuela\n- country -> Chile\n- country -> South Africa\n- country -> Czech Republic\n- country -> New Zealand"
+  },
+  {
+    "idx": 131,
+    "gold": "James_Ingram",
+    "rank": 32,
+    "n_cand": 51,
+    "gold_score": -4.3132,
+    "reading": "Edges:\n- artist -> The B-52s\n- artist -> Janes Addiction\n- artist -> The Cult\n- artist -> Uriah Heep\n- artist -> Cheap Trick\n- artist -> Pat Metheny Group\n- artist -> Grateful Dead\n- artist -> David Grisman\n- artist -> Allan Holdsworth"
+  },
+  {
+    "idx": 132,
+    "gold": "Hong_Kong",
+    "rank": 4,
+    "n_cand": 50,
+    "gold_score": -1.2932,
+    "reading": "Edges:\n- film release region -> Kuwait\n- film release region -> Croatia\n- film release region -> Thailand\n- executive produced by -> Boaz Davidson\n- film release region -> Singapore\n- film release region -> Israel\n- film release region -> South Korea\n- film release region -> Austria\n- produced by -> Avi Lerner"
+  },
+  {
+    "idx": 133,
+    "gold": "Germany",
+    "rank": 5,
+    "n_cand": 50,
+    "gold_score": -1.7652,
+    "reading": "Edges:\n- film release region -> West Germany\n- genre -> Detective fiction\n- film release region -> South Korea\n- genre -> Detective-GB\n- film release region -> Austria\n- film release region -> Portugal\n- film release region -> Hong Kong\n- film release region -> Greece\n- film release region -> Denmark-GB"
+  },
+  {
+    "idx": 134,
+    "gold": "Julie_&_Julia",
+    "rank": 35,
+    "n_cand": 51,
+    "gold_score": -3.714,
+    "reading": "Edges:\n- nominated for -> The French Lieutenants Woman\n- nominated for -> One Flew Over the Cuckoos Nest\n- nominated for -> The Nuns Story\n- nominated for <- Whos Afraid of Virginia Woolf?\n- nominated for -> Ryans Daughter\n- nominated for -> Sophies Choice\n- nominated for -> They Shoot Horses, Dont They?\n- nominated for -> Alice Doesnt Live Here Anymore\n- nominated for -> Pillow Talk"
+  },
+  {
+    "idx": 135,
+    "gold": "Hong_Kong",
+    "rank": 5,
+    "n_cand": 50,
+    "gold_score": -1.615,
+    "reading": "Edges:\n- films <- Serial killer\n- film release region -> Norway\n- film release region -> Greece\n- film release region -> Hungary\n- film release region -> Denmark-GB\n- film release region -> Poland\n- film release region -> Finland\n- film release region -> Netherlands\n- film release region -> Japan"
+  },
+  {
+    "idx": 136,
+    "gold": "Pat_Metheny",
+    "rank": 34,
+    "n_cand": 51,
+    "gold_score": -3.0273,
+    "reading": "Edges:\n- artist -> The Cure\n- artist -> Siouxsie & the Banshees\n- artist -> John 5\n- artist -> Counting Crows\n- artist -> Sonic Youth\n- artist -> Nirvana\n- artist -> Thomas DeLonge\n- artist -> Rufus Wainwright\n- artist -> The Who"
+  },
+  {
+    "idx": 137,
+    "gold": "Israel",
+    "rank": 4,
+    "n_cand": 50,
+    "gold_score": -2.1443,
+    "reading": "Edges:\n- award -> Palme dOr\n- films <- The Holocaust\n- film release region -> Kazakhstan\n- film release region -> Chile\n- film release region -> Lithuania\n- production companies -> Canal+\n- film release region -> Czech Republic\n- film release region -> Austria\n- film release region -> Turkey"
+  },
+  {
+    "idx": 138,
+    "gold": "Film_adaptation",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.601,
+    "reading": "Edges:\n- genre -> Epic film\n- genre -> Costume drama\n- genre -> War film\n- music -> Nino Rota\n- genre -> Romance Film\n- story by -> Leo Tolstoy\n- executive produced by -> Carlo Ponti\n- titles <- Epic film\n- nominated for <- King Vidor\n- produced by -> Dino De Laurentiis\n- nominated for <- Dino De Laurentiis"
+  },
+  {
+    "idx": 139,
+    "gold": "Australia",
+    "rank": 2,
+    "n_cand": 50,
+    "gold_score": -1.8974,
+    "reading": "Edges:\n- film regional debut venue -> 2012 Donostia-San Sebastián…\n- film release region -> Kuwait\n- cinematography -> Robert Elswit\n- film release region -> Iceland\n- film release region -> Czech Republic\n- film festivals -> 2012 Donostia-San Sebastián…\n- film release region -> South Korea\n- film release region -> Switzerland\n- film release region -> Austria\n- film release region -> Portugal"
+  },
+  {
+    "idx": 140,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2,
+    "gold_score": -0.0019,
+    "reading": "Edges:\n- nationality -> Wales\n- team -> Macclesfield Town F.C.\n- team -> Aston Villa F.C.\n- team -> Wales national football team\n- team -> Bradford City A.F.C.\n- team -> Bristol City F.C.\n- team -> Hull City A.F.C.\n- team -> West Bromwich Albion F.C.\n- nationality -> England"
+  },
+  {
+    "idx": 141,
+    "gold": "Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Cast_in_a_Motion_Picture",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -0.3508,
+    "reading": "Edges:\n- award winner <- Robert Carlyle\n- award -> BAFTA Award for Best Actress…\n- award winner -> Robert Carlyle\n- award winner <- Mark Addy\n- award winner -> Mark Addy\n- award nominee <- Robert Carlyle\n- award nominee -> Robert Carlyle\n- award nominee <- Mark Addy\n- award nominee -> Mark Addy\n- nominated for -> The Full Monty\n- film -> Inkheart\n- location -> Liverpool"
+  },
+  {
+    "idx": 142,
+    "gold": "Visual_Effects_Art_Director",
+    "rank": 11,
+    "n_cand": 39,
+    "gold_score": -1.3853,
+    "reading": "Edges:\n- film crew role -> Mechanic\n- film crew role -> Dialogue Editor\n- film crew role -> Boom Operator\n- featured film locations -> Golden Gate Bridge\n- crewmember -> Gary Summers\n- featured film locations -> Alameda\n- film crew role -> Special Effects Supervisor\n- film crew role -> Visual Effects Supervisor\n- film crew role -> Makeup Artist-GB"
+  },
+  {
+    "idx": 143,
+    "gold": "Shelley_Winters",
+    "rank": 3,
+    "n_cand": 51,
+    "gold_score": -1.052,
+    "reading": "Edges:\n- award winner -> Maureen Stapleton\n- award winner -> Geraldine Page\n- award winner -> Lee Grant\n- award winner -> Jessica Walter\n- award winner -> Joanne Woodward\n- award winner -> Kirstie Alley\n- award winner -> Ellen Barkin\n- award winner -> Barbara Hershey\n- award winner -> Bette Davis"
+  },
+  {
+    "idx": 144,
+    "gold": "The_Mars_Volta",
+    "rank": 10,
+    "n_cand": 50,
+    "gold_score": -2.0256,
+    "reading": "Edges:\n- artists -> Jim ORourke\n- artists -> Robyn Hitchcock\n- artists -> They Might Be Giants\n- artists -> Emily Osment\n- artists -> The Flaming Lips\n- artists -> Sonic Youth\n- artists -> Draco Rosa\n- artists -> Modest Mouse\n- artists -> Animal Collective"
+  },
+  {
+    "idx": 145,
+    "gold": "The_White_Stripes",
+    "rank": 21,
+    "n_cand": 51,
+    "gold_score": -2.3667,
+    "reading": "Edges:\n- artists -> Jim ORourke\n- artists -> Robyn Hitchcock\n- artists -> Pixies\n- artists -> Oasis\n- artists -> Emily Osment\n- artists -> Sonic Youth\n- artists -> Ian MacKaye\n- artists -> Modest Mouse\n- artists -> Animal Collective"
+  },
+  {
+    "idx": 146,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.1642,
+    "reading": "Edges:\n- service language -> English Language\n- state province region -> Pennsylvania\n- list -> Fortune Global 500\n- list -> Fortune 1000\n- company <- Treasurer\n- company <- Chief Financial Officer-GB\n- organization <- Managing Director-GB\n- company <- Managing Director-GB\n- company <- Vice President-GB\n- contact category -> Customer service\n- company <- Chief Financial Officer-GB"
+  },
+  {
+    "idx": 147,
+    "gold": "Telecommunications",
+    "rank": 1,
+    "n_cand": 48,
+    "gold_score": -0.5836,
+    "reading": "Edges:\n- contact category -> Sales\n- company <- Treasurer\n- contact category -> Technical Support\n- citytown -> Philadelphia\n- state province region -> Pennsylvania\n- contact category -> Customer service\n- child -> Universal Studios\n- company <- Chief Operating Officer\n- company <- Vice President-GB\n- company <- Technical Support"
+  },
+  {
+    "idx": 149,
+    "gold": "Eric_Dane",
+    "rank": 37,
+    "n_cand": 51,
+    "gold_score": -3.6638,
+    "reading": "Edges:\n- award winner -> Lifetime Television\n- award winner -> Kyra Sedgwick\n- award winner -> Julie Benz\n- award winner -> Public Broadcasting Service\n- award winner -> Richard Donner\n- award winner -> Martin Landau\n- award winner -> Willie D. Burton\n- award winner -> Bill Condon\n- award winner -> Gustavo Santaolalla"
+  },
+  {
+    "idx": 150,
+    "gold": "TV5",
+    "rank": 44,
+    "n_cand": 51,
+    "gold_score": -5.0482,
+    "reading": "Edges:\n- organization -> McDonalds\n- organization -> Macys Inc.\n- organization -> Victory Records\n- organization -> Cessna\n- organization -> Munhwa Broadcasting…\n- organization -> PopCap Games\n- organization -> Seven Network\n- organization -> Tooth & Nail Records\n- organization -> Vodafone Group Plc"
+  },
+  {
+    "idx": 151,
+    "gold": "United_States_Virgin_Islands",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -2.609,
+    "reading": "Edges:\n- country -> San Marino\n- country -> Turkmenistan\n- country -> Bhutan\n- country -> Oman\n- country -> Honduras\n- country -> Andorra\n- country -> Fiji\n- country -> Trinidad and Tobago\n- country -> Qatar"
+  },
+  {
+    "idx": 152,
+    "gold": "Irish",
+    "rank": 46,
+    "n_cand": 50,
+    "gold_score": -5.7138,
+    "reading": "Edges:\n- production companies -> UK Film Council\n- film festivals -> 2011 Sundance Film Festival\n- genre -> Crime Fiction\n- film regional debut venue -> 2011 Sundance Film Festival\n- film regional debut venue -> 2011 Berlin International…\n- crewmember -> Tom Johnson\n- executive produced by -> Martin McDonagh\n- film <- Alliance Films\n- film <- Brendan Gleeson\n- film release region -> Slovenia\n- film festivals -> 2011 Berlin International…"
+  },
+  {
+    "idx": 153,
+    "gold": "Actor-GB",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.1604,
+    "reading": "Edges:\n- film -> Scrooged\n- film -> Mumford\n- film -> Star Trek: First Contact\n- film -> The Singing Detective\n- location -> Tulsa\n- place of birth -> Tulsa\n- award nominee <- Samantha Mathis\n- award nominee -> Samantha Mathis\n- award -> Independent Spirit Award for…\n- gender -> Female\n- award -> Primetime Emmy Award for…"
+  },
+  {
+    "idx": 154,
+    "gold": "Germany",
+    "rank": 16,
+    "n_cand": 50,
+    "gold_score": -2.7781,
+    "reading": "Edges:\n- featured film locations -> Valletta\n- featured film locations -> Budapest\n- featured film locations -> London\n- featured film locations -> New York City\n- genre -> Spy film\n- films <- Terrorism\n- film crew role -> Set decorator-GB\n- genre -> Political thriller\n- production companies -> Amblin Entertainment"
+  },
+  {
+    "idx": 155,
+    "gold": "Central_African_Republic",
+    "rank": 3,
+    "n_cand": 51,
+    "gold_score": -1.3516,
+    "reading": "Edges:\n- country -> San Marino\n- country -> Mauritius\n- country -> Côte d’Ivoire\n- country -> Fiji\n- country -> Tajikistan\n- country -> Sri Lanka\n- country -> El Salvador\n- country -> Myanmar\n- country -> Moldova"
+  },
+  {
+    "idx": 156,
+    "gold": "Slasher",
+    "rank": 5,
+    "n_cand": 51,
+    "gold_score": -1.6267,
+    "reading": "Edges:\n- genre -> Psychological thriller\n- genre -> Thriller\n- music -> Danny Elfman\n- award winner <- Janet Leigh\n- production companies -> Imagine Entertainment\n- featured film locations -> Phoenix\n- films <- Serial killer\n- nominated for <- Janet Leigh\n- film release distribution… -> Video\n- award winner -> Gus Van Sant\n- produced by -> Gus Van Sant"
+  },
+  {
+    "idx": 157,
+    "gold": "Ecuador",
+    "rank": 6,
+    "n_cand": 51,
+    "gold_score": -2.6083,
+    "reading": "Edges:\n- country -> Timor-Leste\n- country -> Lesotho\n- country -> Andorra\n- country -> Rwanda\n- country -> Namibia\n- country -> Qatar\n- country -> Libya\n- country -> Montenegro\n- country -> Jordan"
+  },
+  {
+    "idx": 158,
+    "gold": "Sound_Mixer",
+    "rank": 1,
+    "n_cand": 39,
+    "gold_score": -0.4492,
+    "reading": "Edges:\n- film crew role -> Special Effects Supervisor\n- film crew role -> Makeup Artist-GB\n- language -> Latin Language\n- nominated for <- The Yards\n- genre -> Film adaptation\n- honored for -> The Yards\n- nominated for <- Chicago Film Critics…\n- nominated for <- London Film Critics Circle…\n- genre -> Biography\n- film <- Billie Whitelaw"
+  },
+  {
+    "idx": 159,
+    "gold": "Mad_Men",
+    "rank": 30,
+    "n_cand": 50,
+    "gold_score": -3.1475,
+    "reading": "Edges:\n- honored for -> Brothers & Sisters\n- honored for -> Heroes\n- honored for -> The Reader\n- honored for -> 30 Rock\n- award winner -> Anil Kapoor\n- award winner -> Irrfan Khan\n- award winner -> Katrina Bowden\n- award winner -> Scott Adsit\n- award winner -> Jack McBrayer"
+  },
+  {
+    "idx": 160,
+    "gold": "Bill_Cosby",
+    "rank": 21,
+    "n_cand": 50,
+    "gold_score": -2.3549,
+    "reading": "Edges:\n- influenced by -> Chevy Chase\n- religion -> Episcopal Church\n- location -> Kalamazoo\n- film -> The Santa Clause 3: The…\n- profession -> Character Actor\n- award winner <- Saturn Award for Best Actor\n- film -> Galaxy Quest\n- nominated for -> The Santa Clause 3: The…\n- film -> Toy Story\n- nominated for -> Galaxy Quest\n- award winner <- Galaxy Quest\n- nominated for -> Toy Story"
+  },
+  {
+    "idx": 161,
+    "gold": "The_Sand_Pebbles",
+    "rank": 27,
+    "n_cand": 51,
+    "gold_score": -2.6582,
+    "reading": "Edges:\n- entity involved -> Kuomintang\n- entity involved -> Peng Dehuai\n- entity involved -> Chiang Kai-shek\n- entity involved -> Taiwan\n- locations -> China"
+  },
+  {
+    "idx": 162,
+    "gold": "Born_on_the_Fourth_of_July",
+    "rank": 18,
+    "n_cand": 51,
+    "gold_score": -2.0048,
+    "reading": "Edges:\n- nominated for -> Prizzis Honor\n- nominated for -> The Kings Speech\n- nominated for -> Whos Afraid of Virginia Woolf?\n- nominated for -> Gentlemans Agreement\n- nominated for -> One Flew Over the Cuckoos Nest\n- nominated for -> Cyrano de Bergerac\n- nominated for -> The Pride of the Yankees\n- award <- Peter OToole\n- award <- Ryan ONeal\n- award <- The Kings Speech\n- award <- One Flew Over the Cuckoos Nest"
+  },
+  {
+    "idx": 163,
+    "gold": "127_Hours",
+    "rank": 5,
+    "n_cand": 51,
+    "gold_score": -0.9579,
+    "reading": "Edges:\n- nominated for -> Prizzis Honor\n- nominated for -> Schindlers List\n- nominated for -> The Kings Speech\n- nominated for -> Whos Afraid of Virginia Woolf?\n- nominated for -> Gentlemans Agreement\n- nominated for -> One Flew Over the Cuckoos Nest\n- nominated for -> The Spy Who Came in from the…\n- nominated for -> Cyrano de Bergerac\n- nominated for -> My Man Godfrey\n- award <- The Kings Speech\n- award <- One Flew Over the Cuckoos Nest"
+  },
+  {
+    "idx": 164,
+    "gold": "25th_Academy_Awards",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -0.365,
+    "reading": "Edges:\n- ceremony -> 31st Academy Awards\n- ceremony -> 21st Academy Awards\n- ceremony -> 40th Academy Awards\n- ceremony -> 34th Academy Awards\n- ceremony -> 28th Academy Awards\n- ceremony -> 39th Academy Awards\n- ceremony -> 32nd Academy Awards\n- ceremony -> 45th Academy Awards\n- ceremony -> 23rd Academy Awards"
+  },
+  {
+    "idx": 165,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0076,
+    "reading": "Edges:\n- genre -> Stop motion\n- genre -> Fantasy\n- story by -> Tim Burton\n- film distribution medium -> Blu-ray disc\n- produced by -> Tim Burton\n- film <- Catherine OHara\n- film crew role -> Dialogue Editor\n- film <- Walt Disney Studios Home…\n- films <- Christmas\n- film <- Touchstone Pictures"
+  },
+  {
+    "idx": 166,
+    "gold": "Shea_Whigham",
+    "rank": 42,
+    "n_cand": 51,
+    "gold_score": -3.2482,
+    "reading": "Edges:\n- award nominee <- Stephen Graham\n- award nominee -> Stephen Graham\n- award nominee <- Charlie Cox\n- award nominee -> Charlie Cox\n- award nominee <- Michael Pitt\n- award nominee -> Michael Pitt\n- award nominee <- Robert Clohessy\n- award nominee <- Michael K. Williams\n- award nominee -> Michael K. Williams\n- award nominee <- Gretchen Mol\n- award nominee -> Gretchen Mol"
+  },
+  {
+    "idx": 167,
+    "gold": "Clube_de_Regatas_Vasco_da_Gama",
+    "rank": 12,
+    "n_cand": 51,
+    "gold_score": -1.9692,
+    "reading": "Edges:\n- teams -> Fluminense FC\n- vacationer -> Joe Jonas\n- place of birth <- Thiago Silva\n- country -> Brazil\n- contains <- Brazil\n- category -> Official Website\n- location of ceremony <- Marriage"
+  },
+  {
+    "idx": 168,
+    "gold": "Nova_Scotia",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -0.4998,
+    "reading": "Edges:\n- district represented -> Manitoba\n- district represented -> Saskatchewan\n- district represented -> New Brunswick\n- district represented -> British Columbia\n- district represented -> Ontario\n- legislative sessions <- Parliament of Canada\n- legislative sessions <- Senate of Canada\n- legislative sessions <- 34th Canadian Parliament\n- legislative sessions <- 38th Canadian Parliament\n- legislative sessions -> 38th Canadian Parliament\n- legislative sessions <- 40th Canadian Parliament\n- legislative sessions -> 40th Canadian Parliament"
+  },
+  {
+    "idx": 169,
+    "gold": "Alpha_Delta_Pi",
+    "rank": 2,
+    "n_cand": 3,
+    "gold_score": -1.3963,
+    "reading": "Edges:\n- student -> John Denver\n- school type -> University\n- major field of study -> English Studies\n- educational institution -> Texas Tech University\n- major field of study -> Engineering-GB\n- major field of study -> Finance\n- colors -> Scarlet\n- major field of study -> Physics\n- major field of study -> Electrical engineering\n- citytown -> Lubbock"
+  },
+  {
+    "idx": 170,
+    "gold": "Very_Bad_Things",
+    "rank": 28,
+    "n_cand": 51,
+    "gold_score": -2.5086,
+    "reading": "Edges:\n- film -> Mrs. Parker and the Vicious…\n- film -> Deep Impact\n- film -> Daredevil\n- film -> G-Force\n- film -> Iron Man 2\n- film -> Iron Man\n- place of birth -> Flushing\n- participant <- Vince Vaughn\n- location -> Queens\n- participant -> Vince Vaughn"
+  },
+  {
+    "idx": 171,
+    "gold": "Finding_Neverland",
+    "rank": 13,
+    "n_cand": 51,
+    "gold_score": -2.2398,
+    "reading": "Edges:\n- nominated for -> The Kings Speech\n- nominated for <- My Big Fat Greek Wedding\n- nominated for -> Get Shorty\n- nominated for -> 3:10 to Yuma\n- nominated for -> The Birdcage\n- nominated for -> The Kids Are All Right\n- nominated for -> Midnight in Paris\n- nominated for -> Billy Elliot-GB\n- nominated for -> The Full Monty"
+  },
+  {
+    "idx": 172,
+    "gold": "Nick_Cave_and_the_Bad_Seeds",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -1.6376,
+    "reading": "Edges:\n- group -> The Damned\n- group -> Dio\n- group -> Jefferson Airplane\n- group -> Bob Marley & The Wailers\n- group -> Melvins\n- group -> Funkadelic\n- group -> Camel\n- group -> Megadeth\n- group -> Scorpions"
+  },
+  {
+    "idx": 173,
+    "gold": "Turkey",
+    "rank": 3,
+    "n_cand": 50,
+    "gold_score": -1.9395,
+    "reading": "Edges:\n- film release region -> Cyprus\n- film regional debut venue -> Toronto International Film…\n- film release region -> Kuwait\n- film release region -> Iceland\n- film release region -> Czech Republic\n- film release region -> Israel\n- film release region -> South Korea\n- film release region -> Switzerland\n- film release region -> Austria"
+  },
+  {
+    "idx": 174,
+    "gold": "57th_Primetime_Emmy_Awards",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -0.2273,
+    "reading": "Edges:\n- nominated for -> Greys Anatomy\n- ceremony -> 52nd Primetime Emmy Awards\n- ceremony -> 54th Primetime Emmy Awards\n- ceremony -> 64th Primetime Emmy Awards\n- ceremony -> 58th Primetime Emmy Awards\n- ceremony -> 63rd Primetime Emmy Awards\n- ceremony -> 59th Primetime Emmy Awards\n- award winner -> Alex Graves\n- nominated for -> The Shield"
+  },
+  {
+    "idx": 175,
+    "gold": "Domestic_partnership",
+    "rank": 1,
+    "n_cand": 4,
+    "gold_score": -0.3695,
+    "reading": "Edges:\n- type of union -> Marriage\n- entity involved <- Invasion of Normandy\n- entity involved <- Western Desert Campaign\n- people <- Suicide\n- entity involved <- North African Campaign\n- entity involved <- Western Front\n- gender -> Male"
+  },
+  {
+    "idx": 176,
+    "gold": "Republic",
+    "rank": 1,
+    "n_cand": 6,
+    "gold_score": -0.5757,
+    "reading": "Edges:\n- form of government -> Unitary state\n- organization -> League of Nations\n- film release region <- Madagascar 3: Europes Most…\n- administrative area type -> Sovereign state\n- teams -> Paraguay national football…\n- contains <- Latin America\n- adjoins <- Bolivia\n- contains <- South America\n- country <- Tennis\n- adjoins -> Bolivia"
+  },
+  {
+    "idx": 177,
+    "gold": "Arsenal_F.C.",
+    "rank": 3,
+    "n_cand": 51,
+    "gold_score": -0.9889,
+    "reading": "Edges:\n- team -> Eintracht Frankfurt\n- team -> Cardiff City F.C.\n- team -> Stade Rennais F.C.\n- team -> Fulham F.C.\n- team -> West Bromwich Albion F.C.\n- location -> Kagoshima Prefecture\n- gender -> Male\n- athlete <- Football"
+  },
+  {
+    "idx": 178,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0337,
+    "reading": "Edges:\n- place of death -> North Hollywood\n- gender -> Male\n- profession -> Actor-GB\n- celebrities impersonated <- Rich Little\n- special performance type -> Cameo appearance\n- people <- Scottish American"
+  },
+  {
+    "idx": 179,
+    "gold": "Grateful_Dead",
+    "rank": 6,
+    "n_cand": 51,
+    "gold_score": -1.5217,
+    "reading": "Edges:\n- group -> Janes Addiction\n- group -> The Jackson 5\n- group -> Social Distortion\n- group -> Uriah Heep\n- group -> Jefferson Starship\n- group -> NOFX\n- group -> Pixies\n- group -> Anthrax\n- group -> Sepultura"
+  },
+  {
+    "idx": 180,
+    "gold": "Domestic_partnership",
+    "rank": 1,
+    "n_cand": 4,
+    "gold_score": -0.0713,
+    "reading": "Edges:\n- type of union -> Marriage\n- participant <- Courteney Cox\n- spouse -> Courteney Cox\n- participant -> Courteney Cox\n- film -> Jackie Brown\n- film -> Batman Returns\n- award nominee <- Michelle Pfeiffer\n- participant <- Michelle Pfeiffer\n- award nominee -> Michelle Pfeiffer\n- nominated for -> Jackie Brown\n- film -> Out of Sight"
+  },
+  {
+    "idx": 181,
+    "gold": "AFI",
+    "rank": 18,
+    "n_cand": 51,
+    "gold_score": -2.2911,
+    "reading": "Edges:\n- artists -> Leighton Meester\n- artists -> Panic! at the Disco\n- artists -> Ian MacKaye\n- artists -> Thomas DeLonge\n- artists -> Weezer\n- artists -> Paramore\n- artists -> Rivers Cuomo\n- artists -> Peter Wentz\n- parent genre -> Post-hardcore"
+  },
+  {
+    "idx": 182,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0023,
+    "reading": "Edges:\n- award nominee <- Rick Berman\n- profession -> Television producer-GB\n- nominated for -> Star Trek: The Next Generation\n- award nominee -> Rick Berman\n- award nominee <- Brannon Braga\n- program -> Star Trek: The Next Generation\n- award -> Primetime Emmy Award for…\n- gender -> Male\n- story by <- Star Trek: Insurrection\n- producer type -> Executive Producer"
+  },
+  {
+    "idx": 183,
+    "gold": "Searching_for_Debra_Winger",
+    "rank": 46,
+    "n_cand": 51,
+    "gold_score": -4.6388,
+    "reading": "Edges:\n- film -> Cirque du Freak: The Vampires…\n- film -> Four Rooms\n- film -> The Faculty\n- film -> Spy Kids 3-D: Game Over\n- film -> Puss in Boots\n- film -> Savages\n- film -> Traffic\n- participant <- Ashley Judd\n- participant <- Josh Lucas\n- participant -> Josh Lucas"
+  },
+  {
+    "idx": 184,
+    "gold": "Pat_Metheny",
+    "rank": 25,
+    "n_cand": 51,
+    "gold_score": -2.9349,
+    "reading": "Edges:\n- artists -> Paquito DRivera\n- artists -> Sheila E.\n- artists -> Chick Corea"
+  },
+  {
+    "idx": 185,
+    "gold": "United_Kingdom",
+    "rank": 2,
+    "n_cand": 50,
+    "gold_score": -0.7398,
+    "reading": "Edges:\n- profession -> Bassist\n- group -> Ringo Starr & His All-Starr…\n- role -> Bass\n- profession -> Songwriter-GB\n- artists <- Acid rock\n- role -> Bass guitar\n- artist <- EMI\n- gender -> Male\n- artists <- Jazz fusion"
+  },
+  {
+    "idx": 186,
+    "gold": "Battle_of_Britain",
+    "rank": 26,
+    "n_cand": 51,
+    "gold_score": -2.5982,
+    "reading": "Edges:\n- film -> From Russia with Love\n- film -> The Sting\n- film -> Jaws\n- award -> Grammy Award for Best Choral…\n- award -> Tony Award for Best Play\n- award -> Academy Award for Best Actor…\n- students <- Royal Academy of Dramatic Art\n- nationality -> United Kingdom\n- people <- Myocardial infarction"
+  },
+  {
+    "idx": 187,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4,
+    "gold_score": -0.0075,
+    "reading": "Edges:\n- award -> Grammy Award for Best Jazz…\n- award winner <- Grammy Lifetime Achievement…\n- award winner <- Aretha Franklin\n- award winner -> Aretha Franklin\n- origin -> Plainfield\n- location -> Plainfield\n- place of birth -> Plainfield\n- award winner <- Grammy Award for Best Jazz…\n- performance role -> Piano\n- artists <- Jazz piano\n- role -> Piano\n- artists <- Post-bop"
+  },
+  {
+    "idx": 188,
+    "gold": "Screenwriter",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.5917,
+    "reading": "Edges:\n- profession -> Television Director\n- profession -> Television producer-GB\n- film -> I Love You, Man\n- profession -> Film Director\n- film -> Hancock\n- profession -> Actor-GB\n- award nominee <- Paul Rudd\n- written by <- Night at the Museum\n- film -> Memento\n- award nominee -> Paul Rudd"
+  },
+  {
+    "idx": 189,
+    "gold": "Trinity_College",
+    "rank": 14,
+    "n_cand": 51,
+    "gold_score": -2.179,
+    "reading": "Edges:\n- organization -> Queens College, Cambridge\n- organization -> Saint Josephs University\n- organization -> St Johns College, Oxford\n- organization -> St. Johns University\n- organization -> Saint Marys College of…\n- organization -> Nikon Corporation\n- organization -> University of the Philippines\n- organization -> Johann Wolfgang Goethe…\n- organization -> University of Groningen"
+  },
+  {
+    "idx": 190,
+    "gold": "Long_Beach",
+    "rank": 10,
+    "n_cand": 51,
+    "gold_score": -1.647,
+    "reading": "Edges:\n- participant <- Pauly Shore\n- participant -> Pauly Shore\n- participant <- Jason Priestley\n- participant -> Jason Priestley\n- participant <- Mario López\n- participant -> Mario López\n- participant <- Brian Austin Green\n- profession -> Film Producer-GB\n- actor <- Beverly Hills, 90210\n- profession -> Actor-GB\n- diet -> Vegetarianism"
+  },
+  {
+    "idx": 191,
+    "gold": "Indianapolis",
+    "rank": 33,
+    "n_cand": 51,
+    "gold_score": -3.081,
+    "reading": "Edges:\n- film -> Eat Pray Love\n- award -> Primetime Emmy Award for…\n- profession -> Television Director\n- religion -> Catholicism\n- award -> Grammy Award for Best…\n- profession -> Writer-GB\n- profession -> Television producer-GB\n- award -> Primetime Emmy Award for…\n- award -> Primetime Emmy Award for…\n- profession -> Screenwriter"
+  },
+  {
+    "idx": 192,
+    "gold": "Ska",
+    "rank": 24,
+    "n_cand": 51,
+    "gold_score": -2.4434,
+    "reading": "Edges:\n- parent genre <- Dark wave\n- parent genre -> Glam rock\n- parent genre <- Electroclash\n- parent genre <- Reggae\n- parent genre -> Reggae\n- parent genre <- New Romanticism\n- parent genre <- Britpop\n- parent genre <- Indie pop\n- artists -> The B-52s\n- parent genre <- Synthpop"
+  },
+  {
+    "idx": 193,
+    "gold": "George_Michael",
+    "rank": 8,
+    "n_cand": 51,
+    "gold_score": -1.7815,
+    "reading": "Edges:\n- artists -> The B-52s\n- artists -> Simply Red\n- artists -> Bob Geldof\n- artists -> Pat Benatar\n- artists -> Depeche Mode\n- artists -> Devo\n- artists -> Pretenders\n- artists -> Blondie\n- artists -> New Order"
+  },
+  {
+    "idx": 194,
+    "gold": "North_Vietnam",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -0.8813,
+    "reading": "Edges:\n- combatants <- Viet Cong\n- combatants -> Viet Cong\n- combatants <- First Indochina War\n- combatants <- Korean War\n- combatants <- Soviet Union\n- combatants <- Indo-Pak War of 1971\n- films -> Maos Last Dancer\n- teams -> China PR national football…\n- entity involved <- Soviet Union\n- locations <- Chinese Civil War\n- country <- Tibet"
+  },
+  {
+    "idx": 195,
+    "gold": "Artist-GB",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -0.9166,
+    "reading": "Edges:\n- profession -> Cartoonist\n- profession -> Writer-GB\n- place of birth -> Calgary\n- organizations founded -> Image Comics\n- award nominee <- Korn\n- religion -> Atheism\n- nationality -> Canada\n- category -> Official Website\n- award winner <- Grammy Award for Best Music…\n- award winner <- Korn"
+  },
+  {
+    "idx": 196,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0022,
+    "reading": "Edges:\n- award nominee <- Catherine OHara\n- award nominee -> Catherine OHara\n- film -> Deconstructing Harry\n- film -> The Late Shift\n- film -> Best in Show\n- film -> Recount\n- film -> Lady in the Water\n- film -> Midnight Cowboy\n- film -> A Mighty Wind\n- award winner <- 7th Critics Choice Awards"
+  },
+  {
+    "idx": 197,
+    "gold": "50th_Annual_Grammy_Awards-US",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.2467,
+    "reading": "Edges:\n- ceremony -> 54th Annual Grammy Awards-US\n- ceremony -> 35th Annual Grammy Awards\n- ceremony -> 36th Annual Grammy Awards\n- ceremony -> 38th Annual Grammy Awards\n- ceremony -> 39th Annual Grammy Awards\n- ceremony -> 42nd Annual Grammy Awards\n- ceremony -> 43rd Annual Grammy Awards\n- ceremony -> 46th Annual Grammy Awards\n- ceremony -> 52nd Annual Grammy Awards-US"
+  },
+  {
+    "idx": 198,
+    "gold": "Independent_Spirit_Award_for_Best_Screenplay",
+    "rank": 35,
+    "n_cand": 51,
+    "gold_score": -0.7246,
+    "reading": "Edges:\n- award winner <- Synecdoche, New York\n- award nominee <- Tom Noonan\n- award nominee -> Tom Noonan\n- award winner <- Confessions of a Dangerous…\n- award winner <- Spike Jonze\n- award winner -> Spike Jonze\n- award -> Satellite Award for Best…\n- award winner <- Jennifer Jason Leigh\n- award winner -> Jennifer Jason Leigh\n- award -> Satellite Award for Best…\n- award winner <- Adaptation"
+  },
+  {
+    "idx": 199,
+    "gold": "Toby_Emmerich",
+    "rank": 7,
+    "n_cand": 50,
+    "gold_score": -1.8708,
+    "reading": "Edges:\n- produced by -> Ivan Reitman\n- produced by -> Darren Star\n- produced by -> Jason Reitman\n- production companies -> HBO\n- produced by -> Sarah Jessica Parker\n- written by -> Darren Star\n- edited by -> Conrad Buff\n- actor -> Chris Noth\n- actor -> Kim Cattrall\n- actor -> Kristin Davis"
+  },
+  {
+    "idx": 200,
+    "gold": "United_Kingdom",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.1185,
+    "reading": "Edges:\n- country -> Iceland\n- country -> United States of America\n- produced by -> Neil Gaiman\n- genre -> Costume drama\n- crewmember -> Mark Williams\n- genre -> Fantasy\n- genre -> Romance Film\n- genre -> Adventure Film\n- film <- David Walliams"
+  },
+  {
+    "idx": 201,
+    "gold": "They_Shoot_Horses,_Don't_They?",
+    "rank": 23,
+    "n_cand": 51,
+    "gold_score": -1.8134,
+    "reading": "Edges:\n- nominated for -> Boys Dont Cry\n- nominated for -> Coal Miners Daughter\n- nominated for -> Sophies Choice\n- nominated for -> Another Year\n- nominated for -> Mommie Dearest\n- nominated for -> Six Degrees of Separation\n- nominated for -> I Shot Andy Warhol\n- nominated for -> Mrs. Parker and the Vicious…\n- nominated for -> Cries and Whispers\n- award <- Coal Miners Daughter"
+  },
+  {
+    "idx": 202,
+    "gold": "Isabella_Rossellini",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -1.3397,
+    "reading": "Edges:\n- actor -> Rutger Hauer\n- actor -> Miranda Richardson\n- actor -> Martin Short\n- film <- Rutger Hauer\n- film <- Miranda Richardson\n- film <- Sam Neill\n- film <- Lena Headey\n- nominated for <- Primetime Emmy Award for…\n- genre -> Fantasy\n- film <- John Gielgud\n- nominated for <- Primetime Emmy Award for…"
+  },
+  {
+    "idx": 203,
+    "gold": "Spain",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -1.8439,
+    "reading": "Edges:\n- films <- Social issues\n- film release region -> Egypt\n- film release region -> Slovenia\n- film release region -> Chile\n- genre -> Political cinema\n- film release region -> Singapore\n- film release region -> Israel\n- film release region -> South Korea\n- film release region -> Portugal"
+  },
+  {
+    "idx": 204,
+    "gold": "Screenwriter",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -1.046,
+    "reading": "Edges:\n- profession -> Film Director\n- diet -> Vegetarianism\n- location -> Birmingham\n- place of birth -> Birmingham\n- nationality -> United States of America"
+  },
+  {
+    "idx": 205,
+    "gold": "Japanese_Language",
+    "rank": 2,
+    "n_cand": 50,
+    "gold_score": -0.4277,
+    "reading": "Edges:\n- prequel -> Evangelion 1.11: You Are…\n- country -> Japan\n- actor -> Greg Ayres\n- actor -> John Swasey\n- actor -> Monica Rial\n- actor -> Colleen Clinkenbeard\n- film <- Tomokazu Seki\n- film <- Takehito Koyasu\n- film <- Akira Ishida"
+  },
+  {
+    "idx": 206,
+    "gold": "Political_cinema",
+    "rank": 22,
+    "n_cand": 51,
+    "gold_score": -2.2129,
+    "reading": "Edges:\n- genre -> Gross out\n- genre -> Absurdism\n- genre -> Political satire\n- genre -> Parody\n- genre -> Black comedy\n- genre -> Musical\n- music -> Marc Shaiman\n- genre -> Comedy-GB\n- written by -> Matt Stone\n- award winner -> Matt Stone"
+  },
+  {
+    "idx": 207,
+    "gold": "Paraguay",
+    "rank": 4,
+    "n_cand": 51,
+    "gold_score": -2.544,
+    "reading": "Edges:\n- film release region -> Bahrain\n- film release region -> Vietnam\n- film release region -> Panama\n- film release region -> Indonesia\n- film release region -> Slovakia\n- film release region -> Egypt\n- film release region -> Malaysia\n- film release region -> Ukraine\n- film release region -> Colombia"
+  },
+  {
+    "idx": 208,
+    "gold": "Norway",
+    "rank": 4,
+    "n_cand": 50,
+    "gold_score": -2.286,
+    "reading": "Edges:\n- film release region -> Syria\n- film release region -> Latvia\n- film release region -> Rome\n- film release region -> Uruguay\n- film release region -> Panama\n- film release region -> Indonesia\n- film release region -> Slovakia\n- film release region -> Egypt\n- film release region -> Malaysia"
+  },
+  {
+    "idx": 210,
+    "gold": "Prometheus_Hall_of_Fame_Award",
+    "rank": 51,
+    "n_cand": 51,
+    "gold_score": -1.9654,
+    "reading": "Edges:\n- award -> World Fantasy Award for Best…\n- award -> Nebula Award for Best…\n- award -> Nebula Award for Best Novella\n- award winner <- Hugo Award for Best Novelette\n- award -> Hugo Award for Best Short…\n- award -> Hugo Award for Best Novella\n- award nominee <- Isaac Asimov\n- influenced by <- Peter David\n- award nominee -> Isaac Asimov\n- influenced by -> Roger Zelazny\n- award winner <- Hugo Award for Best Novelette\n- award winner <- Hugo Award for Best Short…"
+  },
+  {
+    "idx": 211,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 40,
+    "gold_score": -0.0073,
+    "reading": "Edges:\n- actor -> Andy Hallett\n- actor -> Vincent Kartheiser\n- program creator -> David Greenwalt\n- genre -> Action\n- nominated for <- Andy Hallett\n- genre -> Comedy-drama\n- genre -> Horror\n- genre -> Fantasy\n- genre -> Adventure Film\n- program <- The WB\n- program <- David Greenwalt"
+  },
+  {
+    "idx": 212,
+    "gold": "Screenwriter",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -0.9319,
+    "reading": "Edges:\n- film -> Lemony Snickets A Series of…\n- film -> Madagascar 3: Europes Most…\n- profession -> Television producer-GB\n- profession -> Actor-GB\n- film -> Be Cool\n- film -> Cadillac Records\n- film -> Larry Crowne\n- film -> Madagascar: Escape 2 Africa\n- film -> Talk to Me"
+  },
+  {
+    "idx": 213,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0112,
+    "reading": "Edges:\n- gender -> Male\n- profession -> Screenwriter\n- award winner <- Daytime Emmy Award for…\n- producer type -> Executive Producer\n- student <- University of California, Los…\n- type of union -> Marriage"
+  },
+  {
+    "idx": 214,
+    "gold": "Republic_of_Macedonia",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -2.4576,
+    "reading": "Edges:\n- country -> Palestinian National Authority\n- country -> Cayman Islands\n- country -> Guam\n- country -> San Marino\n- country -> Brunei\n- country -> Saint Vincent and the…\n- country -> Palau\n- country -> Swaziland\n- country -> Lesotho"
+  },
+  {
+    "idx": 215,
+    "gold": "Tonga",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -2.1046,
+    "reading": "Edges:\n- country -> Cayman Islands\n- country -> United States Virgin Islands\n- country -> Guam\n- country -> Brunei\n- country -> Federated States of Micronesia\n- country -> Palau\n- country -> Suriname\n- country -> Turkmenistan\n- country -> Lesotho"
+  },
+  {
+    "idx": 216,
+    "gold": "Puerto_Rico",
+    "rank": 4,
+    "n_cand": 50,
+    "gold_score": -1.4116,
+    "reading": "Edges:\n- service location -> Canada\n- industry -> Investment banking\n- company <- Chief Administrative Officer\n- contact category -> Customer service\n- service language -> English Language\n- list -> Fortune 1000\n- state province region -> New York\n- place founded -> New York City\n- citytown -> New York City\n- organization <- Managing Director-GB"
+  },
+  {
+    "idx": 217,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2,
+    "gold_score": -0.0028,
+    "reading": "Edges:\n- profession -> Comedian\n- influenced by <- Buster Keaton\n- profession -> Film Director\n- influenced by <- Charlie Chaplin\n- people <- Scottish American\n- place of death -> New York City\n- people <- Myocardial infarction"
+  },
+  {
+    "idx": 218,
+    "gold": "Grammy_Award_for_Best_Female_R&B_Vocal_Performance",
+    "rank": 38,
+    "n_cand": 51,
+    "gold_score": -1.0811,
+    "reading": "Edges:\n- award -> Grammy Award for Best Female…\n- award -> MTV Video Music Award for…\n- award -> MTV Video Music Award for…\n- award winner <- Leonard Cohen\n- award winner <- Grammy Award for Best Female…\n- award winner -> Larry Klein\n- award nominee <- Larry Klein\n- award -> Grammy Award for Best Rock…\n- award winner <- Corinne Bailey Rae\n- award winner -> Corinne Bailey Rae\n- award -> Grammy Award for Best Music…\n- award -> Grammy Award for Best Female…\n- award nominee -> Larry Klein\n- award winner -> Joni Mitchell"
+  },
+  {
+    "idx": 219,
+    "gold": "United_States_Dollar",
+    "rank": 1,
+    "n_cand": 7,
+    "gold_score": -0.0139,
+    "reading": "Edges:\n- language -> Russian Language\n- crewmember -> Travis Banton\n- list -> National Film Registry\n- film release region -> West Germany\n- country -> United States of America\n- genre -> Romance Film\n- film <- Carole Lombard\n- film release region -> Denmark-GB\n- film release region -> Argentina"
+  },
+  {
+    "idx": 220,
+    "gold": "B.B._King",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -1.0191,
+    "reading": "Edges:\n- artists -> Nelson Riddle\n- artists -> Dean Martin\n- artists -> Duke Ellington\n- artists -> Jaco Pastorius\n- artists -> Ringo Sheena\n- artists -> Doris Day\n- artists -> Frank Sinatra\n- artists -> Linda Ronstadt\n- artists -> Quincy Jones"
+  },
+  {
+    "idx": 221,
+    "gold": "Primetime_Emmy_Award_for_Outstanding_Guest_Actor_-_Comedy_Series",
+    "rank": 7,
+    "n_cand": 51,
+    "gold_score": -0.3155,
+    "reading": "Edges:\n- film -> Its Complicated\n- award -> MTV Movie Award for Best…\n- award -> Los Angeles Film Critics…\n- award -> Primetime Emmy Award for…\n- award nominee <- Marc Shaiman\n- award winner <- Grammy Award for Best Country…\n- award -> MTV Movie Award for Best…\n- award nominee -> Marc Shaiman\n- award winner <- Jerry Douglas\n- award winner -> Jerry Douglas"
+  },
+  {
+    "idx": 222,
+    "gold": "U.S.A._for_Africa",
+    "rank": 8,
+    "n_cand": 50,
+    "gold_score": -1.435,
+    "reading": "Edges:\n- location -> Saginaw\n- role -> Harmonica\n- role -> Bass\n- role -> Drum\n- participant -> Isaiah Washington\n- role -> Synthesizer\n- role -> Piano\n- award -> Grammy Award for Best…\n- instrumentalists <- Bongo drum"
+  },
+  {
+    "idx": 223,
+    "gold": "Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Female_Actor_in_a_Miniseries_or_Television_Movie",
+    "rank": 35,
+    "n_cand": 51,
+    "gold_score": -0.7979,
+    "reading": "Edges:\n- award -> Daytime Emmy Award for…\n- award -> Independent Spirit Award for…\n- award -> Independent Spirit Award for…\n- award nominee <- Miguel Sandoval\n- award -> Screen Actors Guild Award for…\n- award -> Screen Actors Guild Award for…\n- award nominee -> Miguel Sandoval\n- award nominee <- Amy Brenneman\n- award nominee -> Amy Brenneman\n- award nominee <- Lisa Gay Hamilton\n- award nominee <- Joe Mantegna\n- award nominee -> Joe Mantegna\n- award nominee <- Molly Parker"
+  },
+  {
+    "idx": 224,
+    "gold": "France",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -1.5436,
+    "reading": "Edges:\n- film release region -> Uruguay\n- cinematography -> Chris Menges\n- film release region -> Serbia\n- film festivals -> 2012 Berlin International…\n- film release region -> Kuwait\n- film release region -> Colombia\n- film release region -> Slovenia\n- film release region -> Croatia\n- film release region -> Chile"
+  },
+  {
+    "idx": 225,
+    "gold": "Aretha_Franklin",
+    "rank": 3,
+    "n_cand": 51,
+    "gold_score": -1.6734,
+    "reading": "Edges:\n- artists -> Giuseppe Verdi\n- artists -> Vidyasagar\n- artists -> Pyotr Ilyich Tchaikovsky\n- artists -> Robert Alexander Schumann\n- artists -> Joseph Haydn\n- artists -> Richard Strauss\n- artists -> Claude Debussy\n- artists -> Steve Hackett\n- artists -> Franz Schubert"
+  },
+  {
+    "idx": 226,
+    "gold": "Pirates_of_the_Caribbean:_At_World's_End",
+    "rank": 4,
+    "n_cand": 51,
+    "gold_score": -0.7816,
+    "reading": "Edges:\n- nominated for -> Bram Stokers Dracula\n- nominated for -> Pans Labyrinth\n- nominated for -> Lemony Snickets A Series of…\n- nominated for -> Barneys Version\n- nominated for -> Star Trek VI: The…\n- nominated for -> Coming to America\n- nominated for -> Scrooged\n- nominated for -> Il Divo\n- nominated for -> Apocalypto\n- award <- Bram Stokers Dracula"
+  },
+  {
+    "idx": 227,
+    "gold": "Primetime_Emmy_Award",
+    "rank": 1,
+    "n_cand": 20,
+    "gold_score": -1.0713,
+    "reading": "Edges:\n- nominated for -> The Big Bang Theory\n- nominated for -> The Cosby Show\n- nominated for -> Malcolm in the Middle\n- award winner -> Colleen Dewhurst\n- nominated for -> Monk\n- nominated for -> 3rd Rock from the Sun\n- nominated for -> Murphy Brown\n- award <- Marcia Wallace\n- award <- JoBeth Williams"
+  },
+  {
+    "idx": 228,
+    "gold": "Indie_film",
+    "rank": 3,
+    "n_cand": 50,
+    "gold_score": -0.8997,
+    "reading": "Edges:\n- genre -> Crime Fiction\n- genre -> Thriller\n- award -> Palme dOr\n- executive produced by -> Michael Shamberg\n- award winner -> Lawrence Bender\n- award -> MTV Movie Award for Best…\n- award -> London Film Critics Circle…\n- language -> French Language\n- produced by <- Lawrence Bender\n- award winner -> Samuel L. Jackson\n- nominated for <- Lawrence Bender"
+  },
+  {
+    "idx": 229,
+    "gold": "Video_game",
+    "rank": 1,
+    "n_cand": 48,
+    "gold_score": -0.5561,
+    "reading": "Edges:\n- industry -> Video game industry\n- place founded -> Scotland\n- place founded -> New York City\n- state province region -> New York\n- category -> Official Website"
+  },
+  {
+    "idx": 230,
+    "gold": "42nd_Annual_Grammy_Awards",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.149,
+    "reading": "Edges:\n- ceremony -> 36th Annual Grammy Awards\n- award winner -> Yolanda Adams\n- ceremony -> 38th Annual Grammy Awards\n- ceremony -> 39th Annual Grammy Awards\n- ceremony -> 41st Annual Grammy Awards\n- ceremony -> 47th Annual Grammy Awards\n- ceremony -> 43rd Annual Grammy Awards\n- ceremony -> 48th Annual Grammy Awards\n- award winner -> Kirk Franklin"
+  },
+  {
+    "idx": 231,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0133,
+    "reading": "Edges:\n- music -> Harry Gregson-Williams\n- cinematography -> John Seale\n- edited by -> Michael Kahn\n- genre -> Fantasy\n- produced by -> Jerry Bruckheimer\n- genre -> Romance Film\n- film crew role -> Hairdresser-GB\n- film <- Ben Kingsley\n- film <- Alfred Molina"
+  },
+  {
+    "idx": 232,
+    "gold": "2010_Toronto_International_Film_Festival",
+    "rank": 16,
+    "n_cand": 21,
+    "gold_score": -0.8522,
+    "reading": "Edges:\n- cinematography -> Conrad L. Hall\n- genre -> Existentialism\n- genre -> Satire\n- film format -> Super 35\n- music -> Thomas Newman\n- film <- The Criterion Collection\n- film <- Bruce Cohen\n- film <- Sam Mendes\n- film <- Mena Suvari"
+  },
+  {
+    "idx": 233,
+    "gold": "Rear_Window",
+    "rank": 12,
+    "n_cand": 51,
+    "gold_score": -3.1198,
+    "reading": "Edges:\n- nominated for -> Schindlers List\n- nominated for -> The Kings Speech\n- nominated for -> Whos Afraid of Virginia Woolf?\n- nominated for -> Singin in the Rain\n- nominated for -> All the Presidents Men\n- nominated for -> The Nuns Story\n- nominated for -> Alice Doesnt Live Here Anymore\n- nominated for -> Seven Brides for Seven…\n- nominated for -> Strictly Ballroom"
+  },
+  {
+    "idx": 234,
+    "gold": "Shrek",
+    "rank": 12,
+    "n_cand": 51,
+    "gold_score": -4.1412,
+    "reading": "Edges:\n- nominated for -> The Kings Speech\n- nominated for -> The French Lieutenants Woman\n- nominated for -> Whos Afraid of Virginia Woolf?\n- nominated for -> Singin in the Rain\n- nominated for -> All the Presidents Men\n- nominated for -> The Nuns Story\n- nominated for -> Ryans Daughter\n- nominated for -> Alice Doesnt Live Here Anymore\n- nominated for -> Seven Brides for Seven…"
+  },
+  {
+    "idx": 235,
+    "gold": "The_Remains_of_the_Day",
+    "rank": 11,
+    "n_cand": 51,
+    "gold_score": -1.9215,
+    "reading": "Edges:\n- films -> Schindlers List\n- films -> Slaughterhouse-Five\n- films -> Since You Went Away\n- films -> Red Tails\n- films -> Miracle at St. Anna\n- films -> 1941\n- films -> The Guns of Navarone\n- films -> Enemy at the Gates\n- films -> Shining Through"
+  },
+  {
+    "idx": 236,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0118,
+    "reading": "Edges:\n- profession -> Voice Actor\n- gender -> Male\n- actor <- Kid vs. Kat\n- type of union -> Marriage"
+  },
+  {
+    "idx": 237,
+    "gold": "Horror",
+    "rank": 20,
+    "n_cand": 50,
+    "gold_score": -2.4351,
+    "reading": "Edges:\n- genre -> Whodunit\n- genre -> Detective fiction\n- genre -> Detective-GB\n- genre -> Costume drama\n- genre -> Mystery\n- genre -> Period piece\n- genre -> Drama\n- award winner -> Bob Clark\n- produced by -> Bob Clark\n- nominated for <- Academy of Canadian Cinema…"
+  },
+  {
+    "idx": 238,
+    "gold": "Makeup_Artist-GB",
+    "rank": 1,
+    "n_cand": 39,
+    "gold_score": -0.3716,
+    "reading": "Edges:\n- film crew role -> Animation Director\n- film crew role -> Visual Effects Art Director\n- genre -> Space opera\n- crewmember -> Ben Burtt\n- film crew role -> Special Effects Supervisor\n- film crew role -> Visual Effects Supervisor\n- film crew role -> Sound Mixer\n- featured film locations -> Sydney\n- prequel -> Star Wars Episode I: The…\n- edited by -> Ben Burtt"
+  },
+  {
+    "idx": 239,
+    "gold": "University_of_Arkansas",
+    "rank": 5,
+    "n_cand": 51,
+    "gold_score": -1.0128,
+    "reading": "Edges:\n- institution -> University of Michigan Law…\n- institution -> Boston University School of…\n- institution -> National and Kapodistrian…\n- institution -> University of Pennsylvania…\n- institution -> University of Minnesota Law…\n- institution -> Northwestern University…\n- institution -> Cornell Law School\n- institution -> University of Chicago Law…\n- institution -> Georgetown University Law…"
+  },
+  {
+    "idx": 240,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0015,
+    "reading": "Edges:\n- film -> Wall Street\n- location -> Boston\n- award nominee <- John Larroquette\n- place of birth -> Boston\n- award nominee -> Hal Holbrook\n- award nominee <- Julie Bowen\n- award nominee -> Julie Bowen\n- film -> Lincoln\n- award winner <- 56th Primetime Emmy Awards\n- award winner <- 57th Primetime Emmy Awards\n- award winner <- Cannes Best Actor Award"
+  },
+  {
+    "idx": 241,
+    "gold": "Republic_of_Ireland",
+    "rank": 3,
+    "n_cand": 50,
+    "gold_score": -0.994,
+    "reading": "Edges:\n- film release region -> Cyprus\n- film release region -> Malta\n- film release region -> Shanghai\n- film release region -> Lithuania\n- film release region -> Singapore\n- genre -> Remake\n- production companies -> Spyglass Entertainment\n- film release region -> Portugal\n- film release region -> Hungary"
+  },
+  {
+    "idx": 242,
+    "gold": "Itzhak_Perlman",
+    "rank": 39,
+    "n_cand": 51,
+    "gold_score": -3.3904,
+    "reading": "Edges:\n- person -> Steve Jordan\n- person -> Kelly Clarkson\n- profession <- Jim ORourke\n- specialization of <- Harpsichordist\n- profession <- Deva\n- profession <- Ian James Corlett\n- profession <- James Marsters\n- profession <- Martin Mull\n- profession <- Burn Gorman"
+  },
+  {
+    "idx": 243,
+    "gold": "Special_Effects_Supervisor",
+    "rank": 1,
+    "n_cand": 39,
+    "gold_score": -0.3773,
+    "reading": "Edges:\n- film crew role -> Special Effects\n- film crew role -> Visual Effects Supervisor\n- film festivals -> 2012 Berlin International…\n- film regional debut venue -> Toronto International Film…\n- film release region -> Ireland\n- film release region -> Malta\n- production companies -> Relativity Media\n- film release region -> Kazakhstan\n- film release region -> Kuwait"
+  },
+  {
+    "idx": 244,
+    "gold": "India",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.017,
+    "reading": "Edges:\n- location -> New Delhi\n- place of birth -> Delhi\n- profession -> Comedian\n- gender -> Male\n- profession -> Actor-GB\n- religion -> Hinduism"
+  },
+  {
+    "idx": 245,
+    "gold": "Dominic_Chianese",
+    "rank": 32,
+    "n_cand": 50,
+    "gold_score": -2.5379,
+    "reading": "Edges:\n- award winner -> Sidney Poitier\n- award winner -> Peter Gallagher\n- award winner -> Michael J. Fox\n- award winner -> Thora Birch\n- award winner -> Kelsey Grammer\n- award winner -> Vincent Pastore\n- award winner -> Nancy Marchand\n- award winner -> Mena Suvari\n- award winner -> Tony Sirico"
+  },
+  {
+    "idx": 246,
+    "gold": "Drama",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.6486,
+    "reading": "Edges:\n- genre -> Medical fiction\n- genre -> Medical drama\n- genre -> Black comedy\n- genre -> Comedy-drama\n- genre -> Mystery\n- genre -> Comedy-GB\n- actor -> Kal Penn\n- honored for <- 64th Golden Globe Awards\n- award winner -> FOX"
+  },
+  {
+    "idx": 247,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2,
+    "gold_score": -0.0035,
+    "reading": "Edges:\n- profession -> Television Director\n- film -> Night at the Museum\n- location -> Reading\n- participant <- Jon Stewart\n- profession -> Comedian\n- participant -> Jon Stewart\n- participant <- Stephen Merchant\n- profession -> Author-GB\n- film -> Stardust\n- profession -> Writer-GB"
+  },
+  {
+    "idx": 248,
+    "gold": "Graphic_Designer-GB",
+    "rank": 10,
+    "n_cand": 39,
+    "gold_score": -1.2743,
+    "reading": "Edges:\n- film crew role -> Special Effects Supervisor\n- film crew role -> Visual Effects Supervisor\n- genre -> Slasher\n- genre -> Cult film\n- genre -> Horror\n- genre -> Mystery\n- country -> Canada\n- titles <- Horror\n- film <- Cary Elwes\n- film <- Lionsgate Entertainment"
+  },
+  {
+    "idx": 249,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 40,
+    "gold_score": -0.008,
+    "reading": "Edges:\n- genre -> Chat show-GB\n- actor -> Rob Corddry\n- actor -> Aasif Mandvi\n- program <- Lewis Black\n- award winner -> Comedy Central\n- actor -> John Oliver\n- program <- Rob Corddry\n- program <- Aasif Mandvi\n- program <- Comedy Central\n- program <- John Oliver\n- program <- Rory Albanese\n- genre -> Parody"
+  },
+  {
+    "idx": 250,
+    "gold": "What_Lies_Beneath",
+    "rank": 8,
+    "n_cand": 51,
+    "gold_score": -1.2598,
+    "reading": "Edges:\n- film -> A Midsummer Nights Dream\n- film -> Stardust\n- film -> The Fabulous Baker Boys\n- film -> The Witches of Eastwick\n- film -> Dangerous Liaisons\n- film -> Dark Shadows\n- spouse <- Peter Horton\n- participant <- Fisher Stevens\n- place of birth -> Santa Ana\n- spouse -> Peter Horton"
+  },
+  {
+    "idx": 251,
+    "gold": "Sound_Mixer",
+    "rank": 2,
+    "n_cand": 39,
+    "gold_score": -0.3467,
+    "reading": "Edges:\n- film crew role -> Set Dresser\n- film crew role -> Visual Effects\n- production companies -> Happy Madison Productions\n- executive produced by -> Allen Covert\n- genre -> Buddy film\n- production companies -> Relativity Media\n- nominated for <- Rob Schneider\n- film release region -> Japan\n- film <- Maria Bello\n- film <- Rob Schneider"
+  },
+  {
+    "idx": 252,
+    "gold": "Four_Weddings_and_a_Funeral",
+    "rank": 11,
+    "n_cand": 51,
+    "gold_score": -1.9278,
+    "reading": "Edges:\n- nominated for -> One Flew Over the Cuckoos Nest\n- nominated for -> The French Lieutenants Woman\n- nominated for -> Pat Garrett and Billy the Kid\n- nominated for -> Cyrano de Bergerac\n- nominated for -> Il Postino: The Postman\n- nominated for -> Flashdance\n- nominated for -> The Spy Who Loved Me\n- nominated for -> Cinema Paradiso\n- nominated for -> Cry Freedom"
+  },
+  {
+    "idx": 253,
+    "gold": "Economics",
+    "rank": 2,
+    "n_cand": 50,
+    "gold_score": -0.848,
+    "reading": "Edges:\n- major field of study -> Medicine\n- major field of study -> Philosophy\n- student -> Leo Strauss\n- educational institution -> University of Hamburg\n- campuses -> University of Hamburg\n- currency -> Euro\n- institution <- Master of Arts\n- institution <- Doctorate\n- institution <- Bachelor of Arts\n- organization <- President"
+  },
+  {
+    "idx": 255,
+    "gold": "Germany",
+    "rank": 3,
+    "n_cand": 50,
+    "gold_score": -0.9682,
+    "reading": "Edges:\n- country -> United States of America\n- music -> Brian Tyler\n- produced by -> Avi Lerner\n- production companies -> Revolution Studios\n- production companies -> Relativity Media\n- production companies -> Lionsgate Entertainment\n- executive produced by -> Boaz Davidson\n- written by -> Sylvester Stallone\n- production companies -> United Artists"
+  },
+  {
+    "idx": 256,
+    "gold": "Independent_Spirit_Award_for_Best_First_Screenplay",
+    "rank": 49,
+    "n_cand": 51,
+    "gold_score": -1.6147,
+    "reading": "Edges:\n- award -> MTV Movie Award for Best…\n- award -> Tony Award for Best Actor in…\n- award nominee <- Josh Charles\n- award -> Primetime Emmy Award for…\n- award -> Primetime Emmy Award for…\n- award nominee -> Mira Sorvino\n- award nominee <- Mira Sorvino\n- award nominee <- Chris Noth\n- award nominee -> Chris Noth\n- award winner <- Tony Award for Best Actor in…\n- award nominee -> Lisa Kudrow\n- award nominee <- Lisa Kudrow"
+  },
+  {
+    "idx": 257,
+    "gold": "Craig_Robinson",
+    "rank": 34,
+    "n_cand": 51,
+    "gold_score": -2.9141,
+    "reading": "Edges:\n- student -> Sean Hayes\n- student -> Cloris Leachman\n- student -> John Malkovich\n- student -> Gary Sinise\n- educational institution -> Illinois State University\n- campuses -> Illinois State University\n- major field of study -> Theatre\n- fraternities and sororities -> Alpha Sigma Phi\n- school type -> Public university\n- fraternities and sororities -> Alpha Delta Pi\n- institution <- Bachelor of Science"
+  },
+  {
+    "idx": 258,
+    "gold": "Slovenia",
+    "rank": 10,
+    "n_cand": 50,
+    "gold_score": -2.887,
+    "reading": "Edges:\n- country -> Bangladesh\n- country -> Guatemala\n- country -> Tunisia\n- country -> Puerto Rico\n- country -> North Korea\n- country -> Latvia\n- country -> Belarus\n- country -> Soviet Union\n- country -> Venezuela"
+  },
+  {
+    "idx": 259,
+    "gold": "Boston_Red_Sox",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -1.0099,
+    "reading": "Edges:\n- team -> Tohoku Rakuten Golden Eagles\n- team -> Yomiuri Giants\n- team -> Fukuoka SoftBank Hawks\n- team -> Hiroshima Toyo Carp\n- team -> Chiba Lotte Marines\n- team -> Arizona Diamondbacks\n- team -> Houston Astros\n- team -> Atlanta Braves\n- team -> Colorado Rockies"
+  },
+  {
+    "idx": 260,
+    "gold": "Murphy_Brown",
+    "rank": 24,
+    "n_cand": 51,
+    "gold_score": -2.239,
+    "reading": "Edges:\n- award nominee <- Shirley Henderson\n- award nominee -> Shirley Henderson\n- award nominee <- Allison Janney\n- award nominee <- Michael Lerner\n- award nominee -> Michael Lerner\n- award nominee <- Michael K. Williams\n- award nominee -> Michael K. Williams\n- award winner <- Grammy Award for Best Spoken…\n- award -> Primetime Emmy Award for…\n- location -> Sarasota\n- award winner <- 46th Annual Grammy Awards"
+  },
+  {
+    "idx": 261,
+    "gold": "William_Goldman",
+    "rank": 27,
+    "n_cand": 51,
+    "gold_score": -2.5813,
+    "reading": "Edges:\n- student -> James Burrows\n- educational institution -> Oberlin College\n- major field of study -> Government\n- major field of study -> Art history\n- major field of study -> Biology\n- major field of study -> Sociology\n- major field of study -> Philosophy\n- colors -> Cardinal\n- institution <- Bachelors degree\n- institution <- Master of Arts"
+  },
+  {
+    "idx": 262,
+    "gold": "Actor-GB",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.0487,
+    "reading": "Edges:\n- film -> The Singing Detective\n- location -> Norfolk\n- film -> Gosford Park\n- award winner <- James Wilby\n- award winner -> James Wilby\n- award winner <- Sophie Thompson\n- award winner -> Sophie Thompson\n- award winner <- Alan Bates\n- award winner -> Alan Bates\n- actor <- The Tudors-GB\n- award winner <- 7th Critics Choice Awards"
+  },
+  {
+    "idx": 263,
+    "gold": "British_Raj",
+    "rank": 13,
+    "n_cand": 51,
+    "gold_score": -2.5171,
+    "reading": "Edges:\n- entity involved <- American Revolutionary War\n- student <- Clare College, Cambridge\n- title -> Governor-General\n- nationality -> Kingdom of Great Britain\n- type of union -> Marriage"
+  },
+  {
+    "idx": 264,
+    "gold": "1984_Winter_Olympics",
+    "rank": 5,
+    "n_cand": 43,
+    "gold_score": -0.5016,
+    "reading": "Edges:\n- olympics -> 1968 Winter Olympics\n- olympics -> 1972 Winter Olympics\n- olympics -> 1976 Winter Olympics\n- olympics -> 1904 Summer Olympics\n- olympics -> 1992 Winter Olympics\n- olympics -> 1932 Summer Olympics\n- olympics -> 1948 Winter Olympics\n- country <- Paris, je taime\n- country <- The Worlds Fastest Indian"
+  },
+  {
+    "idx": 265,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.004,
+    "reading": "Edges:\n- influenced by <- Henri Bergson\n- profession -> Psychologist-GB\n- influenced by <- Gertrude Stein\n- influenced by <- Richard Rorty\n- influenced by <- Edmund Husserl\n- influenced by <- John Dewey\n- sibling -> Henry James\n- sibling <- Henry James\n- influenced by -> Ralph Waldo Emerson\n- profession -> Professor-GB"
+  },
+  {
+    "idx": 266,
+    "gold": "Missouri",
+    "rank": 7,
+    "n_cand": 50,
+    "gold_score": -1.7605,
+    "reading": "Edges:\n- district represented -> Delaware\n- district represented -> Rhode Island\n- district represented -> Maine\n- district represented -> Mississippi\n- district represented -> New Hampshire\n- district represented -> Indiana\n- district represented -> North Carolina\n- district represented -> Michigan\n- district represented -> Connecticut"
+  },
+  {
+    "idx": 267,
+    "gold": "Portugal",
+    "rank": 12,
+    "n_cand": 50,
+    "gold_score": -2.108,
+    "reading": "Edges:\n- film regional debut venue -> 2011 Sundance Film Festival\n- film festivals -> 2011 Sundance Film Festival\n- film regional debut venue -> 2011 Berlin International…\n- film festivals -> 2011 Berlin International…\n- film release region -> Croatia\n- film release region -> South Korea\n- film release region -> Austria\n- film release region -> Hong Kong\n- film release region -> Belgium\n- film release region -> Poland\n- film release region -> Netherlands"
+  },
+  {
+    "idx": 269,
+    "gold": "Argentina",
+    "rank": 18,
+    "n_cand": 50,
+    "gold_score": -2.5875,
+    "reading": "Edges:\n- language -> Czech Language\n- films <- Terrorism\n- film release region -> Czech Republic\n- produced by -> Stephen Woolley\n- film release region -> Hungary\n- film release region -> Sweden\n- film release region -> Spain\n- film release region -> Netherlands\n- film release region -> Australia"
+  },
+  {
+    "idx": 270,
+    "gold": "Fremont",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -2.4361,
+    "reading": "Edges:\n- contains -> Saint Marys College of…\n- partially contains -> Sierra Nevada\n- contains -> Mendocino County\n- contains -> Humboldt County\n- contains -> Thousand Oaks\n- contains -> Imperial County\n- contains -> El Dorado County\n- contains -> Disneyland\n- contains -> Redding"
+  },
+  {
+    "idx": 271,
+    "gold": "Art_Director",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -0.8436,
+    "reading": "Edges:\n- profession -> Production Designer\n- profession -> Costume Designer-GB\n- award -> Tony Award for Best Costume…\n- spouse -> Julie Andrews\n- nominated for -> All That Jazz\n- award winner <- Academy Award for Best…\n- nominated for -> Murder on the Orient Express\n- costume design by <- Equus\n- award -> Academy Award for Best…\n- nationality -> England\n- costume design for <- Equus"
+  },
+  {
+    "idx": 272,
+    "gold": "United_Kingdom",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.7273,
+    "reading": "Edges:\n- film release region -> Venezuela\n- films <- Dog\n- film release region -> Indonesia\n- film release region -> Slovakia\n- film release region -> Egypt\n- film release region -> Kazakhstan\n- film release region -> Croatia\n- film release region -> Thailand\n- film release region -> Lithuania"
+  },
+  {
+    "idx": 273,
+    "gold": "The_Flaming_Lips",
+    "rank": 6,
+    "n_cand": 51,
+    "gold_score": -1.8165,
+    "reading": "Edges:\n- artists -> The Damned\n- artists -> The Fall\n- artists -> The Cult\n- artists -> AFI\n- artists -> The Cure\n- artists -> Siouxsie & the Banshees\n- artists -> Devo\n- artists -> New Order\n- artists -> Nick Cave and the Bad Seeds"
+  },
+  {
+    "idx": 274,
+    "gold": "Public_university",
+    "rank": 1,
+    "n_cand": 24,
+    "gold_score": -0.0275,
+    "reading": "Edges:\n- child -> Queens College, City…\n- major field of study -> Chemical Engineering\n- educational institution -> City University of New York\n- major field of study -> Physics\n- major field of study -> English Language\n- campuses -> City University of New York\n- institution <- Bachelors degree\n- institution <- Masters Degree\n- category -> Official Website\n- citytown -> New York City\n- organization <- Chancellor"
+  },
+  {
+    "idx": 275,
+    "gold": "Lausanne",
+    "rank": 15,
+    "n_cand": 51,
+    "gold_score": -2.0876,
+    "reading": "Edges:\n- location -> Huddersfield\n- film -> Murder by Decree\n- film -> The Verdict\n- film -> Heaven Can Wait\n- film -> A Star Is Born\n- award winner <- London Film Critics Circle…\n- award -> Academy Award for Best Actor…\n- actor <- Jesus of Nazareth\n- nominated for -> The Verdict\n- nominated for -> A Star Is Born\n- nationality -> United Kingdom\n- award winner <- A Star Is Born"
+  },
+  {
+    "idx": 276,
+    "gold": "Computer_Science",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.5956,
+    "reading": "Edges:\n- major field of study -> Internal medicine\n- major field of study -> Public health\n- major field of study -> Astronomy\n- major field of study -> Chinese language\n- major field of study -> Architecture\n- major field of study -> Marketing-GB\n- major field of study -> Chemical Engineering\n- institution <- Bachelors degree\n- institution <- Masters Degree"
+  },
+  {
+    "idx": 277,
+    "gold": "President",
+    "rank": 6,
+    "n_cand": 18,
+    "gold_score": -1.6961,
+    "reading": "Edges:\n- basic title -> Member of Congress\n- profession -> Farmer-GB\n- profession -> Judge-GB\n- organization -> Freemasonry\n- jurisdiction of office -> Florida\n- religion -> Presbyterianism\n- profession -> Politician-GB\n- legislative sessions -> 19th United States Congress\n- legislative sessions -> 18th United States Congress"
+  },
+  {
+    "idx": 278,
+    "gold": "Hoboken",
+    "rank": 15,
+    "n_cand": 51,
+    "gold_score": -2.1742,
+    "reading": "Edges:\n- location -> Connecticut\n- film -> Percy Jackson & the…\n- film -> Cats & Dogs\n- film -> Daredevil\n- film -> The Fugitive\n- film -> The Goonies\n- film -> Congo\n- film -> Memento\n- award nominee <- Drea de Matteo\n- award nominee -> Drea de Matteo"
+  },
+  {
+    "idx": 279,
+    "gold": "Casino_Royale",
+    "rank": 26,
+    "n_cand": 51,
+    "gold_score": -2.5579,
+    "reading": "Edges:\n- award nominee <- David Arnold\n- award winner <- David Arnold\n- award winner -> David Arnold\n- award -> Grammy Award for Best Rock…\n- award -> Satellite Award for Best…\n- group -> Soundgarden\n- place of birth -> Seattle\n- award winner <- 11th Satellite Awards\n- artist <- SST Records\n- profession -> Guitarist-GB\n- artist <- A&M Records"
+  },
+  {
+    "idx": 280,
+    "gold": "Psychology",
+    "rank": 22,
+    "n_cand": 50,
+    "gold_score": -3.0314,
+    "reading": "Edges:\n- major field of study <- School of Visual Arts\n- major field of study <- University of New Mexico\n- major field of study <- University of California,…\n- major field of study <- English Studies\n- major field of study <- Film\n- major field of study <- Bachelor of Fine Arts\n- major field of study <- Master of Fine Arts\n- major field of study <- University of Michigan\n- major field of study <- Bachelor of Arts"
+  },
+  {
+    "idx": 281,
+    "gold": "Gabriel_Yared",
+    "rank": 51,
+    "n_cand": 51,
+    "gold_score": -4.5742,
+    "reading": "Edges:\n- genre -> Thriller\n- film <- Alliance Films\n- written by -> Anthony Minghella\n- produced by -> Sydney Pollack\n- nominated for <- Juliette Binoche\n- film <- Vera Farmiga\n- produced by -> Anthony Minghella\n- film <- Martin Freeman\n- executive produced by -> Bob Weinstein\n- nominated for <- British Independent Film…"
+  },
+  {
+    "idx": 282,
+    "gold": "Mrs._Parker_and_the_Vicious_Circle",
+    "rank": 32,
+    "n_cand": 51,
+    "gold_score": -2.4107,
+    "reading": "Edges:\n- nominated for -> The Opposite of Sex\n- nominated for -> Shattered Glass\n- nominated for -> Adventureland\n- nominated for -> You Can Count on Me\n- nominated for -> The Savages\n- nominated for -> The Painted Veil\n- nominated for -> Dead Man\n- nominated for -> Drugstore Cowboy\n- nominated for -> The Believer"
+  },
+  {
+    "idx": 283,
+    "gold": "DVD",
+    "rank": 1,
+    "n_cand": 5,
+    "gold_score": -0.0526,
+    "reading": "Edges:\n- actor -> Chris Patton\n- actor -> John Swasey\n- actor -> Luci Christian\n- genre -> Animation\n- film <- Miyuki Sawashiro\n- genre -> Science Fiction\n- genre -> Action Film\n- film <- Warner Home Video\n- film <- Seiyū-GB"
+  },
+  {
+    "idx": 284,
+    "gold": "Lindy_Hemming",
+    "rank": 9,
+    "n_cand": 27,
+    "gold_score": -3.0099,
+    "reading": "Edges:\n- written by -> Christopher Nolan\n- story by -> Christopher Nolan\n- production companies -> DC Comics\n- film format -> IMAX\n- produced by -> Christopher Nolan\n- prequel -> The Dark Knight\n- music -> Hans Zimmer\n- nominated for <- Tom Hardy\n- nominated for <- Screen Actors Guild Award for…\n- nominated for <- Japan Academy Prize for…\n- nominated for <- Marion Cotillard"
+  },
+  {
+    "idx": 285,
+    "gold": "Baritone",
+    "rank": 8,
+    "n_cand": 51,
+    "gold_score": -3.9159,
+    "reading": "Edges:\n- role <- Bill Bruford\n- role <- Yann Tiersen\n- role <- Bill Wyman\n- role <- Mike Mogis\n- role <- Mick Harvey\n- role <- PJ Harvey\n- role <- Isaac Hayes\n- role <- Musical saw\n- role <- Toy piano\n- role -> Toy piano"
+  },
+  {
+    "idx": 286,
+    "gold": "United_Church_of_Christ",
+    "rank": 7,
+    "n_cand": 50,
+    "gold_score": -1.2736,
+    "reading": "Edges:\n- religion -> Evangelicalism\n- religion -> Mormonism\n- religion -> Churches of Christ\n- religion -> Pentecostalism\n- religion -> Protestantism\n- religion -> Buddhism\n- religion -> Lutheranism\n- religion -> Methodism\n- religion -> Catholicism"
+  },
+  {
+    "idx": 287,
+    "gold": "Parliamentary_system",
+    "rank": 2,
+    "n_cand": 6,
+    "gold_score": -0.7048,
+    "reading": "Edges:\n- capital -> Baghdad\n- combatants <- Yom Kippur War\n- combatants <- Six-Day War\n- combatants <- 2003 invasion of Iraq\n- combatants <- Gulf War\n- contains -> Baghdad\n- official language -> Arabic Language\n- administrative area type -> Sovereign state\n- teams -> Iraq national football team\n- organization -> World Bank"
+  },
+  {
+    "idx": 288,
+    "gold": "United_Church_of_Christ",
+    "rank": 6,
+    "n_cand": 50,
+    "gold_score": -1.1103,
+    "reading": "Edges:\n- religion -> Mormonism\n- religion -> Churches of Christ\n- religion -> Nondenominational Christianity\n- religion -> Presbyterianism\n- religion -> Lutheranism\n- religion -> Baptists\n- religion -> Judaism-GB\n- contains -> Grove Street Cemetery\n- location <- Eugene ONeill"
+  },
+  {
+    "idx": 289,
+    "gold": "Singapore",
+    "rank": 11,
+    "n_cand": 50,
+    "gold_score": -2.623,
+    "reading": "Edges:\n- film release region -> Yugoslavia\n- film release region -> Luxembourg\n- genre -> Neo-noir\n- film release region -> Uruguay\n- film release region -> Slovenia\n- film release region -> Israel\n- film release region -> South Korea\n- film release region -> Portugal\n- film release region -> New Zealand"
+  },
+  {
+    "idx": 290,
+    "gold": "Kinsey",
+    "rank": 37,
+    "n_cand": 51,
+    "gold_score": -3.2788,
+    "reading": "Edges:\n- film -> Charlies Angels\n- film -> It\n- film -> Scary Movie 2\n- film -> The Colour of Magic\n- film -> Oscar\n- film -> Annie\n- film -> Congo\n- location -> Bath\n- nominated for -> Congo\n- location -> Cheshire"
+  },
+  {
+    "idx": 291,
+    "gold": "Hot_Springs",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -1.326,
+    "reading": "Edges:\n- contains -> Fort Smith\n- contains -> Pulaski County\n- contains -> University of Arkansas\n- contains <- Contiguous United States\n- contains <- Oklahoma\n- adjoins <- Oklahoma\n- administrative parent <- Pulaski County\n- contains <- United States of America\n- partially contains -> Mississippi River\n- religion -> Churches of Christ"
+  },
+  {
+    "idx": 292,
+    "gold": "Engineering-GB",
+    "rank": 27,
+    "n_cand": 50,
+    "gold_score": -3.2759,
+    "reading": "Edges:\n- major field of study -> Astronomy\n- major field of study -> Applied mathematics\n- major field of study -> Biochemistry\n- major field of study -> International relations\n- institution <- Masters Degree\n- major field of study -> English Literature\n- major field of study -> Law\n- major field of study -> Physics\n- institution <- Bachelors degree"
+  },
+  {
+    "idx": 293,
+    "gold": "Primetime_Emmy_Award_for_Outstanding_Supporting_Actor_-_Comedy_Series",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -0.2621,
+    "reading": "Edges:\n- award -> Primetime Emmy Award for…\n- film -> Mickeys Magical Christmas:…\n- location -> Eugene\n- film -> Lilo & Stitch\n- film -> The Hunchback of Notre Dame\n- location -> Urbana\n- profession -> Conductor\n- actor <- Stargate Atlantis\n- film -> Everyone Says I Love You"
+  },
+  {
+    "idx": 294,
+    "gold": "Black_comedy",
+    "rank": 7,
+    "n_cand": 50,
+    "gold_score": -1.3654,
+    "reading": "Edges:\n- music -> Marc Shaiman\n- genre -> Comedy-GB\n- award -> Razzie Award for Worst…\n- produced by -> Scott Rudin\n- nominated for <- Theoni AlArdige\n- film <- Joan Cusack\n- film <- Christina Ricci\n- film <- Tony Shalhoub\n- film <- Barry Sonnenfeld"
+  },
+  {
+    "idx": 295,
+    "gold": "New_York_City",
+    "rank": 1,
+    "n_cand": 50,
+    "gold_score": -0.3145,
+    "reading": "Edges:\n- location -> Greenwich Village\n- location -> Venice\n- location -> Manhattan\n- location -> California\n- film -> Kiss Kiss Bang Bang\n- film -> The Soloist\n- film -> Zodiac\n- film -> The Incredible Hulk\n- film -> Wonder Boys"
+  },
+  {
+    "idx": 296,
+    "gold": "National_Board_of_Review_Award_for_Best_Cast",
+    "rank": 47,
+    "n_cand": 51,
+    "gold_score": -1.6896,
+    "reading": "Edges:\n- award -> Broadcast Film Critics…\n- award -> Broadcast Film Critics…\n- award -> Broadcast Film Critics…\n- honored for <- 38th Peoples Choice Awards\n- award -> Screen Actors Guild Award for…\n- award -> Screen Actors Guild Award for…\n- award -> BAFTA Award for Best Actress…\n- nominated for <- Chris Columbus\n- award winner -> Octavia Spencer\n- award winner -> Cicely Tyson\n- award winner -> Emma Stone"
+  }
+]

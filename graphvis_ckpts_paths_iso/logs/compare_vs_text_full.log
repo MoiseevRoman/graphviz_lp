@@ -1,0 +1,32 @@
+[protocol] rank
+[ok]   text_paths: image_mode=blank, n=971
+[ok]   visual_paths: image_mode=real, n=971
+[ok]   both_paths_iso: image_mode=real, n=971
+[ok]   text_paths_iso: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+text_paths   971   0.4040   30.28   42.43   59.63
+visual_paths   971   0.3667   25.03   39.24   60.25
+both_paths_iso   971   0.3849   28.42   40.78   57.78
+text_paths_iso   971   0.3819   28.12   39.96   57.47
+
+=== visual_paths vs text_paths (парных 971) ===
+  ΔMRR = -0.0373  95% CI [-0.0547, -0.0196]  ЗНАЧИМО
+  McNemar H@1 : visual_paths-win= 45 text_paths-win= 96 z= 4.21 p=2.545e-05 значимо
+  McNemar H@3 : visual_paths-win= 51 text_paths-win= 82 z= 2.60 p=0.009286 значимо
+  McNemar H@10: visual_paths-win= 65 text_paths-win= 59 z= 0.45 p=0.6534 н/з
+
+=== both_paths_iso vs text_paths (парных 971) ===
+  ΔMRR = -0.0191  95% CI [-0.0305, -0.0079]  ЗНАЧИМО
+  McNemar H@1 : both_paths_iso-win= 29 text_paths-win= 47 z= 1.95 p=0.05117 н/з
+  McNemar H@3 : both_paths_iso-win= 19 text_paths-win= 35 z= 2.04 p=0.04123 значимо
+  McNemar H@10: both_paths_iso-win= 19 text_paths-win= 37 z= 2.27 p=0.0231 значимо
+
+=== text_paths_iso vs text_paths (парных 971) ===
+  ΔMRR = -0.0221  95% CI [-0.0336, -0.0110]  ЗНАЧИМО
+  McNemar H@1 : text_paths_iso-win= 24 text_paths-win= 45 z= 2.41 p=0.01605 значимо
+  McNemar H@3 : text_paths_iso-win= 14 text_paths-win= 38 z= 3.19 p=0.001425 значимо
+  McNemar H@10: text_paths_iso-win= 19 text_paths-win= 40 z= 2.60 p=0.00922 значимо
+
+Сохранено: graphvis_ckpts_paths_iso\compare_vs_text_full.json

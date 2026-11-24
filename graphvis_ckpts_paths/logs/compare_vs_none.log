@@ -1,0 +1,40 @@
+[protocol] rank
+[ok]   none: image_mode=blank, n=971
+[ok]   text_cn: image_mode=blank, n=971
+[ok]   text_paths: image_mode=blank, n=971
+[ok]   visual_paths: image_mode=real, n=971
+[ok]   both_paths: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+none       971   0.3859   28.22   40.78   59.32
+text_cn    971   0.4499   34.60   47.79   65.09
+text_paths   971   0.4543   34.91   48.20   65.81
+visual_paths   971   0.4396   32.85   47.79   66.74
+both_paths   971   0.4580   35.43   48.71   65.91
+
+=== text_cn vs none (парных 971) ===
+  ΔMRR = +0.0640  95% CI [+0.0432, +0.0846]  ЗНАЧИМО
+  McNemar H@1 : text_cn-win=115 none-win= 53 z= 4.71 p=2.523e-06 значимо
+  McNemar H@3 : text_cn-win=119 none-win= 51 z= 5.14 p=2.767e-07 значимо
+  McNemar H@10: text_cn-win=110 none-win= 54 z= 4.29 p=1.749e-05 значимо
+
+=== text_paths vs none (парных 971) ===
+  ΔMRR = +0.0684  95% CI [+0.0472, +0.0903]  ЗНАЧИМО
+  McNemar H@1 : text_paths-win=121 none-win= 56 z= 4.81 p=1.505e-06 значимо
+  McNemar H@3 : text_paths-win=124 none-win= 52 z= 5.35 p=8.707e-08 значимо
+  McNemar H@10: text_paths-win=118 none-win= 55 z= 4.71 p=2.432e-06 значимо
+
+=== visual_paths vs none (парных 971) ===
+  ΔMRR = +0.0537  95% CI [+0.0343, +0.0737]  ЗНАЧИМО
+  McNemar H@1 : visual_paths-win= 97 none-win= 52 z= 3.60 p=0.0003126 значимо
+  McNemar H@3 : visual_paths-win=116 none-win= 48 z= 5.23 p=1.678e-07 значимо
+  McNemar H@10: visual_paths-win=113 none-win= 41 z= 5.72 p=1.057e-08 значимо
+
+=== both_paths vs none (парных 971) ===
+  ΔMRR = +0.0720  95% CI [+0.0509, +0.0933]  ЗНАЧИМО
+  McNemar H@1 : both_paths-win=122 none-win= 52 z= 5.23 p=1.687e-07 значимо
+  McNemar H@3 : both_paths-win=125 none-win= 48 z= 5.78 p=7.552e-09 значимо
+  McNemar H@10: both_paths-win=117 none-win= 53 z= 4.83 p=1.353e-06 значимо
+
+Сохранено: graphvis_ckpts_paths\compare_vs_none.json

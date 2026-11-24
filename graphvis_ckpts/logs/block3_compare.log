@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\compare_conditions.py", line 14, in <module>
+    import argparse
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\argparse.py", line 92, in <module>
+    import warnings
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 990, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1086, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1185, in get_data
+KeyboardInterrupt
+^C

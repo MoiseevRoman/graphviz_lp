@@ -1,0 +1,12 @@
+Saving the dataset (0/1 shards):   0%|          | 0/7497 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 7497/7497 [00:00<00:00, 1091223.52 examples/s]Saving the dataset (1/1 shards): 100%|##########| 7497/7497 [00:00<00:00, 1091223.52 examples/s]
+Графов обработано: 2500  (пустых neighbors_text: 1)
+Примеров stage1:   7497
+По задачам:        {'node_count': 2499, 'node_listing': 2499, 'triple_listing': 2499}
+Задачи:            ['node_count', 'node_listing', 'triple_listing']  degree_samples=0
+Сохранено:         graphvis_ckpts_s1\k16\stage1_drawn
+Exception ignored in: <function ResourceTracker.__del__ at 0x00000286AAFB07C0>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

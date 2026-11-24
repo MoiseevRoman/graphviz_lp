@@ -1,0 +1,16 @@
+[protocol] rank
+[ok]   visual: image_mode=real, n=971
+[ok]   visual_vbf16: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+visual     971   0.3800   26.88   40.78   59.63
+visual_vbf16   971   0.3783   26.47   41.09   59.94
+
+=== visual_vbf16 vs visual (парных 971) ===
+  ΔMRR = -0.0017  95% CI [-0.0110, +0.0077]  не значимо
+  McNemar H@1 : visual_vbf16-win= 23 visual-win= 27 z= 0.42 p=0.6714 н/з
+  McNemar H@3 : visual_vbf16-win= 28 visual-win= 25 z= 0.27 p=0.7835 н/з
+  McNemar H@10: visual_vbf16-win= 27 visual-win= 24 z= 0.28 p=0.7794 н/з
+
+Сохранено: graphvis_ckpts_scaling_vbf16\k1\compare_vs_nf4.json

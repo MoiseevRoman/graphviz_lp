@@ -100,12 +100,45 @@ def parse_edges(neighbors_text: str):
     return edges
 
 
-def gen_examples(row, rng: random.Random, tasks: set, degree_k: int = 3):
+def _drawn(head, qrel, real_edges):
+    """Эталон = ровно нарисованное: тот же отбор узлов, что в рендере
+    (compute_visible_subgraph: первые max_nodes_display), и подписи через
+    format_label (обрезка, '_' → ' '). Без этого при K=16 stage1 учил бы
+    «читать» соседей, которых на картинке нет, и сырые имена с '_'.
+    Структура (счёт узлов, степени) — по СЫРЫМ именам: два узла с одинаковой
+    обрезанной подписью на картинке — два разных бокса. Возвращает видимые
+    рёбра (сырые имена) и функцию подписи."""
+    import sys as _sys
+    _root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    if _root not in _sys.path:
+        _sys.path.insert(0, _root)
+    from config import VisualizationConfig
+    from visualizer import compute_visible_subgraph, format_label
+
+    order = []
+    for n in [head] + [x for e in real_edges for x in (e["source"], e["target"])]:
+        if n not in order:
+            order.append(n)
+    vcfg = VisualizationConfig()
+    sg = {"head": head, "rel": qrel, "nodes": [{"name": n} for n in order],
+          "edges": real_edges}
+    _, vis = compute_visible_subgraph(sg, vcfg)
+    L = vcfg.max_label_len
+    return [dict(e) for e in vis], (lambda x: x if x == _QUESTION_NODE else format_label(x, L))
+
+
+def gen_examples(row, rng: random.Random, tasks: set, degree_k: int = 3,
+                 drawn: bool = False):
     head = row["head"]
     qrel = row["relation"]                       # отношение запроса → подпись на head→[?]
     real_edges = parse_edges(row["neighbors_text"])
     if not real_edges:
         return []
+    lab = lambda x: x                            # noqa: E731
+    if drawn:
+        real_edges, lab = _drawn(head, qrel, real_edges)
+        if not real_edges:
+            return []
 
     # Множество нарисованных узлов: head первым, затем по первому появлению.
     seen, real_nodes = set(), []
@@ -148,14 +181,15 @@ def gen_examples(row, rng: random.Random, tasks: set, degree_k: int = 3):
     if "node_degree" in tasks and degree_k > 0:
         pool = [n for n in visual_nodes if n in deg]
         for node in rng.sample(pool, min(degree_k, len(pool))):
-            _add("node_degree", str(deg[node]), prompt=_q("node_degree").format(node=node))
+            _add("node_degree", str(deg[node]), prompt=_q("node_degree").format(node=lab(node)))
 
     if deg:
-        _add("highest_degree", max(deg, key=deg.get))
+        _add("highest_degree", lab(max(deg, key=deg.get)))
 
-    _add("node_listing", ", ".join(visual_nodes))
+    _add("node_listing", ", ".join(lab(n) for n in visual_nodes))
     _add("triple_listing",
-         "; ".join(f"({e['source']}, {e['relation']}, {e['target']})" for e in visual_edges))
+         "; ".join(f"({lab(e['source'])}, {lab(e['relation'])}, {lab(e['target'])})"
+                   for e in visual_edges))
     return out
 
 
@@ -182,6 +216,9 @@ def main():
     ap.add_argument("--degree_samples", type=int, default=3,
                     help="сколько вопросов node_degree на граф (0 = выкл; было 3 — избыточно)")
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--drawn", action="store_true",
+                    help="эталон = НАРИСОВАННОЕ (лимит узлов рендера + подписи format_label). "
+                         "Обязательно при K > 13: иначе в ответах соседи, которых нет на картинке")
     args = ap.parse_args()
 
     tasks = {t.strip() for t in args.tasks.split(",") if t.strip()}
@@ -201,7 +238,7 @@ def main():
 
     rows, empty = [], 0
     for i in idx:
-        ex = gen_examples(ds[i], rng, tasks, args.degree_samples)
+        ex = gen_examples(ds[i], rng, tasks, args.degree_samples, drawn=args.drawn)
         if not ex:
             empty += 1
         rows.extend(ex)

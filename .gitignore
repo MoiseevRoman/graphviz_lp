@@ -1,14 +1,13 @@
 # data / checkpoints / heavy artifacts (not source)
 FB15k-237/
-graphvis_ckpts/
-graphvis_ckpts_scaling/
-graphvis_ckpts_scaling_aug/
-graphvis_ckpts_scaling_common/
 graphvis_fb15k_data/
 graphvis_fb15k_data_hybrid4_672/
 graphvis_fb15k_data_hybrid8_672/
 graphvis_scaling/
 graphvis_scaling_aug/
+graphvis_scaling_trainsize/
+graphvis_paths/
+_archive/
 tmp/
 paper/*.pdf
 
@@ -20,3 +19,17 @@ __pycache__/
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 .secondstack/
+graphvis_paths_iso/
+
+# checkpoint folders: keep results (json/logs), drop weights, optimizer states, images, arrow data
+*.safetensors
+*.pt
+*.bin
+*.arrow
+*.png
+!paper/**/*.png
+!graphvis_rel_preview.png
+**/checkpoint-*/
+**/adapter*/tokenizer.json
+**/adapter*/vocab.json
+**/adapter*/merges.txt

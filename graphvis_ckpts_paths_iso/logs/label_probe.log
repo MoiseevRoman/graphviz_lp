@@ -1,0 +1,23 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.08s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.73s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.79s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+[nf4] vision Linear in 4-bit: 162/162
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[nf4/base] {"recall_exact_%": 73.8, "recall_fuzzy_%": 75.0, "precision_%": 98.6, "mean_lines": 14.1, "mean_visual_tokens": 400, "sec": 207}
+[nf4/font] {"recall_exact_%": 70.8, "recall_fuzzy_%": 71.6, "precision_%": 98.3, "mean_lines": 14.1, "mean_visual_tokens": 400, "sec": 217}
+[nf4/hires] {"recall_exact_%": 61.4, "recall_fuzzy_%": 64.2, "precision_%": 98.7, "mean_lines": 11.7, "mean_visual_tokens": 1600, "sec": 209}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.68s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.66s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.67s/it]
+[vision_bf16] vision Linear in 4-bit: 0/162
+[vision_bf16/base] {"recall_exact_%": 76.7, "recall_fuzzy_%": 77.9, "precision_%": 98.8, "mean_lines": 14.7, "mean_visual_tokens": 400, "sec": 215}
+[vision_bf16/font] {"recall_exact_%": 68.6, "recall_fuzzy_%": 69.6, "precision_%": 98.7, "mean_lines": 12.9, "mean_visual_tokens": 400, "sec": 196}
+[vision_bf16/hires] {"recall_exact_%": 61.4, "recall_fuzzy_%": 65.3, "precision_%": 98.7, "mean_lines": 11.8, "mean_visual_tokens": 1600, "sec": 213}
+
+=== label reading (20 candidate names per image, 60 images) ===
+quant/render             vis.tok  exact%  fuzzy%  prec%  lines
+nf4/base                     400    73.8    75.0   98.6   14.1
+nf4/font                     400    70.8    71.6   98.3   14.1
+nf4/hires                   1600    61.4    64.2   98.7   11.7
+vision_bf16/base             400    76.7    77.9   98.8   14.7
+vision_bf16/font             400    68.6    69.6   98.7   12.9
+vision_bf16/hires           1600    61.4    65.3   98.7   11.8
+saved: graphvis_ckpts_paths_iso\label_probe.json

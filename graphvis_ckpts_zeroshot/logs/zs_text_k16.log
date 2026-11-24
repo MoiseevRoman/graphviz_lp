@@ -1,0 +1,58 @@
+prompt[text]:   0%|          | 0/4000 [00:00<?, ? examples/s]prompt[text]:  46%|████▌     | 1827/4000 [00:00<00:00, 11173.93 examples/s]prompt[text]:  91%|█████████ | 3621/4000 [00:00<00:00, 14223.14 examples/s]prompt[text]: 100%|██████████| 4000/4000 [00:00<00:00, 13647.00 examples/s]
+prompt[text]:   0%|          | 0/2000 [00:00<?, ? examples/s]prompt[text]: 100%|██████████| 2000/2000 [00:00<00:00, 19979.16 examples/s]prompt[text]: 100%|██████████| 2000/2000 [00:00<00:00, 19781.37 examples/s]
+2026-10-18 02:38:41,420 [INFO] context_mode=text: промпты пересобраны; train_image_mode=blank (соседей текстом: True)
+2026-10-18 02:38:41,421 [INFO] ZERO-SHOT: базовая модель Qwen/Qwen2.5-VL-3B-Instruct без адаптера
+2026-10-18 02:38:41,421 [INFO] Семейство модели: qwen (Qwen/Qwen2.5-VL-3B-Instruct)
+2026-10-18 02:38:41,422 [INFO] 4-bit quantization (QLoRA) включена
+`torch_dtype` is deprecated! Use `dtype` instead!
+C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\transformers\modeling_utils.py:6105: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(byte_count // factor, dtype=torch.float16, device=device, requires_grad=False)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.89s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+2026-10-18 02:38:50,862 [INFO] Gradient checkpointing включён (use_reentrant=False)
+2026-10-18 02:38:50,864 [INFO] ================================================================
+2026-10-18 02:38:50,864 [INFO] ОЦЕНКА (rank, filtered): 1000 примеров, cand_cap=50, режимы=['blank']
+2026-10-18 02:38:50,864 [INFO] ================================================================
+2026-10-18 02:38:51,400 [INFO] ─── image_mode=blank ───
+2026-10-18 02:38:51,403 [INFO] EVALUATION (rank): 1000/2000 samples, image_mode=blank, cand_batch=8
+2026-10-18 02:42:56,517 [INFO] [   50/1000] 0.2 smp/s | scored=48
+2026-10-18 02:47:12,912 [INFO] [  100/1000] 0.2 smp/s | scored=97
+2026-10-18 02:51:37,410 [INFO] [  150/1000] 0.2 smp/s | scored=147
+2026-10-18 02:56:01,429 [INFO] [  200/1000] 0.2 smp/s | scored=196
+2026-10-18 03:00:29,742 [INFO] [  250/1000] 0.2 smp/s | scored=245
+2026-10-18 03:04:43,134 [INFO] [  300/1000] 0.2 smp/s | scored=293
+2026-10-18 03:08:48,203 [INFO] [  350/1000] 0.2 smp/s | scored=340
+2026-10-18 03:13:01,435 [INFO] [  400/1000] 0.2 smp/s | scored=389
+2026-10-18 03:17:29,901 [INFO] [  450/1000] 0.2 smp/s | scored=439
+2026-10-18 03:21:55,030 [INFO] [  500/1000] 0.2 smp/s | scored=488
+2026-10-18 03:26:08,421 [INFO] [  550/1000] 0.2 smp/s | scored=536
+2026-10-18 03:30:31,358 [INFO] [  600/1000] 0.2 smp/s | scored=585
+2026-10-18 03:34:22,131 [INFO] [  650/1000] 0.2 smp/s | scored=632
+2026-10-18 03:39:00,455 [INFO] [  700/1000] 0.2 smp/s | scored=680
+2026-10-18 03:43:13,941 [INFO] [  750/1000] 0.2 smp/s | scored=729
+2026-10-18 03:47:41,456 [INFO] [  800/1000] 0.2 smp/s | scored=779
+2026-10-18 03:52:17,178 [INFO] [  850/1000] 0.2 smp/s | scored=829
+2026-10-18 03:56:00,862 [INFO] [  900/1000] 0.2 smp/s | scored=877
+2026-10-18 04:04:11,276 [INFO] [ 1000/1000] 0.2 smp/s | scored=971
+2026-10-18 04:04:11,506 [INFO] =================================================================
+2026-10-18 04:04:11,506 [INFO] RESULTS rank (971 queries, 85.3 min) | filtered
+2026-10-18 04:04:11,506 [INFO]   MRR 0.3377 | H@1 22.5 | H@3 35.4 | H@10 56.1 | med.cand 50
+2026-10-18 04:04:11,506 [INFO] =================================================================
+
+================================================================
+ГЕЙТ ЖИЗНЕСПОСОБНОСТИ  (rank, filtered)
+================================================================
+  обучение : loss nan → nan | пик VRAM 0.0 ГБ
+  качество : MRR=0.3377  H@1=22.5  H@3=35.4  H@10=56.1  n=971  med.cand=45
+  zero-shot пол (preflight) : MRR≈0
+----------------------------------------------------------------
+  ✅ ЕСТЬ СИГНАЛ: дообучение заметно поднимает качество над нулём.
+     → премиса подтверждена, можно масштабировать на полный тест / A100.
+================================================================
+Сохранено: graphvis_ckpts_zeroshot\ctx_zs_text_k16\report.json
+Exception ignored in: <function ResourceTracker.__del__ at 0x0000015830772D40>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

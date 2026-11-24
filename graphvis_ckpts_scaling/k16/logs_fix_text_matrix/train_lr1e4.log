@@ -1,0 +1,592 @@
+prompt[text_matrix]:   0%|          | 0/4000 [00:00<?, ? examples/s]prompt[text_matrix]:  46%|████▌     | 1827/4000 [00:00<00:00, 11076.91 examples/s]prompt[text_matrix]:  89%|████████▉ | 3556/4000 [00:00<00:00, 13947.14 examples/s]prompt[text_matrix]: 100%|██████████| 4000/4000 [00:00<00:00, 13542.74 examples/s]
+prompt[text_matrix]:   0%|          | 0/2000 [00:00<?, ? examples/s]prompt[text_matrix]: 100%|██████████| 2000/2000 [00:00<00:00, 19821.48 examples/s]prompt[text_matrix]: 100%|██████████| 2000/2000 [00:00<00:00, 19626.65 examples/s]
+2026-09-01 14:10:23,870 [INFO] context_mode=text_matrix: промпты пересобраны; train_image_mode=blank (соседей текстом: True)
+2026-09-01 14:10:23,870 [INFO] Семейство модели: qwen (Qwen/Qwen2.5-VL-3B-Instruct)
+2026-09-01 14:10:23,871 [INFO] 4-bit quantization (QLoRA) включена
+`torch_dtype` is deprecated! Use `dtype` instead!
+C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\transformers\modeling_utils.py:6105: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(byte_count // factor, dtype=torch.float16, device=device, requires_grad=False)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.81s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.51s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.71s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+2026-09-01 14:10:35,035 [INFO] train_vision: +162 визуальных Linear в LoRA (ViT+merger)
+2026-09-01 14:10:36,016 [INFO] Gradient checkpointing включён (use_reentrant=False)
+2026-09-01 14:10:36,016 [INFO] ================================================================
+2026-09-01 14:10:36,016 [INFO] ОБУЧЕНИЕ (stage2): 4000 примеров, 1 эпоха(и), batch=1×accum=8
+2026-09-01 14:10:36,016 [INFO] ================================================================
+C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\training\trainer.py:80: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+2026-09-01 14:10:36,351 [INFO] Trainer создан: viability | epochs=1 | lr=1.0e-04 | trainable=165,453,824
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None}.
+trainable params: 165,453,824 || all params: 3,920,076,800 || trainable%: 4.2207
+  0%|          | 0/500 [00:00<?, ?it/s]2026-09-01 14:10:36,551 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:36,560 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:36,567 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:36,576 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:36,583 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:36,590 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:36,597 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:36,603 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:36,611 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+  0%|          | 1/500 [00:09<1:18:55,  9.49s/it]                                                   0%|          | 1/500 [00:09<1:18:55,  9.49s/it]2026-09-01 14:10:46,047 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:46,058 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:46,067 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:46,080 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:46,089 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:46,095 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:46,102 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  0%|          | 2/500 [00:18<1:14:49,  9.01s/it]2026-09-01 14:10:54,725 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:54,739 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:54,746 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:54,759 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:54,768 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:10:54,775 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  1%|          | 3/500 [00:26<1:12:42,  8.78s/it]2026-09-01 14:11:03,218 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:03,235 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:03,241 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:03,248 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:03,257 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:03,264 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:03,272 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  1%|          | 4/500 [00:35<1:12:10,  8.73s/it]2026-09-01 14:11:11,882 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:11,901 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:11,909 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:11,930 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:11,938 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  1%|          | 5/500 [00:43<1:11:00,  8.61s/it]2026-09-01 14:11:20,270 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:20,277 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:20,286 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:20,293 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:20,302 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:20,309 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:20,315 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  1%|          | 6/500 [00:52<1:11:10,  8.65s/it]2026-09-01 14:11:28,987 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:28,996 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:29,005 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:29,014 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:29,021 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:29,028 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:29,036 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:29,044 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  1%|▏         | 7/500 [01:01<1:11:36,  8.72s/it]2026-09-01 14:11:37,867 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:37,878 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:37,888 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:37,899 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  2%|▏         | 8/500 [01:09<1:10:53,  8.65s/it]2026-09-01 14:11:46,344 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:46,351 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:46,360 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:46,368 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:46,391 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:46,399 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  2%|▏         | 9/500 [01:18<1:09:52,  8.54s/it]2026-09-01 14:11:54,648 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:54,655 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:54,663 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:54,677 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:54,683 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:11:54,690 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  2%|▏         | 10/500 [01:26<1:10:09,  8.59s/it]2026-09-01 14:12:03,352 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:03,360 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:03,368 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:03,375 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:03,383 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:03,389 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:03,397 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:03,403 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  2%|▏         | 11/500 [01:35<1:10:35,  8.66s/it]2026-09-01 14:12:12,171 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:12,181 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:12,188 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:12,202 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:12,214 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  2%|▏         | 12/500 [01:44<1:10:05,  8.62s/it]2026-09-01 14:12:20,701 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:20,722 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:20,730 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:20,737 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:20,744 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  3%|▎         | 13/500 [01:52<1:09:09,  8.52s/it]2026-09-01 14:12:28,988 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:28,996 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:29,002 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:29,010 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:29,017 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:29,025 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:29,032 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:29,038 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  3%|▎         | 14/500 [02:01<1:09:52,  8.63s/it]2026-09-01 14:12:37,860 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:37,878 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:37,893 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:37,900 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:37,907 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:37,915 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  3%|▎         | 15/500 [02:09<1:09:14,  8.57s/it]2026-09-01 14:12:46,290 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:46,311 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:46,319 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:46,333 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  3%|▎         | 16/500 [02:18<1:08:24,  8.48s/it]2026-09-01 14:12:54,568 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:54,577 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:54,584 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:54,592 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:54,599 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:54,606 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:12:54,619 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  3%|▎         | 17/500 [02:26<1:08:45,  8.54s/it]2026-09-01 14:13:03,252 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:03,260 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:03,274 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:03,280 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:03,288 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:03,295 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:03,302 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  4%|▎         | 18/500 [02:35<1:09:10,  8.61s/it]2026-09-01 14:13:12,023 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:12,030 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:12,038 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:12,045 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:12,053 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:12,060 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:12,066 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:12,074 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  4%|▍         | 19/500 [02:44<1:09:34,  8.68s/it]2026-09-01 14:13:20,870 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:20,880 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:20,888 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:20,895 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:20,902 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:20,908 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  4%|▍         | 20/500 [02:52<1:09:23,  8.67s/it]                                                    4%|▍         | 20/500 [02:52<1:09:23,  8.67s/it]2026-09-01 14:13:29,531 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:29,544 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:29,552 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:29,561 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:29,571 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:29,579 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  4%|▍         | 21/500 [03:01<1:08:32,  8.59s/it]2026-09-01 14:13:37,906 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:37,914 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:37,922 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:37,930 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:37,956 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  4%|▍         | 22/500 [03:09<1:08:18,  8.57s/it]2026-09-01 14:13:46,450 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:46,457 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:46,465 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:46,473 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:46,487 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:46,496 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:46,504 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  5%|▍         | 23/500 [03:18<1:08:00,  8.55s/it]2026-09-01 14:13:54,963 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:54,975 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:54,984 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:54,991 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:54,999 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:55,013 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:13:55,021 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  5%|▍         | 24/500 [03:27<1:08:19,  8.61s/it]2026-09-01 14:14:03,709 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:03,716 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:03,724 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:03,732 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:03,740 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:03,747 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:03,755 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:03,762 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  5%|▌         | 25/500 [03:36<1:08:49,  8.69s/it]2026-09-01 14:14:12,592 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:12,600 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:12,608 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:12,616 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:12,623 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:12,630 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:12,644 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  5%|▌         | 26/500 [03:44<1:08:43,  8.70s/it]2026-09-01 14:14:21,302 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:21,311 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:21,321 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:21,328 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:21,336 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:21,344 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:21,351 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:21,359 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  5%|▌         | 27/500 [03:53<1:09:03,  8.76s/it]2026-09-01 14:14:30,206 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:30,214 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:30,221 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:30,234 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:30,241 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:30,248 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:30,256 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  6%|▌         | 28/500 [04:02<1:08:46,  8.74s/it]2026-09-01 14:14:38,910 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:38,918 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:38,926 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:38,933 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:38,940 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:38,947 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:38,956 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:38,962 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  6%|▌         | 29/500 [04:11<1:08:58,  8.79s/it]2026-09-01 14:14:47,797 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:47,805 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:47,818 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:47,834 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:47,841 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:47,848 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  6%|▌         | 30/500 [04:19<1:08:25,  8.73s/it]2026-09-01 14:14:56,414 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:56,424 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:56,435 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:56,442 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:56,449 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:56,463 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:14:56,470 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  6%|▌         | 31/500 [04:28<1:08:49,  8.81s/it]2026-09-01 14:15:05,388 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:05,398 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:05,405 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:05,413 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:05,420 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:05,436 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:05,446 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  6%|▋         | 32/500 [04:37<1:08:35,  8.79s/it]2026-09-01 14:15:14,151 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:14,160 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:14,167 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:14,174 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:14,184 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:14,202 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:14,208 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  7%|▋         | 33/500 [04:46<1:08:02,  8.74s/it]2026-09-01 14:15:22,777 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:22,787 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:22,796 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:22,804 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:22,812 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:22,828 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:22,837 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  7%|▋         | 34/500 [04:55<1:08:09,  8.78s/it]2026-09-01 14:15:31,627 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:31,639 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:31,647 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:31,660 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:31,667 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:31,675 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:31,681 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  7%|▋         | 35/500 [05:03<1:07:59,  8.77s/it]2026-09-01 14:15:40,394 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:40,407 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:40,414 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:40,421 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:40,429 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:40,443 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  7%|▋         | 36/500 [05:12<1:07:07,  8.68s/it]2026-09-01 14:15:48,862 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:48,873 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:48,879 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:48,888 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:48,898 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:48,908 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:48,917 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  7%|▋         | 37/500 [05:21<1:07:27,  8.74s/it]2026-09-01 14:15:57,743 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:57,751 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:57,758 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:57,771 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:57,779 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:57,786 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:15:57,794 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  8%|▊         | 38/500 [05:29<1:06:42,  8.66s/it]2026-09-01 14:16:06,225 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:06,255 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:06,262 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:06,270 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  8%|▊         | 39/500 [05:38<1:06:04,  8.60s/it]2026-09-01 14:16:14,674 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:14,682 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:14,690 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:14,697 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:14,705 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:14,716 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:14,725 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:14,732 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  8%|▊         | 40/500 [05:46<1:06:09,  8.63s/it]                                                    8%|▊         | 40/500 [05:46<1:06:09,  8.63s/it]2026-09-01 14:16:23,373 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:23,382 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:23,389 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:23,397 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:23,404 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:23,413 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:23,423 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  8%|▊         | 41/500 [05:55<1:07:04,  8.77s/it]2026-09-01 14:16:32,466 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:32,484 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:32,491 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:32,511 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:32,517 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  8%|▊         | 42/500 [06:04<1:05:44,  8.61s/it]2026-09-01 14:16:40,723 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:40,731 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:40,739 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:40,747 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:40,764 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:40,772 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  9%|▊         | 43/500 [06:12<1:05:46,  8.64s/it]2026-09-01 14:16:49,407 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:49,422 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:49,429 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:49,436 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:49,455 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  9%|▉         | 44/500 [06:21<1:05:03,  8.56s/it]2026-09-01 14:16:57,787 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:57,795 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:57,802 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:57,816 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:57,823 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:16:57,837 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  9%|▉         | 45/500 [06:29<1:05:18,  8.61s/it]2026-09-01 14:17:06,524 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:06,532 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:06,539 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:06,547 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:06,554 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:06,562 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:06,569 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:06,579 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  9%|▉         | 46/500 [06:38<1:05:59,  8.72s/it]2026-09-01 14:17:15,500 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:15,508 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:15,516 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:15,523 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:15,542 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:15,549 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+  9%|▉         | 47/500 [06:47<1:04:57,  8.60s/it]2026-09-01 14:17:23,841 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:23,855 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:23,862 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:23,879 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 10%|▉         | 48/500 [06:55<1:04:29,  8.56s/it]2026-09-01 14:17:32,293 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:32,302 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:32,313 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:32,327 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:32,338 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:32,349 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:32,358 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 10%|▉         | 49/500 [07:04<1:05:03,  8.66s/it]2026-09-01 14:17:41,168 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:41,175 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:41,189 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:41,196 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:41,202 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:41,210 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:41,217 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 10%|█         | 50/500 [07:13<1:04:56,  8.66s/it]2026-09-01 14:17:49,835 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:49,844 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:49,855 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:49,865 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:49,874 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:49,889 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:49,895 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 10%|█         | 51/500 [07:22<1:05:14,  8.72s/it]2026-09-01 14:17:58,693 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:58,701 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:58,710 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:58,720 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:58,729 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:58,736 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:17:58,745 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 10%|█         | 52/500 [07:31<1:05:31,  8.78s/it]2026-09-01 14:18:07,603 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:07,610 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:07,618 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:07,627 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:07,638 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:07,648 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:07,656 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:07,664 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 11%|█         | 53/500 [07:39<1:05:07,  8.74s/it]2026-09-01 14:18:16,272 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:16,279 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:16,286 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:16,294 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:16,301 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:16,310 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:16,316 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 11%|█         | 54/500 [07:48<1:05:08,  8.76s/it]2026-09-01 14:18:25,085 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:25,093 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:25,107 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:25,114 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:25,124 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:25,132 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 11%|█         | 55/500 [07:57<1:04:39,  8.72s/it]2026-09-01 14:18:33,699 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:33,708 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:33,716 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:33,723 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:33,730 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:33,737 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:33,745 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 11%|█         | 56/500 [08:06<1:05:05,  8.80s/it]2026-09-01 14:18:42,672 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:42,680 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:42,688 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:42,695 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:42,702 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:42,709 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:42,716 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:42,725 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 11%|█▏        | 57/500 [08:14<1:05:05,  8.82s/it]2026-09-01 14:18:51,535 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:51,542 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:51,548 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:51,556 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:51,569 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:18:51,577 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 12%|█▏        | 58/500 [08:23<1:04:39,  8.78s/it]2026-09-01 14:19:00,220 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:00,228 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:00,236 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:00,242 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:00,250 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:00,258 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:00,265 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:00,271 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 12%|█▏        | 59/500 [08:32<1:04:22,  8.76s/it]2026-09-01 14:19:08,933 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:08,942 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:08,949 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:08,966 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:08,976 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:08,986 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 12%|█▏        | 60/500 [08:41<1:04:07,  8.74s/it]                                                   12%|█▏        | 60/500 [08:41<1:04:07,  8.74s/it]2026-09-01 14:19:17,652 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:17,659 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:17,667 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:17,673 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:17,680 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:17,687 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:17,695 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 12%|█▏        | 61/500 [08:49<1:03:48,  8.72s/it]2026-09-01 14:19:26,314 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:26,322 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:26,330 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:26,339 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:26,349 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:26,356 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:26,364 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:26,372 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 12%|█▏        | 62/500 [08:58<1:03:59,  8.77s/it]2026-09-01 14:19:35,183 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:35,190 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:35,204 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:35,217 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:35,227 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 13%|█▎        | 63/500 [09:07<1:03:19,  8.69s/it]2026-09-01 14:19:43,707 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:43,715 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:43,722 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:43,730 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:43,737 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:43,751 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:43,758 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 13%|█▎        | 64/500 [09:15<1:03:09,  8.69s/it]2026-09-01 14:19:52,395 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:52,403 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:52,411 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:52,418 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:52,426 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:52,433 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:19:52,440 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 13%|█▎        | 65/500 [09:24<1:03:21,  8.74s/it]2026-09-01 14:20:01,244 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:01,262 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:01,269 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:01,277 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:01,285 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:01,293 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:01,300 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 13%|█▎        | 66/500 [09:33<1:03:21,  8.76s/it]2026-09-01 14:20:10,063 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:10,071 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:10,078 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:10,093 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:10,100 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 13%|█▎        | 67/500 [09:41<1:02:29,  8.66s/it]2026-09-01 14:20:18,474 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:18,490 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:18,497 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:18,505 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:18,512 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:18,518 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:18,526 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 14%|█▎        | 68/500 [09:50<1:02:23,  8.67s/it]2026-09-01 14:20:27,154 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:27,162 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:27,172 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:27,179 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:27,187 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:27,195 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:27,201 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:27,209 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 14%|█▍        | 69/500 [09:59<1:02:55,  8.76s/it]2026-09-01 14:20:36,134 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:36,143 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:36,153 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:36,160 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:36,168 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:36,175 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:36,183 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:36,191 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 14%|█▍        | 70/500 [10:08<1:03:04,  8.80s/it]2026-09-01 14:20:45,031 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:45,039 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:45,046 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:45,054 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:45,060 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:45,068 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:45,077 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:45,086 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 14%|█▍        | 71/500 [10:17<1:03:17,  8.85s/it]2026-09-01 14:20:54,007 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:54,018 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:54,029 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:54,038 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:54,051 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:54,058 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:20:54,066 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 14%|█▍        | 72/500 [10:26<1:02:45,  8.80s/it]2026-09-01 14:21:02,678 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:02,685 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:02,692 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:02,700 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:02,706 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:02,714 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:02,721 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 15%|█▍        | 73/500 [10:34<1:02:12,  8.74s/it]2026-09-01 14:21:11,282 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:11,289 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:11,311 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:11,319 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:11,326 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 15%|█▍        | 74/500 [10:43<1:01:56,  8.72s/it]2026-09-01 14:21:19,965 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:19,979 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:19,987 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:19,995 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:20,001 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:20,010 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:20,018 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 15%|█▌        | 75/500 [10:52<1:02:13,  8.78s/it]2026-09-01 14:21:28,893 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:28,904 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:28,913 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:28,920 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:28,930 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:28,939 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:28,954 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 15%|█▌        | 76/500 [11:01<1:02:15,  8.81s/it]2026-09-01 14:21:37,763 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:37,770 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:37,784 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:37,791 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:37,800 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:37,814 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 15%|█▌        | 77/500 [11:09<1:01:41,  8.75s/it]2026-09-01 14:21:46,372 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:46,380 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:46,387 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:46,396 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:46,409 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:46,417 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:46,424 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 16%|█▌        | 78/500 [11:18<1:01:24,  8.73s/it]2026-09-01 14:21:55,061 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:55,089 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:55,096 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:55,104 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:21:55,111 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 16%|█▌        | 79/500 [11:26<1:00:19,  8.60s/it]2026-09-01 14:22:03,350 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:22:03,361 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:22:03,371 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:22:03,390 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+ 16%|█▌        | 80/500 [11:35<59:33,  8.51s/it]                                                   16%|█▌        | 80/500 [11:35<59:33,  8.51s/it]2026-09-01 14:22:11,649 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:22:11,657 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:22:11,667 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:22:11,676 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:22:11,683 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:22:11,691 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+2026-09-01 14:22:11,704 [WARNING] example truncated: answer fully cut (prompt_len=1024 >= seq_len=1024)
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 0.0, 'epoch': 0.0}
+{'loss': 483481.9474, 'grad_norm': 4.096295356750488, 'learning_rate': 9.998321768134102e-05, 'epoch': 0.04}
+{'loss': 8181170.4, 'grad_norm': 0.0771748423576355, 'learning_rate': 9.93970185956522e-05, 'epoch': 0.08}
+{'loss': 42086.1781, 'grad_norm': 1.1774866580963135, 'learning_rate': 9.798293547886748e-05, 'epoch': 0.12}
+{'loss': 8106565.6, 'grad_norm': 5.48280668258667, 'learning_rate': 9.576466807773899e-05, 'epoch': 0.16}
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\viability_gate.py", line 595, in <module>
+    main()
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\viability_gate.py", line 375, in main
+    trainer.train()
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\transformers\trainer.py", line 2325, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\transformers\trainer.py", line 2674, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\transformers\trainer.py", line 4071, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\accelerate\accelerator.py", line 2852, in backward
+    loss.backward(**kwargs)
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\torch\_tensor.py", line 630, in backward
+    torch.autograd.backward(
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\torch\autograd\__init__.py", line 364, in backward
+    _engine_run_backward(
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\torch\autograd\graph.py", line 865, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+ 16%|█▌        | 80/500 [11:39<1:01:12,  8.74s/it]
+Exception ignored in: <function ResourceTracker.__del__ at 0x0000018AA05E6660>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'
+^C

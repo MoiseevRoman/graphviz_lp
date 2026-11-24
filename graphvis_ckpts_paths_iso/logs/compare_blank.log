@@ -1,0 +1,40 @@
+[protocol] rank
+[ok]   visual_paths_blank: image_mode=blank, n=971
+[ok]   visual_paths: image_mode=real, n=971
+[ok]   both_paths_iso_blank: image_mode=blank, n=971
+[ok]   both_paths_iso: image_mode=real, n=971
+[ok]   text_paths_iso: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+visual_paths_blank   971   0.3777   27.29   39.13   58.91
+visual_paths   971   0.3667   25.03   39.24   60.25
+both_paths_iso_blank   971   0.3847   28.22   41.19   57.78
+both_paths_iso   971   0.3849   28.42   40.78   57.78
+text_paths_iso   971   0.3819   28.12   39.96   57.47
+
+=== visual_paths vs visual_paths_blank (парных 971) ===
+  ΔMRR = -0.0111  95% CI [-0.0241, +0.0021]  не значимо
+  McNemar H@1 : visual_paths-win= 29 visual_paths_blank-win= 51 z= 2.35 p=0.01888 значимо
+  McNemar H@3 : visual_paths-win= 43 visual_paths_blank-win= 42 z= 0.00 p=1 н/з
+  McNemar H@10: visual_paths-win= 45 visual_paths_blank-win= 32 z= 1.37 p=0.1715 н/з
+
+=== both_paths_iso_blank vs visual_paths_blank (парных 971) ===
+  ΔMRR = +0.0069  95% CI [-0.0105, +0.0245]  не значимо
+  McNemar H@1 : both_paths_iso_blank-win= 67 visual_paths_blank-win= 58 z= 0.72 p=0.4743 н/з
+  McNemar H@3 : both_paths_iso_blank-win= 89 visual_paths_blank-win= 69 z= 1.51 p=0.1306 н/з
+  McNemar H@10: both_paths_iso_blank-win= 69 visual_paths_blank-win= 80 z= 0.82 p=0.4127 н/з
+
+=== both_paths_iso vs visual_paths_blank (парных 971) ===
+  ΔMRR = +0.0072  95% CI [-0.0099, +0.0248]  не значимо
+  McNemar H@1 : both_paths_iso-win= 68 visual_paths_blank-win= 57 z= 0.89 p=0.3711 н/з
+  McNemar H@3 : both_paths_iso-win= 85 visual_paths_blank-win= 69 z= 1.21 p=0.2268 н/з
+  McNemar H@10: both_paths_iso-win= 71 visual_paths_blank-win= 82 z= 0.81 p=0.4188 н/з
+
+=== text_paths_iso vs visual_paths_blank (парных 971) ===
+  ΔMRR = +0.0041  95% CI [-0.0130, +0.0214]  не значимо
+  McNemar H@1 : text_paths_iso-win= 65 visual_paths_blank-win= 57 z= 0.63 p=0.5262 н/з
+  McNemar H@3 : text_paths_iso-win= 77 visual_paths_blank-win= 69 z= 0.58 p=0.5624 н/з
+  McNemar H@10: text_paths_iso-win= 64 visual_paths_blank-win= 78 z= 1.09 p=0.2753 н/з
+
+Сохранено: graphvis_ckpts_paths_iso\compare_blank.json

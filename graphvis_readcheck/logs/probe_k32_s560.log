@@ -1,0 +1,34 @@
+K=32: 100 images, 2696 questions/mode {'node': 1000, 'edge_rel': 848, 'edge_ent': 848}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.52s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.59s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.73s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+  [real] 25/100 images, 82s
+  [real] 50/100 images, 161s
+  [real] 75/100 images, 233s
+  [real] 100/100 images, 307s
+[base_s560/K32] mode=real done in 307s
+  [shuffle] 25/100 images, 82s
+  [shuffle] 50/100 images, 160s
+  [shuffle] 75/100 images, 233s
+  [shuffle] 100/100 images, 307s
+[base_s560/K32] mode=shuffle done in 307s
+  [blank] 25/100 images, 82s
+  [blank] 50/100 images, 160s
+  [blank] 75/100 images, 233s
+  [blank] 100/100 images, 307s
+[base_s560/K32] mode=blank done in 307s
+saved: graphvis_readcheck\read_choice.json
+
+=== READ CHOICE PROBE: AUC (real / shuffle / blank), d = real-shuffle [95% CI] ===
+base_s560/K16      node      AUC 0.998 / 0.624 / 0.745   d=+0.374 [+0.339, +0.412] *   yes%=47.5  n=500+500
+base_s560/K16      edge_rel  AUC 0.890 / 0.604 / 0.658   d=+0.286 [+0.249, +0.321] *   yes%=56.2  n=378+378
+base_s560/K16      edge_ent  AUC 0.984 / 0.779 / 0.840   d=+0.205 [+0.169, +0.241] *   yes%=44.3  n=378+378
+base_s560/K32      node      AUC 0.903 / 0.644 / 0.756   d=+0.259 [+0.230, +0.287] *   yes%=30.8  n=500+500
+base_s560/K32      edge_rel  AUC 0.711 / 0.607 / 0.647   d=+0.105 [+0.073, +0.139] *   yes%=62.7  n=424+424
+base_s560/K32      edge_ent  AUC 0.899 / 0.748 / 0.839   d=+0.152 [+0.121, +0.183] *   yes%=45.9  n=424+424
+Exception ignored in: <function ResourceTracker.__del__ at 0x000001ABAFE65C60>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

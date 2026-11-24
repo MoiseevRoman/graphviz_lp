@@ -1,0 +1,125 @@
+{
+  "results": {
+    "R336_k4": {
+      "node_count": 0.5166666666666667,
+      "edge_count": 0.06,
+      "read_name": 0.17482517482517482,
+      "read_relation": 0.22666666666666666
+    },
+    "R672_k4": {
+      "node_count": 0.4766666666666667,
+      "edge_count": 0.07333333333333333,
+      "read_name": 0.25524475524475526,
+      "read_relation": 0.5066666666666667
+    },
+    "R896_k4": {
+      "node_count": 0.4633333333333333,
+      "edge_count": 0.07666666666666666,
+      "read_name": 0.25524475524475526,
+      "read_relation": 0.52
+    },
+    "R336_k8": {
+      "node_count": 0.09666666666666666,
+      "edge_count": 0.01,
+      "read_name": 0.09764309764309764,
+      "read_relation": 0.1
+    },
+    "R672_k8": {
+      "node_count": 0.11333333333333333,
+      "edge_count": 0.0,
+      "read_name": 0.18181818181818182,
+      "read_relation": 0.33666666666666667
+    },
+    "R896_k8": {
+      "node_count": 0.12333333333333334,
+      "edge_count": 0.0,
+      "read_name": 0.19865319865319866,
+      "read_relation": 0.44333333333333336
+    },
+    "R336_k12": {
+      "node_count": 0.11666666666666667,
+      "edge_count": 0.0,
+      "read_name": 0.11447811447811448,
+      "read_relation": 0.06333333333333334
+    },
+    "R672_k12": {
+      "node_count": 0.08333333333333333,
+      "edge_count": 0.0,
+      "read_name": 0.21212121212121213,
+      "read_relation": 0.26
+    },
+    "R896_k12": {
+      "node_count": 0.07666666666666666,
+      "edge_count": 0.0,
+      "read_name": 0.19528619528619529,
+      "read_relation": 0.32
+    }
+  },
+  "counts": {
+    "R336_k4": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 286,
+      "read_relation": 300
+    },
+    "R672_k4": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 286,
+      "read_relation": 300
+    },
+    "R896_k4": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 286,
+      "read_relation": 300
+    },
+    "R336_k8": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 297,
+      "read_relation": 300
+    },
+    "R672_k8": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 297,
+      "read_relation": 300
+    },
+    "R896_k8": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 297,
+      "read_relation": 300
+    },
+    "R336_k12": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 297,
+      "read_relation": 300
+    },
+    "R672_k12": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 297,
+      "read_relation": 300
+    },
+    "R896_k12": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 297,
+      "read_relation": 300
+    }
+  },
+  "resolutions": [
+    336,
+    672,
+    896
+  ],
+  "neighbors": [
+    4,
+    8,
+    12
+  ],
+  "model": "Qwen/Qwen2.5-VL-3B-Instruct"
+}

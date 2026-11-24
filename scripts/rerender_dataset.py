@@ -139,6 +139,11 @@ def main():
                     choices=["baseline_semantic", "relation_sim", "pmi", "mmr", "hybrid"])
     ap.add_argument("--k", type=int, default=4)
     ap.add_argument("--target_size", type=int, default=672)
+    ap.add_argument("--max_nodes", type=int, default=0,
+                    help="лимит узлов на картинке (0 = VisualizationConfig.max_nodes_display=14); "
+                         "для k>12 ставить ≥ k+2, иначе рендер молча обрежет звезду")
+    ap.add_argument("--rel_tiers", action="store_true",
+                    help="кодировать релевантность соседа стилем бокса (VisualizationConfig.relevance_tiers)")
     ap.add_argument("--splits", default="stage2_train,stage2_valid,stage2_test")
     ap.add_argument("--limit", type=int, default=0, help="ограничить примеров на сплит (0 = все)")
     ap.add_argument("--workers", type=int, default=4, help="воркеров рендера (joblib)")
@@ -164,6 +169,10 @@ def main():
 
     vis_cfg = _cfg.VisualizationConfig(
         output_dir=args.out_root, target_size=args.target_size, cache_enabled=False)
+    if args.max_nodes > 0:
+        vis_cfg.max_nodes_display = args.max_nodes
+        vis_cfg.max_edges_display = max(vis_cfg.max_edges_display, args.max_nodes + 10)
+    vis_cfg.relevance_tiers = args.rel_tiers
     out_graphs = Path(args.out_root) / "graphs"
     out_datasets = Path(args.out_root) / "datasets"
     out_graphs.mkdir(parents=True, exist_ok=True)
@@ -296,6 +305,8 @@ def main():
                 prev = {}
         prev.update(summary)   # частичный прогон (напр. только test) не стирает train/valid
         meta = {"method": args.method, "k": args.k, "target_size": args.target_size,
+                "max_nodes_display": vis_cfg.max_nodes_display,
+                "relevance_tiers": vis_cfg.relevance_tiers,
                 "src_root": args.src_root,
                 "strip_description": not args.keep_desc, "drop_leak": args.drop_leak,
                 "splits": prev}

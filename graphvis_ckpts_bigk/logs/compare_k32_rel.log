@@ -1,0 +1,48 @@
+[protocol] rank
+[ok]   visual_vbf16_rel: image_mode=real, n=971
+[ok]   visual_vbf16: image_mode=real, n=971
+[ok]   visual_vbf16_s728: image_mode=real, n=971
+[ok]   none: image_mode=blank, n=971
+[ok]   text: image_mode=blank, n=971
+[ok]   visual16: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+visual_vbf16_rel   971   0.3816   27.29   41.09   59.84
+visual_vbf16   971   0.3786   26.67   40.68   59.42
+visual_vbf16_s728   971   0.3858   28.01   40.68   59.84
+none       971   0.3859   28.22   40.78   59.32
+text       971   0.4162   30.07   45.31   64.88
+visual16   971   0.3983   28.73   42.12   63.95
+
+=== visual_vbf16 vs visual_vbf16_rel (парных 971) ===
+  ΔMRR = -0.0030  95% CI [-0.0123, +0.0064]  не значимо
+  McNemar H@1 : visual_vbf16-win= 19 visual_vbf16_rel-win= 25 z= 0.75 p=0.451 н/з
+  McNemar H@3 : visual_vbf16-win= 28 visual_vbf16_rel-win= 32 z= 0.39 p=0.6985 н/з
+  McNemar H@10: visual_vbf16-win= 22 visual_vbf16_rel-win= 26 z= 0.43 p=0.665 н/з
+
+=== visual_vbf16_s728 vs visual_vbf16_rel (парных 971) ===
+  ΔMRR = +0.0042  95% CI [-0.0039, +0.0129]  не значимо
+  McNemar H@1 : visual_vbf16_s728-win= 25 visual_vbf16_rel-win= 18 z= 0.91 p=0.3602 н/з
+  McNemar H@3 : visual_vbf16_s728-win= 22 visual_vbf16_rel-win= 26 z= 0.43 p=0.665 н/з
+  McNemar H@10: visual_vbf16_s728-win= 21 visual_vbf16_rel-win= 21 z=-0.15 p=0.8774 н/з
+
+=== none vs visual_vbf16_rel (парных 971) ===
+  ΔMRR = +0.0043  95% CI [-0.0042, +0.0128]  не значимо
+  McNemar H@1 : none-win= 27 visual_vbf16_rel-win= 18 z= 1.19 p=0.233 н/з
+  McNemar H@3 : none-win= 22 visual_vbf16_rel-win= 25 z= 0.29 p=0.7705 н/з
+  McNemar H@10: none-win= 15 visual_vbf16_rel-win= 20 z= 0.68 p=0.499 н/з
+
+=== text vs visual_vbf16_rel (парных 971) ===
+  ΔMRR = +0.0346  95% CI [+0.0227, +0.0468]  ЗНАЧИМО
+  McNemar H@1 : text-win= 52 visual_vbf16_rel-win= 25 z= 2.96 p=0.003047 значимо
+  McNemar H@3 : text-win= 64 visual_vbf16_rel-win= 23 z= 4.29 p=1.799e-05 значимо
+  McNemar H@10: text-win= 66 visual_vbf16_rel-win= 17 z= 5.27 p=1.374e-07 значимо
+
+=== visual16 vs visual_vbf16_rel (парных 971) ===
+  ΔMRR = +0.0167  95% CI [+0.0054, +0.0281]  ЗНАЧИМО
+  McNemar H@1 : visual16-win= 41 visual_vbf16_rel-win= 27 z= 1.58 p=0.1149 н/з
+  McNemar H@3 : visual16-win= 45 visual_vbf16_rel-win= 35 z= 1.01 p=0.3143 н/з
+  McNemar H@10: visual16-win= 54 visual_vbf16_rel-win= 14 z= 4.73 p=2.251e-06 значимо
+
+Сохранено: graphvis_ckpts_bigk\k32\compare_rel.json

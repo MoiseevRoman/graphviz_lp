@@ -1,0 +1,56 @@
+{
+  "config": {
+    "train_n": 0,
+    "eval_only": true,
+    "adapter": "graphvis_ckpts_trainsize\\k16\\ctx_visual\\viability\\checkpoint-1000",
+    "eval_n": 1000,
+    "epochs": 1,
+    "eval_mode": "rank",
+    "beams": 10,
+    "cand_cap": 50,
+    "dataset_root": "graphvis_scaling_trainsize\\k16\\datasets",
+    "model": "Qwen/Qwen2.5-VL-3B-Instruct"
+  },
+  "train": {
+    "loss_first": NaN,
+    "loss_last": NaN,
+    "peak_vram_gb": 0.0,
+    "with_stage1": false,
+    "stage1_loss_first": null,
+    "stage1_loss_last": null
+  },
+  "eval": {
+    "MRR": 0.3617885652554033,
+    "Hits@1": 24.51081359423275,
+    "Hits@3": 40.47373841400618,
+    "Hits@10": 58.29042224510813,
+    "mean_total_tokens": 468.109375,
+    "mean_text_tokens": 68.109375,
+    "mean_visual_tokens": 400.0,
+    "n_cost_sampled": 64,
+    "n_evaluated": 971,
+    "n_total_test": 2000,
+    "mean_candidates": 44.675592173017506,
+    "eval_mode": "rank",
+    "tie_break": "optimistic",
+    "image_mode": "real"
+  },
+  "ablation": {
+    "real": {
+      "MRR": 0.3617885652554033,
+      "Hits@1": 24.51081359423275,
+      "Hits@3": 40.47373841400618,
+      "Hits@10": 58.29042224510813,
+      "mean_total_tokens": 468.109375,
+      "mean_text_tokens": 68.109375,
+      "mean_visual_tokens": 400.0,
+      "n_cost_sampled": 64,
+      "n_evaluated": 971,
+      "n_total_test": 2000,
+      "mean_candidates": 44.675592173017506,
+      "eval_mode": "rank",
+      "tie_break": "optimistic",
+      "image_mode": "real"
+    }
+  }
+}

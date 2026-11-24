@@ -1,0 +1,32 @@
+[protocol] rank
+[ok]   zs_none: image_mode=blank, n=971
+[ok]   zs_text: image_mode=blank, n=971
+[ok]   zs_visual: image_mode=real, n=971
+[ok]   zs_visual_blank: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+zs_none    971   0.2828   17.82   29.76   47.68
+zs_text    971   0.3377   22.45   35.43   56.13
+zs_visual   971   0.2997   19.16   31.51   49.64
+zs_visual_blank   971   0.2811   17.40   29.76   47.99
+
+=== zs_text vs zs_none (парных 971) ===
+  ΔMRR = +0.0549  95% CI [+0.0369, +0.0730]  ЗНАЧИМО
+  McNemar H@1 : zs_text-win= 85 zs_none-win= 40 z= 3.94 p=8.303e-05 значимо
+  McNemar H@3 : zs_text-win=103 zs_none-win= 48 z= 4.39 p=1.11e-05 значимо
+  McNemar H@10: zs_text-win=137 zs_none-win= 55 z= 5.85 p=5.045e-09 значимо
+
+=== zs_visual vs zs_none (парных 971) ===
+  ΔMRR = +0.0169  95% CI [+0.0024, +0.0318]  ЗНАЧИМО
+  McNemar H@1 : zs_visual-win= 56 zs_none-win= 43 z= 1.21 p=0.2278 н/з
+  McNemar H@3 : zs_visual-win= 67 zs_none-win= 50 z= 1.48 p=0.1391 н/з
+  McNemar H@10: zs_visual-win= 70 zs_none-win= 51 z= 1.64 p=0.1018 н/з
+
+=== zs_visual_blank vs zs_none (парных 971) ===
+  ΔMRR = -0.0017  95% CI [-0.0101, +0.0066]  не значимо
+  McNemar H@1 : zs_visual_blank-win= 18 zs_none-win= 22 z= 0.47 p=0.6353 н/з
+  McNemar H@3 : zs_visual_blank-win= 28 zs_none-win= 28 z=-0.13 p=0.8937 н/з
+  McNemar H@10: zs_visual_blank-win= 29 zs_none-win= 26 z= 0.27 p=0.7874 н/з
+
+Сохранено: graphvis_ckpts_zeroshot\k16\compare_zs.json

@@ -1,0 +1,38 @@
+2026-10-20 15:23:07,934 INFO Статистики KG + эмбеддинги отношений …
+2026-10-20 15:23:13,625 INFO Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-10-20 15:23:16,456 INFO Received notification from DBMS server: {severity: INFORMATION} {code: Neo.ClientNotification.Schema.IndexOrConstraintAlreadyExists} {category: SCHEMA} {title: `CREATE RANGE INDEX entity_name_index IF NOT EXISTS FOR (e:Entity) ON (e.name)` has no effect.} {description: `RANGE INDEX index_121666b9 FOR (e:Entity) ON (e.name)` already exists.} {position: None} for query: 'CREATE INDEX entity_name_index IF NOT EXISTS FOR (e:Entity) ON (e.name)'
+2026-10-20 15:23:16,460 INFO Received notification from DBMS server: {severity: INFORMATION} {code: Neo.ClientNotification.Schema.IndexOrConstraintAlreadyExists} {category: SCHEMA} {title: `CREATE RANGE INDEX entity_fb_id_index IF NOT EXISTS FOR (e:Entity) ON (e.fb_id)` has no effect.} {description: `RANGE INDEX entity_fb_id_index FOR (e:Entity) ON (e.fb_id)` already exists.} {position: None} for query: 'CREATE INDEX entity_fb_id_index IF NOT EXISTS FOR (e:Entity) ON (e.fb_id)'
+2026-10-20 15:23:16,505 INFO === stage2_train: 4000 примеров (retriever split=train) ===
+C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\neo4j\_sync\work\result.py:625: UserWarning: Expected a result with a single record, but found multiple.
+  warn(
+2026-10-20 15:23:31,389 INFO   …подграфы 1000/4000 (пустых рёбер: 1)
+2026-10-20 15:23:45,483 INFO   …подграфы 2000/4000 (пустых рёбер: 1)
+2026-10-20 15:23:59,129 INFO   …подграфы 3000/4000 (пустых рёбер: 2)
+2026-10-20 15:24:13,390 INFO   …подграфы 4000/4000 (пустых рёбер: 2)
+2026-10-20 15:24:13,390 INFO Рендер 4000 картинок в 560px, workers=4 …
+2026-10-20 15:30:01,439 INFO stage2_train: утечка описания=103 (вырезано описаний из промпта=2604, выкинуто по --drop_leak=0)
+Saving the dataset (0/1 shards):   0%|          | 0/4000 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 4000/4000 [00:00<00:00, 266618.19 examples/s]Saving the dataset (1/1 shards): 100%|##########| 4000/4000 [00:00<00:00, 266618.19 examples/s]
+2026-10-20 15:30:01,547 INFO Сохранено: graphvis_scaling\k32\datasets\stage2_train (4000 примеров, без рёбер: 2, пропущено: 0)
+2026-10-20 15:30:01,579 INFO === stage2_test: 4000 примеров (retriever split=test) ===
+2026-10-20 15:30:15,812 INFO   …подграфы 1000/4000 (пустых рёбер: 0)
+2026-10-20 15:30:29,402 INFO   …подграфы 2000/4000 (пустых рёбер: 0)
+2026-10-20 15:30:42,966 INFO   …подграфы 3000/4000 (пустых рёбер: 0)
+2026-10-20 15:30:56,304 INFO   …подграфы 4000/4000 (пустых рёбер: 0)
+2026-10-20 15:30:56,304 INFO Рендер 4000 картинок в 560px, workers=4 …
+2026-10-20 15:36:39,083 INFO stage2_test: утечка описания=96 (вырезано описаний из промпта=2671, выкинуто по --drop_leak=0)
+Saving the dataset (0/1 shards):   0%|          | 0/4000 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 4000/4000 [00:00<00:00, 499619.30 examples/s]Saving the dataset (1/1 shards): 100%|##########| 4000/4000 [00:00<00:00, 499619.30 examples/s]
+2026-10-20 15:36:39,164 INFO Сохранено: graphvis_scaling\k32\datasets\stage2_test (4000 примеров, без рёбер: 0, пропущено: 0)
+
+============================================================
+Перерендер готов: hybrid@32, 560px
+  stage2_train      4000 примеров  (без рёбер: 2)
+  stage2_test       4000 примеров  (без рёбер: 0)
+Новый датасет: graphvis_scaling\k32\datasets
+Для обучения: cfg.dataset_root = graphvis_scaling\k32\datasets
+============================================================
+Exception ignored in: <function ResourceTracker.__del__ at 0x0000026A8E3EF560>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

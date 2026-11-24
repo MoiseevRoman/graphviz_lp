@@ -1,0 +1,48 @@
+[protocol] rank
+[ok]   none: image_mode=blank, n=971
+[ok]   text_cn: image_mode=blank, n=971
+[ok]   text_paths_iso: image_mode=blank, n=971
+[ok]   text_paths: image_mode=blank, n=971
+[ok]   visual_paths: image_mode=real, n=971
+[ok]   both_paths_iso: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+none       971   0.3859   28.22   40.78   59.32
+text_cn    971   0.3819   27.91   40.78   58.19
+text_paths_iso   971   0.3819   28.12   39.96   57.47
+text_paths   971   0.4040   30.28   42.43   59.63
+visual_paths   971   0.3667   25.03   39.24   60.25
+both_paths_iso   971   0.3849   28.42   40.78   57.78
+
+=== text_cn vs none (парных 971) ===
+  ΔMRR = -0.0040  95% CI [-0.0190, +0.0110]  не значимо
+  McNemar H@1 : text_cn-win= 51 none-win= 54 z= 0.20 p=0.8453 н/з
+  McNemar H@3 : text_cn-win= 59 none-win= 59 z=-0.09 p=0.9267 н/з
+  McNemar H@10: text_cn-win= 51 none-win= 62 z= 0.94 p=0.3468 н/з
+
+=== text_paths_iso vs none (парных 971) ===
+  ΔMRR = -0.0041  95% CI [-0.0193, +0.0110]  не значимо
+  McNemar H@1 : text_paths_iso-win= 54 none-win= 55 z= 0.00 p=1 н/з
+  McNemar H@3 : text_paths_iso-win= 52 none-win= 60 z= 0.66 p=0.5083 н/з
+  McNemar H@10: text_paths_iso-win= 53 none-win= 71 z= 1.53 p=0.1268 н/з
+
+=== text_paths vs none (парных 971) ===
+  ΔMRR = +0.0181  95% CI [+0.0012, +0.0352]  ЗНАЧИМО
+  McNemar H@1 : text_paths-win= 77 none-win= 57 z= 1.64 p=0.1007 н/з
+  McNemar H@3 : text_paths-win= 67 none-win= 51 z= 1.38 p=0.1673 н/з
+  McNemar H@10: text_paths-win= 63 none-win= 60 z= 0.18 p=0.8569 н/з
+
+=== visual_paths vs none (парных 971) ===
+  ΔMRR = -0.0192  95% CI [-0.0316, -0.0074]  ЗНАЧИМО
+  McNemar H@1 : visual_paths-win= 23 none-win= 54 z= 3.42 p=0.0006289 значимо
+  McNemar H@3 : visual_paths-win= 33 none-win= 48 z= 1.56 p=0.1198 н/з
+  McNemar H@10: visual_paths-win= 49 none-win= 40 z= 0.85 p=0.3964 н/з
+
+=== both_paths_iso vs none (парных 971) ===
+  ΔMRR = -0.0010  95% CI [-0.0170, +0.0151]  не значимо
+  McNemar H@1 : both_paths_iso-win= 60 none-win= 58 z= 0.09 p=0.9267 н/з
+  McNemar H@3 : both_paths_iso-win= 58 none-win= 58 z=-0.09 p=0.926 н/з
+  McNemar H@10: both_paths_iso-win= 56 none-win= 71 z= 1.24 p=0.2141 н/з
+
+Сохранено: graphvis_ckpts_paths_iso\compare_vs_none.json

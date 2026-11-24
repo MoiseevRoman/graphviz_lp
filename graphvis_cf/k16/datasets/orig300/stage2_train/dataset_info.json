@@ -1,0 +1,64 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "image_path": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "task_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "query_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "head": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "relation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tail": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "head_description": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "neighbors_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "neighbors_feat": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "desc_leak": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "neighbors_adjlist": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "neighbors_matrix": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

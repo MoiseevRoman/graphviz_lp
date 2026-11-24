@@ -92,6 +92,12 @@ class VisualizationConfig:
     # исторический вывод колонок не меняется.
     disambiguate_labels: bool = False
 
+    # Кодировать релевантность соседа (порядок hybrid-ранжирования = порядок
+    # subgraph["nodes"]) стилем бокса: верхняя четверть — крупно и ярко, вторая —
+    # как обычно, остальные — мелко и бледно; плюс ordering="out" у dot. В тексте
+    # порядок строк и так несёт ранг, на звезде без этого все соседи равны.
+    relevance_tiers: bool = False
+
     @classmethod
     def for_qwen(cls, side: int = 560, **overrides) -> "VisualizationConfig":
         """Пресет рендера под Qwen2.5-VL (dynamic resolution).
@@ -152,6 +158,10 @@ class TrainConfig:
     # т.е. окно [min_pixels, max_pixels] вокруг 336×336≈451584 px.
     qwen_min_pixels: int = 256 * 28 * 28   # ~200k px  ≈ 256 токенов
     qwen_max_pixels: int = 720 * 28 * 28   # ~564k px  ≈ 720 токенов
+    # Qwen3-VL: 32 px на токен. min чуть ниже 640² → и рендер 560, и blank 336
+    # апскейлятся до 640×640 = 400 токенов (как 560 px у Qwen2.5-VL).
+    qwen3_min_pixels: int = 630 * 630
+    qwen3_max_pixels: int = 640 * 640
 
     # LoRA
     use_lora: bool = True
@@ -184,6 +194,10 @@ class TrainConfig:
     # учится игнорировать картинку (real≈blank). Имена модулей обнаруживаются
     # в рантайме (устойчиво к различиям версий Qwen2-VL / 2.5-VL).
     train_vision: bool = False
+    # Не квантовать зрительную башню (ViT + merger) в 4 бит: при use_4bit в NF4
+    # уходит вся модель, и мелкие подписи на рендере читаются хуже. Текстовые
+    # условия башню не используют → квантование бьёт только по картинке.
+    vision_bf16: bool = False
 
     # Режим картинки ПРИ ОБУЧЕНИИ: "real" — настоящий рендер (визуальный контекст);
     # "blank"/"noise" — пустой/шумовой холст (для текстовых условий, где окрестность
@@ -197,6 +211,14 @@ class TrainConfig:
     weight_decay: float = 0.0
     warmup_ratio: float = 0.03
     lr_scheduler_type: str = "cosine"
+    # Обрезка нормы градиента (HF default 1.0). Ужесточить (например 0.5) для
+    # нестабильных условий (длинные text_matrix-последовательности → редкие
+    # градиентные всплески). max_grad_norm=1.0 = историческое поведение.
+    max_grad_norm: float = 1.0
+    # Seed обучения (порядок шаффла данных). HF default 42. Вариация seed при
+    # том же LR — чистый способ проверить, был ли дивёрдж случайным «плохим
+    # батчем» (гиперпараметры остаются matched across conditions).
+    seed: int = 42
 
     # Batch
     per_device_train_batch_size: int = 16
@@ -231,6 +253,11 @@ class TrainConfig:
     save_steps: int = 500
     eval_steps: int = 1000
     save_total_limit: int = 3
+    # Сохранять в чекпойнтах ТОЛЬКО веса модели (адаптер), без optimizer/scheduler
+    # state. Для промежуточных чекпойнтов, которые нужны лишь под eval-only (не под
+    # resume), это режет размер каждого чекпойнта примерно вдвое-втрое. Default False
+    # = историческое поведение (полный чекпойнт, пригодный для resume).
+    save_only_model: bool = False
 
     # Dataloader
     dataloader_num_workers: int = 16

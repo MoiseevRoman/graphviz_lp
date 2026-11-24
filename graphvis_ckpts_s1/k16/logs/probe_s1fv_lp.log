@@ -1,0 +1,44 @@
+K=16: 60 images, mean drawn neighbors 12.3, missing 0
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.23s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.04s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.22s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+[s1fv_lp] adapter: graphvis_ckpts_s1\k16\ctx_visual_s1fv\adapter
+[vision_bf16] vision Linear in 4-bit: 0/162
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[s1fv_lp/vision_bf16/K16/names] {"recall_exact_%": 0.7, "recall_fuzzy_%": 3.4, "precision_%": 34.7, "gold_per_img": 12.3, "out_per_img": 1.2, "mean_visual_tokens": 400, "sec": 48}
+[s1fv_lp/vision_bf16/K16/triples] {"pair_recall_%": 0.0, "entity_recall_%": 1.8, "pair_precision_%": 0.0, "gold_per_img": 13.7, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 41}
+[s1fv_lp/vision_bf16/K16/s1_nodes] {"recall_exact_%": 0.8, "recall_fuzzy_%": 3.7, "precision_%": 21.4, "gold_per_img": 12.3, "out_per_img": 2.2, "mean_visual_tokens": 400, "sec": 92}
+[s1fv_lp/vision_bf16/K16/s1_triples] {"pair_recall_%": 0.2, "entity_recall_%": 2.4, "pair_precision_%": 2.7, "gold_per_img": 13.7, "out_per_img": 1.2, "mean_visual_tokens": 400, "sec": 63}
+
+=== reading the paper's 1-hop renders (60 images per K) ===
+base/vision_bf16/K16/names               {"recall_exact_%": 69.1, "recall_fuzzy_%": 78.3, "precision_%": 97.4, "gold_per_img": 12.3, "out_per_img": 10.1, "mean_visual_tokens": 400, "sec": 175}
+base/vision_bf16/K16/triples             {"pair_recall_%": 59.5, "entity_recall_%": 78.3, "pair_precision_%": 66.7, "gold_per_img": 13.7, "out_per_img": 13.2, "mean_visual_tokens": 400, "sec": 368}
+base/vision_bf16/K16/s1_nodes            {"recall_exact_%": 80.2, "recall_fuzzy_%": 89.6, "precision_%": 75.4, "gold_per_img": 12.3, "out_per_img": 15.5, "mean_visual_tokens": 400, "sec": 430}
+base/vision_bf16/K16/s1_triples          {"pair_recall_%": 38.5, "entity_recall_%": 60.6, "pair_precision_%": 47.3, "gold_per_img": 13.7, "out_per_img": 12.5, "mean_visual_tokens": 400, "sec": 683}
+lp_only/vision_bf16/K16/names            {"recall_exact_%": 0.4, "recall_fuzzy_%": 0.9, "precision_%": 15.0, "gold_per_img": 12.3, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 39}
+lp_only/vision_bf16/K16/triples          {"pair_recall_%": 0.0, "entity_recall_%": 1.1, "pair_precision_%": 0.0, "gold_per_img": 13.7, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 42}
+lp_only/vision_bf16/K16/s1_nodes         {"recall_exact_%": 0.3, "recall_fuzzy_%": 3.2, "precision_%": 25.0, "gold_per_img": 12.3, "out_per_img": 0.9, "mean_visual_tokens": 400, "sec": 43}
+lp_only/vision_bf16/K16/s1_triples       {"pair_recall_%": 0.0, "entity_recall_%": 2.7, "pair_precision_%": 0.0, "gold_per_img": 13.7, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 50}
+stage1/vision_bf16/K16/names             {"recall_exact_%": 94.9, "recall_fuzzy_%": 99.2, "precision_%": 99.5, "gold_per_img": 12.3, "out_per_img": 12.5, "mean_visual_tokens": 400, "sec": 366}
+stage1/vision_bf16/K16/triples           {"pair_recall_%": 92.0, "entity_recall_%": 98.1, "pair_precision_%": 92.5, "gold_per_img": 13.7, "out_per_img": 13.6, "mean_visual_tokens": 400, "sec": 1145}
+stage1/vision_bf16/K16/s1_nodes          {"recall_exact_%": 94.9, "recall_fuzzy_%": 99.1, "precision_%": 99.1, "gold_per_img": 12.3, "out_per_img": 12.6, "mean_visual_tokens": 400, "sec": 383}
+stage1/vision_bf16/K16/s1_triples        {"pair_recall_%": 94.4, "entity_recall_%": 99.0, "pair_precision_%": 96.6, "gold_per_img": 13.7, "out_per_img": 13.4, "mean_visual_tokens": 400, "sec": 1142}
+stage1_lp/vision_bf16/K16/names          {"recall_exact_%": 0.0, "recall_fuzzy_%": 0.1, "precision_%": 6.7, "gold_per_img": 12.3, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 46}
+stage1_lp/vision_bf16/K16/triples        {"pair_recall_%": 0.0, "entity_recall_%": 0.5, "pair_precision_%": 0.0, "gold_per_img": 13.7, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 38}
+stage1_lp/vision_bf16/K16/s1_nodes       {"recall_exact_%": 0.0, "recall_fuzzy_%": 0.0, "precision_%": 0.0, "gold_per_img": 12.3, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 40}
+stage1_lp/vision_bf16/K16/s1_triples     {"pair_recall_%": 0.0, "entity_recall_%": 0.0, "pair_precision_%": 0.0, "gold_per_img": 13.7, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 52}
+s1rp_lp/vision_bf16/K16/names            {"recall_exact_%": 1.8, "recall_fuzzy_%": 2.4, "precision_%": 7.8, "gold_per_img": 12.3, "out_per_img": 16.1, "mean_visual_tokens": 400, "sec": 529}
+s1rp_lp/vision_bf16/K16/triples          {"pair_recall_%": 0.0, "entity_recall_%": 0.2, "pair_precision_%": 0.0, "gold_per_img": 13.7, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 37}
+s1rp_lp/vision_bf16/K16/s1_nodes         {"recall_exact_%": 0.0, "recall_fuzzy_%": 1.4, "precision_%": 0.4, "gold_per_img": 12.3, "out_per_img": 11.2, "mean_visual_tokens": 400, "sec": 721}
+s1rp_lp/vision_bf16/K16/s1_triples       {"pair_recall_%": 0.0, "entity_recall_%": 0.0, "pair_precision_%": 0.0, "gold_per_img": 13.7, "out_per_img": 13.1, "mean_visual_tokens": 400, "sec": 1118}
+s1fv_lp/vision_bf16/K16/names            {"recall_exact_%": 0.7, "recall_fuzzy_%": 3.4, "precision_%": 34.7, "gold_per_img": 12.3, "out_per_img": 1.2, "mean_visual_tokens": 400, "sec": 48}
+s1fv_lp/vision_bf16/K16/triples          {"pair_recall_%": 0.0, "entity_recall_%": 1.8, "pair_precision_%": 0.0, "gold_per_img": 13.7, "out_per_img": 1.0, "mean_visual_tokens": 400, "sec": 41}
+s1fv_lp/vision_bf16/K16/s1_nodes         {"recall_exact_%": 0.8, "recall_fuzzy_%": 3.7, "precision_%": 21.4, "gold_per_img": 12.3, "out_per_img": 2.2, "mean_visual_tokens": 400, "sec": 92}
+s1fv_lp/vision_bf16/K16/s1_triples       {"pair_recall_%": 0.2, "entity_recall_%": 2.4, "pair_precision_%": 2.7, "gold_per_img": 13.7, "out_per_img": 1.2, "mean_visual_tokens": 400, "sec": 63}
+saved: graphvis_ckpts_s1\k16\read_probe.json
+Exception ignored in: <function ResourceTracker.__del__ at 0x000002A1364D53A0>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

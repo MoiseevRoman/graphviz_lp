@@ -1,0 +1,51 @@
+{
+  "results": {
+    "R672_k4": {
+      "node_count": 0.4766666666666667,
+      "edge_count": 0.07333333333333333,
+      "read_name": 0.25524475524475526,
+      "read_relation": 0.5066666666666667
+    },
+    "R896_k4": {
+      "node_count": 0.49333333333333335,
+      "edge_count": 0.08333333333333333,
+      "read_name": 0.26573426573426573,
+      "read_relation": 0.5533333333333333
+    },
+    "R1120_k4": {
+      "node_count": 0.4533333333333333,
+      "edge_count": 0.056666666666666664,
+      "read_name": 0.26223776223776224,
+      "read_relation": 0.5266666666666666
+    }
+  },
+  "counts": {
+    "R672_k4": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 286,
+      "read_relation": 300
+    },
+    "R896_k4": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 286,
+      "read_relation": 300
+    },
+    "R1120_k4": {
+      "node_count": 300,
+      "edge_count": 300,
+      "read_name": 286,
+      "read_relation": 300
+    }
+  },
+  "resolutions": [
+    672,
+    896,
+    1120
+  ],
+  "neighbors": [
+    4
+  ],
+  "model": "Qwen/Qwen2.5-VL-3B-Instruct"
+}

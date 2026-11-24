@@ -1,0 +1,41 @@
+K=16: 100 images, 2512 questions/mode {'node': 1000, 'edge_rel': 756, 'edge_ent': 756}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.81s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+[stage1_lp] adapter: graphvis_ckpts_s1\k16\ctx_visual_s1\adapter
+  [real] 25/100 images, 124s
+  [real] 50/100 images, 236s
+  [real] 75/100 images, 342s
+  [real] 100/100 images, 448s
+[stage1_lp/K16] mode=real done in 448s
+  [shuffle] 25/100 images, 123s
+  [shuffle] 50/100 images, 235s
+  [shuffle] 75/100 images, 341s
+  [shuffle] 100/100 images, 447s
+[stage1_lp/K16] mode=shuffle done in 447s
+  [blank] 25/100 images, 123s
+  [blank] 50/100 images, 235s
+  [blank] 75/100 images, 341s
+  [blank] 100/100 images, 446s
+[stage1_lp/K16] mode=blank done in 446s
+saved: graphvis_ckpts_s1\k16\read_choice_probe.json
+
+=== READ CHOICE PROBE: AUC (real / shuffle / blank), d = real-shuffle [95% CI] ===
+base/K16           node      AUC 0.998 / 0.624 / 0.745   d=+0.374 [+0.339, +0.412] *   yes%=47.5  n=500+500
+base/K16           edge_rel  AUC 0.890 / 0.604 / 0.658   d=+0.286 [+0.249, +0.321] *   yes%=56.2  n=378+378
+base/K16           edge_ent  AUC 0.984 / 0.779 / 0.840   d=+0.205 [+0.169, +0.241] *   yes%=44.3  n=378+378
+lp_only/K16        node      AUC 0.952 / 0.611 / 0.751   d=+0.342 [+0.297, +0.385] *   yes%=76.7  n=500+500
+lp_only/K16        edge_rel  AUC 0.654 / 0.614 / 0.702   d=+0.040 [+0.005, +0.077] *   yes%=58.2  n=378+378
+lp_only/K16        edge_ent  AUC 0.690 / 0.633 / 0.822   d=+0.056 [+0.024, +0.091] *   yes%=58.5  n=378+378
+stage1/K16         node      AUC 1.000 / 0.662 / 0.738   d=+0.338 [+0.296, +0.380] *   yes%=50.2  n=500+500
+stage1/K16         edge_rel  AUC 0.923 / 0.711 / 0.734   d=+0.211 [+0.179, +0.241] *   yes%=78.7  n=378+378
+stage1/K16         edge_ent  AUC 1.000 / 0.877 / 0.889   d=+0.122 [+0.096, +0.148] *   yes%=50.9  n=378+378
+stage1_lp/K16      node      AUC 0.671 / 0.673 / 0.667   d=-0.001 [-0.005, +0.002]   yes%=93.0  n=500+500
+stage1_lp/K16      edge_rel  AUC 0.613 / 0.614 / 0.616   d=-0.001 [-0.003, +0.001]   yes%=39.2  n=378+378
+stage1_lp/K16      edge_ent  AUC 0.634 / 0.635 / 0.634   d=-0.001 [-0.003, +0.001]   yes%=37.0  n=378+378
+Exception ignored in: <function ResourceTracker.__del__ at 0x000001CF19941DA0>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

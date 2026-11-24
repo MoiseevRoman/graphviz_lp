@@ -1,0 +1,48 @@
+[protocol] rank
+[ok]   text_paths_iso: image_mode=blank, n=971
+[ok]   visual_paths: image_mode=real, n=971
+[ok]   both_paths_iso: image_mode=real, n=971
+[ok]   text_paths: image_mode=blank, n=971
+[ok]   text_cn: image_mode=blank, n=971
+[ok]   none: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+text_paths_iso   971   0.3819   28.12   39.96   57.47
+visual_paths   971   0.3667   25.03   39.24   60.25
+both_paths_iso   971   0.3849   28.42   40.78   57.78
+text_paths   971   0.4040   30.28   42.43   59.63
+text_cn    971   0.3819   27.91   40.78   58.19
+none       971   0.3859   28.22   40.78   59.32
+
+=== visual_paths vs text_paths_iso (парных 971) ===
+  ΔMRR = -0.0152  95% CI [-0.0311, +0.0009]  не значимо
+  McNemar H@1 : visual_paths-win= 43 text_paths_iso-win= 73 z= 2.69 p=0.00709 значимо
+  McNemar H@3 : visual_paths-win= 54 text_paths_iso-win= 61 z= 0.56 p=0.5758 н/з
+  McNemar H@10: visual_paths-win= 83 text_paths_iso-win= 56 z= 2.21 p=0.02743 значимо
+
+=== both_paths_iso vs text_paths_iso (парных 971) ===
+  ΔMRR = +0.0031  95% CI [-0.0060, +0.0121]  не значимо
+  McNemar H@1 : both_paths_iso-win= 27 text_paths_iso-win= 24 z= 0.28 p=0.7794 н/з
+  McNemar H@3 : both_paths_iso-win= 28 text_paths_iso-win= 20 z= 1.01 p=0.3123 н/з
+  McNemar H@10: both_paths_iso-win= 27 text_paths_iso-win= 24 z= 0.28 p=0.7794 н/з
+
+=== text_paths vs text_paths_iso (парных 971) ===
+  ΔMRR = +0.0221  95% CI [+0.0110, +0.0336]  ЗНАЧИМО
+  McNemar H@1 : text_paths-win= 45 text_paths_iso-win= 24 z= 2.41 p=0.01605 значимо
+  McNemar H@3 : text_paths-win= 38 text_paths_iso-win= 14 z= 3.19 p=0.001425 значимо
+  McNemar H@10: text_paths-win= 40 text_paths_iso-win= 19 z= 2.60 p=0.00922 значимо
+
+=== text_cn vs text_paths_iso (парных 971) ===
+  ΔMRR = +0.0001  95% CI [-0.0129, +0.0130]  не значимо
+  McNemar H@1 : text_cn-win= 47 text_paths_iso-win= 49 z= 0.10 p=0.9187 н/з
+  McNemar H@3 : text_cn-win= 39 text_paths_iso-win= 31 z= 0.84 p=0.4028 н/з
+  McNemar H@10: text_cn-win= 35 text_paths_iso-win= 28 z= 0.76 p=0.4497 н/з
+
+=== none vs text_paths_iso (парных 971) ===
+  ΔMRR = +0.0041  95% CI [-0.0113, +0.0196]  не значимо
+  McNemar H@1 : none-win= 55 text_paths_iso-win= 54 z= 0.00 p=1 н/з
+  McNemar H@3 : none-win= 60 text_paths_iso-win= 52 z= 0.66 p=0.5083 н/з
+  McNemar H@10: none-win= 71 text_paths_iso-win= 53 z= 1.53 p=0.1268 н/з
+
+Сохранено: graphvis_ckpts_paths_iso\compare_vs_text_iso.json

@@ -1,0 +1,16 @@
+[protocol] rank
+[ok]   visual_blank: image_mode=blank, n=971
+[ok]   visual: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+visual_blank   971   0.3917   29.04   40.37   61.38
+visual     971   0.3915   28.94   40.68   61.59
+
+=== visual vs visual_blank (парных 971) ===
+  ΔMRR = -0.0002  95% CI [-0.0023, +0.0019]  не значимо
+  McNemar H@1 : visual-win=  1 visual_blank-win=  2 z= 0.00 p=1 н/з
+  McNemar H@3 : visual-win=  5 visual_blank-win=  2 z= 0.76 p=0.4497 н/з
+  McNemar H@10: visual-win=  5 visual_blank-win=  3 z= 0.35 p=0.7237 н/з
+
+Сохранено: graphvis_ckpts_qwen3\k16\compare_blank.json

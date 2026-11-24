@@ -1,0 +1,11 @@
+{
+  "MRR": 0.401384665895328,
+  "Hits@1": 29.315068493150687,
+  "Hits@3": 43.9041095890411,
+  "Hits@10": 60.06849315068493,
+  "n_evaluated": 1460,
+  "n_total_test": 2000,
+  "mean_candidates": 44.570547945205476,
+  "eval_mode": "rank",
+  "image_mode": "blank"
+}

@@ -1,0 +1,16 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.99s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.69s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.74s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+  20/121 картинок, 183s
+  40/121 картинок, 366s
+  60/121 картинок, 541s
+  80/121 картинок, 728s
+  100/121 картинок, 912s
+  120/121 картинок, 1092s
+saved: graphvis_readcheck\cf_probe.json  (1101s)
+
+=== CF PROBE: AUC правка / orig (src = исходный PNG), d = правка − orig [95% CI] ===
+base           drop    AUC 0.997 / 0.528 (src 0.525)  d=+0.469 [+0.440, +0.502] *  yes% на негативах: правка 2.1 / orig 98.4  n=482+438 (121 img)
+base           swap    AUC 0.427 / 0.066 (src 0.101)  d=+0.361 [+0.323, +0.397] *  yes% на негативах: правка 58.6 / orig 87.4  n=444+444 (121 img)
+base           detach  AUC 0.690 / 0.495 (src 0.492)  d=+0.195 [+0.167, +0.222] *  yes% на негативах: правка 95.8 / orig 99.6  n=481+240 (121 img)
+base           box?    отцепленный бокс «есть»: 98.3% (orig 97.5%)  n=240

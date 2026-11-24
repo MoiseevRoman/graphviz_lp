@@ -1,0 +1,58 @@
+[
+  {
+    "idx": 0,
+    "gold": "October",
+    "rank": 1,
+    "n_cand": 12,
+    "gold_score": -0.9677
+  },
+  {
+    "idx": 1,
+    "gold": "Heart",
+    "rank": 48,
+    "n_cand": 51,
+    "gold_score": -8.5862
+  },
+  {
+    "idx": 2,
+    "gold": "France",
+    "rank": 10,
+    "n_cand": 50,
+    "gold_score": -1.96
+  },
+  {
+    "idx": 3,
+    "gold": "Pontefract",
+    "rank": 2,
+    "n_cand": 51,
+    "gold_score": -2.4095
+  },
+  {
+    "idx": 4,
+    "gold": "Lancaster",
+    "rank": 1,
+    "n_cand": 51,
+    "gold_score": -1.3698
+  },
+  {
+    "idx": 11,
+    "gold": "David_Henrie",
+    "rank": 38,
+    "n_cand": 51,
+    "gold_score": -3.624
+  },
+  {
+    "idx": 13,
+    "gold": "Eastern_Time_Zone",
+    "rank": 1,
+    "n_cand": 13,
+    "gold_score": -1.1645
+  },
+  {
+    "idx": 15,
+    "gold": "Blue",
+    "rank": 2,
+    "n_cand": 21,
+    "gold_score": -1.5305
+  }
+]

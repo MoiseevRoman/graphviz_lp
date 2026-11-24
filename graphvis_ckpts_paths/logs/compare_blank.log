@@ -1,0 +1,40 @@
+[protocol] rank
+[ok]   visual_paths: image_mode=real, n=971
+[ok]   visual_paths_blank: image_mode=blank, n=971
+[ok]   both_paths: image_mode=real, n=971
+[ok]   both_paths_blank: image_mode=blank, n=971
+[ok]   text_paths: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+visual_paths   971   0.4396   32.85   47.79   66.74
+visual_paths_blank   971   0.3246   20.80   34.50   56.54
+both_paths   971   0.4580   35.43   48.71   65.91
+both_paths_blank   971   0.4579   35.32   48.82   66.22
+text_paths   971   0.4543   34.91   48.20   65.81
+
+=== visual_paths vs visual_paths_blank (парных 971) ===
+  ΔMRR = +0.1150  95% CI [+0.0933, +0.1362]  ЗНАЧИМО
+  McNemar H@1 : visual_paths-win=152 visual_paths_blank-win= 35 z= 8.48 p=2.199e-17 значимо
+  McNemar H@3 : visual_paths-win=178 visual_paths_blank-win= 49 z= 8.50 p=1.968e-17 значимо
+  McNemar H@10: visual_paths-win=139 visual_paths_blank-win= 40 z= 7.32 p=2.391e-13 значимо
+
+=== both_paths vs visual_paths_blank (парных 971) ===
+  ΔMRR = +0.1333  95% CI [+0.1108, +0.1556]  ЗНАЧИМО
+  McNemar H@1 : both_paths-win=174 visual_paths_blank-win= 32 z= 9.82 p=8.881e-23 значимо
+  McNemar H@3 : both_paths-win=185 visual_paths_blank-win= 47 z= 8.99 p=2.373e-19 значимо
+  McNemar H@10: both_paths-win=149 visual_paths_blank-win= 58 z= 6.26 p=3.964e-10 значимо
+
+=== both_paths_blank vs visual_paths_blank (парных 971) ===
+  ΔMRR = +0.1332  95% CI [+0.1103, +0.1560]  ЗНАЧИМО
+  McNemar H@1 : both_paths_blank-win=173 visual_paths_blank-win= 32 z= 9.78 p=1.399e-22 значимо
+  McNemar H@3 : both_paths_blank-win=187 visual_paths_blank-win= 48 z= 9.00 p=2.214e-19 значимо
+  McNemar H@10: both_paths_blank-win=150 visual_paths_blank-win= 56 z= 6.48 p=9.196e-11 значимо
+
+=== text_paths vs visual_paths_blank (парных 971) ===
+  ΔMRR = +0.1297  95% CI [+0.1075, +0.1528]  ЗНАЧИМО
+  McNemar H@1 : text_paths-win=169 visual_paths_blank-win= 32 z= 9.59 p=8.581e-22 значимо
+  McNemar H@3 : text_paths-win=187 visual_paths_blank-win= 54 z= 8.50 p=1.85e-17 значимо
+  McNemar H@10: text_paths-win=148 visual_paths_blank-win= 58 z= 6.20 p=5.613e-10 значимо
+
+Сохранено: graphvis_ckpts_paths\compare_blank.json

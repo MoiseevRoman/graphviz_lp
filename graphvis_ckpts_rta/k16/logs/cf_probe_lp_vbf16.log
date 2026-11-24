@@ -1,0 +1,21 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.79s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.81s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+[lp_vbf16] adapter: graphvis_ckpts_scaling_vbf16\k16\ctx_visual_vbf16\adapter
+  20/121 картинок, 286s
+  40/121 картинок, 573s
+  60/121 картинок, 849s
+  80/121 картинок, 1143s
+  100/121 картинок, 1431s
+  120/121 картинок, 1715s
+saved: graphvis_readcheck\cf_probe.json  (1729s)
+
+=== CF PROBE: AUC правка / orig (src = исходный PNG), d = правка − orig [95% CI] ===
+base           drop    AUC 0.997 / 0.528 (src 0.525)  d=+0.469 [+0.440, +0.502] *  yes% на негативах: правка 2.1 / orig 98.4  n=482+438 (121 img)
+base           swap    AUC 0.427 / 0.066 (src 0.101)  d=+0.361 [+0.323, +0.397] *  yes% на негативах: правка 58.6 / orig 87.4  n=444+444 (121 img)
+base           detach  AUC 0.690 / 0.495 (src 0.492)  d=+0.195 [+0.167, +0.222] *  yes% на негативах: правка 95.8 / orig 99.6  n=481+240 (121 img)
+base           box?    отцепленный бокс «есть»: 98.3% (orig 97.5%)  n=240
+lp_vbf16       drop    AUC 0.825 / 0.486 (src 0.489)  d=+0.339 [+0.309, +0.370] *  yes% на негативах: правка 92.7 / orig 98.6  n=482+438 (121 img)
+lp_vbf16       swap    AUC 0.361 / 0.336 (src 0.357)  d=+0.025 [+0.013, +0.036] *  yes% на негативах: правка 73.2 / orig 74.5  n=444+444 (121 img)
+lp_vbf16       detach  AUC 0.558 / 0.514 (src 0.517)  d=+0.044 [+0.032, +0.056] *  yes% на негативах: правка 99.2 / orig 99.2  n=481+240 (121 img)
+lp_vbf16       box?    отцепленный бокс «есть»: 98.8% (orig 98.3%)  n=240

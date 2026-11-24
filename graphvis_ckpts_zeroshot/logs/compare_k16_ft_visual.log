@@ -1,0 +1,16 @@
+[protocol] rank
+[ok]   zs_visual: image_mode=real, n=971
+[ok]   ft_visual: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+zs_visual   971   0.2997   19.16   31.51   49.64
+ft_visual   971   0.4037   29.25   42.53   63.65
+
+=== ft_visual vs zs_visual (парных 971) ===
+  ΔMRR = +0.1040  95% CI [+0.0821, +0.1260]  ЗНАЧИМО
+  McNemar H@1 : ft_visual-win=142 zs_visual-win= 44 z= 7.11 p=1.141e-12 значимо
+  McNemar H@3 : ft_visual-win=168 zs_visual-win= 61 z= 7.00 p=2.476e-12 значимо
+  McNemar H@10: ft_visual-win=201 zs_visual-win= 65 z= 8.28 p=1.259e-16 значимо
+
+Сохранено: graphvis_ckpts_zeroshot\k16\compare_ft_visual.json

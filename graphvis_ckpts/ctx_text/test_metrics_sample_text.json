@@ -1,0 +1,18 @@
+{
+  "MRR": 0.3523439314227852,
+  "Hits@1": 29.666666666666668,
+  "Hits@3": 38.166666666666664,
+  "Hits@10": 46.833333333333336,
+  "n_evaluated": 600,
+  "n_total_test": 1200,
+  "n_entities": 14541,
+  "sampled_gold_rate": 52.33333333333333,
+  "mean_distinct_entities": 25.648333333333333,
+  "mean_invalid_frac": 0.287325,
+  "eval_mode": "sample",
+  "image_mode": "blank",
+  "prompt_key": "prompt",
+  "num_samples": 200,
+  "temperature": 1.0,
+  "label": "text"
+}

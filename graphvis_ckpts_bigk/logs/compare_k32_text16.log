@@ -1,0 +1,16 @@
+[protocol] rank
+[ok]   text16: image_mode=blank, n=971
+[ok]   text: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+text16     971   0.4115   29.87   44.18   65.29
+text       971   0.4162   30.07   45.31   64.88
+
+=== text vs text16 (парных 971) ===
+  ΔMRR = +0.0046  95% CI [-0.0042, +0.0135]  не значимо
+  McNemar H@1 : text-win= 23 text16-win= 21 z= 0.15 p=0.8802 н/з
+  McNemar H@3 : text-win= 30 text16-win= 19 z= 1.43 p=0.1531 н/з
+  McNemar H@10: text-win= 22 text16-win= 26 z= 0.43 p=0.665 н/з
+
+Сохранено: graphvis_ckpts_bigk\k32\compare_text16.json

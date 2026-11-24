@@ -22,6 +22,38 @@ from graphvis_lp.training.families import (
 logger = logging.getLogger(__name__)
 
 
+def quant_config(cfg: TrainConfig):
+    """NF4-конфиг QLoRA; при cfg.vision_bf16 зрительная башня не квантуется."""
+    if not cfg.use_4bit:
+        return None
+    kw: Dict[str, Any] = {}
+    if getattr(cfg, "vision_bf16", False):
+        # имя сегмента "visual" (Qwen2-VL / 2.5-VL: model.visual.*); lm_head — дефолт bnb
+        kw["llm_int8_skip_modules"] = ["visual", "model.visual", "lm_head"]
+    return BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.bfloat16 if cfg.use_bf16 else torch.float16,
+        bnb_4bit_use_double_quant=True,
+        **kw,
+    )
+
+
+def vision_precision(model) -> Tuple[int, int]:
+    """(квантованных 4-bit Linear, всего Linear) в зрительной башне."""
+    n4 = n = 0
+    for name, m in model.named_modules():
+        if "visual" not in name.split("."):
+            continue
+        t = type(m).__name__
+        if t in ("Linear4bit", "Linear8bitLt"):
+            n4 += 1
+            n += 1
+        elif isinstance(m, torch.nn.Linear):
+            n += 1
+    return n4, n
+
+
 def build_model_and_processor(
     cfg: TrainConfig,
 ) -> Tuple[Any, Any, PreTrainedTokenizerBase]:
@@ -33,18 +65,21 @@ def build_model_and_processor(
     load_kwargs: Dict[str, Any] = {"device_map": "cuda:0"}
 
     # Quantization
-    if cfg.use_4bit:
-        load_kwargs["quantization_config"] = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_compute_dtype=torch.bfloat16 if cfg.use_bf16 else torch.float16,
-            bnb_4bit_use_double_quant=True,
-        )
-        logger.info("4-bit quantization (QLoRA) включена")
+    qc = quant_config(cfg)
+    if qc is not None:
+        load_kwargs["quantization_config"] = qc
+        logger.info("4-bit quantization (QLoRA) включена%s",
+                    " (зрительная башня — bf16)" if getattr(cfg, "vision_bf16", False) else "")
 
     dtype = torch.bfloat16 if cfg.use_bf16 else torch.float16
 
     model, processor = load_model_and_processor(cfg, load_kwargs, dtype)
+    if getattr(cfg, "vision_bf16", False):
+        n4, n = vision_precision(model)
+        logger.info("vision_bf16: квантованных Linear в зрительной башне %d из %d", n4, n)
+        if n4:
+            raise RuntimeError(f"vision_bf16: {n4}/{n} Linear зрительной башни всё же в 4 бит "
+                               "(llm_int8_skip_modules не сработал в этой версии transformers)")
     tokenizer = (
         processor.tokenizer
         if hasattr(processor, "tokenizer")

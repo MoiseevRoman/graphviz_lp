@@ -1,0 +1,32 @@
+[protocol] rank
+[ok]   text: image_mode=blank, n=971
+[ok]   visual: image_mode=real, n=971
+[ok]   visual_blank: image_mode=blank, n=971
+[ok]   none: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+text       971   0.4212   31.51   43.67   64.78
+visual     971   0.3915   28.94   40.68   61.59
+visual_blank   971   0.3917   29.04   40.37   61.38
+none       971   0.3947   28.94   41.50   60.56
+
+=== visual vs text (парных 971) ===
+  ΔMRR = -0.0297  95% CI [-0.0420, -0.0175]  ЗНАЧИМО
+  McNemar H@1 : visual-win= 22 text-win= 47 z= 2.89 p=0.003861 значимо
+  McNemar H@3 : visual-win= 31 text-win= 60 z= 2.94 p=0.003333 значимо
+  McNemar H@10: visual-win= 28 text-win= 59 z= 3.22 p=0.001298 значимо
+
+=== visual_blank vs text (парных 971) ===
+  ΔMRR = -0.0296  95% CI [-0.0420, -0.0176]  ЗНАЧИМО
+  McNemar H@1 : visual_blank-win= 23 text-win= 47 z= 2.75 p=0.005977 значимо
+  McNemar H@3 : visual_blank-win= 30 text-win= 62 z= 3.23 p=0.001229 значимо
+  McNemar H@10: visual_blank-win= 27 text-win= 60 z= 3.43 p=0.0006019 значимо
+
+=== none vs text (парных 971) ===
+  ΔMRR = -0.0265  95% CI [-0.0392, -0.0138]  ЗНАЧИМО
+  McNemar H@1 : none-win= 27 text-win= 52 z= 2.70 p=0.00693 значимо
+  McNemar H@3 : none-win= 33 text-win= 54 z= 2.14 p=0.03201 значимо
+  McNemar H@10: none-win= 22 text-win= 63 z= 4.34 p=1.434e-05 значимо
+
+Сохранено: graphvis_ckpts_qwen3\k16\compare.json

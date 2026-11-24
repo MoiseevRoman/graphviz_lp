@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\image_influence.py", line 46, in <module>
+    import torch
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\torch\__init__.py", line 280, in <module>
+    _load_dll_libraries()
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\torch\__init__.py", line 256, in _load_dll_libraries
+    res = kernel32.LoadLibraryExW(dll, None, 0x00001100)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+^C

@@ -1,4 +1,4 @@
-"""Абстракция семейства моделей: изолирует ВСЕ отличия LLaVA vs Qwen2.5-VL.
+"""Абстракция семейства моделей: изолирует ВСЕ отличия LLaVA vs Qwen2.5-VL / Qwen3-VL.
 
 Смена бэкенда сводится к смене ``cfg.model_name`` — весь остальной код
 (dataset / evaluate / probes / trainer) работает через функции ниже и не
@@ -40,6 +40,11 @@ def detect_family(model_name: str, override: str = "auto") -> str:
     return "llava"
 
 
+def is_qwen3(model_name: str) -> bool:
+    """Qwen3-VL идёт по пути семейства "qwen"; отличаются класс и шаг патча."""
+    return "qwen3" in model_name.lower()
+
+
 # ──────────────────────────────────────────────────────────────────
 # Загрузка модели + процессора
 # ──────────────────────────────────────────────────────────────────
@@ -51,15 +56,27 @@ def load_model_and_processor(cfg, load_kwargs: Dict[str, Any], dtype):
         load_kwargs = {**load_kwargs, "attn_implementation": cfg.attn_implementation}
 
     if family == "qwen":
-        from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
+        from transformers import AutoProcessor
 
-        model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+        if is_qwen3(cfg.model_name):
+            # Qwen3-VL: тот же chat-template / <|image_pad|> / image_grid_thw, что у
+            # Qwen2.5-VL, но патч 16 px × merge 2 = 32 px на токен (а не 28).
+            try:
+                from transformers import Qwen3VLForConditionalGeneration as _Cls
+            except ImportError as e:
+                raise ImportError("Qwen3-VL требует transformers>=4.57") from e
+            min_px, max_px = cfg.qwen3_min_pixels, cfg.qwen3_max_pixels
+        else:
+            from transformers import Qwen2_5_VLForConditionalGeneration as _Cls
+            min_px, max_px = cfg.qwen_min_pixels, cfg.qwen_max_pixels
+
+        model = _Cls.from_pretrained(
             cfg.model_name, torch_dtype=dtype, cache_dir=cfg.model_cache_dir, **load_kwargs,
         )
         # min/max_pixels задаём процессору — так контролируем число визуальных токенов.
         processor = AutoProcessor.from_pretrained(
             cfg.model_name, cache_dir=cfg.model_cache_dir,
-            min_pixels=cfg.qwen_min_pixels, max_pixels=cfg.qwen_max_pixels,
+            min_pixels=min_px, max_pixels=max_px,
         )
     else:
         from transformers import AutoProcessor, LlavaForConditionalGeneration

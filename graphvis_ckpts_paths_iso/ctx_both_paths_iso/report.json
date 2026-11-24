@@ -1,0 +1,78 @@
+{
+  "config": {
+    "train_n": 4000,
+    "eval_only": false,
+    "adapter": "graphvis_ckpts_paths_iso\\ctx_both_paths_iso\\adapter",
+    "eval_n": 1000,
+    "epochs": 1,
+    "eval_mode": "rank",
+    "beams": 10,
+    "cand_cap": 50,
+    "dataset_root": "graphvis_paths_iso\\datasets",
+    "model": "Qwen/Qwen2.5-VL-3B-Instruct"
+  },
+  "train": {
+    "loss_first": 3.4035,
+    "loss_last": 1.3991,
+    "peak_vram_gb": 7.3,
+    "with_stage1": false,
+    "stage1_loss_first": null,
+    "stage1_loss_last": null,
+    "train_mean_tokens": 804.96875,
+    "train_mean_text_tokens": 404.96875,
+    "train_mean_visual_tokens": 400.0,
+    "train_examples": 4000,
+    "train_epochs": 1,
+    "train_tokens_total": 3219875.0
+  },
+  "eval": {
+    "MRR": 0.3849154562971607,
+    "Hits@1": 28.424304840370752,
+    "Hits@3": 40.7826982492276,
+    "Hits@10": 57.77548918640577,
+    "mean_total_tokens": 798.859375,
+    "mean_text_tokens": 398.859375,
+    "mean_visual_tokens": 400.0,
+    "n_cost_sampled": 64,
+    "n_evaluated": 971,
+    "n_total_test": 2000,
+    "mean_candidates": 44.675592173017506,
+    "eval_mode": "rank",
+    "tie_break": "optimistic",
+    "image_mode": "real"
+  },
+  "ablation": {
+    "real": {
+      "MRR": 0.3849154562971607,
+      "Hits@1": 28.424304840370752,
+      "Hits@3": 40.7826982492276,
+      "Hits@10": 57.77548918640577,
+      "mean_total_tokens": 798.859375,
+      "mean_text_tokens": 398.859375,
+      "mean_visual_tokens": 400.0,
+      "n_cost_sampled": 64,
+      "n_evaluated": 971,
+      "n_total_test": 2000,
+      "mean_candidates": 44.675592173017506,
+      "eval_mode": "rank",
+      "tie_break": "optimistic",
+      "image_mode": "real"
+    },
+    "blank": {
+      "MRR": 0.38468682059672454,
+      "Hits@1": 28.218331616889802,
+      "Hits@3": 41.1946446961895,
+      "Hits@10": 57.77548918640577,
+      "mean_total_tokens": 654.859375,
+      "mean_text_tokens": 398.859375,
+      "mean_visual_tokens": 256.0,
+      "n_cost_sampled": 64,
+      "n_evaluated": 971,
+      "n_total_test": 2000,
+      "mean_candidates": 44.675592173017506,
+      "eval_mode": "rank",
+      "tie_break": "optimistic",
+      "image_mode": "blank"
+    }
+  }
+}

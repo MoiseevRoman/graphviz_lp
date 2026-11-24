@@ -1,0 +1,23 @@
+=== 1. RTA: качество чтени€ на основном тесте ===
+  [real ] n=971 MRR=0.410 | рЄбра P/R 0.972/0.964 | соседи P/R 0.989/0.987 | выписано 13.4 из 13.5
+          MRR по терцил€м полноты чтени€: [0.33Ц1.00] 0.410 (n=971)
+  [blank] нет деталей Ч пропуск
+
+=== 2.  онтрфактика LP: ~30 % соседей убраны и с картинки, и из текста ===
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\rta_report.py", line 153, in <module>
+    main()
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\rta_report.py", line 144, in main
+    part2(out)
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\rta_report.py", line 114, in part2
+    print(f"  {c:13s} n={len(ids)} MRR orig {ro.mean():.3f} \u2192 drop {rd.mean():.3f}  \u0394={mu:+.3f} [{lo:+.3f},{hi:+.3f}]"
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Exception ignored in: <function ResourceTracker.__del__ at 0x000001F81D3153A0>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

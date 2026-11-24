@@ -1,0 +1,2624 @@
+[
+  {
+    "idx": 0,
+    "gold": "October",
+    "rank": 1,
+    "n_cand": 12
+  },
+  {
+    "idx": 1,
+    "gold": "Heart",
+    "rank": 45,
+    "n_cand": 51
+  },
+  {
+    "idx": 2,
+    "gold": "France",
+    "rank": 3,
+    "n_cand": 50
+  },
+  {
+    "idx": 3,
+    "gold": "Pontefract",
+    "rank": 4,
+    "n_cand": 51
+  },
+  {
+    "idx": 4,
+    "gold": "Lancaster",
+    "rank": 4,
+    "n_cand": 51
+  },
+  {
+    "idx": 6,
+    "gold": "Piranha_3D",
+    "rank": 16,
+    "n_cand": 51
+  },
+  {
+    "idx": 7,
+    "gold": "Liechtenstein",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 8,
+    "gold": "War_film",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 9,
+    "gold": "Notts_County_F.C.",
+    "rank": 6,
+    "n_cand": 51
+  },
+  {
+    "idx": 11,
+    "gold": "David_Henrie",
+    "rank": 49,
+    "n_cand": 51
+  },
+  {
+    "idx": 15,
+    "gold": "Blue",
+    "rank": 2,
+    "n_cand": 21
+  },
+  {
+    "idx": 18,
+    "gold": "Djibouti",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 19,
+    "gold": "Mauritania",
+    "rank": 5,
+    "n_cand": 51
+  },
+  {
+    "idx": 20,
+    "gold": "Computer_Science",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 21,
+    "gold": "Presbyterianism",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 22,
+    "gold": "Canada",
+    "rank": 16,
+    "n_cand": 50
+  },
+  {
+    "idx": 27,
+    "gold": "United_Kingdom",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 30,
+    "gold": "Society_of_Jesus-GB",
+    "rank": 17,
+    "n_cand": 24
+  },
+  {
+    "idx": 32,
+    "gold": "The_King's_Speech",
+    "rank": 24,
+    "n_cand": 50
+  },
+  {
+    "idx": 40,
+    "gold": "Ralph_E._Winters",
+    "rank": 15,
+    "n_cand": 29
+  },
+  {
+    "idx": 44,
+    "gold": "United_States_Dollar",
+    "rank": 1,
+    "n_cand": 7
+  },
+  {
+    "idx": 46,
+    "gold": "League_of_Nations",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 47,
+    "gold": "Pacific_Palisades",
+    "rank": 43,
+    "n_cand": 50
+  },
+  {
+    "idx": 48,
+    "gold": "You_Only_Live_Twice",
+    "rank": 3,
+    "n_cand": 51
+  },
+  {
+    "idx": 51,
+    "gold": "Nat_King_Cole",
+    "rank": 14,
+    "n_cand": 51
+  },
+  {
+    "idx": 52,
+    "gold": "Primetime_Emmy_Award_for_Outstanding_Lead_Actor_-_Drama_Series",
+    "rank": 4,
+    "n_cand": 51
+  },
+  {
+    "idx": 55,
+    "gold": "2010_Berlin_International_Film_Festival",
+    "rank": 1,
+    "n_cand": 21
+  },
+  {
+    "idx": 57,
+    "gold": "Jun_Fukuyama",
+    "rank": 13,
+    "n_cand": 51
+  },
+  {
+    "idx": 58,
+    "gold": "Garland",
+    "rank": 8,
+    "n_cand": 51
+  },
+  {
+    "idx": 59,
+    "gold": "Film_Producer-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 60,
+    "gold": "Thor",
+    "rank": 38,
+    "n_cand": 51
+  },
+  {
+    "idx": 62,
+    "gold": "Sven_Nykvist",
+    "rank": 33,
+    "n_cand": 51
+  },
+  {
+    "idx": 66,
+    "gold": "Confessions_of_a_Dangerous_Mind",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 67,
+    "gold": "Poet",
+    "rank": 17,
+    "n_cand": 50
+  },
+  {
+    "idx": 69,
+    "gold": "Intelligent_dance_music",
+    "rank": 18,
+    "n_cand": 51
+  },
+  {
+    "idx": 70,
+    "gold": "Arkansas",
+    "rank": 10,
+    "n_cand": 50
+  },
+  {
+    "idx": 71,
+    "gold": "United_Kingdom",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 72,
+    "gold": "Pantothenic_acid",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 73,
+    "gold": "Beta-carotene",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 74,
+    "gold": "DodgeBall:_A_True_Underdog_Story",
+    "rank": 37,
+    "n_cand": 51
+  },
+  {
+    "idx": 75,
+    "gold": "Royal_Holloway,_University_of_London",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 76,
+    "gold": "Domestic_partnership",
+    "rank": 1,
+    "n_cand": 4
+  },
+  {
+    "idx": 77,
+    "gold": "Henry_V",
+    "rank": 43,
+    "n_cand": 51
+  },
+  {
+    "idx": 79,
+    "gold": "Artist-GB",
+    "rank": 21,
+    "n_cand": 50
+  },
+  {
+    "idx": 80,
+    "gold": "Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Cast_in_a_Motion_Picture",
+    "rank": 11,
+    "n_cand": 50
+  },
+  {
+    "idx": 81,
+    "gold": "Drugstore_Cowboy",
+    "rank": 11,
+    "n_cand": 51
+  },
+  {
+    "idx": 82,
+    "gold": "Singer-songwriter-GB",
+    "rank": 3,
+    "n_cand": 50
+  },
+  {
+    "idx": 83,
+    "gold": "Meryl_Streep",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 87,
+    "gold": "Queens_of_the_Stone_Age",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 89,
+    "gold": "Finland_national_football_team",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 93,
+    "gold": "Eastern_Time_Zone",
+    "rank": 1,
+    "n_cand": 13
+  },
+  {
+    "idx": 94,
+    "gold": "Nondenominational_Christianity",
+    "rank": 21,
+    "n_cand": 50
+  },
+  {
+    "idx": 96,
+    "gold": "The_Pianist",
+    "rank": 9,
+    "n_cand": 51
+  },
+  {
+    "idx": 99,
+    "gold": "Austria",
+    "rank": 8,
+    "n_cand": 50
+  },
+  {
+    "idx": 100,
+    "gold": "Crewe_Alexandra_F.C.",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 102,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 103,
+    "gold": "Leo_Tolstoy",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 104,
+    "gold": "New_Zealand",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 106,
+    "gold": "United_States_Dollar",
+    "rank": 1,
+    "n_cand": 7
+  },
+  {
+    "idx": 107,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 21
+  },
+  {
+    "idx": 108,
+    "gold": "1988_Summer_Olympics",
+    "rank": 18,
+    "n_cand": 43
+  },
+  {
+    "idx": 109,
+    "gold": "University_of_Michigan_Law_School",
+    "rank": 25,
+    "n_cand": 51
+  },
+  {
+    "idx": 111,
+    "gold": "University",
+    "rank": 7,
+    "n_cand": 24
+  },
+  {
+    "idx": 112,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 114,
+    "gold": "Typhoid_fever",
+    "rank": 19,
+    "n_cand": 50
+  },
+  {
+    "idx": 117,
+    "gold": "United_Nations",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 118,
+    "gold": "Yanni",
+    "rank": 7,
+    "n_cand": 51
+  },
+  {
+    "idx": 121,
+    "gold": "The_Country_Girl",
+    "rank": 30,
+    "n_cand": 51
+  },
+  {
+    "idx": 122,
+    "gold": "Academy_Award_for_Best_Actress_in_a_Supporting_Role",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 127,
+    "gold": "Hollywood",
+    "rank": 8,
+    "n_cand": 50
+  },
+  {
+    "idx": 128,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 131,
+    "gold": "BAFTA_Award_for_Best_Direction",
+    "rank": 17,
+    "n_cand": 50
+  },
+  {
+    "idx": 134,
+    "gold": "Halifax_Regional_Municipality",
+    "rank": 32,
+    "n_cand": 51
+  },
+  {
+    "idx": 135,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4
+  },
+  {
+    "idx": 137,
+    "gold": "Theatrical_producer",
+    "rank": 21,
+    "n_cand": 50
+  },
+  {
+    "idx": 141,
+    "gold": "Shirley_Ann_Russell",
+    "rank": 35,
+    "n_cand": 51
+  },
+  {
+    "idx": 142,
+    "gold": "Business",
+    "rank": 39,
+    "n_cand": 50
+  },
+  {
+    "idx": 143,
+    "gold": "San_Mateo",
+    "rank": 6,
+    "n_cand": 51
+  },
+  {
+    "idx": 146,
+    "gold": "Alpha_Delta_Pi",
+    "rank": 2,
+    "n_cand": 3
+  },
+  {
+    "idx": 156,
+    "gold": "58th_Academy_Awards",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 157,
+    "gold": "Physics",
+    "rank": 12,
+    "n_cand": 50
+  },
+  {
+    "idx": 158,
+    "gold": "Beverly_Hills",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 159,
+    "gold": "Actor-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 161,
+    "gold": "The_Birdcage",
+    "rank": 25,
+    "n_cand": 51
+  },
+  {
+    "idx": 163,
+    "gold": "Long_Island",
+    "rank": 7,
+    "n_cand": 51
+  },
+  {
+    "idx": 165,
+    "gold": "2004_Summer_Olympics",
+    "rank": 1,
+    "n_cand": 43
+  },
+  {
+    "idx": 166,
+    "gold": "Action_Film",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 167,
+    "gold": "New_Zealand",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 168,
+    "gold": "Denmark-GB",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 169,
+    "gold": "Kelly_Macdonald",
+    "rank": 14,
+    "n_cand": 50
+  },
+  {
+    "idx": 170,
+    "gold": "Japanese_Language",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 175,
+    "gold": "Punjabi_language",
+    "rank": 12,
+    "n_cand": 40
+  },
+  {
+    "idx": 181,
+    "gold": "Marmaduke",
+    "rank": 20,
+    "n_cand": 51
+  },
+  {
+    "idx": 182,
+    "gold": "The_Truman_Show",
+    "rank": 26,
+    "n_cand": 51
+  },
+  {
+    "idx": 183,
+    "gold": "Bulgaria",
+    "rank": 3,
+    "n_cand": 50
+  },
+  {
+    "idx": 186,
+    "gold": "1995_Major_League_Baseball_Draft",
+    "rank": 3,
+    "n_cand": 20
+  },
+  {
+    "idx": 187,
+    "gold": "Art",
+    "rank": 20,
+    "n_cand": 51
+  },
+  {
+    "idx": 189,
+    "gold": "Washington,_D.C.",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 190,
+    "gold": "Capote",
+    "rank": 7,
+    "n_cand": 51
+  },
+  {
+    "idx": 194,
+    "gold": "Space_Cowboys",
+    "rank": 42,
+    "n_cand": 51
+  },
+  {
+    "idx": 196,
+    "gold": "Dominican_Republic",
+    "rank": 12,
+    "n_cand": 51
+  },
+  {
+    "idx": 203,
+    "gold": "Men_in_Black",
+    "rank": 16,
+    "n_cand": 51
+  },
+  {
+    "idx": 205,
+    "gold": "Hugo",
+    "rank": 19,
+    "n_cand": 51
+  },
+  {
+    "idx": 208,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4
+  },
+  {
+    "idx": 209,
+    "gold": "The_Mask_of_Zorro",
+    "rank": 4,
+    "n_cand": 51
+  },
+  {
+    "idx": 214,
+    "gold": "Greek_Language",
+    "rank": 16,
+    "n_cand": 50
+  },
+  {
+    "idx": 215,
+    "gold": "Technical_Director",
+    "rank": 12,
+    "n_cand": 39
+  },
+  {
+    "idx": 216,
+    "gold": "Actor-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 217,
+    "gold": "Portugal",
+    "rank": 5,
+    "n_cand": 50
+  },
+  {
+    "idx": 218,
+    "gold": "Israel",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 219,
+    "gold": "Patrick_Doyle",
+    "rank": 46,
+    "n_cand": 50
+  },
+  {
+    "idx": 220,
+    "gold": "Female",
+    "rank": 1,
+    "n_cand": 2
+  },
+  {
+    "idx": 222,
+    "gold": "Netherlands",
+    "rank": 3,
+    "n_cand": 38
+  },
+  {
+    "idx": 223,
+    "gold": "Visual_Effects_Art_Director",
+    "rank": 15,
+    "n_cand": 39
+  },
+  {
+    "idx": 224,
+    "gold": "Television_producer-GB",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 225,
+    "gold": "London",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 226,
+    "gold": "Drama",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 228,
+    "gold": "Finance",
+    "rank": 17,
+    "n_cand": 50
+  },
+  {
+    "idx": 230,
+    "gold": "Thailand",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 233,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 40
+  },
+  {
+    "idx": 234,
+    "gold": "Mandarin_Chinese",
+    "rank": 12,
+    "n_cand": 50
+  },
+  {
+    "idx": 235,
+    "gold": "Iceland",
+    "rank": 3,
+    "n_cand": 50
+  },
+  {
+    "idx": 238,
+    "gold": "Action_Film",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 240,
+    "gold": "North_by_Northwest",
+    "rank": 27,
+    "n_cand": 51
+  },
+  {
+    "idx": 242,
+    "gold": "Greece",
+    "rank": 5,
+    "n_cand": 50
+  },
+  {
+    "idx": 243,
+    "gold": "Composer",
+    "rank": 11,
+    "n_cand": 50
+  },
+  {
+    "idx": 244,
+    "gold": "James_Ingram",
+    "rank": 31,
+    "n_cand": 51
+  },
+  {
+    "idx": 245,
+    "gold": "Hong_Kong",
+    "rank": 6,
+    "n_cand": 50
+  },
+  {
+    "idx": 246,
+    "gold": "Film_Producer-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 248,
+    "gold": "Julie_&_Julia",
+    "rank": 33,
+    "n_cand": 51
+  },
+  {
+    "idx": 250,
+    "gold": "Iron_Man_2",
+    "rank": 28,
+    "n_cand": 51
+  },
+  {
+    "idx": 252,
+    "gold": "Richard_Donner",
+    "rank": 30,
+    "n_cand": 51
+  },
+  {
+    "idx": 253,
+    "gold": "Delta_Delta_Delta",
+    "rank": 1,
+    "n_cand": 3
+  },
+  {
+    "idx": 254,
+    "gold": "The_Muppet_Movie",
+    "rank": 22,
+    "n_cand": 50
+  },
+  {
+    "idx": 255,
+    "gold": "Hong_Kong",
+    "rank": 19,
+    "n_cand": 50
+  },
+  {
+    "idx": 257,
+    "gold": "Pat_Metheny",
+    "rank": 4,
+    "n_cand": 51
+  },
+  {
+    "idx": 267,
+    "gold": "Visual_Effects_Art_Director",
+    "rank": 12,
+    "n_cand": 39
+  },
+  {
+    "idx": 269,
+    "gold": "Johnny_Yong_Bosch",
+    "rank": 32,
+    "n_cand": 51
+  },
+  {
+    "idx": 270,
+    "gold": "The_Mars_Volta",
+    "rank": 11,
+    "n_cand": 50
+  },
+  {
+    "idx": 271,
+    "gold": "The_White_Stripes",
+    "rank": 15,
+    "n_cand": 51
+  },
+  {
+    "idx": 273,
+    "gold": "Telecommunications",
+    "rank": 2,
+    "n_cand": 48
+  },
+  {
+    "idx": 278,
+    "gold": "Martin_Sheen",
+    "rank": 37,
+    "n_cand": 51
+  },
+  {
+    "idx": 279,
+    "gold": "Ghostbusters",
+    "rank": 37,
+    "n_cand": 51
+  },
+  {
+    "idx": 281,
+    "gold": "Merck_&_Co.",
+    "rank": 26,
+    "n_cand": 51
+  },
+  {
+    "idx": 282,
+    "gold": "Northrop_Grumman",
+    "rank": 38,
+    "n_cand": 51
+  },
+  {
+    "idx": 284,
+    "gold": "Vietnam",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 285,
+    "gold": "United_States_Virgin_Islands",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 286,
+    "gold": "Maine",
+    "rank": 5,
+    "n_cand": 50
+  },
+  {
+    "idx": 287,
+    "gold": "Irish",
+    "rank": 48,
+    "n_cand": 50
+  },
+  {
+    "idx": 288,
+    "gold": "Monash_University",
+    "rank": 3,
+    "n_cand": 51
+  },
+  {
+    "idx": 291,
+    "gold": "Henry_Bumstead",
+    "rank": 28,
+    "n_cand": 31
+  },
+  {
+    "idx": 292,
+    "gold": "Actor-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 296,
+    "gold": "Terence_Blanchard",
+    "rank": 8,
+    "n_cand": 51
+  },
+  {
+    "idx": 298,
+    "gold": "Albuquerque",
+    "rank": 20,
+    "n_cand": 51
+  },
+  {
+    "idx": 300,
+    "gold": "The_Godfather_Part_II",
+    "rank": 5,
+    "n_cand": 51
+  },
+  {
+    "idx": 303,
+    "gold": "Slasher",
+    "rank": 23,
+    "n_cand": 51
+  },
+  {
+    "idx": 305,
+    "gold": "Ecuador",
+    "rank": 4,
+    "n_cand": 51
+  },
+  {
+    "idx": 306,
+    "gold": "Dick_Clark",
+    "rank": 22,
+    "n_cand": 51
+  },
+  {
+    "idx": 307,
+    "gold": "Iron_Maiden",
+    "rank": 8,
+    "n_cand": 51
+  },
+  {
+    "idx": 309,
+    "gold": "Johnny_Yong_Bosch",
+    "rank": 13,
+    "n_cand": 50
+  },
+  {
+    "idx": 314,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4
+  },
+  {
+    "idx": 317,
+    "gold": "127_Hours",
+    "rank": 7,
+    "n_cand": 51
+  },
+  {
+    "idx": 319,
+    "gold": "Milwaukee_Bucks",
+    "rank": 3,
+    "n_cand": 51
+  },
+  {
+    "idx": 321,
+    "gold": "Shea_Whigham",
+    "rank": 41,
+    "n_cand": 51
+  },
+  {
+    "idx": 322,
+    "gold": "Clube_de_Regatas_Vasco_da_Gama",
+    "rank": 12,
+    "n_cand": 51
+  },
+  {
+    "idx": 323,
+    "gold": "Nova_Scotia",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 324,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 326,
+    "gold": "Very_Bad_Things",
+    "rank": 31,
+    "n_cand": 51
+  },
+  {
+    "idx": 331,
+    "gold": "Linkin_Park",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 332,
+    "gold": "Turkey",
+    "rank": 11,
+    "n_cand": 50
+  },
+  {
+    "idx": 338,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 341,
+    "gold": "Dark_Shadows",
+    "rank": 22,
+    "n_cand": 51
+  },
+  {
+    "idx": 344,
+    "gold": "Wilco",
+    "rank": 19,
+    "n_cand": 50
+  },
+  {
+    "idx": 346,
+    "gold": "Mike_Mogis",
+    "rank": 44,
+    "n_cand": 51
+  },
+  {
+    "idx": 347,
+    "gold": "AFI",
+    "rank": 50,
+    "n_cand": 51
+  },
+  {
+    "idx": 348,
+    "gold": "National_Book_Award_for_Fiction",
+    "rank": 25,
+    "n_cand": 51
+  },
+  {
+    "idx": 349,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 351,
+    "gold": "The_Unbearable_Lightness_of_Being",
+    "rank": 11,
+    "n_cand": 51
+  },
+  {
+    "idx": 352,
+    "gold": "Judaism-GB",
+    "rank": 13,
+    "n_cand": 50
+  },
+  {
+    "idx": 353,
+    "gold": "Osaka_Prefecture",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 357,
+    "gold": "Brazil",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 361,
+    "gold": "Toronto_International_Film_Festival",
+    "rank": 5,
+    "n_cand": 31
+  },
+  {
+    "idx": 362,
+    "gold": "Battle_of_Britain",
+    "rank": 33,
+    "n_cand": 51
+  },
+  {
+    "idx": 363,
+    "gold": "John_Debney",
+    "rank": 14,
+    "n_cand": 50
+  },
+  {
+    "idx": 367,
+    "gold": "Screenwriter",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 370,
+    "gold": "Pace_University",
+    "rank": 8,
+    "n_cand": 51
+  },
+  {
+    "idx": 371,
+    "gold": "University_of_Memphis",
+    "rank": 7,
+    "n_cand": 51
+  },
+  {
+    "idx": 373,
+    "gold": "Anger_Management",
+    "rank": 49,
+    "n_cand": 51
+  },
+  {
+    "idx": 378,
+    "gold": "Private_school",
+    "rank": 11,
+    "n_cand": 24
+  },
+  {
+    "idx": 379,
+    "gold": "Ska",
+    "rank": 28,
+    "n_cand": 51
+  },
+  {
+    "idx": 382,
+    "gold": "Cinematographer-GB",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 383,
+    "gold": "Female",
+    "rank": 1,
+    "n_cand": 2
+  },
+  {
+    "idx": 387,
+    "gold": "Republic_of_Ireland",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 388,
+    "gold": "North_Vietnam",
+    "rank": 12,
+    "n_cand": 51
+  },
+  {
+    "idx": 389,
+    "gold": "Artist-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 390,
+    "gold": "Independent_Spirit_Award_for_Best_Supporting_Male",
+    "rank": 40,
+    "n_cand": 51
+  },
+  {
+    "idx": 394,
+    "gold": "Toby_Emmerich",
+    "rank": 8,
+    "n_cand": 50
+  },
+  {
+    "idx": 399,
+    "gold": "VHS",
+    "rank": 2,
+    "n_cand": 6
+  },
+  {
+    "idx": 405,
+    "gold": "Academy_Award_for_Best_Foreign_Language_Film",
+    "rank": 10,
+    "n_cand": 51
+  },
+  {
+    "idx": 407,
+    "gold": "Japanese_Language",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 408,
+    "gold": "Political_cinema",
+    "rank": 16,
+    "n_cand": 51
+  },
+  {
+    "idx": 410,
+    "gold": "Tony_Award_for_Best_Featured_Actress_in_a_Play",
+    "rank": 29,
+    "n_cand": 51
+  },
+  {
+    "idx": 412,
+    "gold": "DVD",
+    "rank": 1,
+    "n_cand": 5
+  },
+  {
+    "idx": 413,
+    "gold": "Golden_Globe_Award_for_Best_Original_Song",
+    "rank": 31,
+    "n_cand": 50
+  },
+  {
+    "idx": 416,
+    "gold": "Norway",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 420,
+    "gold": "Chronic_kidney_disease",
+    "rank": 7,
+    "n_cand": 50
+  },
+  {
+    "idx": 424,
+    "gold": "Science_Fiction",
+    "rank": 1,
+    "n_cand": 34
+  },
+  {
+    "idx": 427,
+    "gold": "Jennifer_Carpenter",
+    "rank": 39,
+    "n_cand": 51
+  },
+  {
+    "idx": 429,
+    "gold": "Screenwriter",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 432,
+    "gold": "Tonga",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 433,
+    "gold": "Puerto_Rico",
+    "rank": 3,
+    "n_cand": 50
+  },
+  {
+    "idx": 438,
+    "gold": "Primetime_Emmy_Award_for_Outstanding_Guest_Actor_-_Comedy_Series",
+    "rank": 17,
+    "n_cand": 51
+  },
+  {
+    "idx": 440,
+    "gold": "U.S.A._for_Africa",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 441,
+    "gold": "New_Orleans",
+    "rank": 9,
+    "n_cand": 50
+  },
+  {
+    "idx": 442,
+    "gold": "44th_Annual_Grammy_Awards",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 445,
+    "gold": "France",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 447,
+    "gold": "Aretha_Franklin",
+    "rank": 4,
+    "n_cand": 51
+  },
+  {
+    "idx": 448,
+    "gold": "Pirates_of_the_Caribbean:_At_World's_End",
+    "rank": 3,
+    "n_cand": 51
+  },
+  {
+    "idx": 452,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 40
+  },
+  {
+    "idx": 453,
+    "gold": "Video_game",
+    "rank": 1,
+    "n_cand": 48
+  },
+  {
+    "idx": 459,
+    "gold": "Rear_Window",
+    "rank": 10,
+    "n_cand": 51
+  },
+  {
+    "idx": 460,
+    "gold": "Shrek",
+    "rank": 13,
+    "n_cand": 51
+  },
+  {
+    "idx": 462,
+    "gold": "The_Remains_of_the_Day",
+    "rank": 12,
+    "n_cand": 51
+  },
+  {
+    "idx": 464,
+    "gold": "United_Kingdom",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 465,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 468,
+    "gold": "Makeup_Artist-GB",
+    "rank": 1,
+    "n_cand": 39
+  },
+  {
+    "idx": 469,
+    "gold": "University_of_Arkansas",
+    "rank": 6,
+    "n_cand": 51
+  },
+  {
+    "idx": 470,
+    "gold": "New_Haven",
+    "rank": 41,
+    "n_cand": 51
+  },
+  {
+    "idx": 471,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 473,
+    "gold": "Itzhak_Perlman",
+    "rank": 32,
+    "n_cand": 51
+  },
+  {
+    "idx": 478,
+    "gold": "Bath",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 479,
+    "gold": "Poland",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 483,
+    "gold": "Gary_Barber",
+    "rank": 38,
+    "n_cand": 50
+  },
+  {
+    "idx": 484,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2
+  },
+  {
+    "idx": 486,
+    "gold": "Record_producer-GB",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 487,
+    "gold": "Graphic_Designer-GB",
+    "rank": 11,
+    "n_cand": 39
+  },
+  {
+    "idx": 488,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 40
+  },
+  {
+    "idx": 492,
+    "gold": "Economics",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 495,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 497,
+    "gold": "Independent_Spirit_Award_for_Best_First_Screenplay",
+    "rank": 49,
+    "n_cand": 51
+  },
+  {
+    "idx": 498,
+    "gold": "Craig_Robinson",
+    "rank": 37,
+    "n_cand": 51
+  },
+  {
+    "idx": 500,
+    "gold": "Boston_Red_Sox",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 505,
+    "gold": "British_Raj",
+    "rank": 26,
+    "n_cand": 51
+  },
+  {
+    "idx": 511,
+    "gold": "Argentina",
+    "rank": 31,
+    "n_cand": 50
+  },
+  {
+    "idx": 512,
+    "gold": "The_Thin_Red_Line",
+    "rank": 31,
+    "n_cand": 51
+  },
+  {
+    "idx": 514,
+    "gold": "Fremont",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 515,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2
+  },
+  {
+    "idx": 517,
+    "gold": "United_Kingdom",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 518,
+    "gold": "Writer-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 519,
+    "gold": "Eastern_Time_Zone",
+    "rank": 1,
+    "n_cand": 13
+  },
+  {
+    "idx": 520,
+    "gold": "Ireland",
+    "rank": 12,
+    "n_cand": 51
+  },
+  {
+    "idx": 521,
+    "gold": "The_Flaming_Lips",
+    "rank": 12,
+    "n_cand": 51
+  },
+  {
+    "idx": 523,
+    "gold": "Visual_Effects",
+    "rank": 1,
+    "n_cand": 39
+  },
+  {
+    "idx": 526,
+    "gold": "The_Good,_the_Bad,_the_Weird",
+    "rank": 19,
+    "n_cand": 51
+  },
+  {
+    "idx": 529,
+    "gold": "Lausanne",
+    "rank": 28,
+    "n_cand": 51
+  },
+  {
+    "idx": 535,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2
+  },
+  {
+    "idx": 539,
+    "gold": "Gabriel_Yared",
+    "rank": 39,
+    "n_cand": 51
+  },
+  {
+    "idx": 540,
+    "gold": "Mrs._Parker_and_the_Vicious_Circle",
+    "rank": 36,
+    "n_cand": 51
+  },
+  {
+    "idx": 541,
+    "gold": "DVD",
+    "rank": 1,
+    "n_cand": 5
+  },
+  {
+    "idx": 543,
+    "gold": "Baritone",
+    "rank": 8,
+    "n_cand": 51
+  },
+  {
+    "idx": 545,
+    "gold": "Celtic_F.C.",
+    "rank": 3,
+    "n_cand": 50
+  },
+  {
+    "idx": 546,
+    "gold": "United_Church_of_Christ",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 548,
+    "gold": "Parliamentary_system",
+    "rank": 2,
+    "n_cand": 6
+  },
+  {
+    "idx": 549,
+    "gold": "United_Church_of_Christ",
+    "rank": 8,
+    "n_cand": 50
+  },
+  {
+    "idx": 550,
+    "gold": "Gold",
+    "rank": 11,
+    "n_cand": 21
+  },
+  {
+    "idx": 551,
+    "gold": "Maryland",
+    "rank": 8,
+    "n_cand": 50
+  },
+  {
+    "idx": 552,
+    "gold": "Singapore",
+    "rank": 15,
+    "n_cand": 50
+  },
+  {
+    "idx": 553,
+    "gold": "Kinsey",
+    "rank": 41,
+    "n_cand": 51
+  },
+  {
+    "idx": 555,
+    "gold": "October",
+    "rank": 1,
+    "n_cand": 12
+  },
+  {
+    "idx": 558,
+    "gold": "Black_comedy",
+    "rank": 22,
+    "n_cand": 50
+  },
+  {
+    "idx": 562,
+    "gold": "National_Board_of_Review_Award_for_Best_Cast",
+    "rank": 46,
+    "n_cand": 51
+  },
+  {
+    "idx": 563,
+    "gold": "Joseph_Campbell",
+    "rank": 30,
+    "n_cand": 51
+  },
+  {
+    "idx": 566,
+    "gold": "30_Rock",
+    "rank": 5,
+    "n_cand": 50
+  },
+  {
+    "idx": 567,
+    "gold": "Musician-GB",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 569,
+    "gold": "Athens",
+    "rank": 30,
+    "n_cand": 51
+  },
+  {
+    "idx": 570,
+    "gold": "State_of_Play",
+    "rank": 30,
+    "n_cand": 51
+  },
+  {
+    "idx": 574,
+    "gold": "John_Cale",
+    "rank": 26,
+    "n_cand": 51
+  },
+  {
+    "idx": 575,
+    "gold": "San_Diego_Padres",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 576,
+    "gold": "Australia",
+    "rank": 10,
+    "n_cand": 50
+  },
+  {
+    "idx": 578,
+    "gold": "Ray_Manzarek",
+    "rank": 27,
+    "n_cand": 51
+  },
+  {
+    "idx": 580,
+    "gold": "Rush_Hour_3",
+    "rank": 17,
+    "n_cand": 51
+  },
+  {
+    "idx": 584,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 589,
+    "gold": "Voice_Actor",
+    "rank": 14,
+    "n_cand": 50
+  },
+  {
+    "idx": 591,
+    "gold": "Seeking_a_Friend_for_the_End_of_the_World",
+    "rank": 22,
+    "n_cand": 51
+  },
+  {
+    "idx": 596,
+    "gold": "Primetime_Emmy_Award_for_Outstanding_Supporting_Actress_-_Miniseries_or_a_Movie",
+    "rank": 7,
+    "n_cand": 51
+  },
+  {
+    "idx": 597,
+    "gold": "Brazil",
+    "rank": 8,
+    "n_cand": 50
+  },
+  {
+    "idx": 598,
+    "gold": "Argentina",
+    "rank": 16,
+    "n_cand": 50
+  },
+  {
+    "idx": 600,
+    "gold": "Grammy_Award_for_Song_of_the_Year",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 602,
+    "gold": "Academy_Award_for_Best_Original_Musical",
+    "rank": 43,
+    "n_cand": 51
+  },
+  {
+    "idx": 603,
+    "gold": "United_States_Dollar",
+    "rank": 1,
+    "n_cand": 7
+  },
+  {
+    "idx": 604,
+    "gold": "Tottenham_Hotspur_F.C.",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 605,
+    "gold": "Grammy_Awards",
+    "rank": 1,
+    "n_cand": 20
+  },
+  {
+    "idx": 613,
+    "gold": "Sideways",
+    "rank": 19,
+    "n_cand": 50
+  },
+  {
+    "idx": 616,
+    "gold": "James_Burrows",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 618,
+    "gold": "Grammy_Award_for_Best_Contemporary_Folk_Album",
+    "rank": 8,
+    "n_cand": 51
+  },
+  {
+    "idx": 621,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 623,
+    "gold": "United_States_Dollar",
+    "rank": 1,
+    "n_cand": 7
+  },
+  {
+    "idx": 624,
+    "gold": "Raging_Bull",
+    "rank": 18,
+    "n_cand": 51
+  },
+  {
+    "idx": 625,
+    "gold": "Pixies",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 629,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 40
+  },
+  {
+    "idx": 633,
+    "gold": "Bleach:_The_DiamondDust_Rebellion",
+    "rank": 36,
+    "n_cand": 51
+  },
+  {
+    "idx": 634,
+    "gold": "Turkey",
+    "rank": 29,
+    "n_cand": 50
+  },
+  {
+    "idx": 635,
+    "gold": "Charlottetown",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 638,
+    "gold": "South_Korea",
+    "rank": 10,
+    "n_cand": 50
+  },
+  {
+    "idx": 639,
+    "gold": "Germany_national_football_team",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 640,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4
+  },
+  {
+    "idx": 641,
+    "gold": "Visual_Effects",
+    "rank": 1,
+    "n_cand": 39
+  },
+  {
+    "idx": 642,
+    "gold": "Tori_Amos",
+    "rank": 42,
+    "n_cand": 51
+  },
+  {
+    "idx": 643,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 644,
+    "gold": "David_Hyde_Pierce",
+    "rank": 20,
+    "n_cand": 51
+  },
+  {
+    "idx": 646,
+    "gold": "Harvey_Weinstein",
+    "rank": 5,
+    "n_cand": 50
+  },
+  {
+    "idx": 650,
+    "gold": "Montgomery",
+    "rank": 49,
+    "n_cand": 51
+  },
+  {
+    "idx": 651,
+    "gold": "Argentina",
+    "rank": 7,
+    "n_cand": 50
+  },
+  {
+    "idx": 653,
+    "gold": "Picket_Fences",
+    "rank": 43,
+    "n_cand": 51
+  },
+  {
+    "idx": 654,
+    "gold": "San_Diego_State_University",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 655,
+    "gold": "Plymouth",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 656,
+    "gold": "Niagara_County",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 658,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2
+  },
+  {
+    "idx": 660,
+    "gold": "Marilyn_Monroe",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 661,
+    "gold": "k.d._lang",
+    "rank": 7,
+    "n_cand": 51
+  },
+  {
+    "idx": 662,
+    "gold": "Chad_Smith",
+    "rank": 8,
+    "n_cand": 51
+  },
+  {
+    "idx": 663,
+    "gold": "Iceland",
+    "rank": 16,
+    "n_cand": 50
+  },
+  {
+    "idx": 664,
+    "gold": "Philippines",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 665,
+    "gold": "Canada",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 668,
+    "gold": "Television_producer-GB",
+    "rank": 3,
+    "n_cand": 50
+  },
+  {
+    "idx": 670,
+    "gold": "Nassar",
+    "rank": 35,
+    "n_cand": 51
+  },
+  {
+    "idx": 671,
+    "gold": "Songwriter-GB",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 675,
+    "gold": "Roddy_McDowall",
+    "rank": 29,
+    "n_cand": 51
+  },
+  {
+    "idx": 676,
+    "gold": "Fyvush_Finkel",
+    "rank": 47,
+    "n_cand": 51
+  },
+  {
+    "idx": 677,
+    "gold": "Brentford_F.C.",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 678,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4
+  },
+  {
+    "idx": 680,
+    "gold": "The_West_Wing",
+    "rank": 11,
+    "n_cand": 50
+  },
+  {
+    "idx": 681,
+    "gold": "John_Houseman",
+    "rank": 30,
+    "n_cand": 51
+  },
+  {
+    "idx": 686,
+    "gold": "French_Language",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 689,
+    "gold": "United_States_Dollar",
+    "rank": 1,
+    "n_cand": 7
+  },
+  {
+    "idx": 690,
+    "gold": "Blu-ray_disc",
+    "rank": 1,
+    "n_cand": 5
+  },
+  {
+    "idx": 692,
+    "gold": "Guitarist-GB",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 695,
+    "gold": "Los_Angeles",
+    "rank": 3,
+    "n_cand": 50
+  },
+  {
+    "idx": 696,
+    "gold": "111th_United_States_Congress",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 698,
+    "gold": "Earth",
+    "rank": 13,
+    "n_cand": 50
+  },
+  {
+    "idx": 699,
+    "gold": "Terms_of_Endearment",
+    "rank": 18,
+    "n_cand": 51
+  },
+  {
+    "idx": 701,
+    "gold": "41st_Academy_Awards",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 704,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2
+  },
+  {
+    "idx": 705,
+    "gold": "Primetime_Emmy_Award_for_Outstanding_Comedy_Series",
+    "rank": 16,
+    "n_cand": 50
+  },
+  {
+    "idx": 706,
+    "gold": "Film_Director",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 708,
+    "gold": "Gretchen_Mol",
+    "rank": 38,
+    "n_cand": 51
+  },
+  {
+    "idx": 714,
+    "gold": "Tokyo",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 717,
+    "gold": "Wayne's_World",
+    "rank": 37,
+    "n_cand": 51
+  },
+  {
+    "idx": 718,
+    "gold": "Guitar",
+    "rank": 7,
+    "n_cand": 50
+  },
+  {
+    "idx": 721,
+    "gold": "Unitary_state",
+    "rank": 4,
+    "n_cand": 6
+  },
+  {
+    "idx": 723,
+    "gold": "Aerospace_Engineering-GB",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 726,
+    "gold": "Spain",
+    "rank": 5,
+    "n_cand": 50
+  },
+  {
+    "idx": 730,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 733,
+    "gold": "Austria",
+    "rank": 6,
+    "n_cand": 50
+  },
+  {
+    "idx": 735,
+    "gold": "Scary_Movie_2",
+    "rank": 8,
+    "n_cand": 51
+  },
+  {
+    "idx": 736,
+    "gold": "Music",
+    "rank": 33,
+    "n_cand": 50
+  },
+  {
+    "idx": 741,
+    "gold": "Alaska",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 742,
+    "gold": "New_York_Film_Critics_Circle_Award_for_Best_Actress",
+    "rank": 25,
+    "n_cand": 51
+  },
+  {
+    "idx": 743,
+    "gold": "Defender",
+    "rank": 1,
+    "n_cand": 49
+  },
+  {
+    "idx": 744,
+    "gold": "Miami",
+    "rank": 5,
+    "n_cand": 51
+  },
+  {
+    "idx": 745,
+    "gold": "Milt_Franklyn",
+    "rank": 31,
+    "n_cand": 51
+  },
+  {
+    "idx": 746,
+    "gold": "Writer-GB",
+    "rank": 6,
+    "n_cand": 50
+  },
+  {
+    "idx": 747,
+    "gold": "The_Towering_Inferno",
+    "rank": 18,
+    "n_cand": 51
+  },
+  {
+    "idx": 748,
+    "gold": "Broadcast_Film_Critics_Association_Award_for_Best_Actor",
+    "rank": 39,
+    "n_cand": 51
+  },
+  {
+    "idx": 754,
+    "gold": "Venice",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 757,
+    "gold": "Finland",
+    "rank": 16,
+    "n_cand": 50
+  },
+  {
+    "idx": 758,
+    "gold": "Keyboard_player-GB",
+    "rank": 6,
+    "n_cand": 50
+  },
+  {
+    "idx": 759,
+    "gold": "MTV_Video_Music_Award_for_Best_Editing",
+    "rank": 4,
+    "n_cand": 51
+  },
+  {
+    "idx": 761,
+    "gold": "Michael_Caine",
+    "rank": 12,
+    "n_cand": 51
+  },
+  {
+    "idx": 762,
+    "gold": "Writers_Guild_of_America_Award_for_Best_Adapted_Screenplay",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 765,
+    "gold": "University_of_Arizona",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 767,
+    "gold": "Australian_National_University",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 769,
+    "gold": "University_of_Cape_Town",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 771,
+    "gold": "Sweden",
+    "rank": 14,
+    "n_cand": 50
+  },
+  {
+    "idx": 772,
+    "gold": "Barbados",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 777,
+    "gold": "Mandarin_Chinese",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 778,
+    "gold": "Interview_with_the_Vampire:_The_Vampire_Chronicles",
+    "rank": 10,
+    "n_cand": 51
+  },
+  {
+    "idx": 781,
+    "gold": "Aspartic_acid",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 782,
+    "gold": "Marriage",
+    "rank": 1,
+    "n_cand": 4
+  },
+  {
+    "idx": 783,
+    "gold": "Flags_of_Our_Fathers",
+    "rank": 30,
+    "n_cand": 51
+  },
+  {
+    "idx": 784,
+    "gold": "English_Language",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 785,
+    "gold": "Toto",
+    "rank": 9,
+    "n_cand": 51
+  },
+  {
+    "idx": 787,
+    "gold": "Noel_Gallagher",
+    "rank": 2,
+    "n_cand": 51
+  },
+  {
+    "idx": 788,
+    "gold": "I_Shot_Andy_Warhol",
+    "rank": 41,
+    "n_cand": 51
+  },
+  {
+    "idx": 789,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2
+  },
+  {
+    "idx": 791,
+    "gold": "92nd_United_States_Congress",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 793,
+    "gold": "J._R._R._Tolkien",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 794,
+    "gold": "Primetime_Emmy_Award_for_Outstanding_Continued_Performance_by_an_Actress_in_a_Leading_Role_in_a_Dramatic_Series",
+    "rank": 44,
+    "n_cand": 51
+  },
+  {
+    "idx": 796,
+    "gold": "Male",
+    "rank": 1,
+    "n_cand": 2
+  },
+  {
+    "idx": 801,
+    "gold": "Ukraine",
+    "rank": 4,
+    "n_cand": 51
+  },
+  {
+    "idx": 806,
+    "gold": "Atlanta_Hawks",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 810,
+    "gold": "Comedy-GB",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 814,
+    "gold": "England",
+    "rank": 3,
+    "n_cand": 50
+  },
+  {
+    "idx": 821,
+    "gold": "Louisville",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 823,
+    "gold": "MTV_Video_Music_Award_for_Best_Male_Video",
+    "rank": 7,
+    "n_cand": 51
+  },
+  {
+    "idx": 825,
+    "gold": "Actor-GB",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 826,
+    "gold": "Author-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 827,
+    "gold": "Mexico",
+    "rank": 15,
+    "n_cand": 50
+  },
+  {
+    "idx": 828,
+    "gold": "Celesta",
+    "rank": 19,
+    "n_cand": 51
+  },
+  {
+    "idx": 829,
+    "gold": "Musician-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 832,
+    "gold": "Lucasfilm",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 833,
+    "gold": "France",
+    "rank": 5,
+    "n_cand": 50
+  },
+  {
+    "idx": 834,
+    "gold": "Peter_Dinklage",
+    "rank": 27,
+    "n_cand": 51
+  },
+  {
+    "idx": 836,
+    "gold": "Academy_Award_for_Best_Actor_in_a_Supporting_Role",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 837,
+    "gold": "Kenneth_Branagh",
+    "rank": 26,
+    "n_cand": 51
+  },
+  {
+    "idx": 842,
+    "gold": "Animated_series",
+    "rank": 40,
+    "n_cand": 51
+  },
+  {
+    "idx": 843,
+    "gold": "Smokin'_Aces",
+    "rank": 25,
+    "n_cand": 51
+  },
+  {
+    "idx": 846,
+    "gold": "Special_Effects",
+    "rank": 1,
+    "n_cand": 39
+  },
+  {
+    "idx": 847,
+    "gold": "United_Kingdom",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 851,
+    "gold": "Special_Effects_Supervisor",
+    "rank": 2,
+    "n_cand": 39
+  },
+  {
+    "idx": 852,
+    "gold": "Thriller",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 853,
+    "gold": "66th_Tony_Awards",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 854,
+    "gold": "Santa_Monica",
+    "rank": 10,
+    "n_cand": 50
+  },
+  {
+    "idx": 855,
+    "gold": "MTV_Video_Music_Award_for_Best_Female_Video",
+    "rank": 3,
+    "n_cand": 51
+  },
+  {
+    "idx": 856,
+    "gold": "Lebanon",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 858,
+    "gold": "County_Kildare",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 860,
+    "gold": "The_Walt_Disney_Company",
+    "rank": 7,
+    "n_cand": 50
+  },
+  {
+    "idx": 863,
+    "gold": "University_of_California,_Los_Angeles",
+    "rank": 4,
+    "n_cand": 50
+  },
+  {
+    "idx": 865,
+    "gold": "Patrick_Doyle",
+    "rank": 44,
+    "n_cand": 51
+  },
+  {
+    "idx": 866,
+    "gold": "Ian_McShane",
+    "rank": 5,
+    "n_cand": 51
+  },
+  {
+    "idx": 867,
+    "gold": "Western",
+    "rank": 9,
+    "n_cand": 50
+  },
+  {
+    "idx": 868,
+    "gold": "United_States_of_America",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 869,
+    "gold": "Law_&_Order:_Special_Victims_Unit",
+    "rank": 25,
+    "n_cand": 51
+  },
+  {
+    "idx": 870,
+    "gold": "Julie_&_Julia",
+    "rank": 23,
+    "n_cand": 51
+  },
+  {
+    "idx": 872,
+    "gold": "The_City_of_Lost_Children",
+    "rank": 8,
+    "n_cand": 51
+  },
+  {
+    "idx": 873,
+    "gold": "The_Lord_of_the_Rings:_The_Return_of_the_King",
+    "rank": 1,
+    "n_cand": 51
+  },
+  {
+    "idx": 877,
+    "gold": "India",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 879,
+    "gold": "India",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 881,
+    "gold": "California_State_University,_Fresno",
+    "rank": 20,
+    "n_cand": 50
+  },
+  {
+    "idx": 882,
+    "gold": "Actor-GB",
+    "rank": 1,
+    "n_cand": 50
+  },
+  {
+    "idx": 885,
+    "gold": "Clear_Channel_Communications",
+    "rank": 13,
+    "n_cand": 51
+  },
+  {
+    "idx": 888,
+    "gold": "Kazakhstan",
+    "rank": 16,
+    "n_cand": 50
+  },
+  {
+    "idx": 889,
+    "gold": "William_H._Macy",
+    "rank": 23,
+    "n_cand": 50
+  },
+  {
+    "idx": 890,
+    "gold": "Green",
+    "rank": 5,
+    "n_cand": 21
+  },
+  {
+    "idx": 892,
+    "gold": "Primetime_Emmy_Award_for_Outstanding_Supporting_Actor_-_Miniseries_or_a_Movie",
+    "rank": 11,
+    "n_cand": 50
+  },
+  {
+    "idx": 896,
+    "gold": "Comedian",
+    "rank": 2,
+    "n_cand": 50
+  },
+  {
+    "idx": 897,
+    "gold": "Eastern_Time_Zone",
+    "rank": 1,
+    "n_cand": 13
+  }
+]

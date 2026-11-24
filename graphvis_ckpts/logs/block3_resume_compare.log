@@ -1,0 +1,24 @@
+[protocol] rank
+[ok]   none: image_mode=blank, n=1460
+[ok]   text: image_mode=blank, n=1460
+[ok]   visual: image_mode=real, n=1460
+[ok]   visual_s1: image_mode=real, n=580
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+none      1460   0.4014   29.32   43.90   60.07
+text      1460   0.4274   31.92   45.96   63.36
+visual    1460   0.4018   29.25   43.63   60.27
+visual_s1   580   0.3859   27.93   41.21   58.62
+
+=== text vs none (парных 1460) ===
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\compare_conditions.py", line 146, in <module>
+    main()
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\compare_conditions.py", line 129, in main
+    print(f"  \u0394MRR = {obs:+.4f}  95% CI [{lo:+.4f}, {hi:+.4f}]  "
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0394' in position 2: character maps to <undefined>

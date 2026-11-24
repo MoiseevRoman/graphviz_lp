@@ -1,0 +1,16 @@
+[protocol] rank
+[ok]   visual_s1fv_blank: image_mode=blank, n=971
+[ok]   visual_s1fv: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+visual_s1fv_blank   971   0.3768   26.67   40.89   58.81
+visual_s1fv   971   0.4031   29.45   42.43   63.03
+
+=== visual_s1fv vs visual_s1fv_blank (парных 971) ===
+  ΔMRR = +0.0263  95% CI [+0.0129, +0.0399]  ЗНАЧИМО
+  McNemar H@1 : visual_s1fv-win= 57 visual_s1fv_blank-win= 30 z= 2.79 p=0.005312 значимо
+  McNemar H@3 : visual_s1fv-win= 50 visual_s1fv_blank-win= 35 z= 1.52 p=0.1289 н/з
+  McNemar H@10: visual_s1fv-win= 59 visual_s1fv_blank-win= 18 z= 4.56 p=5.154e-06 значимо
+
+Сохранено: graphvis_ckpts_s1\k16\compare_fv_blank.json

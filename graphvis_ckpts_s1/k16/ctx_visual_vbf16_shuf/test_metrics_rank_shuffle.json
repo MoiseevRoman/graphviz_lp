@@ -1,0 +1,16 @@
+{
+  "MRR": 0.3559373170282726,
+  "Hits@1": 24.51081359423275,
+  "Hits@3": 37.28115345005149,
+  "Hits@10": 58.8053553038105,
+  "mean_total_tokens": 468.109375,
+  "mean_text_tokens": 68.109375,
+  "mean_visual_tokens": 400.0,
+  "n_cost_sampled": 64,
+  "n_evaluated": 971,
+  "n_total_test": 2000,
+  "mean_candidates": 44.675592173017506,
+  "eval_mode": "rank",
+  "tie_break": "optimistic",
+  "image_mode": "shuffle"
+}

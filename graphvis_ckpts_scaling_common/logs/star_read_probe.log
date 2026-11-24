@@ -1,0 +1,34 @@
+K=4: 100 images, mean drawn neighbors 3.8, missing 0
+K=16: 100 images, mean drawn neighbors 12.5, missing 0
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.25s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.96s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.01s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+[nf4] vision Linear in 4-bit: 162/162
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[nf4/K4/names] {"recall_exact_%": 86.0, "recall_fuzzy_%": 89.4, "precision_%": 98.5, "gold_per_img": 3.8, "out_per_img": 3.4, "mean_visual_tokens": 400, "sec": 107}
+[nf4/K4/triples] {"pair_recall_%": 85.2, "entity_recall_%": 91.5, "pair_precision_%": 89.8, "gold_per_img": 4.0, "out_per_img": 3.7, "mean_visual_tokens": 400, "sec": 172}
+[nf4/K16/names] {"recall_exact_%": 71.1, "recall_fuzzy_%": 77.3, "precision_%": 97.7, "gold_per_img": 12.5, "out_per_img": 12.0, "mean_visual_tokens": 400, "sec": 364}
+[nf4/K16/triples] {"pair_recall_%": 57.5, "entity_recall_%": 78.8, "pair_precision_%": 60.9, "gold_per_img": 14.2, "out_per_img": 13.5, "mean_visual_tokens": 400, "sec": 595}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.79s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.80s/it]
+[vision_bf16] vision Linear in 4-bit: 0/162
+[vision_bf16/K4/names] {"recall_exact_%": 87.6, "recall_fuzzy_%": 91.5, "precision_%": 98.9, "gold_per_img": 3.8, "out_per_img": 3.5, "mean_visual_tokens": 400, "sec": 106}
+[vision_bf16/K4/triples] {"pair_recall_%": 86.0, "entity_recall_%": 94.0, "pair_precision_%": 91.4, "gold_per_img": 4.0, "out_per_img": 3.7, "mean_visual_tokens": 400, "sec": 170}
+[vision_bf16/K16/names] {"recall_exact_%": 69.3, "recall_fuzzy_%": 76.1, "precision_%": 92.2, "gold_per_img": 12.5, "out_per_img": 12.1, "mean_visual_tokens": 400, "sec": 365}
+[vision_bf16/K16/triples] {"pair_recall_%": 57.5, "entity_recall_%": 80.9, "pair_precision_%": 58.2, "gold_per_img": 14.2, "out_per_img": 14.2, "mean_visual_tokens": 400, "sec": 659}
+
+=== reading the paper's 1-hop renders (100 images per K) ===
+nf4/K4/names                 {"recall_exact_%": 86.0, "recall_fuzzy_%": 89.4, "precision_%": 98.5, "gold_per_img": 3.8, "out_per_img": 3.4, "mean_visual_tokens": 400, "sec": 107}
+nf4/K4/triples               {"pair_recall_%": 85.2, "entity_recall_%": 91.5, "pair_precision_%": 89.8, "gold_per_img": 4.0, "out_per_img": 3.7, "mean_visual_tokens": 400, "sec": 172}
+nf4/K16/names                {"recall_exact_%": 71.1, "recall_fuzzy_%": 77.3, "precision_%": 97.7, "gold_per_img": 12.5, "out_per_img": 12.0, "mean_visual_tokens": 400, "sec": 364}
+nf4/K16/triples              {"pair_recall_%": 57.5, "entity_recall_%": 78.8, "pair_precision_%": 60.9, "gold_per_img": 14.2, "out_per_img": 13.5, "mean_visual_tokens": 400, "sec": 595}
+vision_bf16/K4/names         {"recall_exact_%": 87.6, "recall_fuzzy_%": 91.5, "precision_%": 98.9, "gold_per_img": 3.8, "out_per_img": 3.5, "mean_visual_tokens": 400, "sec": 106}
+vision_bf16/K4/triples       {"pair_recall_%": 86.0, "entity_recall_%": 94.0, "pair_precision_%": 91.4, "gold_per_img": 4.0, "out_per_img": 3.7, "mean_visual_tokens": 400, "sec": 170}
+vision_bf16/K16/names        {"recall_exact_%": 69.3, "recall_fuzzy_%": 76.1, "precision_%": 92.2, "gold_per_img": 12.5, "out_per_img": 12.1, "mean_visual_tokens": 400, "sec": 365}
+vision_bf16/K16/triples      {"pair_recall_%": 57.5, "entity_recall_%": 80.9, "pair_precision_%": 58.2, "gold_per_img": 14.2, "out_per_img": 14.2, "mean_visual_tokens": 400, "sec": 659}
+saved: graphvis_ckpts_scaling_common\star_read_probe.json
+Exception ignored in: <function ResourceTracker.__del__ at 0x0000018B0B0911C0>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

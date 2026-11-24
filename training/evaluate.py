@@ -284,8 +284,14 @@ def evaluate_link_prediction_rank(
     cand_batch: int = 8,
     max_length: int = 2048,
     realistic_ties: bool = False,
+    read_first: bool = False,
+    read_max_new_tokens: int = 384,
 ) -> Dict[str, Any]:
     """Filtered link prediction РАНЖИРОВАНИЕМ кандидатов по правдоподобию.
+
+    ``read_first`` (read-then-answer): сначала жадно генерируется чтение картинки
+    ('Edges: …'), оно обрезается до 'Answer:' и дописывается к промпту; кандидаты
+    скорятся как продолжение '…Answer:' (с ведущим пробелом, как при обучении).
 
     ``realistic_ties``: при равенстве очков золотого с дистракторами ранг =
     1 + higher + ties/2 (realistic, как в pykeen и в sample-пути). По умолчанию
@@ -379,6 +385,15 @@ def evaluate_link_prediction_rank(
             del logits, lp
         return out
 
+    @torch.no_grad()
+    def _read(prompt_text, image):
+        enc = processor(text=[prompt_text], images=[image], return_tensors="pt").to(device)
+        out = model.generate(**enc, max_new_tokens=read_max_new_tokens, do_sample=False,
+                             use_cache=True)
+        gen = tokenizer.decode(out[0, enc["input_ids"].shape[1]:], skip_special_tokens=True)
+        cut = gen.rfind("Answer:")
+        return (gen[:cut] if cut != -1 else gen).rstrip()
+
     ranks: List[float] = []
     cand_sizes: List[int] = []
     detailed: List[Dict[str, Any]] = []
@@ -393,7 +408,12 @@ def evaluate_link_prediction_rank(
             continue
         image = _load_eval_image(sample, cfg, image_mode, override_path=shuffle_lookup.get(data_i))
         prompt_text = format_eval_text(processor, family, sample[cfg.prompt_column])
-        sc = _score(prompt_text, image, candidates)
+        reading = None
+        if read_first:
+            reading = _read(prompt_text, image)
+            sc = _score(f"{prompt_text}{reading}\nAnswer:", image, [f" {c}" for c in candidates])
+        else:
+            sc = _score(prompt_text, image, candidates)
         gpos = candidates.index(gold)
         gscore = sc[gpos]
         higher = sum(1 for i, c in enumerate(candidates)
@@ -406,7 +426,11 @@ def evaluate_link_prediction_rank(
             rank = 1 + higher
         ranks.append(rank)
         cand_sizes.append(len(candidates))
-        detailed.append({"idx": data_i, "gold": gold, "rank": rank, "n_cand": len(candidates)})
+        rec = {"idx": data_i, "gold": gold, "rank": rank, "n_cand": len(candidates),
+               "gold_score": round(float(gscore), 4)}
+        if reading is not None:
+            rec["reading"] = reading
+        detailed.append(rec)
         if (step + 1) % 50 == 0 or step + 1 == len(eval_indices):
             sp = (step + 1) / max(time.time() - t0, 1e-6)
             logger.info("[%5d/%d] %.1f smp/s | scored=%d", step + 1, len(eval_indices), sp, len(ranks))
@@ -432,6 +456,7 @@ def evaluate_link_prediction_rank(
         "eval_mode": "rank",
         "tie_break": "realistic" if realistic_ties else "optimistic",
         "image_mode": image_mode,
+        "read_first": read_first,
     }
     logger.info("=" * 65)
     logger.info("RESULTS rank (%d queries, %.1f min) | filtered", len(r), (time.time() - t0) / 60)

@@ -1,0 +1,25 @@
+{
+  "means": {
+    "visual": 440.0,
+    "text": 39.98046875,
+    "text_feat": 121.22265625
+  },
+  "counts": {
+    "visual": {
+      "train_n": 4000,
+      "eval_n": 400,
+      "mean_tokens": 440.0
+    },
+    "text": {
+      "train_n": 44021,
+      "eval_n": 4402,
+      "mean_tokens": 39.98046875
+    },
+    "text_feat": {
+      "train_n": 14519,
+      "eval_n": 1452,
+      "mean_tokens": 121.22265625
+    }
+  },
+  "token_budget": 0
+}

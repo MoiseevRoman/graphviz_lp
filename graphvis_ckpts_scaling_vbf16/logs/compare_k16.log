@@ -1,0 +1,32 @@
+[protocol] rank
+[ok]   text: image_mode=blank, n=971
+[ok]   visual: image_mode=real, n=971
+[ok]   visual_vbf16: image_mode=real, n=971
+[ok]   visual_vbf16_blank: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+text       971   0.4115   29.87   44.18   65.29
+visual     971   0.4037   29.25   42.53   63.65
+visual_vbf16   971   0.3983   28.73   42.12   63.95
+visual_vbf16_blank   971   0.3765   26.78   39.55   60.35
+
+=== visual vs text (парных 971) ===
+  ΔMRR = -0.0079  95% CI [-0.0180, +0.0024]  не значимо
+  McNemar H@1 : visual-win= 26 text-win= 32 z= 0.66 p=0.5115 н/з
+  McNemar H@3 : visual-win= 24 text-win= 40 z= 1.88 p=0.06079 н/з
+  McNemar H@10: visual-win= 26 text-win= 42 z= 1.82 p=0.06891 н/з
+
+=== visual_vbf16 vs text (парных 971) ===
+  ΔMRR = -0.0132  95% CI [-0.0231, -0.0034]  ЗНАЧИМО
+  McNemar H@1 : visual_vbf16-win= 22 text-win= 33 z= 1.35 p=0.1775 н/з
+  McNemar H@3 : visual_vbf16-win= 23 text-win= 43 z= 2.34 p=0.01935 значимо
+  McNemar H@10: visual_vbf16-win= 24 text-win= 37 z= 1.54 p=0.1244 н/з
+
+=== visual_vbf16_blank vs text (парных 971) ===
+  ΔMRR = -0.0350  95% CI [-0.0488, -0.0212]  ЗНАЧИМО
+  McNemar H@1 : visual_vbf16_blank-win= 31 text-win= 61 z= 3.02 p=0.002499 значимо
+  McNemar H@3 : visual_vbf16_blank-win= 31 text-win= 76 z= 4.25 p=2.103e-05 значимо
+  McNemar H@10: visual_vbf16_blank-win= 21 text-win= 69 z= 4.95 p=7.262e-07 значимо
+
+Сохранено: graphvis_ckpts_scaling_vbf16\k16\compare.json

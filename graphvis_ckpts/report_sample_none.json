@@ -1,0 +1,57 @@
+{
+  "config": {
+    "train_n": 0,
+    "eval_only": true,
+    "adapter": "graphvis_ckpts\\ctx_none\\adapter",
+    "eval_n": 600,
+    "epochs": 1,
+    "eval_mode": "sample",
+    "beams": 10,
+    "cand_cap": 50,
+    "dataset_root": "graphvis_fb15k_data_hybrid8_672\\datasets",
+    "model": "Qwen/Qwen2.5-VL-3B-Instruct"
+  },
+  "train": {
+    "loss_first": NaN,
+    "loss_last": NaN,
+    "peak_vram_gb": 0.0
+  },
+  "eval": {
+    "MRR": 0.3439878773545558,
+    "Hits@1": 28.166666666666668,
+    "Hits@3": 38.0,
+    "Hits@10": 46.5,
+    "n_evaluated": 600,
+    "n_total_test": 1200,
+    "n_entities": 14541,
+    "sampled_gold_rate": 53.0,
+    "mean_distinct_entities": 30.06,
+    "mean_invalid_frac": 0.2630166666666667,
+    "eval_mode": "sample",
+    "image_mode": "blank",
+    "prompt_key": "prompt",
+    "num_samples": 200,
+    "temperature": 1.0,
+    "label": "none"
+  },
+  "ablation": {
+    "none": {
+      "MRR": 0.3439878773545558,
+      "Hits@1": 28.166666666666668,
+      "Hits@3": 38.0,
+      "Hits@10": 46.5,
+      "n_evaluated": 600,
+      "n_total_test": 1200,
+      "n_entities": 14541,
+      "sampled_gold_rate": 53.0,
+      "mean_distinct_entities": 30.06,
+      "mean_invalid_frac": 0.2630166666666667,
+      "eval_mode": "sample",
+      "image_mode": "blank",
+      "prompt_key": "prompt",
+      "num_samples": 200,
+      "temperature": 1.0,
+      "label": "none"
+    }
+  }
+}

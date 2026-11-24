@@ -1,0 +1,26 @@
+2026-10-20 00:52:27,848 INFO Статистики KG + эмбеддинги отношений …
+2026-10-20 00:52:33,085 INFO Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-10-20 00:52:35,677 INFO Received notification from DBMS server: {severity: INFORMATION} {code: Neo.ClientNotification.Schema.IndexOrConstraintAlreadyExists} {category: SCHEMA} {title: `CREATE RANGE INDEX entity_name_index IF NOT EXISTS FOR (e:Entity) ON (e.name)` has no effect.} {description: `RANGE INDEX index_121666b9 FOR (e:Entity) ON (e.name)` already exists.} {position: None} for query: 'CREATE INDEX entity_name_index IF NOT EXISTS FOR (e:Entity) ON (e.name)'
+2026-10-20 00:52:35,679 INFO Received notification from DBMS server: {severity: INFORMATION} {code: Neo.ClientNotification.Schema.IndexOrConstraintAlreadyExists} {category: SCHEMA} {title: `CREATE RANGE INDEX entity_fb_id_index IF NOT EXISTS FOR (e:Entity) ON (e.fb_id)` has no effect.} {description: `RANGE INDEX entity_fb_id_index FOR (e:Entity) ON (e.fb_id)` already exists.} {position: None} for query: 'CREATE INDEX entity_fb_id_index IF NOT EXISTS FOR (e:Entity) ON (e.fb_id)'
+2026-10-20 00:52:35,684 INFO === stage2_test: 2000 примеров (retriever split=test) ===
+C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\neo4j\_sync\work\result.py:625: UserWarning: Expected a result with a single record, but found multiple.
+  warn(
+2026-10-20 00:52:50,468 INFO   …подграфы 1000/2000 (пустых рёбер: 0)
+2026-10-20 00:53:04,754 INFO   …подграфы 2000/2000 (пустых рёбер: 0)
+2026-10-20 00:53:04,754 INFO Рендер 2000 картинок в 560px, workers=4 …
+2026-10-20 00:56:01,417 INFO stage2_test: утечка описания=45 (вырезано описаний из промпта=1324, выкинуто по --drop_leak=0)
+Saving the dataset (0/1 shards):   0%|          | 0/2000 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 2000/2000 [00:00<00:00, 333556.32 examples/s]Saving the dataset (1/1 shards): 100%|##########| 2000/2000 [00:00<00:00, 333556.32 examples/s]
+2026-10-20 00:56:01,482 INFO Сохранено: graphvis_readcheck\s560\k64\datasets\stage2_test (2000 примеров, без рёбер: 0, пропущено: 0)
+
+============================================================
+Перерендер готов: hybrid@64, 560px
+  stage2_test       2000 примеров  (без рёбер: 0)
+Новый датасет: graphvis_readcheck\s560\k64\datasets
+Для обучения: cfg.dataset_root = graphvis_readcheck\s560\k64\datasets
+============================================================
+Exception ignored in: <function ResourceTracker.__del__ at 0x000001C4C001F560>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

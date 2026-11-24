@@ -1,0 +1,56 @@
+{
+  "config": {
+    "train_n": 0,
+    "eval_only": true,
+    "adapter": "C:\\Users\\PC\\Documents\\my_hse\\DKG\\graphviz_lp\\graphvis_ckpts_scaling\\k16\\ctx_text_matrix\\adapter",
+    "eval_n": 1000,
+    "epochs": 1,
+    "eval_mode": "rank",
+    "beams": 10,
+    "cand_cap": 50,
+    "dataset_root": "C:\\Users\\PC\\Documents\\my_hse\\DKG\\graphviz_lp\\graphvis_scaling\\k16\\datasets",
+    "model": "Qwen/Qwen2.5-VL-3B-Instruct"
+  },
+  "train": {
+    "loss_first": NaN,
+    "loss_last": NaN,
+    "peak_vram_gb": 0.0,
+    "with_stage1": false,
+    "stage1_loss_first": null,
+    "stage1_loss_last": null
+  },
+  "eval": {
+    "MRR": 0.3937227271597933,
+    "Hits@1": 28.836251287332647,
+    "Hits@3": 40.7826982492276,
+    "Hits@10": 60.865087538619974,
+    "mean_total_tokens": 1443.296875,
+    "mean_text_tokens": 1187.296875,
+    "mean_visual_tokens": 256.0,
+    "n_cost_sampled": 64,
+    "n_evaluated": 971,
+    "n_total_test": 2000,
+    "mean_candidates": 44.675592173017506,
+    "eval_mode": "rank",
+    "tie_break": "realistic",
+    "image_mode": "blank"
+  },
+  "ablation": {
+    "blank": {
+      "MRR": 0.3937227271597933,
+      "Hits@1": 28.836251287332647,
+      "Hits@3": 40.7826982492276,
+      "Hits@10": 60.865087538619974,
+      "mean_total_tokens": 1443.296875,
+      "mean_text_tokens": 1187.296875,
+      "mean_visual_tokens": 256.0,
+      "n_cost_sampled": 64,
+      "n_evaluated": 971,
+      "n_total_test": 2000,
+      "mean_candidates": 44.675592173017506,
+      "eval_mode": "rank",
+      "tie_break": "realistic",
+      "image_mode": "blank"
+    }
+  }
+}

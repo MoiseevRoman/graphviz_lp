@@ -1,0 +1,19 @@
+{
+  "method": "hybrid",
+  "k": 32,
+  "target_size": 728,
+  "max_nodes_display": 34,
+  "src_root": "C:\\Users\\PC\\Documents\\my_hse\\DKG\\graphviz_lp\\graphvis_fb15k_data\\datasets",
+  "strip_description": true,
+  "drop_leak": false,
+  "splits": {
+    "stage2_test": {
+      "n": 2000,
+      "no_edges": 0,
+      "dropped": 0,
+      "desc_leak": 45,
+      "desc_stripped": 1324,
+      "dropped_leak": 0
+    }
+  }
+}

@@ -1,0 +1,52 @@
+2026-08-10 03:38:31,664 [INFO] Ѕазова€ модель из adapter_config.json: Qwen/Qwen2.5-VL-3B-Instruct
+2026-08-10 03:38:31,664 [INFO] —емейство модели: qwen (Qwen/Qwen2.5-VL-3B-Instruct)
+2026-08-10 03:38:31,665 [INFO] 4-bit quantization (QLoRA) включена
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:02<00:02,  2.34s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:04<00:00,  2.04s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:04<00:00,  2.08s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+2026-08-10 03:38:41,364 [INFO] Gradient checkpointing включЄн (use_reentrant=False)
+2026-08-10 03:38:41,364 [INFO] «агрузка адаптера: graphvis_ckpts\ctx_visual_s1\adapter
+2026-08-10 03:38:43,198 [INFO] ѕ–ќЅј B: причинна€ чувствительность (300 примеров)Е
+2026-08-10 03:39:31,992 [INFO]   Е25/300
+2026-08-10 03:40:20,253 [INFO]   Е50/300
+2026-08-10 03:41:08,486 [INFO]   Е75/300
+2026-08-10 03:41:56,645 [INFO]   Е100/300
+2026-08-10 03:42:44,949 [INFO]   Е125/300
+2026-08-10 03:43:33,358 [INFO]   Е150/300
+2026-08-10 03:44:21,700 [INFO]   Е175/300
+2026-08-10 03:45:10,094 [INFO]   Е200/300
+2026-08-10 03:45:58,473 [INFO]   Е225/300
+2026-08-10 03:46:46,820 [INFO]   Е250/300
+2026-08-10 03:47:35,070 [INFO]   Е275/300
+2026-08-10 03:48:23,456 [INFO]   Е300/300
+2026-08-10 03:48:23,457 [INFO] ѕ–ќЅј C: дол€ внимани€ на изображение (300 примеров)Е
+2026-08-10 03:48:35,637 [INFO]   Е25/300
+2026-08-10 03:48:47,842 [INFO]   Е50/300
+2026-08-10 03:49:00,059 [INFO]   Е75/300
+2026-08-10 03:49:12,314 [INFO]   Е100/300
+2026-08-10 03:49:24,511 [INFO]   Е125/300
+2026-08-10 03:49:36,721 [INFO]   Е150/300
+2026-08-10 03:49:48,905 [INFO]   Е175/300
+2026-08-10 03:50:01,086 [INFO]   Е200/300
+2026-08-10 03:50:13,282 [INFO]   Е225/300
+2026-08-10 03:50:25,479 [INFO]   Е250/300
+2026-08-10 03:50:37,660 [INFO]   Е275/300
+2026-08-10 03:50:49,818 [INFO]   Е300/300
+
+==================================================================
+ѕ–ќЅј B Ч причинна€ чувствительность выхода LM (real vs абл€ци€)
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\image_influence.py", line 395, in <module>
+    main()
+  File "C:\Users\PC\Documents\my_hse\DKG\graphviz_lp\scripts\image_influence.py", line 363, in main
+    print(f"{'mode':<9} {'\u0394NLL':>10} {'±sem':>8} {'symKL':>10} {'helped%':>9} {'n':>5}")
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0394' in position 16: character maps to <undefined>
+Exception ignored in: <function ResourceTracker.__del__ at 0x000001C68C987560>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

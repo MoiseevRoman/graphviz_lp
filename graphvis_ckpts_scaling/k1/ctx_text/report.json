@@ -1,0 +1,60 @@
+{
+  "config": {
+    "train_n": 4000,
+    "eval_only": false,
+    "adapter": "C:\\Users\\PC\\Documents\\my_hse\\DKG\\graphviz_lp\\graphvis_ckpts_scaling\\k1\\ctx_text\\adapter",
+    "eval_n": 4402,
+    "epochs": 1,
+    "eval_mode": "rank",
+    "beams": 10,
+    "cand_cap": 50,
+    "dataset_root": "C:\\Users\\PC\\Documents\\my_hse\\DKG\\graphviz_lp\\graphvis_scaling\\k1\\datasets",
+    "model": "Qwen/Qwen2.5-VL-3B-Instruct"
+  },
+  "train": {
+    "loss_first": 3.4219,
+    "loss_last": 1.5348,
+    "peak_vram_gb": 6.3,
+    "with_stage1": false,
+    "stage1_loss_first": null,
+    "stage1_loss_last": null,
+    "train_mean_tokens": 329.25,
+    "train_mean_text_tokens": 73.25,
+    "train_mean_visual_tokens": 256.0,
+    "train_examples": 4000,
+    "train_epochs": 1,
+    "train_tokens_total": 1317000.0
+  },
+  "eval": {
+    "MRR": 0.39812619320220055,
+    "Hits@1": 29.020618556701034,
+    "Hits@3": 42.68041237113402,
+    "Hits@10": 61.185567010309285,
+    "mean_total_tokens": 330.1875,
+    "mean_text_tokens": 74.1875,
+    "mean_visual_tokens": 256.0,
+    "n_cost_sampled": 64,
+    "n_evaluated": 3880,
+    "n_total_test": 4000,
+    "mean_candidates": 44.81932989690721,
+    "eval_mode": "rank",
+    "image_mode": "blank"
+  },
+  "ablation": {
+    "blank": {
+      "MRR": 0.39812619320220055,
+      "Hits@1": 29.020618556701034,
+      "Hits@3": 42.68041237113402,
+      "Hits@10": 61.185567010309285,
+      "mean_total_tokens": 330.1875,
+      "mean_text_tokens": 74.1875,
+      "mean_visual_tokens": 256.0,
+      "n_cost_sampled": 64,
+      "n_evaluated": 3880,
+      "n_total_test": 4000,
+      "mean_candidates": 44.81932989690721,
+      "eval_mode": "rank",
+      "image_mode": "blank"
+    }
+  }
+}

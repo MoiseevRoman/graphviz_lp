@@ -1,0 +1,24 @@
+[protocol] rank
+[ok]   visual_s1fv_shuf: image_mode=shuffle, n=971
+[ok]   visual_s1fv_blank: image_mode=blank, n=971
+[ok]   visual_s1fv: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+visual_s1fv_shuf   971   0.3503   24.51   36.87   55.61
+visual_s1fv_blank   971   0.3768   26.67   40.89   58.81
+visual_s1fv   971   0.4031   29.45   42.43   63.03
+
+=== visual_s1fv_blank vs visual_s1fv_shuf (парных 971) ===
+  ΔMRR = +0.0265  95% CI [+0.0156, +0.0380]  ЗНАЧИМО
+  McNemar H@1 : visual_s1fv_blank-win= 43 visual_s1fv_shuf-win= 22 z= 2.48 p=0.01311 значимо
+  McNemar H@3 : visual_s1fv_blank-win= 56 visual_s1fv_shuf-win= 17 z= 4.45 p=8.685e-06 значимо
+  McNemar H@10: visual_s1fv_blank-win= 50 visual_s1fv_shuf-win= 19 z= 3.61 p=0.0003043 значимо
+
+=== visual_s1fv vs visual_s1fv_shuf (парных 971) ===
+  ΔMRR = +0.0528  95% CI [+0.0374, +0.0684]  ЗНАЧИМО
+  McNemar H@1 : visual_s1fv-win= 76 visual_s1fv_shuf-win= 28 z= 4.61 p=4.051e-06 значимо
+  McNemar H@3 : visual_s1fv-win= 89 visual_s1fv_shuf-win= 35 z= 4.76 p=1.94e-06 значимо
+  McNemar H@10: visual_s1fv-win= 86 visual_s1fv_shuf-win= 14 z= 7.10 p=1.248e-12 значимо
+
+Сохранено: graphvis_ckpts_s1\k16\compare_shuf_fv.json

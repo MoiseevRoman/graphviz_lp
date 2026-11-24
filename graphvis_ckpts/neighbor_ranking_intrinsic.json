@@ -1,0 +1,107 @@
+{
+  "baseline_semantic@4": {
+    "has_query_rel": 0.2733333333333333,
+    "pmi_support": 0.57,
+    "rel_entropy": 0.7740809345899742,
+    "redundancy": 0.3727777777777778,
+    "hub_frac": 0.4263888888888889
+  },
+  "baseline_semantic@8": {
+    "has_query_rel": 0.38,
+    "pmi_support": 0.6633333333333333,
+    "rel_entropy": 1.0905563275879195,
+    "redundancy": 0.5104206349206348,
+    "hub_frac": 0.429313492063492
+  },
+  "baseline_semantic@12": {
+    "has_query_rel": 0.48333333333333334,
+    "pmi_support": 0.74,
+    "rel_entropy": 1.2518993429121024,
+    "redundancy": 0.5719980759980761,
+    "hub_frac": 0.4472015392015392
+  },
+  "relation_sim@4": {
+    "has_query_rel": 0.7633333333333333,
+    "pmi_support": 0.8233333333333334,
+    "rel_entropy": 0.35435860539911523,
+    "redundancy": 0.5777777777777778,
+    "hub_frac": 0.5397222222222222
+  },
+  "relation_sim@8": {
+    "has_query_rel": 0.7633333333333333,
+    "pmi_support": 0.8533333333333334,
+    "rel_entropy": 0.6195042511821695,
+    "redundancy": 0.6704206349206349,
+    "hub_frac": 0.5101468253968253
+  },
+  "relation_sim@12": {
+    "has_query_rel": 0.7633333333333333,
+    "pmi_support": 0.8666666666666667,
+    "rel_entropy": 0.7878204219462572,
+    "redundancy": 0.6975536315536315,
+    "hub_frac": 0.4991459836459836
+  },
+  "pmi@4": {
+    "has_query_rel": 0.7466666666666667,
+    "pmi_support": 0.9066666666666666,
+    "rel_entropy": 0.3981276368316509,
+    "redundancy": 0.5577777777777778,
+    "hub_frac": 0.4888888888888889
+  },
+  "pmi@8": {
+    "has_query_rel": 0.7533333333333333,
+    "pmi_support": 0.9066666666666666,
+    "rel_entropy": 0.689506289258503,
+    "redundancy": 0.6383373015873015,
+    "hub_frac": 0.49306349206349204
+  },
+  "pmi@12": {
+    "has_query_rel": 0.7566666666666667,
+    "pmi_support": 0.9066666666666666,
+    "rel_entropy": 0.8708280929116445,
+    "redundancy": 0.6650536315536315,
+    "hub_frac": 0.4977570947570948
+  },
+  "mmr@4": {
+    "has_query_rel": 0.7633333333333333,
+    "pmi_support": 0.8333333333333334,
+    "rel_entropy": 0.502841504152126,
+    "redundancy": 0.48861111111111116,
+    "hub_frac": 0.5463888888888888
+  },
+  "mmr@8": {
+    "has_query_rel": 0.7633333333333333,
+    "pmi_support": 0.8866666666666667,
+    "rel_entropy": 0.8925458644442362,
+    "redundancy": 0.5266706349206348,
+    "hub_frac": 0.5272301587301587
+  },
+  "mmr@12": {
+    "has_query_rel": 0.7633333333333333,
+    "pmi_support": 0.9,
+    "rel_entropy": 1.0622001789551117,
+    "redundancy": 0.5697758537758538,
+    "hub_frac": 0.5138682058682059
+  },
+  "hybrid@4": {
+    "has_query_rel": 0.76,
+    "pmi_support": 0.8733333333333333,
+    "rel_entropy": 0.5223903340455055,
+    "redundancy": 0.4977777777777778,
+    "hub_frac": 0.2347222222222222
+  },
+  "hybrid@8": {
+    "has_query_rel": 0.76,
+    "pmi_support": 0.8866666666666667,
+    "rel_entropy": 0.8077376606595617,
+    "redundancy": 0.5979206349206349,
+    "hub_frac": 0.26639682539682535
+  },
+  "hybrid@12": {
+    "has_query_rel": 0.7633333333333333,
+    "pmi_support": 0.8966666666666666,
+    "rel_entropy": 0.9888954346746023,
+    "redundancy": 0.6333869648869649,
+    "hub_frac": 0.29609042809042807
+  }
+}

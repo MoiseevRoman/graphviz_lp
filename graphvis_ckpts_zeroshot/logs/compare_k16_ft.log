@@ -1,0 +1,48 @@
+[protocol] rank
+[ok]   zs_none: image_mode=blank, n=971
+[ok]   ft_none: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+zs_none    971   0.2828   17.82   29.76   47.68
+ft_none    971   0.3859   28.22   40.78   59.32
+
+=== ft_none vs zs_none (парных 971) ===
+  ΔMRR = +0.1031  95% CI [+0.0809, +0.1249]  ЗНАЧИМО
+  McNemar H@1 : ft_none-win=143 zs_none-win= 42 z= 7.35 p=1.95e-13 значимо
+  McNemar H@3 : ft_none-win=169 zs_none-win= 62 z= 6.97 p=3.074e-12 значимо
+  McNemar H@10: ft_none-win=188 zs_none-win= 75 z= 6.91 p=4.978e-12 значимо
+
+Сохранено: graphvis_ckpts_zeroshot\k16\compare_ft_none.json
+[protocol] rank
+[ok]   zs_text: image_mode=blank, n=971
+[ok]   ft_text: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+zs_text    971   0.3377   22.45   35.43   56.13
+ft_text    971   0.4115   29.87   44.18   65.29
+
+=== ft_text vs zs_text (парных 971) ===
+  ΔMRR = +0.0738  95% CI [+0.0529, +0.0941]  ЗНАЧИМО
+  McNemar H@1 : ft_text-win=124 zs_text-win= 52 z= 5.35 p=8.707e-08 значимо
+  McNemar H@3 : ft_text-win=140 zs_text-win= 55 z= 6.02 p=1.795e-09 значимо
+  McNemar H@10: ft_text-win=142 zs_text-win= 53 z= 6.30 p=2.942e-10 значимо
+
+Сохранено: graphvis_ckpts_zeroshot\k16\compare_ft_text.json
+[protocol] rank
+[ok]   zs_visual: image_mode=real, n=971
+[ok]   ft_visual: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+zs_visual   971   0.2997   19.16   31.51   49.64
+ft_visual   971   0.4037   29.25   42.53   63.65
+
+=== ft_visual vs zs_visual (парных 971) ===
+  ΔMRR = +0.1040  95% CI [+0.0821, +0.1260]  ЗНАЧИМО
+  McNemar H@1 : ft_visual-win=142 zs_visual-win= 44 z= 7.11 p=1.141e-12 значимо
+  McNemar H@3 : ft_visual-win=168 zs_visual-win= 61 z= 7.00 p=2.476e-12 значимо
+  McNemar H@10: ft_visual-win=201 zs_visual-win= 65 z= 8.28 p=1.259e-16 значимо
+
+Сохранено: graphvis_ckpts_zeroshot\k16\compare_ft_visual.json

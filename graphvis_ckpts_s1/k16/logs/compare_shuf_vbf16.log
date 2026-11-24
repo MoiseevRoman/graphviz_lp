@@ -1,0 +1,24 @@
+[protocol] rank
+[ok]   visual_vbf16_shuf: image_mode=shuffle, n=971
+[ok]   visual_vbf16_blank: image_mode=blank, n=971
+[ok]   visual_vbf16: image_mode=real, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+visual_vbf16_shuf   971   0.3559   24.51   37.28   58.81
+visual_vbf16_blank   971   0.3765   26.78   39.55   60.35
+visual_vbf16   971   0.3983   28.73   42.12   63.95
+
+=== visual_vbf16_blank vs visual_vbf16_shuf (парных 971) ===
+  ΔMRR = +0.0206  95% CI [+0.0112, +0.0302]  ЗНАЧИМО
+  McNemar H@1 : visual_vbf16_blank-win= 40 visual_vbf16_shuf-win= 18 z= 2.76 p=0.005826 значимо
+  McNemar H@3 : visual_vbf16_blank-win= 38 visual_vbf16_shuf-win= 16 z= 2.86 p=0.004267 значимо
+  McNemar H@10: visual_vbf16_blank-win= 39 visual_vbf16_shuf-win= 24 z= 1.76 p=0.07776 н/з
+
+=== visual_vbf16 vs visual_vbf16_shuf (парных 971) ===
+  ΔMRR = +0.0424  95% CI [+0.0289, +0.0561]  ЗНАЧИМО
+  McNemar H@1 : visual_vbf16-win= 67 visual_vbf16_shuf-win= 26 z= 4.15 p=3.357e-05 значимо
+  McNemar H@3 : visual_vbf16-win= 72 visual_vbf16_shuf-win= 25 z= 4.67 p=3.003e-06 значимо
+  McNemar H@10: visual_vbf16-win= 64 visual_vbf16_shuf-win= 14 z= 5.55 p=2.887e-08 значимо
+
+Сохранено: graphvis_ckpts_s1\k16\compare_shuf_vbf16.json

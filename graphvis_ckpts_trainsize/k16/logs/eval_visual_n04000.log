@@ -1,0 +1,58 @@
+prompt[visual]:   0%|          | 0/4000 [00:00<?, ? examples/s]prompt[visual]:  50%|█████     | 2000/4000 [00:00<00:00, 10892.81 examples/s]prompt[visual]: 100%|██████████| 4000/4000 [00:00<00:00, 14799.56 examples/s]
+prompt[visual]:   0%|          | 0/2000 [00:00<?, ? examples/s]prompt[visual]: 100%|██████████| 2000/2000 [00:00<00:00, 23592.27 examples/s]
+2026-08-31 15:15:06,237 [INFO] context_mode=visual: промпты пересобраны; train_image_mode=real (соседей текстом: False)
+2026-08-31 15:15:06,238 [INFO] EVAL-ONLY: загружаю сохранённый адаптер graphvis_ckpts_trainsize\k16\ctx_visual\viability\checkpoint-500
+2026-08-31 15:15:06,238 [INFO] Семейство модели: qwen (Qwen/Qwen2.5-VL-3B-Instruct)
+2026-08-31 15:15:06,238 [INFO] 4-bit quantization (QLoRA) включена
+`torch_dtype` is deprecated! Use `dtype` instead!
+C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\transformers\modeling_utils.py:6105: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(byte_count // factor, dtype=torch.float16, device=device, requires_grad=False)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.03s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+2026-08-31 15:15:16,102 [INFO] Gradient checkpointing включён (use_reentrant=False)
+2026-08-31 15:15:18,009 [INFO] ================================================================
+2026-08-31 15:15:18,009 [INFO] ОЦЕНКА (rank, filtered): 1000 примеров, cand_cap=50, режимы=['real']
+2026-08-31 15:15:18,009 [INFO] ================================================================
+2026-08-31 15:15:18,551 [INFO] ─── image_mode=real ───
+2026-08-31 15:15:18,561 [INFO] EVALUATION (rank): 1000/2000 samples, image_mode=real, cand_batch=8
+2026-08-31 15:22:38,641 [INFO] [   50/1000] 0.1 smp/s | scored=48
+2026-08-31 15:30:24,412 [INFO] [  100/1000] 0.1 smp/s | scored=97
+2026-08-31 15:38:25,489 [INFO] [  150/1000] 0.1 smp/s | scored=147
+2026-08-31 15:46:23,622 [INFO] [  200/1000] 0.1 smp/s | scored=196
+2026-08-31 15:54:24,402 [INFO] [  250/1000] 0.1 smp/s | scored=245
+2026-08-31 16:02:06,472 [INFO] [  300/1000] 0.1 smp/s | scored=293
+2026-08-31 16:09:20,176 [INFO] [  350/1000] 0.1 smp/s | scored=340
+2026-08-31 16:17:06,397 [INFO] [  400/1000] 0.1 smp/s | scored=389
+2026-08-31 16:25:21,451 [INFO] [  450/1000] 0.1 smp/s | scored=439
+2026-08-31 16:33:16,507 [INFO] [  500/1000] 0.1 smp/s | scored=488
+2026-08-31 16:41:01,586 [INFO] [  550/1000] 0.1 smp/s | scored=536
+2026-08-31 16:48:43,359 [INFO] [  600/1000] 0.1 smp/s | scored=585
+2026-08-31 16:55:52,003 [INFO] [  650/1000] 0.1 smp/s | scored=632
+2026-08-31 17:04:01,518 [INFO] [  700/1000] 0.1 smp/s | scored=680
+2026-08-31 17:11:44,534 [INFO] [  750/1000] 0.1 smp/s | scored=729
+2026-08-31 17:19:47,983 [INFO] [  800/1000] 0.1 smp/s | scored=779
+2026-08-31 17:28:02,885 [INFO] [  850/1000] 0.1 smp/s | scored=829
+2026-08-31 17:34:53,448 [INFO] [  900/1000] 0.1 smp/s | scored=877
+2026-08-31 17:49:34,204 [INFO] [ 1000/1000] 0.1 smp/s | scored=971
+2026-08-31 17:49:34,477 [INFO] =================================================================
+2026-08-31 17:49:34,477 [INFO] RESULTS rank (971 queries, 154.3 min) | filtered
+2026-08-31 17:49:34,478 [INFO]   MRR 0.3698 | H@1 27.1 | H@3 39.0 | H@10 55.7 | med.cand 50
+2026-08-31 17:49:34,478 [INFO] =================================================================
+
+================================================================
+ГЕЙТ ЖИЗНЕСПОСОБНОСТИ  (rank, filtered)
+================================================================
+  обучение : loss nan → nan | пик VRAM 0.0 ГБ
+  качество : MRR=0.3698  H@1=27.1  H@3=39.0  H@10=55.7  n=971  med.cand=45
+  zero-shot пол (preflight) : MRR≈0
+----------------------------------------------------------------
+  ✅ ЕСТЬ СИГНАЛ: дообучение заметно поднимает качество над нулём.
+     → премиса подтверждена, можно масштабировать на полный тест / A100.
+================================================================
+Сохранено: graphvis_ckpts_trainsize\k16\ctx_visual\n04000\report.json
+Exception ignored in: <function ResourceTracker.__del__ at 0x0000012AFB4CE520>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'

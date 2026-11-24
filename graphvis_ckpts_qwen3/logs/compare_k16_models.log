@@ -1,0 +1,56 @@
+[protocol] rank
+[ok]   q25_text: image_mode=blank, n=971
+[ok]   q25_visual: image_mode=real, n=971
+[ok]   q25_visual_vbf16: image_mode=real, n=971
+[ok]   q25_none: image_mode=blank, n=971
+[ok]   text: image_mode=blank, n=971
+[ok]   visual: image_mode=real, n=971
+[ok]   none: image_mode=blank, n=971
+
+=== Метрики ===
+cond         n      MRR     H@1     H@3    H@10
+q25_text   971   0.4115   29.87   44.18   65.29
+q25_visual   971   0.4037   29.25   42.53   63.65
+q25_visual_vbf16   971   0.3983   28.73   42.12   63.95
+q25_none   971   0.3859   28.22   40.78   59.32
+text       971   0.4212   31.51   43.67   64.78
+visual     971   0.3915   28.94   40.68   61.59
+none       971   0.3947   28.94   41.50   60.56
+
+=== q25_visual vs q25_text (парных 971) ===
+  ΔMRR = -0.0079  95% CI [-0.0180, +0.0024]  не значимо
+  McNemar H@1 : q25_visual-win= 26 q25_text-win= 32 z= 0.66 p=0.5115 н/з
+  McNemar H@3 : q25_visual-win= 24 q25_text-win= 40 z= 1.88 p=0.06079 н/з
+  McNemar H@10: q25_visual-win= 26 q25_text-win= 42 z= 1.82 p=0.06891 н/з
+
+=== q25_visual_vbf16 vs q25_text (парных 971) ===
+  ΔMRR = -0.0132  95% CI [-0.0231, -0.0034]  ЗНАЧИМО
+  McNemar H@1 : q25_visual_vbf16-win= 22 q25_text-win= 33 z= 1.35 p=0.1775 н/з
+  McNemar H@3 : q25_visual_vbf16-win= 23 q25_text-win= 43 z= 2.34 p=0.01935 значимо
+  McNemar H@10: q25_visual_vbf16-win= 24 q25_text-win= 37 z= 1.54 p=0.1244 н/з
+
+=== q25_none vs q25_text (парных 971) ===
+  ΔMRR = -0.0256  95% CI [-0.0374, -0.0136]  ЗНАЧИМО
+  McNemar H@1 : q25_none-win= 27 q25_text-win= 43 z= 1.79 p=0.073 н/з
+  McNemar H@3 : q25_none-win= 28 q25_text-win= 61 z= 3.39 p=0.0006939 значимо
+  McNemar H@10: q25_none-win= 18 q25_text-win= 76 z= 5.88 p=4.125e-09 значимо
+
+=== text vs q25_text (парных 971) ===
+  ΔMRR = +0.0097  95% CI [-0.0033, +0.0231]  не значимо
+  McNemar H@1 : text-win= 52 q25_text-win= 36 z= 1.60 p=0.1098 н/з
+  McNemar H@3 : text-win= 48 q25_text-win= 53 z= 0.40 p=0.6906 н/з
+  McNemar H@10: text-win= 47 q25_text-win= 52 z= 0.40 p=0.6877 н/з
+
+=== visual vs q25_text (парных 971) ===
+  ΔMRR = -0.0201  95% CI [-0.0344, -0.0057]  ЗНАЧИМО
+  McNemar H@1 : visual-win= 43 q25_text-win= 52 z= 0.82 p=0.4118 н/з
+  McNemar H@3 : visual-win= 41 q25_text-win= 75 z= 3.06 p=0.002184 значимо
+  McNemar H@10: visual-win= 39 q25_text-win= 75 z= 3.28 p=0.001045 значимо
+
+=== none vs q25_text (парных 971) ===
+  ΔMRR = -0.0169  95% CI [-0.0318, -0.0019]  ЗНАЧИМО
+  McNemar H@1 : none-win= 49 q25_text-win= 58 z= 0.77 p=0.4393 н/з
+  McNemar H@3 : none-win= 42 q25_text-win= 68 z= 2.38 p=0.01714 значимо
+  McNemar H@10: none-win= 37 q25_text-win= 83 z= 4.11 p=3.992e-05 значимо
+
+Сохранено: graphvis_ckpts_qwen3\k16\compare_models.json

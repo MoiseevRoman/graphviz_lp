@@ -1,0 +1,38 @@
+2026-10-21 11:54:58,841 INFO Статистики KG + эмбеддинги отношений …
+2026-10-21 11:55:16,911 INFO Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-10-21 11:55:19,962 INFO Received notification from DBMS server: {severity: INFORMATION} {code: Neo.ClientNotification.Schema.IndexOrConstraintAlreadyExists} {category: SCHEMA} {title: `CREATE RANGE INDEX entity_name_index IF NOT EXISTS FOR (e:Entity) ON (e.name)` has no effect.} {description: `RANGE INDEX index_121666b9 FOR (e:Entity) ON (e.name)` already exists.} {position: None} for query: 'CREATE INDEX entity_name_index IF NOT EXISTS FOR (e:Entity) ON (e.name)'
+2026-10-21 11:55:19,977 INFO Received notification from DBMS server: {severity: INFORMATION} {code: Neo.ClientNotification.Schema.IndexOrConstraintAlreadyExists} {category: SCHEMA} {title: `CREATE RANGE INDEX entity_fb_id_index IF NOT EXISTS FOR (e:Entity) ON (e.fb_id)` has no effect.} {description: `RANGE INDEX entity_fb_id_index FOR (e:Entity) ON (e.fb_id)` already exists.} {position: None} for query: 'CREATE INDEX entity_fb_id_index IF NOT EXISTS FOR (e:Entity) ON (e.fb_id)'
+2026-10-21 11:55:20,036 INFO === stage2_train: 4000 примеров (retriever split=train) ===
+C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\neo4j\_sync\work\result.py:625: UserWarning: Expected a result with a single record, but found multiple.
+  warn(
+2026-10-21 11:55:38,523 INFO   …подграфы 1000/4000 (пустых рёбер: 1)
+2026-10-21 11:55:53,347 INFO   …подграфы 2000/4000 (пустых рёбер: 1)
+2026-10-21 11:56:06,856 INFO   …подграфы 3000/4000 (пустых рёбер: 2)
+2026-10-21 11:56:20,678 INFO   …подграфы 4000/4000 (пустых рёбер: 2)
+2026-10-21 11:56:20,678 INFO Рендер 4000 картинок в 560px, workers=4 …
+2026-10-21 12:02:45,360 INFO stage2_train: утечка описания=103 (вырезано описаний из промпта=2604, выкинуто по --drop_leak=0)
+Saving the dataset (0/1 shards):   0%|          | 0/4000 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 4000/4000 [00:00<00:00, 228047.36 examples/s]Saving the dataset (1/1 shards): 100%|##########| 4000/4000 [00:00<00:00, 228047.36 examples/s]
+2026-10-21 12:02:45,478 INFO Сохранено: graphvis_rel\k32\datasets\stage2_train (4000 примеров, без рёбер: 2, пропущено: 0)
+2026-10-21 12:02:45,519 INFO === stage2_test: 4000 примеров (retriever split=test) ===
+2026-10-21 12:02:59,451 INFO   …подграфы 1000/4000 (пустых рёбер: 0)
+2026-10-21 12:03:12,923 INFO   …подграфы 2000/4000 (пустых рёбер: 0)
+2026-10-21 12:03:26,187 INFO   …подграфы 3000/4000 (пустых рёбер: 0)
+2026-10-21 12:03:39,533 INFO   …подграфы 4000/4000 (пустых рёбер: 0)
+2026-10-21 12:03:39,533 INFO Рендер 4000 картинок в 560px, workers=4 …
+2026-10-21 12:09:57,999 INFO stage2_test: утечка описания=96 (вырезано описаний из промпта=2671, выкинуто по --drop_leak=0)
+Saving the dataset (0/1 shards):   0%|          | 0/4000 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 4000/4000 [00:00<00:00, 473932.66 examples/s]Saving the dataset (1/1 shards): 100%|##########| 4000/4000 [00:00<00:00, 473932.66 examples/s]
+2026-10-21 12:09:58,082 INFO Сохранено: graphvis_rel\k32\datasets\stage2_test (4000 примеров, без рёбер: 0, пропущено: 0)
+
+============================================================
+Перерендер готов: hybrid@32, 560px
+  stage2_train      4000 примеров  (без рёбер: 2)
+  stage2_test       4000 примеров  (без рёбер: 0)
+Новый датасет: graphvis_rel\k32\datasets
+Для обучения: cfg.dataset_root = graphvis_rel\k32\datasets
+============================================================
+Exception ignored in: <function ResourceTracker.__del__ at 0x0000024A7AD802C0>
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 80, in __del__
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 89, in _stop
+  File "C:\Users\PC\Documents\my_hse\DKG\myenv\Lib\site-packages\multiprocess\resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'
